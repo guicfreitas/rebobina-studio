@@ -1,0 +1,15 @@
+<!-- Rádio de mesa anos 1930 (desenho original do Rebobina). Classes: r-gab (gabinete), r-grade, r-barra, r-dial, r-agulha, r-botao -->
+<svg class="simbolo-radio" viewBox="0 0 400 470" xmlns="http://www.w3.org/2000/svg">
+ <rect class="r-base" x="6" y="440" width="388" height="26" rx="6" fill="#3b2412"/>
+ <path class="r-gab" d="M24 445 L24 205 Q24 22 200 22 Q376 22 376 205 L376 445 Z"/>
+ <path class="r-grade" d="M78 300 L78 205 Q78 78 200 78 Q322 78 322 205 L322 300 Z" fill="#24160d"/>
+ <g class="r-barras" stroke="#8a5a32" stroke-width="9" stroke-linecap="round">
+  <line x1="112" y1="160" x2="112" y2="292"/><line x1="140" y1="122" x2="140" y2="292"/><line x1="168" y1="100" x2="168" y2="292"/>
+  <line x1="200" y1="92" x2="200" y2="292"/><line x1="232" y1="100" x2="232" y2="292"/><line x1="260" y1="122" x2="260" y2="292"/>
+  <line x1="288" y1="160" x2="288" y2="292"/>
+ </g>
+ <rect class="r-dial" x="92" y="326" width="216" height="72" rx="12" fill="#f1e8d3"/>
+ <g stroke="#6d5f45" stroke-width="3"><line x1="112" y1="340" x2="112" y2="356"/><line x1="142" y1="340" x2="142" y2="350"/><line x1="172" y1="340" x2="172" y2="356"/><line x1="202" y1="340" x2="202" y2="350"/><line x1="232" y1="340" x2="232" y2="356"/><line x1="262" y1="340" x2="262" y2="350"/><line x1="292" y1="340" x2="292" y2="356"/></g>
+ <line id="agulha" class="r-agulha" x1="120" y1="334" x2="120" y2="390" stroke="#ff3b30" stroke-width="5" stroke-linecap="round"/>
+ <circle class="r-botao" cx="72" cy="412" r="20" fill="#24160d"/><circle class="r-botao" cx="328" cy="412" r="20" fill="#24160d"/>
+</svg>

@@ -1,0 +1,43 @@
+<template>
+  <!-- c03 · rebobinar · ficha-de-arquivo de Melgarejo (sem retrato: o canal não usa fotos de pessoas reais). -->
+  <style>
+    #root { position: absolute; inset: 0; background: #15131a; overflow: hidden; }
+    #c03-ficha { position: absolute; left: 80px; top: 340px; width: 920px; height: 690px; padding: 44px 48px; border-radius: 6px; }
+    #c03-topo { font-family: var(--f-mono); font-weight: 700; font-size: 28px; letter-spacing: .14em; color: #6d5f45;
+      border-bottom: 3px solid #6d5f45; padding-bottom: 14px; width: 560px; }
+    #c03-foto { position: absolute; right: 48px; top: 44px; width: 240px; height: 300px; border: 4px solid #6d5f45;
+      background: repeating-linear-gradient(135deg, transparent 0 18px, rgba(109,95,69,.25) 18px 21px);
+      display: flex; align-items: center; justify-content: center; font-family: var(--f-mono); font-size: 30px; color: #6d5f45; letter-spacing: .1em; }
+    .c03-linha { font-size: 46px; margin-top: 30px; white-space: nowrap; }
+    .c03-linha b { font-family: var(--f-mono); font-size: 28px; letter-spacing: .12em; color: #6d5f45; display: block; margin-bottom: 4px; font-weight: 700; }
+    #c03-l1 { margin-top: 44px; }
+    #c03-sub { position: absolute; left: 352px; bottom: 58px; width: 452px; height: 10px; background: var(--rec); transform-origin: 0 50%; }
+  </style>
+  <div id="root" data-composition-id="c03" data-width="1080" data-height="1920">
+    <div id="c03-ficha-w" class="clip" data-start="0" data-duration="8" data-layout-allow-overlap>
+      <div id="c03-ficha" class="rb-papel rb-doc">
+        <div id="c03-topo">ARQUIVO · BOLÍVIA · FICHA 1867</div>
+        <div id="c03-foto">SEM FOTO</div>
+        <div id="c03-l1" class="c03-linha"><b>NOME</b><span>Mariano Melgarejo</span></div>
+        <div id="c03-l2" class="c03-linha"><b>CARGO</b><span>Presidente da Bolívia</span></div>
+        <div id="c03-l3" class="c03-linha"><b>MANDATO</b><span>1864 – 1871</span></div>
+        <div id="c03-l4" class="c03-linha"><b>OBSESSÃO</b><span>cavalos de raça</span></div>
+        <div id="c03-sub"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c03", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    const digita = (sel, t, n) => tl.fromTo(sel + " span", { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: Math.min(0.03 * n, 0.7), ease: `steps(${n})` }, t);
+    const rotulo = (sel, t) => tl.fromTo(sel + " b", { opacity: 0 }, { opacity: 1, duration: 0.08, ease: "steps(2)" }, t);
+    // a ficha cai na mesa logo depois do rebobinar
+    tl.fromTo("#c03-ficha", { y: -120, rotation: -6, opacity: 0 }, { y: 0, rotation: -1.5, opacity: 1, duration: 0.3, ease: "power3.out" }, 0.2);
+    tl.fromTo("#c03-ficha", { x: 0 }, { x: -12, duration: D, ease: "none" }, 0);
+    [["#c03-l1", T("Mariano") - 0.15, 17], ["#c03-l2", T("presidente") - 0.1, 21], ["#c03-l3", T("Melgarejo") + 0.2, 11], ["#c03-l4", T("louco"), 15]]
+      .forEach(([s, t, n]) => { rotulo(s, t - 0.08); digita(s, t, n); });
+    tl.fromTo("#c03-sub", { scaleX: 0 }, { scaleX: 1, duration: 0.25, ease: "power2.out" }, T("raça"));
+    tl.fromTo("#c03-l4 span", { color: "#1b1a17" }, { color: "#b3261e", duration: 0.1, ease: "steps(2)" }, T("raça"));
+    window.__timelines["c03"] = tl;
+  </script>
+</template>

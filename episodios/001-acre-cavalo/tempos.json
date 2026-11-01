@@ -1,0 +1,1478 @@
+{
+ "motor": "kokoro",
+ "voz": "pm_alex",
+ "cenas": [
+  {
+   "id": "c01",
+   "inicio": 0.15,
+   "fim": 4.118
+  },
+  {
+   "id": "c02",
+   "inicio": 4.398,
+   "fim": 6.569
+  },
+  {
+   "id": "c03",
+   "inicio": 6.849,
+   "fim": 13.782
+  },
+  {
+   "id": "c04",
+   "inicio": 14.062,
+   "fim": 22.113
+  },
+  {
+   "id": "c05",
+   "inicio": 22.393,
+   "fim": 26.946
+  },
+  {
+   "id": "c06",
+   "inicio": 27.226,
+   "fim": 34.373
+  },
+  {
+   "id": "c07",
+   "inicio": 34.653,
+   "fim": 41.33
+  },
+  {
+   "id": "c08",
+   "inicio": 41.61,
+   "fim": 48.906
+  },
+  {
+   "id": "c09",
+   "inicio": 49.186,
+   "fim": 56.424
+  },
+  {
+   "id": "c10",
+   "inicio": 56.704,
+   "fim": 63.787
+  },
+  {
+   "id": "c11",
+   "inicio": 64.067,
+   "fim": 69.25
+  },
+  {
+   "id": "c12",
+   "inicio": 69.53,
+   "fim": 74.394
+  }
+ ],
+ "palavras": [
+  {
+   "id": "w0",
+   "cena": "c01",
+   "text": "Dizem",
+   "start": 0.18,
+   "end": 0.469
+  },
+  {
+   "id": "w1",
+   "cena": "c01",
+   "text": "que",
+   "start": 0.469,
+   "end": 0.636
+  },
+  {
+   "id": "w2",
+   "cena": "c01",
+   "text": "o",
+   "start": 0.636,
+   "end": 0.802
+  },
+  {
+   "id": "w3",
+   "cena": "c01",
+   "text": "Brasil",
+   "start": 0.802,
+   "end": 1.091
+  },
+  {
+   "id": "w4",
+   "cena": "c01",
+   "text": "comprou",
+   "start": 1.091,
+   "end": 1.38
+  },
+  {
+   "id": "w5",
+   "cena": "c01",
+   "text": "o",
+   "start": 1.38,
+   "end": 1.547
+  },
+  {
+   "id": "w6",
+   "cena": "c01",
+   "text": "Acre",
+   "start": 1.547,
+   "end": 1.836
+  },
+  {
+   "id": "w7",
+   "cena": "c01",
+   "text": "da",
+   "start": 1.836,
+   "end": 2.002
+  },
+  {
+   "id": "w8",
+   "cena": "c01",
+   "text": "Bolívia…",
+   "start": 2.002,
+   "end": 2.414
+  },
+  {
+   "id": "w9",
+   "cena": "c01",
+   "text": "em",
+   "start": 2.636,
+   "end": 2.802
+  },
+  {
+   "id": "w10",
+   "cena": "c01",
+   "text": "troca",
+   "start": 2.802,
+   "end": 3.092
+  },
+  {
+   "id": "w11",
+   "cena": "c01",
+   "text": "de",
+   "start": 3.092,
+   "end": 3.258
+  },
+  {
+   "id": "w12",
+   "cena": "c01",
+   "text": "um",
+   "start": 3.258,
+   "end": 3.424
+  },
+  {
+   "id": "w13",
+   "cena": "c01",
+   "text": "cavalo.",
+   "start": 3.424,
+   "end": 3.836
+  },
+  {
+   "id": "w14",
+   "cena": "c02",
+   "text": "É",
+   "start": 4.428,
+   "end": 4.587
+  },
+  {
+   "id": "w15",
+   "cena": "c02",
+   "text": "mentira.",
+   "start": 4.587,
+   "end": 4.981
+  },
+  {
+   "id": "w16",
+   "cena": "c02",
+   "text": "Mas",
+   "start": 5.192,
+   "end": 5.351
+  },
+  {
+   "id": "w17",
+   "cena": "c02",
+   "text": "o",
+   "start": 5.351,
+   "end": 5.51
+  },
+  {
+   "id": "w18",
+   "cena": "c02",
+   "text": "cavalo",
+   "start": 5.51,
+   "end": 5.904
+  },
+  {
+   "id": "w19",
+   "cena": "c02",
+   "text": "existiu.",
+   "start": 5.904,
+   "end": 6.297
+  },
+  {
+   "id": "w20",
+   "cena": "c03",
+   "text": "Mil",
+   "start": 6.879,
+   "end": 7.059
+  },
+  {
+   "id": "w21",
+   "cena": "c03",
+   "text": "oitocentos",
+   "start": 7.059,
+   "end": 7.639
+  },
+  {
+   "id": "w22",
+   "cena": "c03",
+   "text": "e",
+   "start": 7.639,
+   "end": 7.819
+  },
+  {
+   "id": "w23",
+   "cena": "c03",
+   "text": "sessenta",
+   "start": 7.819,
+   "end": 8.266
+  },
+  {
+   "id": "w24",
+   "cena": "c03",
+   "text": "e",
+   "start": 8.266,
+   "end": 8.446
+  },
+  {
+   "id": "w25",
+   "cena": "c03",
+   "text": "sete.",
+   "start": 8.446,
+   "end": 8.76
+  },
+  {
+   "id": "w26",
+   "cena": "c03",
+   "text": "O",
+   "start": 9.0,
+   "end": 9.18
+  },
+  {
+   "id": "w27",
+   "cena": "c03",
+   "text": "presidente",
+   "start": 9.18,
+   "end": 9.76
+  },
+  {
+   "id": "w28",
+   "cena": "c03",
+   "text": "da",
+   "start": 9.76,
+   "end": 9.94
+  },
+  {
+   "id": "w29",
+   "cena": "c03",
+   "text": "Bolívia,",
+   "start": 9.94,
+   "end": 10.387
+  },
+  {
+   "id": "w30",
+   "cena": "c03",
+   "text": "Mariano",
+   "start": 10.547,
+   "end": 10.994
+  },
+  {
+   "id": "w31",
+   "cena": "c03",
+   "text": "Melgarejo,",
+   "start": 10.994,
+   "end": 11.575
+  },
+  {
+   "id": "w32",
+   "cena": "c03",
+   "text": "era",
+   "start": 11.735,
+   "end": 12.048
+  },
+  {
+   "id": "w33",
+   "cena": "c03",
+   "text": "louco",
+   "start": 12.048,
+   "end": 12.362
+  },
+  {
+   "id": "w34",
+   "cena": "c03",
+   "text": "por",
+   "start": 12.362,
+   "end": 12.542
+  },
+  {
+   "id": "w35",
+   "cena": "c03",
+   "text": "cavalos",
+   "start": 12.542,
+   "end": 12.989
+  },
+  {
+   "id": "w36",
+   "cena": "c03",
+   "text": "de",
+   "start": 12.989,
+   "end": 13.169
+  },
+  {
+   "id": "w37",
+   "cena": "c03",
+   "text": "raça.",
+   "start": 13.169,
+   "end": 13.482
+  },
+  {
+   "id": "w38",
+   "cena": "c04",
+   "text": "Um",
+   "start": 14.092,
+   "end": 14.279
+  },
+  {
+   "id": "w39",
+   "cena": "c04",
+   "text": "diplomata",
+   "start": 14.279,
+   "end": 14.882
+  },
+  {
+   "id": "w40",
+   "cena": "c04",
+   "text": "brasileiro",
+   "start": 14.882,
+   "end": 15.484
+  },
+  {
+   "id": "w41",
+   "cena": "c04",
+   "text": "deu",
+   "start": 15.484,
+   "end": 15.671
+  },
+  {
+   "id": "w42",
+   "cena": "c04",
+   "text": "a",
+   "start": 15.671,
+   "end": 15.858
+  },
+  {
+   "id": "w43",
+   "cena": "c04",
+   "text": "ele",
+   "start": 15.858,
+   "end": 16.183
+  },
+  {
+   "id": "w44",
+   "cena": "c04",
+   "text": "medalhas",
+   "start": 16.183,
+   "end": 16.647
+  },
+  {
+   "id": "w45",
+   "cena": "c04",
+   "text": "e",
+   "start": 16.647,
+   "end": 16.834
+  },
+  {
+   "id": "w46",
+   "cena": "c04",
+   "text": "um",
+   "start": 16.834,
+   "end": 17.021
+  },
+  {
+   "id": "w47",
+   "cena": "c04",
+   "text": "cavalo",
+   "start": 17.021,
+   "end": 17.484
+  },
+  {
+   "id": "w48",
+   "cena": "c04",
+   "text": "de",
+   "start": 17.484,
+   "end": 17.671
+  },
+  {
+   "id": "w49",
+   "cena": "c04",
+   "text": "presente.",
+   "start": 17.671,
+   "end": 18.135
+  },
+  {
+   "id": "w50",
+   "cena": "c04",
+   "text": "Logo",
+   "start": 18.384,
+   "end": 18.71
+  },
+  {
+   "id": "w51",
+   "cena": "c04",
+   "text": "depois,",
+   "start": 18.71,
+   "end": 19.035
+  },
+  {
+   "id": "w52",
+   "cena": "c04",
+   "text": "os",
+   "start": 19.201,
+   "end": 19.388
+  },
+  {
+   "id": "w53",
+   "cena": "c04",
+   "text": "dois",
+   "start": 19.388,
+   "end": 19.575
+  },
+  {
+   "id": "w54",
+   "cena": "c04",
+   "text": "países",
+   "start": 19.575,
+   "end": 19.9
+  },
+  {
+   "id": "w55",
+   "cena": "c04",
+   "text": "assinaram",
+   "start": 19.9,
+   "end": 20.503
+  },
+  {
+   "id": "w56",
+   "cena": "c04",
+   "text": "um",
+   "start": 20.503,
+   "end": 20.69
+  },
+  {
+   "id": "w57",
+   "cena": "c04",
+   "text": "tratado",
+   "start": 20.69,
+   "end": 21.153
+  },
+  {
+   "id": "w58",
+   "cena": "c04",
+   "text": "de",
+   "start": 21.153,
+   "end": 21.34
+  },
+  {
+   "id": "w59",
+   "cena": "c04",
+   "text": "fronteira.",
+   "start": 21.34,
+   "end": 21.804
+  },
+  {
+   "id": "w60",
+   "cena": "c05",
+   "text": "Só",
+   "start": 22.423,
+   "end": 22.603
+  },
+  {
+   "id": "w61",
+   "cena": "c05",
+   "text": "que",
+   "start": 22.603,
+   "end": 22.783
+  },
+  {
+   "id": "w62",
+   "cena": "c05",
+   "text": "esse",
+   "start": 22.783,
+   "end": 23.096
+  },
+  {
+   "id": "w63",
+   "cena": "c05",
+   "text": "tratado",
+   "start": 23.096,
+   "end": 23.542
+  },
+  {
+   "id": "w64",
+   "cena": "c05",
+   "text": "não",
+   "start": 23.542,
+   "end": 23.722
+  },
+  {
+   "id": "w65",
+   "cena": "c05",
+   "text": "deu",
+   "start": 23.722,
+   "end": 23.902
+  },
+  {
+   "id": "w66",
+   "cena": "c05",
+   "text": "o",
+   "start": 23.902,
+   "end": 24.082
+  },
+  {
+   "id": "w67",
+   "cena": "c05",
+   "text": "Acre",
+   "start": 24.082,
+   "end": 24.395
+  },
+  {
+   "id": "w68",
+   "cena": "c05",
+   "text": "ao",
+   "start": 24.395,
+   "end": 24.575
+  },
+  {
+   "id": "w69",
+   "cena": "c05",
+   "text": "Brasil.",
+   "start": 24.575,
+   "end": 24.888
+  },
+  {
+   "id": "w70",
+   "cena": "c05",
+   "text": "A",
+   "start": 25.128,
+   "end": 25.308
+  },
+  {
+   "id": "w71",
+   "cena": "c05",
+   "text": "região",
+   "start": 25.308,
+   "end": 25.621
+  },
+  {
+   "id": "w72",
+   "cena": "c05",
+   "text": "continuou",
+   "start": 25.621,
+   "end": 26.067
+  },
+  {
+   "id": "w73",
+   "cena": "c05",
+   "text": "boliviana.",
+   "start": 26.067,
+   "end": 26.647
+  },
+  {
+   "id": "w74",
+   "cena": "c06",
+   "text": "Aí",
+   "start": 27.256,
+   "end": 27.45
+  },
+  {
+   "id": "w75",
+   "cena": "c06",
+   "text": "veio",
+   "start": 27.45,
+   "end": 27.643
+  },
+  {
+   "id": "w76",
+   "cena": "c06",
+   "text": "a",
+   "start": 27.643,
+   "end": 27.837
+  },
+  {
+   "id": "w77",
+   "cena": "c06",
+   "text": "febre",
+   "start": 27.837,
+   "end": 28.173
+  },
+  {
+   "id": "w78",
+   "cena": "c06",
+   "text": "da",
+   "start": 28.173,
+   "end": 28.367
+  },
+  {
+   "id": "w79",
+   "cena": "c06",
+   "text": "borracha.",
+   "start": 28.367,
+   "end": 28.847
+  },
+  {
+   "id": "w80",
+   "cena": "c06",
+   "text": "Dezenas",
+   "start": 29.105,
+   "end": 29.585
+  },
+  {
+   "id": "w81",
+   "cena": "c06",
+   "text": "de",
+   "start": 29.585,
+   "end": 29.778
+  },
+  {
+   "id": "w82",
+   "cena": "c06",
+   "text": "milhares",
+   "start": 29.778,
+   "end": 30.258
+  },
+  {
+   "id": "w83",
+   "cena": "c06",
+   "text": "de",
+   "start": 30.258,
+   "end": 30.452
+  },
+  {
+   "id": "w84",
+   "cena": "c06",
+   "text": "seringueiros",
+   "start": 30.452,
+   "end": 31.075
+  },
+  {
+   "id": "w85",
+   "cena": "c06",
+   "text": "brasileiros",
+   "start": 31.075,
+   "end": 31.698
+  },
+  {
+   "id": "w86",
+   "cena": "c06",
+   "text": "subiram",
+   "start": 31.698,
+   "end": 32.178
+  },
+  {
+   "id": "w87",
+   "cena": "c06",
+   "text": "os",
+   "start": 32.178,
+   "end": 32.372
+  },
+  {
+   "id": "w88",
+   "cena": "c06",
+   "text": "rios",
+   "start": 32.372,
+   "end": 32.565
+  },
+  {
+   "id": "w89",
+   "cena": "c06",
+   "text": "e",
+   "start": 32.565,
+   "end": 32.758
+  },
+  {
+   "id": "w90",
+   "cena": "c06",
+   "text": "ocuparam",
+   "start": 32.758,
+   "end": 33.382
+  },
+  {
+   "id": "w91",
+   "cena": "c06",
+   "text": "a",
+   "start": 33.382,
+   "end": 33.575
+  },
+  {
+   "id": "w92",
+   "cena": "c06",
+   "text": "floresta.",
+   "start": 33.575,
+   "end": 34.055
+  },
+  {
+   "id": "w93",
+   "cena": "c07",
+   "text": "Em",
+   "start": 34.683,
+   "end": 34.86
+  },
+  {
+   "id": "w94",
+   "cena": "c07",
+   "text": "mil",
+   "start": 34.86,
+   "end": 35.038
+  },
+  {
+   "id": "w95",
+   "cena": "c07",
+   "text": "novecentos",
+   "start": 35.038,
+   "end": 35.609
+  },
+  {
+   "id": "w96",
+   "cena": "c07",
+   "text": "e",
+   "start": 35.609,
+   "end": 35.786
+  },
+  {
+   "id": "w97",
+   "cena": "c07",
+   "text": "um,",
+   "start": 35.786,
+   "end": 35.964
+  },
+  {
+   "id": "w98",
+   "cena": "c07",
+   "text": "a",
+   "start": 36.121,
+   "end": 36.299
+  },
+  {
+   "id": "w99",
+   "cena": "c07",
+   "text": "Bolívia",
+   "start": 36.299,
+   "end": 36.739
+  },
+  {
+   "id": "w100",
+   "cena": "c07",
+   "text": "arrendou",
+   "start": 36.739,
+   "end": 37.179
+  },
+  {
+   "id": "w101",
+   "cena": "c07",
+   "text": "a",
+   "start": 37.179,
+   "end": 37.356
+  },
+  {
+   "id": "w102",
+   "cena": "c07",
+   "text": "região",
+   "start": 37.356,
+   "end": 37.665
+  },
+  {
+   "id": "w103",
+   "cena": "c07",
+   "text": "para",
+   "start": 37.665,
+   "end": 37.973
+  },
+  {
+   "id": "w104",
+   "cena": "c07",
+   "text": "uma",
+   "start": 37.973,
+   "end": 38.282
+  },
+  {
+   "id": "w105",
+   "cena": "c07",
+   "text": "empresa",
+   "start": 38.282,
+   "end": 38.722
+  },
+  {
+   "id": "w106",
+   "cena": "c07",
+   "text": "anglo-americana,",
+   "start": 38.722,
+   "end": 39.688
+  },
+  {
+   "id": "w107",
+   "cena": "c07",
+   "text": "o",
+   "start": 39.845,
+   "end": 40.022
+  },
+  {
+   "id": "w108",
+   "cena": "c07",
+   "text": "Bolivian",
+   "start": 40.022,
+   "end": 40.463
+  },
+  {
+   "id": "w109",
+   "cena": "c07",
+   "text": "Syndicate.",
+   "start": 40.463,
+   "end": 41.034
+  },
+  {
+   "id": "w110",
+   "cena": "c08",
+   "text": "Os",
+   "start": 41.64,
+   "end": 41.838
+  },
+  {
+   "id": "w111",
+   "cena": "c08",
+   "text": "seringueiros",
+   "start": 41.838,
+   "end": 42.477
+  },
+  {
+   "id": "w112",
+   "cena": "c08",
+   "text": "não",
+   "start": 42.477,
+   "end": 42.675
+  },
+  {
+   "id": "w113",
+   "cena": "c08",
+   "text": "aceitaram.",
+   "start": 42.675,
+   "end": 43.313
+  },
+  {
+   "id": "w114",
+   "cena": "c08",
+   "text": "Liderados",
+   "start": 43.578,
+   "end": 44.216
+  },
+  {
+   "id": "w115",
+   "cena": "c08",
+   "text": "pelo",
+   "start": 44.216,
+   "end": 44.561
+  },
+  {
+   "id": "w116",
+   "cena": "c08",
+   "text": "gaúcho",
+   "start": 44.561,
+   "end": 44.906
+  },
+  {
+   "id": "w117",
+   "cena": "c08",
+   "text": "Plácido",
+   "start": 44.906,
+   "end": 45.397
+  },
+  {
+   "id": "w118",
+   "cena": "c08",
+   "text": "de",
+   "start": 45.397,
+   "end": 45.596
+  },
+  {
+   "id": "w119",
+   "cena": "c08",
+   "text": "Castro,",
+   "start": 45.596,
+   "end": 45.94
+  },
+  {
+   "id": "w120",
+   "cena": "c08",
+   "text": "pegaram",
+   "start": 46.117,
+   "end": 46.608
+  },
+  {
+   "id": "w121",
+   "cena": "c08",
+   "text": "em",
+   "start": 46.608,
+   "end": 46.806
+  },
+  {
+   "id": "w122",
+   "cena": "c08",
+   "text": "armas",
+   "start": 46.806,
+   "end": 47.151
+  },
+  {
+   "id": "w123",
+   "cena": "c08",
+   "text": "em",
+   "start": 47.151,
+   "end": 47.349
+  },
+  {
+   "id": "w124",
+   "cena": "c08",
+   "text": "mil",
+   "start": 47.349,
+   "end": 47.548
+  },
+  {
+   "id": "w125",
+   "cena": "c08",
+   "text": "novecentos",
+   "start": 47.548,
+   "end": 48.186
+  },
+  {
+   "id": "w126",
+   "cena": "c08",
+   "text": "e",
+   "start": 48.186,
+   "end": 48.384
+  },
+  {
+   "id": "w127",
+   "cena": "c08",
+   "text": "dois.",
+   "start": 48.384,
+   "end": 48.582
+  },
+  {
+   "id": "w128",
+   "cena": "c09",
+   "text": "A",
+   "start": 49.216,
+   "end": 49.398
+  },
+  {
+   "id": "w129",
+   "cena": "c09",
+   "text": "disputa",
+   "start": 49.398,
+   "end": 49.85
+  },
+  {
+   "id": "w130",
+   "cena": "c09",
+   "text": "terminou",
+   "start": 49.85,
+   "end": 50.302
+  },
+  {
+   "id": "w131",
+   "cena": "c09",
+   "text": "na",
+   "start": 50.302,
+   "end": 50.484
+  },
+  {
+   "id": "w132",
+   "cena": "c09",
+   "text": "diplomacia.",
+   "start": 50.484,
+   "end": 51.071
+  },
+  {
+   "id": "w133",
+   "cena": "c09",
+   "text": "Em",
+   "start": 51.314,
+   "end": 51.496
+  },
+  {
+   "id": "w134",
+   "cena": "c09",
+   "text": "mil",
+   "start": 51.496,
+   "end": 51.678
+  },
+  {
+   "id": "w135",
+   "cena": "c09",
+   "text": "novecentos",
+   "start": 51.678,
+   "end": 52.264
+  },
+  {
+   "id": "w136",
+   "cena": "c09",
+   "text": "e",
+   "start": 52.264,
+   "end": 52.446
+  },
+  {
+   "id": "w137",
+   "cena": "c09",
+   "text": "três,",
+   "start": 52.446,
+   "end": 52.629
+  },
+  {
+   "id": "w138",
+   "cena": "c09",
+   "text": "pelo",
+   "start": 52.79,
+   "end": 53.107
+  },
+  {
+   "id": "w139",
+   "cena": "c09",
+   "text": "Tratado",
+   "start": 53.107,
+   "end": 53.559
+  },
+  {
+   "id": "w140",
+   "cena": "c09",
+   "text": "de",
+   "start": 53.559,
+   "end": 53.741
+  },
+  {
+   "id": "w141",
+   "cena": "c09",
+   "text": "Petrópolis,",
+   "start": 53.741,
+   "end": 54.328
+  },
+  {
+   "id": "w142",
+   "cena": "c09",
+   "text": "o",
+   "start": 54.49,
+   "end": 54.672
+  },
+  {
+   "id": "w143",
+   "cena": "c09",
+   "text": "Acre",
+   "start": 54.672,
+   "end": 54.989
+  },
+  {
+   "id": "w144",
+   "cena": "c09",
+   "text": "passou",
+   "start": 54.989,
+   "end": 55.306
+  },
+  {
+   "id": "w145",
+   "cena": "c09",
+   "text": "para",
+   "start": 55.306,
+   "end": 55.623
+  },
+  {
+   "id": "w146",
+   "cena": "c09",
+   "text": "o",
+   "start": 55.623,
+   "end": 55.805
+  },
+  {
+   "id": "w147",
+   "cena": "c09",
+   "text": "Brasil.",
+   "start": 55.805,
+   "end": 56.122
+  },
+  {
+   "id": "w148",
+   "cena": "c10",
+   "text": "O",
+   "start": 56.734,
+   "end": 56.919
+  },
+  {
+   "id": "w149",
+   "cena": "c10",
+   "text": "preço:",
+   "start": 56.919,
+   "end": 57.241
+  },
+  {
+   "id": "w150",
+   "cena": "c10",
+   "text": "dois",
+   "start": 57.405,
+   "end": 57.59
+  },
+  {
+   "id": "w151",
+   "cena": "c10",
+   "text": "milhões",
+   "start": 57.59,
+   "end": 57.911
+  },
+  {
+   "id": "w152",
+   "cena": "c10",
+   "text": "de",
+   "start": 57.911,
+   "end": 58.096
+  },
+  {
+   "id": "w153",
+   "cena": "c10",
+   "text": "libras",
+   "start": 58.096,
+   "end": 58.418
+  },
+  {
+   "id": "w154",
+   "cena": "c10",
+   "text": "esterlinas,",
+   "start": 58.418,
+   "end": 59.013
+  },
+  {
+   "id": "w155",
+   "cena": "c10",
+   "text": "um",
+   "start": 59.177,
+   "end": 59.362
+  },
+  {
+   "id": "w156",
+   "cena": "c10",
+   "text": "pedaço",
+   "start": 59.362,
+   "end": 59.82
+  },
+  {
+   "id": "w157",
+   "cena": "c10",
+   "text": "do",
+   "start": 59.82,
+   "end": 60.005
+  },
+  {
+   "id": "w158",
+   "cena": "c10",
+   "text": "Mato",
+   "start": 60.005,
+   "end": 60.326
+  },
+  {
+   "id": "w159",
+   "cena": "c10",
+   "text": "Grosso,",
+   "start": 60.326,
+   "end": 60.648
+  },
+  {
+   "id": "w160",
+   "cena": "c10",
+   "text": "e",
+   "start": 60.812,
+   "end": 60.997
+  },
+  {
+   "id": "w161",
+   "cena": "c10",
+   "text": "a",
+   "start": 60.997,
+   "end": 61.182
+  },
+  {
+   "id": "w162",
+   "cena": "c10",
+   "text": "promessa",
+   "start": 61.182,
+   "end": 61.64
+  },
+  {
+   "id": "w163",
+   "cena": "c10",
+   "text": "de",
+   "start": 61.64,
+   "end": 61.825
+  },
+  {
+   "id": "w164",
+   "cena": "c10",
+   "text": "uma",
+   "start": 61.825,
+   "end": 62.146
+  },
+  {
+   "id": "w165",
+   "cena": "c10",
+   "text": "ferrovia",
+   "start": 62.146,
+   "end": 62.605
+  },
+  {
+   "id": "w166",
+   "cena": "c10",
+   "text": "no",
+   "start": 62.605,
+   "end": 62.79
+  },
+  {
+   "id": "w167",
+   "cena": "c10",
+   "text": "meio",
+   "start": 62.79,
+   "end": 62.974
+  },
+  {
+   "id": "w168",
+   "cena": "c10",
+   "text": "da",
+   "start": 62.974,
+   "end": 63.159
+  },
+  {
+   "id": "w169",
+   "cena": "c10",
+   "text": "selva.",
+   "start": 63.159,
+   "end": 63.481
+  },
+  {
+   "id": "w170",
+   "cena": "c11",
+   "text": "Ou",
+   "start": 64.097,
+   "end": 64.261
+  },
+  {
+   "id": "w171",
+   "cena": "c11",
+   "text": "seja:",
+   "start": 64.261,
+   "end": 64.546
+  },
+  {
+   "id": "w172",
+   "cena": "c11",
+   "text": "o",
+   "start": 64.692,
+   "end": 64.856
+  },
+  {
+   "id": "w173",
+   "cena": "c11",
+   "text": "Acre",
+   "start": 64.856,
+   "end": 65.141
+  },
+  {
+   "id": "w174",
+   "cena": "c11",
+   "text": "não",
+   "start": 65.141,
+   "end": 65.305
+  },
+  {
+   "id": "w175",
+   "cena": "c11",
+   "text": "saiu",
+   "start": 65.305,
+   "end": 65.469
+  },
+  {
+   "id": "w176",
+   "cena": "c11",
+   "text": "por",
+   "start": 65.469,
+   "end": 65.633
+  },
+  {
+   "id": "w177",
+   "cena": "c11",
+   "text": "um",
+   "start": 65.633,
+   "end": 65.797
+  },
+  {
+   "id": "w178",
+   "cena": "c11",
+   "text": "cavalo.",
+   "start": 65.797,
+   "end": 66.203
+  },
+  {
+   "id": "w179",
+   "cena": "c11",
+   "text": "Saiu",
+   "start": 66.422,
+   "end": 66.586
+  },
+  {
+   "id": "w180",
+   "cena": "c11",
+   "text": "por",
+   "start": 66.586,
+   "end": 66.75
+  },
+  {
+   "id": "w181",
+   "cena": "c11",
+   "text": "dinheiro,",
+   "start": 66.75,
+   "end": 67.156
+  },
+  {
+   "id": "w182",
+   "cena": "c11",
+   "text": "terra,",
+   "start": 67.302,
+   "end": 67.587
+  },
+  {
+   "id": "w183",
+   "cena": "c11",
+   "text": "trilhos…",
+   "start": 67.733,
+   "end": 68.018
+  },
+  {
+   "id": "w184",
+   "cena": "c11",
+   "text": "e",
+   "start": 68.237,
+   "end": 68.401
+  },
+  {
+   "id": "w185",
+   "cena": "c11",
+   "text": "uma",
+   "start": 68.401,
+   "end": 68.686
+  },
+  {
+   "id": "w186",
+   "cena": "c11",
+   "text": "guerra.",
+   "start": 68.686,
+   "end": 68.971
+  },
+  {
+   "id": "w187",
+   "cena": "c12",
+   "text": "E",
+   "start": 69.56,
+   "end": 69.736
+  },
+  {
+   "id": "w188",
+   "cena": "c12",
+   "text": "essa",
+   "start": 69.736,
+   "end": 70.041
+  },
+  {
+   "id": "w189",
+   "cena": "c12",
+   "text": "ferrovia",
+   "start": 70.041,
+   "end": 70.477
+  },
+  {
+   "id": "w190",
+   "cena": "c12",
+   "text": "ganhou",
+   "start": 70.477,
+   "end": 70.783
+  },
+  {
+   "id": "w191",
+   "cena": "c12",
+   "text": "um",
+   "start": 70.783,
+   "end": 70.958
+  },
+  {
+   "id": "w192",
+   "cena": "c12",
+   "text": "apelido:",
+   "start": 70.958,
+   "end": 71.524
+  },
+  {
+   "id": "w193",
+   "cena": "c12",
+   "text": "Ferrovia",
+   "start": 71.68,
+   "end": 72.116
+  },
+  {
+   "id": "w194",
+   "cena": "c12",
+   "text": "do",
+   "start": 72.116,
+   "end": 72.292
+  },
+  {
+   "id": "w195",
+   "cena": "c12",
+   "text": "Diabo.",
+   "start": 72.292,
+   "end": 72.597
+  },
+  {
+   "id": "w196",
+   "cena": "c12",
+   "text": "Mas",
+   "start": 72.832,
+   "end": 73.007
+  },
+  {
+   "id": "w197",
+   "cena": "c12",
+   "text": "essa",
+   "start": 73.007,
+   "end": 73.313
+  },
+  {
+   "id": "w198",
+   "cena": "c12",
+   "text": "é",
+   "start": 73.313,
+   "end": 73.489
+  },
+  {
+   "id": "w199",
+   "cena": "c12",
+   "text": "outra",
+   "start": 73.489,
+   "end": 73.794
+  },
+  {
+   "id": "w200",
+   "cena": "c12",
+   "text": "fita.",
+   "start": 73.794,
+   "end": 74.1
+  }
+ ],
+ "duracao_narracao": 74.394,
+ "duracao_video": 75.79,
+ "tempos_medidos": false
+}

@@ -1,0 +1,149 @@
+[
+ {
+  "id": "pagina",
+  "grupo": "Efeitos sonoros",
+  "termo": "Virar página",
+  "frase": "",
+  "opcoes": [
+   "Page Turn 02.wav",
+   "Page Turn 04.wav",
+   "page turn sound effect"
+  ]
+ },
+ {
+  "id": "papel",
+  "grupo": "Efeitos sonoros",
+  "termo": "Papel deslizando ou caindo",
+  "frase": "",
+  "opcoes": [
+   "Paper Rustle",
+   "rustle.paper_Tear_9.aif",
+   "Papers Tossed into Air; falling 1."
+  ]
+ },
+ {
+  "id": "carimbo",
+  "grupo": "Efeitos sonoros",
+  "termo": "Carimbo batendo",
+  "frase": "",
+  "opcoes": [
+   "Thump.mp3",
+   "Blocking Arm With Hand",
+   "body_hit.wav"
+  ]
+ },
+ {
+  "id": "maquina",
+  "grupo": "Efeitos sonoros",
+  "termo": "Máquina de escrever",
+  "frase": "",
+  "opcoes": [
+   "Typewriter - single key - type 2.w",
+   "Typewriter snippet 03",
+   "Typewriter Bell.wav"
+  ]
+ },
+ {
+  "id": "estatica",
+  "grupo": "Efeitos sonoros",
+  "termo": "Estática de rádio",
+  "frase": "",
+  "opcoes": [
+   "radio static 01.wav",
+   "Radio Static"
+  ]
+ },
+ {
+  "id": "baque",
+  "grupo": "Efeitos sonoros",
+  "termo": "Baque ou impacto",
+  "frase": "",
+  "opcoes": [
+   "ANI Big Pipe Hit",
+   "impact-bass-1",
+   "impact-bass-2"
+  ]
+ },
+ {
+  "id": "tique",
+  "grupo": "Efeitos sonoros",
+  "termo": "Tique de contador",
+  "frase": "",
+  "opcoes": [
+   "clock-tick-01.flac",
+   "SFX Ambiance: Clock Tick"
+  ]
+ },
+ {
+  "id": "tiro",
+  "grupo": "Efeitos sonoros",
+  "termo": "Rajada de metralhadora",
+  "frase": "",
+  "opcoes": [
+   "Machine Gun 001 - triple shot.ogg",
+   "Machine Gun Burst",
+   "FX - SHOT - Machine Gun"
+  ]
+ },
+ {
+  "id": "passaros",
+  "grupo": "Efeitos sonoros",
+  "termo": "Asas batendo",
+  "frase": "",
+  "opcoes": [
+   "short pigeon wing flap"
+  ]
+ },
+ {
+  "id": "gaveta",
+  "grupo": "Efeitos sonoros",
+  "termo": "Gaveta abrindo",
+  "frase": "",
+  "opcoes": [
+   "Drawer open Mid.wav",
+   "drawer. open"
+  ]
+ },
+ {
+  "id": "swoosh",
+  "grupo": "Efeitos sonoros",
+  "termo": "Swoosh de troca de cena",
+  "frase": "",
+  "opcoes": [
+   "whoosh-short",
+   "whoosh",
+   "whoosh-cinematic"
+  ]
+ },
+ {
+  "id": "vhs",
+  "grupo": "Efeitos sonoros",
+  "termo": "Interferência de fita VHS",
+  "frase": "",
+  "opcoes": [
+   "glitch-3",
+   "glitch-1",
+   "glitch-2"
+  ]
+ },
+ {
+  "id": "clique",
+  "grupo": "Efeitos sonoros",
+  "termo": "Clique de botão",
+  "frase": "",
+  "opcoes": [
+   "tusss.aif",
+   "click",
+   "key-press"
+  ]
+ },
+ {
+  "id": "riser",
+  "grupo": "Efeitos sonoros",
+  "termo": "Subida de tensão",
+  "frase": "",
+  "opcoes": [
+   "riser"
+  ]
+ }
+]

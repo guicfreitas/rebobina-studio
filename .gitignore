@@ -1,0 +1,22 @@
+node_modules/
+__pycache__/
+*.log
+episodios/*/assets/voz/*.zip
+# licença Pixabay: não permite redistribuir o arquivo solto (ver canal/sfx/fontes.json)
+canal/sfx/swoosh.mp3
+canal/sfx/vhs.mp3
+canal/sfx/clique.mp3
+canal/sfx/riser.mp3
+canal/sfx/candidatos/audio/
+.hyperframes/
+episodios/*/render/
+episodios/*/revisao/
+episodios/*/publicar/
+episodios/*/capa/
+episodios/*/assets/voz/_*
+episodios/*/assets/transcript.json
+.env
+.DS_Store
+episodios/*/assets/voz/cenas/
+.claude/settings.local.json
+canal/.suspensao.log

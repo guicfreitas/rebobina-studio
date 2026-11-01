@@ -1,0 +1,38 @@
+<template>
+  <!-- c11 · fecho · manchete-de-jornal: a capa do gancho volta; "marcianos" é riscado; a notícia falsa era o pânico. -->
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c11-jornal { position: absolute; left: 60px; top: 330px; width: 960px; height: 530px; padding: 34px 50px; border-radius: 3px; }
+    #c11-topo { display: flex; justify-content: space-between; font-family: var(--f-mono); font-weight: 700; font-size: 28px; letter-spacing: .12em; color: #6d5f45;
+      border-bottom: 6px double #1b1a17; padding-bottom: 12px; }
+    #c11-manchete { margin-top: 26px; font-family: var(--f-jornal); font-weight: 900; font-size: 126px; line-height: .95; color: var(--tinta); position: relative; }
+    .c11-risco { position: absolute; left: -10px; height: 16px; background: var(--rec); transform-origin: 0 50%; }
+    #c11-r1 { top: 54px; width: 830px; } #c11-r2 { top: 174px; width: 580px; } #c11-r3 { top: 294px; width: 520px; }
+    #c11-nova { position: absolute; left: 70px; top: 892px; width: 940px; text-align: center; transform-origin: 50% 50%; }
+    #c11-nova .a { font-family: var(--f-titulo); font-size: 66px; color: var(--papel); text-transform: uppercase; line-height: .95; }
+    #c11-nova .b { font-family: var(--f-titulo); font-size: 112px; color: var(--rec); text-transform: uppercase; line-height: .9; }
+    #c11-fundo { position: absolute; left: 60px; top: 876px; width: 960px; height: 194px; background: rgba(14,13,16,.9); border: 6px solid var(--rec); border-radius: 12px; }
+  </style>
+  <div id="root" data-composition-id="c11" data-width="1080" data-height="1920">
+    <div id="c11-w" class="clip" data-start="0" data-duration="9" data-layout-allow-overlap>
+      <div id="c11-jornal" class="rb-papel">
+        <div id="c11-topo"><span>EDIÇÃO EXTRA</span><span>★ ★ ★</span></div>
+        <div id="c11-manchete"><div>MARCIANOS</div><div>INVADEM</div><div>OS EUA?</div>
+          <div id="c11-r1" class="c11-risco"></div><div id="c11-r2" class="c11-risco"></div><div id="c11-r3" class="c11-risco"></div></div>
+      </div>
+      <div id="c11-fundo"></div>
+      <div id="c11-nova"><div class="a">A notícia falsa era</div><div class="b">o pânico</div></div>
+    </div>
+  </div>
+  <script>
+    const C = "c11", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c11-jornal", { y: 900, rotation: 4 }, { y: 0, rotation: -1.5, duration: 0.35, ease: "power3.out" }, 0.05);
+    tl.fromTo(".c11-risco", { scaleX: 0 }, { scaleX: 1, duration: 0.14, stagger: 0.1, ease: "power2.out" }, T("marcianos") - 0.1);
+    tl.fromTo("#c11-fundo", { opacity: 0, scaleY: 0.2 }, { opacity: 1, scaleY: 1, duration: 0.18, ease: "power3.out" }, T("falsa") - 0.1);
+    tl.fromTo("#c11-nova .a", { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "steps(3)" }, T("falsa"));
+    tl.fromTo("#c11-nova .b", { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2)" }, T("pânico") - 0.05);
+    tl.fromTo("#c11-nova", { x: 0 }, { x: 10, duration: 0.04, ease: "steps(1)", yoyo: true, repeat: 5 }, T("pânico") + 0.2);
+    window.__timelines["c11"] = tl;
+  </script>
+</template>

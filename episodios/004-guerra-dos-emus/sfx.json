@@ -1,0 +1,22 @@
+[
+ {"som":"tique","cena":"c01","palavra":"guerra","volume":0.4},
+ {"som":"carimbo","cena":"c02","palavra":"Mas","volume":0.42},
+ {"som":"vhs","cena":"c03","em":0,"desloca":-0.32,"dur":0.7,"volume":0.3},
+ {"som":"tique","cena":"c03","palavra":"despencou","volume":0.35},
+ {"som":"maquina","cena":"c05","palavra":"metralhadoras","volume":0.3,"dur":0.6},
+ {"som":"carimbo","cena":"c05","palavra":"paga","volume":0.42},
+ {"som":"clique","cena":"c06","palavra":"cinegrafista","volume":0.25},
+ {"som":"tiro","cena":"c07","palavra":"trava","desloca":-0.56,"dur":0.5,"volume":0.24},
+ {"som":"clique","cena":"c07","palavra":"trava","volume":0.45},
+ {"som":"tique","cena":"c08","palavra":"seis","volume":0.35},
+ {"som":"carimbo","cena":"c08","palavra":"recuar","desloca":0.12,"volume":0.3},
+ {"som":"baque","cena":"c09","palavra":"tanques","volume":0.2},
+ {"som":"tique","cena":"c11","palavra":"confirmados","volume":0.4},
+ {"som":"tique","cena":"c11","palavra":"balas","volume":0.4},
+ {"som":"carimbo","cena":"c12","palavra":"recompensa","desloca":0.5,"volume":0.2},
+ {"som":"carimbo","cena":"c12","palavra":"recompensa","desloca":1.5,"volume":0.2},
+ {"som":"carimbo","cena":"c13","palavra":"não","volume":0.45},
+ {"som":"tique","cena":"c14","palavra":"brasão","volume":0.35},
+ {"som":"clique","cena":"c14","palavra":"atirou","volume":0.35},
+ {"som":"clique","cena":"c14","palavra":"perdedor","volume":0.45}
+]

@@ -1,0 +1,51 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #0f0d0c; overflow: hidden; }
+    #c13-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c13-giro { position: absolute; left: 100px; top: 26px; width: 860px; height: 800px; }
+    #c13-of { position: absolute; left: 0; top: 0; width: 860px; height: 800px; }
+    #c13-a { position: absolute; left: 44px; top: 46px; font-size: 50px; white-space: nowrap; }
+    #c13-b { position: absolute; left: 44px; top: 122px; font-size: 50px; white-space: nowrap; }
+    .c13-bar { position: absolute; left: 44px; height: 14px; background: #b9ad93; }
+    #c13-ano { position: absolute; left: 44px; top: 268px; font-size: 200px; color: var(--tinta); white-space: nowrap; }
+    #c13-c { position: absolute; left: 70px; top: 446px; font-size: 130px; white-space: nowrap; }
+  </style>
+  <div id="root" data-composition-id="c13" data-width="1080" data-height="1920">
+    <div id="c13-w" class="clip" data-start="0" data-duration="4.54" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c13-palco">
+        <div id="c13-giro">
+          <div id="c13-of" class="rb-papel">
+            <div id="c13-a" class="rb-doc">FAZENDEIROS PEDEM:</div>
+            <div id="c13-b" class="rb-doc">O EXÉRCITO, DE NOVO</div>
+            <div class="c13-bar" id="c13-b1" style="top:206px;width:730px"></div>
+            <div class="c13-bar" id="c13-b2" style="top:240px;width:600px"></div>
+            <div id="c13-ano" class="rb-titulo">1934:</div>
+            <div id="c13-c" class="rb-carimbo">NEGADO</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c13";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // carimbo bate (1,5 → 1); peça aparece com pequeno deslocamento; texto datilografado em passos
+    const bate = (el, t, de = -9, ate = -5, op = 0.96) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)", immediateRender: false }, t); };
+    const surge = (el, t, dy = 24, dx = 0) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy, x: dx }, { y: 0, x: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, t); };
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    const treme = (el, t, a = 7) => tl.fromTo(el, { x: a }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, t);
+    gsap.set("#c13-giro", { rotation: 1.4 });
+    tl.fromTo("#c13-of", { y: 780 }, { y: 0, duration: 0.24, ease: "power3.out" }, 0.03);
+    dat("#c13-a", T("pedem") - 0.1, 0.36, 18);
+    dat("#c13-b", T("exercito") - 0.08, 0.42, 19);
+    gsap.set("#c13-b1, #c13-b2", { scaleX: 0, transformOrigin: "0 50%" });
+    tl.to("#c13-b1", { scaleX: 1, duration: 0.2, ease: "steps(6)" }, T("governo") - 0.2);
+    tl.to("#c13-b2", { scaleX: 1, duration: 0.2, ease: "steps(6)" }, T("governo"));
+    surge("#c13-ano", T("diz") - 0.05, 0, -24);
+    const N = T("nao");
+    bate("#c13-c", N, -13, -7, 0.96);
+    tl.fromTo("#c13-giro", { x: 10 }, { x: 0, duration: 0.12, ease: "steps(4)", immediateRender: false }, N + 0.02);
+    window.__timelines["c13"] = tl;
+  </script>
+</template>

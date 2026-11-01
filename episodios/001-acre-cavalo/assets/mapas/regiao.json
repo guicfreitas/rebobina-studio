@@ -1,0 +1,41 @@
+{
+ "largura": 1080,
+ "altura": 780,
+ "bbox": [
+  -74.5,
+  -23,
+  -56.5,
+  -6.5
+ ],
+ "centroides": {
+  "pais-brazil": [
+   1090,
+   188
+  ],
+  "pais-bolivia": [
+   576,
+   466
+  ],
+  "pais-peru": [
+   140,
+   118
+  ],
+  "pais-paraguay": [
+   856,
+   778
+  ],
+  "pais-chile": [
+   291,
+   1443
+  ],
+  "pais-argentina": [
+   573,
+   1367
+  ],
+  "uf-acre": [
+   318,
+   127
+  ]
+ },
+ "pontos": {}
+}

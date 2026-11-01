@@ -1,0 +1,65 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #0f1012; overflow: hidden; }
+    #c11-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c11-of { position: absolute; left: 110px; top: 30px; width: 800px; height: 700px; }
+    .c11-p { position: absolute; left: 0; top: 0; width: 800px; height: 700px; background: var(--papel); box-shadow: inset 0 0 80px rgba(120,90,40,.25); }
+    .c11-cab { position: absolute; left: 44px; top: 36px; width: 712px; border-bottom: 6px double var(--tinta); padding-bottom: 12px; font-size: 40px; color: var(--tinta); white-space: nowrap; }
+    .c11-l { position: absolute; left: 44px; white-space: nowrap; font-size: 76px; }
+    #c11-c { position: absolute; left: 66px; top: 410px; font-size: 70px; white-space: nowrap; }
+    #c11-a { position: absolute; left: 44px; top: 138px; font-size: 56px; white-space: nowrap; }
+    #c11-b { top: 250px; font-size: 96px; color: var(--rec); }
+    #c11-d { top: 390px; font-size: 76px; }
+    #c11-e { top: 480px; font-size: 76px; }
+    #c11-sub { position: absolute; left: 44px; top: 354px; width: 330px; height: 12px; background: var(--rec); transform-origin: 0 50%; }
+  </style>
+  <div id="root" data-composition-id="c11" data-width="1080" data-height="1920">
+    <div id="c11-w" class="clip" data-start="0" data-duration="9.74" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c11-palco">
+        <div id="c11-of">
+          <div id="c11-p2" class="c11-p" data-layout-allow-occlusion>
+            <div class="c11-cab rb-mono" data-layout-allow-occlusion>OFÍCIO · FOLHA 2</div>
+            <div id="c11-a" class="rb-doc">AVISO DO GOVERNO, 1997:</div>
+            <div id="c11-b" class="c11-l rb-doc">"POR ORA",</div>
+            <div id="c11-sub"></div>
+            <div id="c11-d" class="c11-l rb-doc">SEM ESCAVAÇÃO</div>
+            <div id="c11-e" class="c11-l rb-doc">ATIVA</div>
+          </div>
+          <div id="c11-p1" class="c11-p">
+            <div class="c11-cab rb-mono">OFÍCIO · FOLHA 1</div>
+            <div id="c11-l1" class="c11-l rb-doc" style="top:150px">CÂMARA</div>
+            <div id="c11-l2" class="c11-l rb-doc" style="top:246px">CENTRAL:</div>
+            <div id="c11-c" class="rb-carimbo">NÃO ESCAVADA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c11";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    const bate = (el, t, de = -12, ate = -6, op = 0.96) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)", immediateRender: false }, t); };
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    // o ofício desliza da direita para o palco
+    tl.fromTo("#c11-of", { x: 960 }, { x: 0, duration: 0.28, ease: "power3.out" }, 0.02);
+    gsap.set("#c11-of", { x: 960 });
+    dat("#c11-l1", T("camara"), 0.24, 6);
+    dat("#c11-l2", T("central"), 0.26, 8);
+    const te = Tf("escavada") - 0.05;
+    bate("#c11-c", te);
+    tl.fromTo("#c11-of", { x: 8 }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, te + 0.03);
+    // "A regra oficial": a folha treme, pronta para virar
+    tl.fromTo("#c11-p1", { rotation: 0 }, { rotation: -1.2, transformOrigin: "50% 0%", duration: 0.2, ease: "steps(4)" }, T("regra"));
+    // em "técnica" a página vira e revela a folha 2
+    tl.set("#c11-p1", { transformPerspective: 1600, transformOrigin: "50% 0%" }, T("sem") - 0.1);
+    tl.to("#c11-p1", { rotationX: -94, rotation: 0, duration: 0.3, ease: "power2.in" }, T("sem") - 0.1);
+    tl.set("#c11-p1", { autoAlpha: 0 }, T("sem") + 0.2);
+    dat("#c11-a", T("tecnica"), 0.5, 23);
+    dat("#c11-d", T("grandes"), 0.42, 13);
+    dat("#c11-e", T("ficam"), 0.24, 5);
+    dat("#c11-b", T("fechadas"), 0.3, 9);
+    tl.fromTo("#c11-sub", { scaleX: 0 }, { scaleX: 1, duration: 0.2, ease: "steps(6)" }, T("enquanto"));
+    window.__timelines["c11"] = tl;
+  </script>
+</template>

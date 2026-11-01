@@ -1,0 +1,51 @@
+<template>
+  <!-- c12 · fecho · objeto-símbolo: trilhos sumindo na escuridão + gancho da próxima fita. -->
+  <style>
+    #root { position: absolute; inset: 0; background: #0a090c; overflow: hidden; }
+    #c12-trilhos { position: absolute; left: 0; top: 380px; width: 1080px; height: 700px; }
+    #c12-trilhos svg { width: 1080px; height: 700px; overflow: visible; }
+    .c12-trilho { fill: none; stroke: #8f8a99; stroke-width: 10; stroke-linecap: round; }
+    .c12-dorm { stroke: #5a4632; stroke-linecap: round; }
+    #c12-nevoa { position: absolute; left: 0; top: 380px; width: 1080px; height: 420px; background: linear-gradient(to bottom, #0a090c 10%, rgba(10,9,12,0)); }
+    #c12-titulo { position: absolute; left: 90px; top: 330px; width: 900px; text-align: center; }
+    #c12-titulo .rb-titulo { font-size: 200px; color: var(--rec); text-shadow: 0 0 40px rgba(255,59,48,.35), 0 10px 30px #000; }
+    #c12-prox { position: absolute; left: 90px; top: 980px; width: 900px; text-align: center; font-size: 40px; color: var(--vhs); }
+  </style>
+  <div id="root" data-composition-id="c12" data-width="1080" data-height="1920">
+    <div id="c12-trilhos" class="clip" data-start="0" data-duration="7" data-layout-allow-overflow>
+      <svg id="c12-svg" viewBox="0 0 1080 700">
+        <g id="c12-dorms">
+          <line class="c12-dorm" x1="150" y1="690" x2="930" y2="690" stroke-width="26" />
+          <line class="c12-dorm" x1="262" y1="560" x2="818" y2="560" stroke-width="20" />
+          <line class="c12-dorm" x1="346" y1="462" x2="734" y2="462" stroke-width="16" />
+          <line class="c12-dorm" x1="408" y1="390" x2="672" y2="390" stroke-width="12" />
+          <line class="c12-dorm" x1="452" y1="338" x2="628" y2="338" stroke-width="9" />
+          <line class="c12-dorm" x1="484" y1="300" x2="596" y2="300" stroke-width="7" />
+          <line class="c12-dorm" x1="506" y1="274" x2="574" y2="274" stroke-width="5" />
+        </g>
+        <path id="c12-t1" class="c12-trilho" d="M250 700 L522 250" />
+        <path id="c12-t2" class="c12-trilho" d="M830 700 L558 250" />
+      </svg>
+    </div>
+    <div id="c12-nevoa" class="clip" data-start="0" data-duration="7"></div>
+    <div id="c12-titulo" class="clip" data-start="0" data-duration="7">
+      <div class="rb-titulo" id="c12-tt1">Ferrovia</div>
+      <div class="rb-titulo" id="c12-tt2">do Diabo</div>
+    </div>
+    <div id="c12-prox" class="rb-mono clip" data-start="0" data-duration="7"><span id="c12-prox-in">PRÓXIMA FITA ▶▶</span></div>
+  </div>
+  <script>
+    const C = "c12", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c12-t1, #c12-t2", { strokeDasharray: 560, strokeDashoffset: 560 }, { strokeDashoffset: 0, duration: 0.9, ease: "power2.out" }, 0.05);
+    tl.fromTo(".c12-dorm", { opacity: 0 }, { opacity: 1, duration: 0.08, stagger: 0.12, ease: "steps(2)" }, 0.15);
+    // a câmera avança pelos trilhos o tempo todo
+    tl.fromTo("#c12-svg", { scale: 1, transformOrigin: "50% 40%" }, { scale: 1.35, duration: D, ease: "power1.in" }, 0);
+    tl.fromTo("#c12-tt1", { opacity: 0, scale: 1.4 }, { opacity: 1, scale: 1, duration: 0.18, ease: "back.out(2)" }, T("Ferrovia", 2) - 0.08);
+    tl.fromTo("#c12-tt2", { opacity: 0, scale: 1.4 }, { opacity: 1, scale: 1, duration: 0.18, ease: "back.out(2)" }, T("Diabo") - 0.08);
+    tl.fromTo("#c12-titulo", { x: 0 }, { x: 8, duration: 0.04, ease: "steps(1)", yoyo: true, repeat: 5 }, T("Diabo") + 0.1);
+    tl.fromTo("#c12-prox-in", { opacity: 0 }, { opacity: 1, duration: 0.1, ease: "steps(2)" }, T("outra") - 0.1);
+    for (let t = T("outra") + 0.5; t < D - 0.7; t += 0.5) tl.set("#c12-prox-in", { opacity: (Math.round((t - T("outra")) * 2) % 2) ? 0.3 : 1 }, t);
+    window.__timelines["c12"] = tl;
+  </script>
+</template>

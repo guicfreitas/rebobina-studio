@@ -1,0 +1,92 @@
+[
+ {
+  "id": "002",
+  "slug": "guerra-dos-mundos",
+  "data": "2026-10-30",
+  "tema": "A Guerra dos Mundos (30/10/1938): o programa de rádio existiu, mas o pânico nacional foi em boa parte criado pelos jornais",
+  "era": "século XX",
+  "regiao": "América do Norte",
+  "acento": "#E07A3B",
+  "gancho_forma": "manchete-de-jornal",
+  "formas": [
+   "manchete-de-jornal",
+   "mito-x-fato",
+   "objeto-simbolo",
+   "documento",
+   "manchete-de-jornal",
+   "numero-que-cai",
+   "comparacao-de-escala",
+   "documento",
+   "antes-e-depois",
+   "mito-x-fato",
+   "manchete-de-jornal"
+  ],
+  "duracao": 86.3,
+  "links": {
+   "tiktok": "https://www.tiktok.com/@rebobina.media/video/7702568275711905031?is_from_webapp=1&sender_device=pc",
+   "youtube": "https://www.youtube.com/shorts/wmiFb197JTM"
+  }
+ },
+ {
+  "id": "003",
+  "slug": "bruxas-salem",
+  "data": "2026-10-31",
+  "tema": "As bruxas de Salem (1692) não foram queimadas: a lei inglesa punia bruxaria com a forca, e a última condenada só foi inocentada em 2022, por causa de uma turma do oitavo ano",
+  "era": "colonial",
+  "regiao": "América do Norte",
+  "acento": "#B48CFF",
+  "gancho_forma": "citacao-poster",
+  "formas": [
+   "citacao-poster",
+   "numero-que-cai",
+   "mapa",
+   "multidao-de-pontos",
+   "objeto-simbolo",
+   "documento",
+   "mapa",
+   "ficha-de-arquivo",
+   "linha-do-tempo",
+   "antes-e-depois",
+   "numero-que-cai",
+   "citacao-poster"
+  ],
+  "duracao": 90.29,
+  "musica": "Static Motion",
+  "links": {
+   "tiktok": "https://www.tiktok.com/@rebobina.media/video/7702907788099472692",
+   "youtube": "https://www.youtube.com/shorts/Pr7PInH25yk"
+  }
+ },
+ {
+  "id": "004",
+  "slug": "guerra-dos-emus",
+  "data": "2026-11-01",
+  "tema": "A Guerra dos Emus (Austrália, 02/11/1932): a operação com metralhadoras existiu e entrou para a história como derrota. O major contou 986 aves confirmadas, as recompensas somaram 57.034 pedidos em seis meses de 1934, e o emu já estava no brasão do país desde 1908",
+  "era": "século XX",
+  "regiao": "Oceania",
+  "acento": "#E8B04B",
+  "gancho_forma": "multidao-de-pontos",
+  "formas": [
+   "multidao-de-pontos",
+   "mito-x-fato",
+   "mapa",
+   "multidao-de-pontos",
+   "recibo",
+   "ficha-de-arquivo",
+   "antes-e-depois",
+   "linha-do-tempo",
+   "citacao-poster",
+   "objeto-simbolo",
+   "numero-que-cai",
+   "comparacao-de-escala",
+   "documento",
+   "objeto-simbolo"
+  ],
+  "duracao": 89.8,
+  "musica": "Thinking Music",
+  "links": {
+   "tiktok": "https://www.tiktok.com/@rebobina.media/video/7703207679157685522",
+   "youtube": "https://www.youtube.com/shorts/lrxKmiS_IjM"
+  }
+ }
+]

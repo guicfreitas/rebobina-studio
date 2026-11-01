@@ -1,0 +1,40 @@
+<template>
+  <!-- c07 · escalada · documento: o contrato de arrendamento ao Bolivian Syndicate + carimbo. -->
+  <style>
+    #root { position: absolute; inset: 0; background: #17151c; overflow: hidden; }
+    #c07-doc { position: absolute; left: 70px; top: 340px; width: 940px; height: 700px; padding: 48px 54px; border-radius: 4px; }
+    #c07-doc h2 { font-family: var(--f-doc); font-weight: 400; font-size: 58px; line-height: 1.05; text-align: center; }
+    #c07-doc .meta { font-family: var(--f-mono); font-weight: 700; font-size: 28px; letter-spacing: .14em; color: #6d5f45; text-align: center; margin: 12px 0 18px; }
+    .c07-l { font-size: 40px; margin-top: 24px; white-space: nowrap; }
+    .c07-l b { font-family: var(--f-mono); font-weight: 700; font-size: 28px; letter-spacing: .12em; color: #6d5f45; display: block; }
+    #c07-carimbo { position: absolute; left: 150px; top: 560px; font-size: 92px; border-width: 12px; padding: 4px 28px; }
+  </style>
+  <div id="root" data-composition-id="c07" data-width="1080" data-height="1920">
+    <div id="c07-doc-w" class="clip" data-start="0" data-duration="8" data-layout-allow-overlap>
+      <div id="c07-doc" class="rb-papel rb-doc">
+        <h2>CONTRATO DE<br />ARRENDAMENTO</h2>
+        <div class="meta">TERRITÓRIO DO ACRE · 1901</div>
+        <div id="c07-l1" class="c07-l"><b>ARRENDADOR</b><span>República da Bolívia</span></div>
+        <div id="c07-l2" class="c07-l"><b>ARRENDATÁRIO</b><span>The Bolivian Syndicate</span></div>
+        <div id="c07-l3" class="c07-l"><b>CAPITAL</b><span>Estados Unidos + Inglaterra</span></div>
+        <div id="c07-carimbo" class="rb-carimbo">ARRENDADO</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c07", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c07-doc", { y: 900, rotation: -4 }, { y: 0, rotation: 1, duration: 0.35, ease: "power3.out" }, 0.05);
+    tl.fromTo("#c07-doc", { scale: 1 }, { scale: 1.035, duration: D, ease: "none" }, 0.4);
+    const digita = (sel, t, n) => {
+      tl.fromTo(sel + " b", { opacity: 0 }, { opacity: 1, duration: 0.08, ease: "steps(2)" }, t - 0.08);
+      tl.fromTo(sel + " span", { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: Math.min(0.03 * n, 0.7), ease: `steps(${n})` }, t);
+    };
+    digita("#c07-l1", T("Bolívia") - 0.1, 20);
+    digita("#c07-l3", T("anglo") - 0.05, 27);
+    digita("#c07-l2", T("Bolivian") - 0.05, 22);
+    tl.fromTo("#c07-carimbo", { scale: 1.7, rotation: 4, opacity: 0 }, { scale: 1, rotation: -10, opacity: 0.92, duration: 0.16, ease: "back.out(2)" }, T("arrendou") + 0.1);
+    tl.fromTo("#c07-doc-w", { x: 0 }, { x: 8, duration: 0.05, ease: "steps(1)", yoyo: true, repeat: 3 }, T("arrendou") + 0.22);
+    window.__timelines["c07"] = tl;
+  </script>
+</template>

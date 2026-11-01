@@ -1,0 +1,1645 @@
+{
+ "motor": "arquivos",
+ "voz": "pm_alex",
+ "cenas": [
+  {
+   "id": "c01",
+   "inicio": 0.15,
+   "fim": 5.56
+  },
+  {
+   "id": "c02",
+   "inicio": 5.84,
+   "fim": 9.51
+  },
+  {
+   "id": "c03",
+   "inicio": 9.79,
+   "fim": 15.18
+  },
+  {
+   "id": "c04",
+   "inicio": 15.46,
+   "fim": 22.47
+  },
+  {
+   "id": "c05",
+   "inicio": 22.75,
+   "fim": 28.67
+  },
+  {
+   "id": "c06",
+   "inicio": 28.95,
+   "fim": 32.9
+  },
+  {
+   "id": "c07",
+   "inicio": 33.18,
+   "fim": 38.57
+  },
+  {
+   "id": "c08",
+   "inicio": 38.85,
+   "fim": 43.26
+  },
+  {
+   "id": "c09",
+   "inicio": 43.54,
+   "fim": 49.43
+  },
+  {
+   "id": "c10",
+   "inicio": 49.71,
+   "fim": 55.72
+  },
+  {
+   "id": "c11",
+   "inicio": 56.0,
+   "fim": 65.46
+  },
+  {
+   "id": "c12",
+   "inicio": 65.74,
+   "fim": 72.24
+  },
+  {
+   "id": "c13",
+   "inicio": 72.52,
+   "fim": 78.23
+  }
+ ],
+ "palavras": [
+  {
+   "id": "w0",
+   "cena": "c01",
+   "text": "A",
+   "start": 0.23,
+   "end": 0.354,
+   "medido": true
+  },
+  {
+   "id": "w1",
+   "cena": "c01",
+   "text": "tumba",
+   "start": 0.354,
+   "end": 0.57,
+   "medido": false
+  },
+  {
+   "id": "w2",
+   "cena": "c01",
+   "text": "do",
+   "start": 0.57,
+   "end": 0.774,
+   "medido": true
+  },
+  {
+   "id": "w3",
+   "cena": "c01",
+   "text": "primeiro",
+   "start": 0.774,
+   "end": 1.28,
+   "medido": false
+  },
+  {
+   "id": "w4",
+   "cena": "c01",
+   "text": "imperador",
+   "start": 1.28,
+   "end": 1.92,
+   "medido": true
+  },
+  {
+   "id": "w5",
+   "cena": "c01",
+   "text": "chinês",
+   "start": 1.92,
+   "end": 2.57,
+   "medido": true
+  },
+  {
+   "id": "w6",
+   "cena": "c01",
+   "text": "segue",
+   "start": 2.57,
+   "end": 2.89,
+   "medido": true
+  },
+  {
+   "id": "w7",
+   "cena": "c01",
+   "text": "fechada.",
+   "start": 2.89,
+   "end": 3.46,
+   "medido": true
+  },
+  {
+   "id": "w8",
+   "cena": "c01",
+   "text": "É",
+   "start": 3.87,
+   "end": 4.0,
+   "medido": true
+  },
+  {
+   "id": "w9",
+   "cena": "c01",
+   "text": "por",
+   "start": 4.0,
+   "end": 4.13,
+   "medido": false
+  },
+  {
+   "id": "w10",
+   "cena": "c01",
+   "text": "medo",
+   "start": 4.13,
+   "end": 4.45,
+   "medido": true
+  },
+  {
+   "id": "w11",
+   "cena": "c01",
+   "text": "de",
+   "start": 4.45,
+   "end": 4.63,
+   "medido": true
+  },
+  {
+   "id": "w12",
+   "cena": "c01",
+   "text": "armadilhas?",
+   "start": 4.63,
+   "end": 5.44,
+   "medido": true
+  },
+  {
+   "id": "w13",
+   "cena": "c02",
+   "text": "O",
+   "start": 5.92,
+   "end": 6.044,
+   "medido": true
+  },
+  {
+   "id": "w14",
+   "cena": "c02",
+   "text": "museu",
+   "start": 6.044,
+   "end": 6.26,
+   "medido": false
+  },
+  {
+   "id": "w15",
+   "cena": "c02",
+   "text": "da",
+   "start": 6.26,
+   "end": 6.4,
+   "medido": true
+  },
+  {
+   "id": "w16",
+   "cena": "c02",
+   "text": "tumba",
+   "start": 6.4,
+   "end": 6.75,
+   "medido": true
+  },
+  {
+   "id": "w17",
+   "cena": "c02",
+   "text": "fala",
+   "start": 6.75,
+   "end": 7.03,
+   "medido": true
+  },
+  {
+   "id": "w18",
+   "cena": "c02",
+   "text": "de",
+   "start": 7.03,
+   "end": 7.17,
+   "medido": true
+  },
+  {
+   "id": "w19",
+   "cena": "c02",
+   "text": "outro",
+   "start": 7.17,
+   "end": 7.52,
+   "medido": true
+  },
+  {
+   "id": "w20",
+   "cena": "c02",
+   "text": "medo:",
+   "start": 7.52,
+   "end": 7.82,
+   "medido": true
+  },
+  {
+   "id": "w21",
+   "cena": "c02",
+   "text": "estragar",
+   "start": 8.13,
+   "end": 8.49,
+   "medido": true
+  },
+  {
+   "id": "w22",
+   "cena": "c02",
+   "text": "o",
+   "start": 8.49,
+   "end": 8.595,
+   "medido": true
+  },
+  {
+   "id": "w23",
+   "cena": "c02",
+   "text": "que",
+   "start": 8.595,
+   "end": 8.7,
+   "medido": false
+  },
+  {
+   "id": "w24",
+   "cena": "c02",
+   "text": "há",
+   "start": 8.7,
+   "end": 8.85,
+   "medido": true
+  },
+  {
+   "id": "w25",
+   "cena": "c02",
+   "text": "dentro.",
+   "start": 8.85,
+   "end": 9.39,
+   "medido": true
+  },
+  {
+   "id": "w26",
+   "cena": "c03",
+   "text": "Ano",
+   "start": 9.87,
+   "end": 10.234,
+   "medido": true
+  },
+  {
+   "id": "w27",
+   "cena": "c03",
+   "text": "duzentos",
+   "start": 10.234,
+   "end": 10.754,
+   "medido": false
+  },
+  {
+   "id": "w28",
+   "cena": "c03",
+   "text": "e",
+   "start": 10.754,
+   "end": 10.963,
+   "medido": false
+  },
+  {
+   "id": "w29",
+   "cena": "c03",
+   "text": "dez",
+   "start": 10.963,
+   "end": 11.172,
+   "medido": false
+  },
+  {
+   "id": "w30",
+   "cena": "c03",
+   "text": "antes",
+   "start": 11.172,
+   "end": 11.536,
+   "medido": false
+  },
+  {
+   "id": "w31",
+   "cena": "c03",
+   "text": "de",
+   "start": 11.536,
+   "end": 11.746,
+   "medido": false
+  },
+  {
+   "id": "w32",
+   "cena": "c03",
+   "text": "Cristo.",
+   "start": 11.746,
+   "end": 12.11,
+   "medido": false
+  },
+  {
+   "id": "w33",
+   "cena": "c03",
+   "text": "Morre",
+   "start": 12.52,
+   "end": 12.924,
+   "medido": true
+  },
+  {
+   "id": "w34",
+   "cena": "c03",
+   "text": "Qin",
+   "start": 12.924,
+   "end": 13.156,
+   "medido": false
+  },
+  {
+   "id": "w35",
+   "cena": "c03",
+   "text": "Shi",
+   "start": 13.156,
+   "end": 13.388,
+   "medido": false
+  },
+  {
+   "id": "w36",
+   "cena": "c03",
+   "text": "Huang,",
+   "start": 13.388,
+   "end": 13.62,
+   "medido": false
+  },
+  {
+   "id": "w37",
+   "cena": "c03",
+   "text": "que",
+   "start": 13.93,
+   "end": 14.11,
+   "medido": true
+  },
+  {
+   "id": "w38",
+   "cena": "c03",
+   "text": "unificou",
+   "start": 14.11,
+   "end": 14.59,
+   "medido": true
+  },
+  {
+   "id": "w39",
+   "cena": "c03",
+   "text": "a",
+   "start": 14.59,
+   "end": 14.761,
+   "medido": true
+  },
+  {
+   "id": "w40",
+   "cena": "c03",
+   "text": "China.",
+   "start": 14.761,
+   "end": 15.06,
+   "medido": false
+  },
+  {
+   "id": "w41",
+   "cena": "c04",
+   "text": "Cerca",
+   "start": 15.54,
+   "end": 15.87,
+   "medido": true
+  },
+  {
+   "id": "w42",
+   "cena": "c04",
+   "text": "de",
+   "start": 15.87,
+   "end": 16.03,
+   "medido": true
+  },
+  {
+   "id": "w43",
+   "cena": "c04",
+   "text": "um",
+   "start": 16.03,
+   "end": 16.19,
+   "medido": true
+  },
+  {
+   "id": "w44",
+   "cena": "c04",
+   "text": "século",
+   "start": 16.19,
+   "end": 16.68,
+   "medido": true
+  },
+  {
+   "id": "w45",
+   "cena": "c04",
+   "text": "depois,",
+   "start": 16.77,
+   "end": 17.11,
+   "medido": true
+  },
+  {
+   "id": "w46",
+   "cena": "c04",
+   "text": "Sima",
+   "start": 17.42,
+   "end": 17.788,
+   "medido": true
+  },
+  {
+   "id": "w47",
+   "cena": "c04",
+   "text": "Qian",
+   "start": 17.788,
+   "end": 18.0,
+   "medido": false
+  },
+  {
+   "id": "w48",
+   "cena": "c04",
+   "text": "descreve",
+   "start": 18.0,
+   "end": 18.73,
+   "medido": true
+  },
+  {
+   "id": "w49",
+   "cena": "c04",
+   "text": "a",
+   "start": 18.73,
+   "end": 18.839,
+   "medido": true
+  },
+  {
+   "id": "w50",
+   "cena": "c04",
+   "text": "tumba.",
+   "start": 18.839,
+   "end": 19.03,
+   "medido": false
+  },
+  {
+   "id": "w51",
+   "cena": "c04",
+   "text": "Rios",
+   "start": 19.44,
+   "end": 19.72,
+   "medido": true
+  },
+  {
+   "id": "w52",
+   "cena": "c04",
+   "text": "de",
+   "start": 19.72,
+   "end": 19.88,
+   "medido": true
+  },
+  {
+   "id": "w53",
+   "cena": "c04",
+   "text": "mercúrio",
+   "start": 19.88,
+   "end": 20.54,
+   "medido": true
+  },
+  {
+   "id": "w54",
+   "cena": "c04",
+   "text": "e",
+   "start": 20.54,
+   "end": 20.66,
+   "medido": true
+  },
+  {
+   "id": "w55",
+   "cena": "c04",
+   "text": "flechas",
+   "start": 20.66,
+   "end": 20.99,
+   "medido": true
+  },
+  {
+   "id": "w56",
+   "cena": "c04",
+   "text": "que",
+   "start": 20.99,
+   "end": 21.16,
+   "medido": true
+  },
+  {
+   "id": "w57",
+   "cena": "c04",
+   "text": "disparam",
+   "start": 21.16,
+   "end": 21.63,
+   "medido": true
+  },
+  {
+   "id": "w58",
+   "cena": "c04",
+   "text": "sozinhas.",
+   "start": 21.63,
+   "end": 22.35,
+   "medido": true
+  },
+  {
+   "id": "w59",
+   "cena": "c05",
+   "text": "Mil",
+   "start": 22.83,
+   "end": 23.005,
+   "medido": false
+  },
+  {
+   "id": "w60",
+   "cena": "c05",
+   "text": "novecentos",
+   "start": 23.005,
+   "end": 23.57,
+   "medido": false
+  },
+  {
+   "id": "w61",
+   "cena": "c05",
+   "text": "e",
+   "start": 23.57,
+   "end": 23.745,
+   "medido": false
+  },
+  {
+   "id": "w62",
+   "cena": "c05",
+   "text": "setenta",
+   "start": 23.745,
+   "end": 24.18,
+   "medido": false
+  },
+  {
+   "id": "w63",
+   "cena": "c05",
+   "text": "e",
+   "start": 24.18,
+   "end": 24.355,
+   "medido": false
+  },
+  {
+   "id": "w64",
+   "cena": "c05",
+   "text": "quatro.",
+   "start": 24.355,
+   "end": 24.66,
+   "medido": false
+  },
+  {
+   "id": "w65",
+   "cena": "c05",
+   "text": "Agricultores",
+   "start": 25.07,
+   "end": 25.98,
+   "medido": true
+  },
+  {
+   "id": "w66",
+   "cena": "c05",
+   "text": "cavam",
+   "start": 25.98,
+   "end": 26.42,
+   "medido": true
+  },
+  {
+   "id": "w67",
+   "cena": "c05",
+   "text": "um",
+   "start": 26.42,
+   "end": 26.51,
+   "medido": true
+  },
+  {
+   "id": "w68",
+   "cena": "c05",
+   "text": "poço",
+   "start": 26.51,
+   "end": 26.79,
+   "medido": true
+  },
+  {
+   "id": "w69",
+   "cena": "c05",
+   "text": "e",
+   "start": 26.95,
+   "end": 27.14,
+   "medido": true
+  },
+  {
+   "id": "w70",
+   "cena": "c05",
+   "text": "acham",
+   "start": 27.14,
+   "end": 27.47,
+   "medido": false
+  },
+  {
+   "id": "w71",
+   "cena": "c05",
+   "text": "soldados",
+   "start": 27.47,
+   "end": 28.02,
+   "medido": true
+  },
+  {
+   "id": "w72",
+   "cena": "c05",
+   "text": "de",
+   "start": 28.02,
+   "end": 28.13,
+   "medido": true
+  },
+  {
+   "id": "w73",
+   "cena": "c05",
+   "text": "barro.",
+   "start": 28.13,
+   "end": 28.55,
+   "medido": true
+  },
+  {
+   "id": "w74",
+   "cena": "c06",
+   "text": "É",
+   "start": 29.03,
+   "end": 29.115,
+   "medido": true
+  },
+  {
+   "id": "w75",
+   "cena": "c06",
+   "text": "um",
+   "start": 29.115,
+   "end": 29.2,
+   "medido": false
+  },
+  {
+   "id": "w76",
+   "cena": "c06",
+   "text": "exército",
+   "start": 29.2,
+   "end": 29.89,
+   "medido": true
+  },
+  {
+   "id": "w77",
+   "cena": "c06",
+   "text": "de",
+   "start": 29.89,
+   "end": 30.06,
+   "medido": true
+  },
+  {
+   "id": "w78",
+   "cena": "c06",
+   "text": "cerca",
+   "start": 30.06,
+   "end": 30.49,
+   "medido": true
+  },
+  {
+   "id": "w79",
+   "cena": "c06",
+   "text": "de",
+   "start": 30.49,
+   "end": 30.647,
+   "medido": true
+  },
+  {
+   "id": "w80",
+   "cena": "c06",
+   "text": "oito",
+   "start": 30.647,
+   "end": 30.92,
+   "medido": false
+  },
+  {
+   "id": "w81",
+   "cena": "c06",
+   "text": "mil",
+   "start": 30.92,
+   "end": 31.18,
+   "medido": true
+  },
+  {
+   "id": "w82",
+   "cena": "c06",
+   "text": "figuras,",
+   "start": 31.18,
+   "end": 31.68,
+   "medido": true
+  },
+  {
+   "id": "w83",
+   "cena": "c06",
+   "text": "perto",
+   "start": 31.99,
+   "end": 32.22,
+   "medido": true
+  },
+  {
+   "id": "w84",
+   "cena": "c06",
+   "text": "da",
+   "start": 32.22,
+   "end": 32.41,
+   "medido": true
+  },
+  {
+   "id": "w85",
+   "cena": "c06",
+   "text": "tumba.",
+   "start": 32.47,
+   "end": 32.78,
+   "medido": false
+  },
+  {
+   "id": "w86",
+   "cena": "c07",
+   "text": "Só",
+   "start": 33.26,
+   "end": 33.34,
+   "medido": true
+  },
+  {
+   "id": "w87",
+   "cena": "c07",
+   "text": "que",
+   "start": 33.34,
+   "end": 33.6,
+   "medido": true
+  },
+  {
+   "id": "w88",
+   "cena": "c07",
+   "text": "não",
+   "start": 33.6,
+   "end": 33.82,
+   "medido": true
+  },
+  {
+   "id": "w89",
+   "cena": "c07",
+   "text": "era",
+   "start": 33.82,
+   "end": 34.01,
+   "medido": true
+  },
+  {
+   "id": "w90",
+   "cena": "c07",
+   "text": "cor",
+   "start": 34.07,
+   "end": 34.3,
+   "medido": true
+  },
+  {
+   "id": "w91",
+   "cena": "c07",
+   "text": "de",
+   "start": 34.3,
+   "end": 34.46,
+   "medido": true
+  },
+  {
+   "id": "w92",
+   "cena": "c07",
+   "text": "barro.",
+   "start": 34.46,
+   "end": 34.74,
+   "medido": true
+  },
+  {
+   "id": "w93",
+   "cena": "c07",
+   "text": "Era",
+   "start": 35.15,
+   "end": 35.52,
+   "medido": true
+  },
+  {
+   "id": "w94",
+   "cena": "c07",
+   "text": "verde,",
+   "start": 35.52,
+   "end": 35.86,
+   "medido": true
+  },
+  {
+   "id": "w95",
+   "cena": "c07",
+   "text": "roxo,",
+   "start": 36.17,
+   "end": 36.68,
+   "medido": true
+  },
+  {
+   "id": "w96",
+   "cena": "c07",
+   "text": "vermelho",
+   "start": 36.99,
+   "end": 37.58,
+   "medido": true
+  },
+  {
+   "id": "w97",
+   "cena": "c07",
+   "text": "e",
+   "start": 37.58,
+   "end": 37.89,
+   "medido": true
+  },
+  {
+   "id": "w98",
+   "cena": "c07",
+   "text": "azul.",
+   "start": 37.97,
+   "end": 38.45,
+   "medido": true
+  },
+  {
+   "id": "w99",
+   "cena": "c08",
+   "text": "Exposta",
+   "start": 38.93,
+   "end": 39.47,
+   "medido": true
+  },
+  {
+   "id": "w100",
+   "cena": "c08",
+   "text": "ao",
+   "start": 39.47,
+   "end": 39.59,
+   "medido": true
+  },
+  {
+   "id": "w101",
+   "cena": "c08",
+   "text": "ar,",
+   "start": 39.59,
+   "end": 39.83,
+   "medido": true
+  },
+  {
+   "id": "w102",
+   "cena": "c08",
+   "text": "a",
+   "start": 40.05,
+   "end": 40.14,
+   "medido": true
+  },
+  {
+   "id": "w103",
+   "cena": "c08",
+   "text": "tinta",
+   "start": 40.21,
+   "end": 40.38,
+   "medido": false
+  },
+  {
+   "id": "w104",
+   "cena": "c08",
+   "text": "que",
+   "start": 40.38,
+   "end": 40.61,
+   "medido": true
+  },
+  {
+   "id": "w105",
+   "cena": "c08",
+   "text": "restou",
+   "start": 40.61,
+   "end": 41.09,
+   "medido": true
+  },
+  {
+   "id": "w106",
+   "cena": "c08",
+   "text": "começa",
+   "start": 41.09,
+   "end": 41.47,
+   "medido": true
+  },
+  {
+   "id": "w107",
+   "cena": "c08",
+   "text": "a",
+   "start": 41.47,
+   "end": 41.631,
+   "medido": true
+  },
+  {
+   "id": "w108",
+   "cena": "c08",
+   "text": "mudar",
+   "start": 41.631,
+   "end": 41.91,
+   "medido": false
+  },
+  {
+   "id": "w109",
+   "cena": "c08",
+   "text": "em",
+   "start": 41.91,
+   "end": 42.125,
+   "medido": true
+  },
+  {
+   "id": "w110",
+   "cena": "c08",
+   "text": "quinze",
+   "start": 42.125,
+   "end": 42.5,
+   "medido": false
+  },
+  {
+   "id": "w111",
+   "cena": "c08",
+   "text": "segundos.",
+   "start": 42.5,
+   "end": 43.14,
+   "medido": true
+  },
+  {
+   "id": "w112",
+   "cena": "c09",
+   "text": "Em",
+   "start": 43.62,
+   "end": 43.73,
+   "medido": true
+  },
+  {
+   "id": "w113",
+   "cena": "c09",
+   "text": "até",
+   "start": 43.73,
+   "end": 44.05,
+   "medido": true
+  },
+  {
+   "id": "w114",
+   "cena": "c09",
+   "text": "quatro",
+   "start": 44.13,
+   "end": 44.6,
+   "medido": true
+  },
+  {
+   "id": "w115",
+   "cena": "c09",
+   "text": "minutos,",
+   "start": 44.6,
+   "end": 45.13,
+   "medido": true
+  },
+  {
+   "id": "w116",
+   "cena": "c09",
+   "text": "a",
+   "start": 45.44,
+   "end": 45.59,
+   "medido": true
+  },
+  {
+   "id": "w117",
+   "cena": "c09",
+   "text": "laca",
+   "start": 45.59,
+   "end": 45.85,
+   "medido": false
+  },
+  {
+   "id": "w118",
+   "cena": "c09",
+   "text": "seca,",
+   "start": 45.85,
+   "end": 46.45,
+   "medido": true
+  },
+  {
+   "id": "w119",
+   "cena": "c09",
+   "text": "encolhe",
+   "start": 46.64,
+   "end": 47.29,
+   "medido": true
+  },
+  {
+   "id": "w120",
+   "cena": "c09",
+   "text": "e",
+   "start": 47.29,
+   "end": 47.39,
+   "medido": true
+  },
+  {
+   "id": "w121",
+   "cena": "c09",
+   "text": "se",
+   "start": 47.39,
+   "end": 47.61,
+   "medido": true
+  },
+  {
+   "id": "w122",
+   "cena": "c09",
+   "text": "solta.",
+   "start": 47.61,
+   "end": 48.02,
+   "medido": true
+  },
+  {
+   "id": "w123",
+   "cena": "c09",
+   "text": "E",
+   "start": 48.43,
+   "end": 48.539,
+   "medido": true
+  },
+  {
+   "id": "w124",
+   "cena": "c09",
+   "text": "leva",
+   "start": 48.539,
+   "end": 48.73,
+   "medido": false
+  },
+  {
+   "id": "w125",
+   "cena": "c09",
+   "text": "a",
+   "start": 48.73,
+   "end": 48.8,
+   "medido": true
+  },
+  {
+   "id": "w126",
+   "cena": "c09",
+   "text": "tinta.",
+   "start": 48.8,
+   "end": 49.31,
+   "medido": true
+  },
+  {
+   "id": "w127",
+   "cena": "c10",
+   "text": "Hoje,",
+   "start": 49.79,
+   "end": 50.18,
+   "medido": true
+  },
+  {
+   "id": "w128",
+   "cena": "c10",
+   "text": "spray",
+   "start": 50.37,
+   "end": 50.76,
+   "medido": true
+  },
+  {
+   "id": "w129",
+   "cena": "c10",
+   "text": "e",
+   "start": 50.76,
+   "end": 50.85,
+   "medido": true
+  },
+  {
+   "id": "w130",
+   "cena": "c10",
+   "text": "plástico",
+   "start": 50.85,
+   "end": 51.515,
+   "medido": true
+  },
+  {
+   "id": "w131",
+   "cena": "c10",
+   "text": "ajudam",
+   "start": 51.515,
+   "end": 52.18,
+   "medido": false
+  },
+  {
+   "id": "w132",
+   "cena": "c10",
+   "text": "a",
+   "start": 52.18,
+   "end": 52.27,
+   "medido": true
+  },
+  {
+   "id": "w133",
+   "cena": "c10",
+   "text": "segurar",
+   "start": 52.27,
+   "end": 52.89,
+   "medido": true
+  },
+  {
+   "id": "w134",
+   "cena": "c10",
+   "text": "a",
+   "start": 52.94,
+   "end": 53.03,
+   "medido": true
+  },
+  {
+   "id": "w135",
+   "cena": "c10",
+   "text": "cor.",
+   "start": 53.03,
+   "end": 53.16,
+   "medido": true
+  },
+  {
+   "id": "w136",
+   "cena": "c10",
+   "text": "Mas",
+   "start": 53.57,
+   "end": 53.77,
+   "medido": true
+  },
+  {
+   "id": "w137",
+   "cena": "c10",
+   "text": "a",
+   "start": 53.77,
+   "end": 53.928,
+   "medido": true
+  },
+  {
+   "id": "w138",
+   "cena": "c10",
+   "text": "proteção",
+   "start": 53.928,
+   "end": 54.32,
+   "medido": false
+  },
+  {
+   "id": "w139",
+   "cena": "c10",
+   "text": "ainda",
+   "start": 54.32,
+   "end": 54.65,
+   "medido": true
+  },
+  {
+   "id": "w140",
+   "cena": "c10",
+   "text": "não",
+   "start": 54.65,
+   "end": 54.86,
+   "medido": true
+  },
+  {
+   "id": "w141",
+   "cena": "c10",
+   "text": "é",
+   "start": 54.86,
+   "end": 54.93,
+   "medido": true
+  },
+  {
+   "id": "w142",
+   "cena": "c10",
+   "text": "garantida.",
+   "start": 54.93,
+   "end": 55.6,
+   "medido": true
+  },
+  {
+   "id": "w143",
+   "cena": "c11",
+   "text": "A",
+   "start": 56.08,
+   "end": 56.241,
+   "medido": true
+  },
+  {
+   "id": "w144",
+   "cena": "c11",
+   "text": "câmara",
+   "start": 56.241,
+   "end": 56.64,
+   "medido": false
+  },
+  {
+   "id": "w145",
+   "cena": "c11",
+   "text": "central",
+   "start": 56.64,
+   "end": 57.17,
+   "medido": true
+  },
+  {
+   "id": "w146",
+   "cena": "c11",
+   "text": "nunca",
+   "start": 57.17,
+   "end": 57.61,
+   "medido": true
+  },
+  {
+   "id": "w147",
+   "cena": "c11",
+   "text": "foi",
+   "start": 57.61,
+   "end": 57.84,
+   "medido": true
+  },
+  {
+   "id": "w148",
+   "cena": "c11",
+   "text": "escavada.",
+   "start": 57.84,
+   "end": 58.39,
+   "medido": true
+  },
+  {
+   "id": "w149",
+   "cena": "c11",
+   "text": "A",
+   "start": 58.8,
+   "end": 59.012,
+   "medido": true
+  },
+  {
+   "id": "w150",
+   "cena": "c11",
+   "text": "regra",
+   "start": 59.012,
+   "end": 59.38,
+   "medido": false
+  },
+  {
+   "id": "w151",
+   "cena": "c11",
+   "text": "oficial:",
+   "start": 59.38,
+   "end": 59.84,
+   "medido": true
+  },
+  {
+   "id": "w152",
+   "cena": "c11",
+   "text": "sem",
+   "start": 60.15,
+   "end": 60.39,
+   "medido": true
+  },
+  {
+   "id": "w153",
+   "cena": "c11",
+   "text": "técnica",
+   "start": 60.39,
+   "end": 61.06,
+   "medido": true
+  },
+  {
+   "id": "w154",
+   "cena": "c11",
+   "text": "de",
+   "start": 61.06,
+   "end": 61.25,
+   "medido": true
+  },
+  {
+   "id": "w155",
+   "cena": "c11",
+   "text": "proteção,",
+   "start": 61.25,
+   "end": 61.77,
+   "medido": true
+  },
+  {
+   "id": "w156",
+   "cena": "c11",
+   "text": "grandes",
+   "start": 62.08,
+   "end": 62.8,
+   "medido": true
+  },
+  {
+   "id": "w157",
+   "cena": "c11",
+   "text": "tumbas",
+   "start": 62.8,
+   "end": 63.11,
+   "medido": true
+  },
+  {
+   "id": "w158",
+   "cena": "c11",
+   "text": "imperiais",
+   "start": 63.11,
+   "end": 63.59,
+   "medido": true
+  },
+  {
+   "id": "w159",
+   "cena": "c11",
+   "text": "ficam",
+   "start": 63.9,
+   "end": 64.18,
+   "medido": true
+  },
+  {
+   "id": "w160",
+   "cena": "c11",
+   "text": "fechadas",
+   "start": 64.18,
+   "end": 64.55,
+   "medido": true
+  },
+  {
+   "id": "w161",
+   "cena": "c11",
+   "text": "por",
+   "start": 64.55,
+   "end": 64.69,
+   "medido": true
+  },
+  {
+   "id": "w162",
+   "cena": "c11",
+   "text": "enquanto.",
+   "start": 64.75,
+   "end": 65.34,
+   "medido": true
+  },
+  {
+   "id": "w163",
+   "cena": "c12",
+   "text": "E",
+   "start": 65.82,
+   "end": 66.125,
+   "medido": true
+  },
+  {
+   "id": "w164",
+   "cena": "c12",
+   "text": "as",
+   "start": 66.125,
+   "end": 66.43,
+   "medido": false
+  },
+  {
+   "id": "w165",
+   "cena": "c12",
+   "text": "flechas?",
+   "start": 66.43,
+   "end": 66.79,
+   "medido": false
+  },
+  {
+   "id": "w166",
+   "cena": "c12",
+   "text": "Ninguém",
+   "start": 66.96,
+   "end": 67.33,
+   "medido": true
+  },
+  {
+   "id": "w167",
+   "cena": "c12",
+   "text": "confirmou.",
+   "start": 67.33,
+   "end": 67.96,
+   "medido": true
+  },
+  {
+   "id": "w168",
+   "cena": "c12",
+   "text": "O",
+   "start": 68.37,
+   "end": 68.58,
+   "medido": true
+  },
+  {
+   "id": "w169",
+   "cena": "c12",
+   "text": "mercúrio",
+   "start": 68.58,
+   "end": 69.1,
+   "medido": false
+  },
+  {
+   "id": "w170",
+   "cena": "c12",
+   "text": "é",
+   "start": 69.1,
+   "end": 69.32,
+   "medido": true
+  },
+  {
+   "id": "w171",
+   "cena": "c12",
+   "text": "só",
+   "start": 69.32,
+   "end": 69.437,
+   "medido": true
+  },
+  {
+   "id": "w172",
+   "cena": "c12",
+   "text": "pista:",
+   "start": 69.437,
+   "end": 69.64,
+   "medido": false
+  },
+  {
+   "id": "w173",
+   "cena": "c12",
+   "text": "alto",
+   "start": 69.95,
+   "end": 70.35,
+   "medido": true
+  },
+  {
+   "id": "w174",
+   "cena": "c12",
+   "text": "no",
+   "start": 70.35,
+   "end": 70.54,
+   "medido": true
+  },
+  {
+   "id": "w175",
+   "cena": "c12",
+   "text": "solo,",
+   "start": 70.54,
+   "end": 70.86,
+   "medido": true
+  },
+  {
+   "id": "w176",
+   "cena": "c12",
+   "text": "fora",
+   "start": 71.11,
+   "end": 71.41,
+   "medido": true
+  },
+  {
+   "id": "w177",
+   "cena": "c12",
+   "text": "da",
+   "start": 71.41,
+   "end": 71.6,
+   "medido": true
+  },
+  {
+   "id": "w178",
+   "cena": "c12",
+   "text": "câmara.",
+   "start": 71.6,
+   "end": 72.12,
+   "medido": true
+  },
+  {
+   "id": "w179",
+   "cena": "c13",
+   "text": "A",
+   "start": 72.6,
+   "end": 72.706,
+   "medido": true
+  },
+  {
+   "id": "w180",
+   "cena": "c13",
+   "text": "única",
+   "start": 72.706,
+   "end": 72.97,
+   "medido": false
+  },
+  {
+   "id": "w181",
+   "cena": "c13",
+   "text": "armadilha",
+   "start": 72.97,
+   "end": 73.64,
+   "medido": true
+  },
+  {
+   "id": "w182",
+   "cena": "c13",
+   "text": "já",
+   "start": 73.64,
+   "end": 73.79,
+   "medido": true
+  },
+  {
+   "id": "w183",
+   "cena": "c13",
+   "text": "vista",
+   "start": 73.79,
+   "end": 74.17,
+   "medido": true
+  },
+  {
+   "id": "w184",
+   "cena": "c13",
+   "text": "em",
+   "start": 74.17,
+   "end": 74.32,
+   "medido": true
+  },
+  {
+   "id": "w185",
+   "cena": "c13",
+   "text": "ação",
+   "start": 74.32,
+   "end": 74.61,
+   "medido": true
+  },
+  {
+   "id": "w186",
+   "cena": "c13",
+   "text": "não",
+   "start": 74.61,
+   "end": 74.83,
+   "medido": true
+  },
+  {
+   "id": "w187",
+   "cena": "c13",
+   "text": "dispara",
+   "start": 74.83,
+   "end": 75.35,
+   "medido": true
+  },
+  {
+   "id": "w188",
+   "cena": "c13",
+   "text": "flechas.",
+   "start": 75.35,
+   "end": 75.83,
+   "medido": true
+  },
+  {
+   "id": "w189",
+   "cena": "c13",
+   "text": "Ela",
+   "start": 76.24,
+   "end": 76.39,
+   "medido": true
+  },
+  {
+   "id": "w190",
+   "cena": "c13",
+   "text": "dispara",
+   "start": 76.39,
+   "end": 76.83,
+   "medido": true
+  },
+  {
+   "id": "w191",
+   "cena": "c13",
+   "text": "quando",
+   "start": 76.83,
+   "end": 77.22,
+   "medido": true
+  },
+  {
+   "id": "w192",
+   "cena": "c13",
+   "text": "alguém",
+   "start": 77.22,
+   "end": 77.42,
+   "medido": true
+  },
+  {
+   "id": "w193",
+   "cena": "c13",
+   "text": "abre",
+   "start": 77.42,
+   "end": 77.76,
+   "medido": true
+  },
+  {
+   "id": "w194",
+   "cena": "c13",
+   "text": "a",
+   "start": 77.76,
+   "end": 77.8,
+   "medido": true
+  },
+  {
+   "id": "w195",
+   "cena": "c13",
+   "text": "terra.",
+   "start": 77.87,
+   "end": 78.11,
+   "medido": true
+  }
+ ],
+ "duracao_narracao": 78.23,
+ "duracao_video": 80.23,
+ "palavras_medidas": 155,
+ "tempos_medidos": false
+}

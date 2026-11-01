@@ -1,0 +1,23 @@
+{
+ "largura": 900,
+ "altura": 700,
+ "bbox": [
+  72,
+  16,
+  136,
+  55
+ ],
+ "centroides": {
+  "pais-china": [
+   442,
+   418
+  ]
+ },
+ "pontos": {
+  "ponto-xian": {
+   "nome": "Xian",
+   "x": 514,
+   "y": 453
+  }
+ }
+}

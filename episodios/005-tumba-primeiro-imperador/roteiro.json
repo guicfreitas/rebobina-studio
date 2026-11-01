@@ -1,0 +1,392 @@
+{
+ "id": "005",
+ "slug": "tumba-primeiro-imperador",
+ "idioma": "pt-BR",
+ "tema": "A tumba do primeiro imperador da China (morto em 210 a.C.): a fama é de armadilhas, mas o museu fala em relíquias frágeis. O exército de terracota, achado em 1974, dá a medida: exposta ao ar, a tinta que restou começa a mudar em 15 segundos e se solta em até 4 minutos.",
+ "era": "antiguidade",
+ "regiao": "Ásia",
+ "acento": "#2FBF71",
+ "objeto_simbolo": "porta de tumba lacrada em traço simples, com uma flecha de besta apontada para ela; no fecho, a flecha some e sobra o lacre",
+ "motor_voz": "colab",
+ "voz": "pm_alex",
+ "velocidade": 0.92,
+ "capa": {
+  "linhas": [
+   "A TUMBA DO 1º IMPERADOR",
+   "FECHADA POR MEDO",
+   "*DAS ARMADILHAS?*"
+  ],
+  "simbolo": "simbolos/porta"
+ },
+ "serie": {
+  "proxima_fita": null
+ },
+ "cenas": [
+  {
+   "id": "c01",
+   "batida": "gancho",
+   "forma": "objeto-simbolo",
+   "ano": 2026,
+   "fala": "A tumba do primeiro imperador chinês segue fechada. É por medo de armadilhas?",
+   "tela": [
+    "FECHADA POR MEDO",
+    "DAS ARMADILHAS?"
+   ],
+   "visual": "Frame 0: a pergunta em League Gothic gigante, com a porta de tumba lacrada em traço simples. Em 'fechada', o lacre bate na porta, com som de baque. Em 'armadilhas', uma flecha cruza o palco e para na frente da porta, com som de swoosh.",
+   "fatos": [
+    "f1",
+    "f12"
+   ]
+  },
+  {
+   "id": "c02",
+   "batida": "quebra",
+   "forma": "mito-x-fato",
+   "ano": 2026,
+   "fala": "O museu da tumba fala de outro medo: estragar o que há dentro.",
+   "tela": [
+    "ARMADILHAS: SEM CONFIRMAÇÃO",
+    "RELÍQUIAS: \"MUITO FRÁGEIS\"",
+    "DIRETOR HONORÁRIO DO MUSEU"
+   ],
+   "visual": "Uma etiqueta de acervo de museu ocupa o palco, sem a palavra única em papel do c02 do episódio 004. A linha das armadilhas surge datilografada; em 'medo', ela leva um carimbo vermelho 'OUTRO MEDO', com som de carimbo. Em 'estragar', a linha das relíquias entra em cor de acento, com som de baque, e o crédito do diretor fecha a etiqueta.",
+   "fatos": [
+    "f2",
+    "f12"
+   ]
+  },
+  {
+   "id": "c03",
+   "batida": "rebobinar",
+   "forma": "mapa",
+   "ano": -210,
+   "fala": "Ano duzentos e dez antes de Cristo. Morre Qin Shi Huang, que unificou a China.",
+   "fala_tts": "Ano duzentos e dez antes de Cristo. Morre Tchin Chi Ruãn, que unificou a China.",
+   "tela": [
+    "210 A.C.",
+    "QIN SHI HUANG",
+    "UNIFICAÇÃO: 221 A.C.",
+    "TUMBA: PERTO DE XI'AN"
+   ],
+   "visual": "Rebobina até 210 a.C., com som de vhs. O contorno atual da China se traça e, em 'Qin', um ponto de acento marca Xi'an, com som de clique. Em 'unificou', uma mancha de acento cresce um pouco em volta do ponto e para, sem preencher o contorno, com som de swoosh. Sem retrato do imperador e sem desenhar fronteiras antigas.",
+   "fatos": [
+    "f3",
+    "f14"
+   ]
+  },
+  {
+   "id": "c04",
+   "batida": "rebobinar",
+   "forma": "documento",
+   "ano": -100,
+   "ano_rotulo": "~100 A.C.",
+   "fala": "Cerca de um século depois, Sima Qian descreve a tumba. Rios de mercúrio e flechas que disparam sozinhas.",
+   "fala_tts": "Cerca de um século depois, Síma Tchién descreve a tumba. Rios de mercúrio e flechas que disparam sozinhas.",
+   "tela": [
+    "HISTORIADOR SIMA QIAN",
+    "~100 ANOS DEPOIS",
+    "\"RIOS\" DE MERCÚRIO",
+    "BESTAS ARMADAS"
+   ],
+   "visual": "Rolo de papel se abre, com som de página, e o texto surge datilografado, com som de máquina. Em 'mercúrio', linhas prateadas correm pelo papel. Em 'flechas', três traços cruzam a folha, com som de swoosh. O texto é um relato, não uma planta da tumba.",
+   "fatos": [
+    "f4"
+   ]
+  },
+  {
+   "id": "c05",
+   "batida": "escalada",
+   "forma": "ficha-de-arquivo",
+   "ano": 1974,
+   "fala": "Mil novecentos e setenta e quatro. Agricultores cavam um poço e acham soldados de barro.",
+   "fala_tts": "Mil novecentos e setenta e quatro. Agricultores cavam um pôço e acham soldados de barro.",
+   "tela": [
+    "UM POÇO",
+    "TAMANHO REAL",
+    "PERTO DE XI'AN"
+   ],
+   "visual": "Rebobina até 1974, com som de vhs. Ficha de arquivo sai de uma gaveta, com som de gaveta, sem foto de ninguém. Em 'barro', um traço de pá bate numa silhueta de soldado de barro em traço simples, com som de baque.",
+   "fatos": [
+    "f5"
+   ]
+  },
+  {
+   "id": "c06",
+   "batida": "escalada",
+   "forma": "multidao-de-pontos",
+   "ano": 1974,
+   "fala": "É um exército de cerca de oito mil figuras, perto da tumba.",
+   "tela": [
+    "~8.000 FIGURAS",
+    "ESTIMATIVA",
+    "GUARDA DA TUMBA"
+   ],
+   "visual": "Um ponto vira uma fila, e a fila vira um bloco que enche o palco em passos, com som de tique. Em 'oito mil', o número trava, com som de baque. Em 'tumba', um pequeno morro surge no canto, com som de swoosh.",
+   "fatos": [
+    "f6"
+   ]
+  },
+  {
+   "id": "c07",
+   "batida": "escalada",
+   "forma": "antes-e-depois",
+   "ano": 1974,
+   "fala": "Só que não era cor de barro. Era verde, roxo, vermelho e azul.",
+   "fala_tts": "Só que não era cor de barro. Era verde, rôxo, vermelho e azul.",
+   "tela": [
+    "ORIGINAL: PINTADO",
+    "VERDE · ROXO",
+    "VERMELHO · AZUL"
+   ],
+   "visual": "A silhueta do soldado em traço simples, toda bege. Em 'verde', 'roxo', 'vermelho' e 'azul', uma parte do corpo ganha cada cor, com um som de clique por cor. Sem rosto detalhado.",
+   "fatos": [
+    "f7"
+   ]
+  },
+  {
+   "id": "c08",
+   "batida": "escalada",
+   "forma": "numero-que-cai",
+   "ano": 2024,
+   "fala": "Exposta ao ar, a tinta que restou começa a mudar em quinze segundos.",
+   "tela": [
+    "00:15",
+    "A COR COMEÇA A MUDAR",
+    "MUSEU DA TUMBA, 2024"
+   ],
+   "visual": "Avança até 2024, com som de vhs. Som de riser na entrada. Um contador de fita rola em passos de 00:00 até 00:15, com som de tique, e trava em 'segundos', com som de baque. Ao lado, o soldado colorido perde um pouco de brilho a cada tique, em passos, e chega a 00:15 ainda colorido.",
+   "fatos": [
+    "f8"
+   ]
+  },
+  {
+   "id": "c09",
+   "batida": "escalada",
+   "forma": "objeto-simbolo",
+   "ano": 2024,
+   "fala": "Em até quatro minutos, a laca seca, encolhe e se solta. E leva a tinta.",
+   "fala_tts": "Em até quatro minutos, a laca séca, encolhe e se sólta. E leva a tinta.",
+   "tela": [
+    "04:00",
+    "LACA ENCOLHE",
+    "A TINTA CAI",
+    "AR SECO DE XI'AN"
+   ],
+   "visual": "O soldado em traço simples ocupa o palco. Em 'encolhe', a camada de cor enruga, com som de tique. Em 'solta', as placas de cor caem em passos até o chão, com som de papel, e sobra bege, com restos de cor. Em 'tinta', o contador trava em 04:00, com som de baque.",
+   "fatos": [
+    "f9"
+   ]
+  },
+  {
+   "id": "c10",
+   "batida": "escalada",
+   "forma": "recibo",
+   "ano": 2026,
+   "fala": "Hoje, spray e plástico ajudam a segurar a cor. Mas a proteção ainda não é garantida.",
+   "fala_tts": "Hoje, esprêi e plástico ajudam a segurar a cor. Mas a proteção ainda não é garantida.",
+   "tela": [
+    "SPRAY NA HORA",
+    "FILME PLÁSTICO",
+    "PROTEÇÃO SEM GARANTIA"
+   ],
+   "visual": "Um recibo de laboratório sai da máquina, com som de máquina, e as linhas surgem uma a uma. Em 'garantida', o carimbo vermelho bate na última linha, com som de carimbo.",
+   "fatos": [
+    "f10"
+   ]
+  },
+  {
+   "id": "c11",
+   "batida": "virada",
+   "forma": "documento",
+   "ano": 2026,
+   "fala": "A câmara central nunca foi escavada. A regra oficial: sem técnica de proteção, grandes tumbas imperiais ficam fechadas por enquanto.",
+   "tela": [
+    "CÂMARA CENTRAL: NÃO ESCAVADA",
+    "AVISO DO GOVERNO, 1997:",
+    "\"POR ORA\", SEM ESCAVAÇÃO ATIVA"
+   ],
+   "visual": "Um ofício desliza para o palco, com som de papel, e a linha 'CÂMARA CENTRAL' surge datilografada, com som de máquina. Em 'escavada', o carimbo 'NÃO ESCAVADA' bate no ofício, com som de carimbo. Em 'técnica', a página vira para a linha seguinte, com som de página. Nada de citar 'por causa da tinta' na tela.",
+   "fatos": [
+    "f1",
+    "f11"
+   ]
+  },
+  {
+   "id": "c12",
+   "batida": "virada",
+   "forma": "mito-x-fato",
+   "ano": 2026,
+   "fala": "E as flechas? Ninguém confirmou. O mercúrio é só pista: alto no solo, fora da câmara.",
+   "tela": [
+    "FLECHAS: SEM CONFIRMAÇÃO",
+    "MERCÚRIO ALTO NO SOLO",
+    "MEDIDO FORA DA CÂMARA",
+    "ORIGEM AINDA EM DEBATE"
+   ],
+   "visual": "Em 'confirmou', o carimbo 'SEM CONFIRMAÇÃO' bate sobre um traço de flecha, com som de carimbo. Em 'mercúrio', um corte do morro mostra pontos prateados na terra de cima, com som de estática, e a câmara fica em branco, sem desenhar rios.",
+   "fatos": [
+    "f12",
+    "f13"
+   ]
+  },
+  {
+   "id": "c13",
+   "batida": "fecho",
+   "forma": "objeto-simbolo",
+   "ano": 2026,
+   "fala": "A única armadilha já vista em ação não dispara flechas. Ela dispara quando alguém abre a terra.",
+   "tela": [
+    "A ARMADILHA:",
+    "ABRIR"
+   ],
+   "visual": "A porta lacrada do início volta. Em 'flechas', a flecha se apaga com som de swoosh. Em 'abre', o lacre treme, e a porta não abre, com som de clique. Corte para tela azul + STOP, com som de vhs.",
+   "fatos": [
+    "f8",
+    "f9"
+   ]
+  }
+ ],
+ "fatos": [
+  {
+   "id": "f1",
+   "afirmacao": "A câmara central da tumba de Qin Shi Huang nunca foi escavada. O texto diz 'continua fechada' e 'nunca foi escavada', não 'nunca foi aberta na história': o estudo de 2020 diz só que os dados apoiam registros de uma tumba 'believed never to have been opened/looted', e esta pesquisa não verificou relatos antigos de saque.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Terracotta_Army",
+    "https://en.wikipedia.org/wiki/Mausoleum_of_Qin_Shi_Huang",
+    "https://www.nationalgeographic.com/history/archaeology/emperor-qin/",
+    "https://www.xatakaon.com/research/these-are-the-real-reasons-why-archaeologists-are-reluctant-to-open-the-tomb-of-chinas-first-emperor",
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC7319949&resultType=core&format=json"
+   ]
+  },
+  {
+   "id": "f2",
+   "afirmacao": "O museu da tumba aponta a fragilidade do que há lá dentro; as armadilhas seguem sem confirmação. The Star: Wu Yongqi, diretor honorário do museu, em entrevista à CCTV: 'Underground cultural relics are indeed very fragile'; segundo o jornal, ele alertou que peças de fibra vegetal e animal 'could deteriorate immediately' se a tumba for aberta sem preparo. Xataka: 'This is likely the least concerning factor', 'improbable that 2,200-year-old traps still function', 'A more significant concern for archaeologists is mercury' e 'Experts fear exploration could irreparably harm the tomb'. Futura Sciences: 'remains unexcavated primarily due to preservation limits'. National Geographic: Duan Qinbao diz que é melhor manter a tumba intacta; o motivo dele é 'complex conditions inside', então ele não sustenta sozinho o dano ao conteúdo. A manchete da Business Insider sustenta a crença popular do gancho. Mercúrio, segurança e política patrimonial também pesam (Xataka, Futura Sciences), por isso a fala não faz ranking de motivos.",
+   "fontes": [
+    "https://www.xatakaon.com/research/these-are-the-real-reasons-why-archaeologists-are-reluctant-to-open-the-tomb-of-chinas-first-emperor",
+    "https://www.futura-sciences.com/en/?p=38800",
+    "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/03/online-claims-revive-mercury-mystery-around-tomb-of-first-chinese-emperor",
+    "https://www.nationalgeographic.com/history/archaeology/emperor-qin/",
+    "https://www.yahoo.com/news/archeologists-too-scared-open-tomb-122512929.html?fr=sycsrp_catchall"
+   ]
+  },
+  {
+   "id": "f3",
+   "afirmacao": "Qin Shi Huang morreu em 210 a.C. e unificou os reinos em guerra em 221 a.C. A National Geographic deduz a morte por 'a year after' de 209 a.C. A idade ao morrer diverge entre fontes e fica de fora.",
+   "fontes": [
+    "https://www.xatakaon.com/research/these-are-the-real-reasons-why-archaeologists-are-reluctant-to-open-the-tomb-of-chinas-first-emperor",
+    "https://www.theworldofchinese.com/2022/10/whats-inside-the-tomb-of-chinas-first-emperor",
+    "https://www.nationalgeographic.com/history/archaeology/emperor-qin/",
+    "https://en.wikipedia.org/wiki/Mausoleum_of_Qin_Shi_Huang"
+   ]
+  },
+  {
+   "id": "f4",
+   "afirmacao": "Sima Qian escreveu seu relato cerca de 100 anos depois da morte do imperador. Ele fala em mercúrio simulando rios e em bestas e flechas 'primed to shoot at anyone who enters the tomb'. É um relato, não uma confirmação. O ano -100 no contador é aproximado, por isso o rótulo '~100 A.C.'.",
+   "fontes": [
+    "https://www.yahoo.com/news/archeologists-too-scared-open-tomb-122512929.html?fr=sycsrp_catchall",
+    "https://www.theworldofchinese.com/2022/10/whats-inside-the-tomb-of-chinas-first-emperor",
+    "https://en.wikipedia.org/wiki/Mausoleum_of_Qin_Shi_Huang",
+    "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/03/online-claims-revive-mercury-mystery-around-tomb-of-first-chinese-emperor"
+   ]
+  },
+  {
+   "id": "f5",
+   "afirmacao": "Agricultores acharam o sítio em 1974 ao cavar um poço, perto de Xi'an; a National Geographic fala em 'farmers' (revista, 2012) e 'workers' (história). As figuras são em tamanho real. A data exata, 29/03/1974, só foi vista na Wikipedia e fica de fora.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Terracotta_Army",
+    "https://www.nationalgeographic.com/magazine/article/terra-cotta-warriors",
+    "https://www.nationalgeographic.com/history/archaeology/emperor-qin/",
+    "https://www.sixthtone.com/news/1004855/the-new-face-of-the-terra-cotta-warriors"
+   ]
+  },
+  {
+   "id": "f6",
+   "afirmacao": "O exército tem cerca de 8 mil figuras, número estimado, e guarda a tumba. Wikipedia: mais de 8.000, estimativa de 2007, com as fossas a cerca de 1.500 m a leste do morro. Xataka: cerca de 8.000, com cerca de 2.000 escavadas. A TUM (2015) estima 7.300. Por isso 'cerca de' na fala e '~' na tela. National Geographic: 'protects the tomb' e 'buried to guard an emperor's tomb'.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Terracotta_Army",
+    "https://www.xatakaon.com/research/these-are-the-real-reasons-why-archaeologists-are-reluctant-to-open-the-tomb-of-chinas-first-emperor",
+    "https://www.tum.de/en/about-tum/news/press-releases/details/32291/",
+    "https://www.nationalgeographic.com/history/archaeology/emperor-qin/"
+   ]
+  },
+  {
+   "id": "f7",
+   "afirmacao": "O exército era pintado. Sixth Tone: 'the most common color ... was green, followed by purple, red, and blue'. TUM: azul, verde, vermelho, violeta, rosa e branco predominam. National Geographic: vermelho, verde, roxo e amarelo. Diário do Povo: mais de 10 cores. A fala usa a lista da Sixth Tone, que confere com a da TUM.",
+   "fontes": [
+    "https://www.sixthtone.com/news/1004855/the-new-face-of-the-terra-cotta-warriors",
+    "https://www.tum.de/en/about-tum/news/press-releases/details/32291/",
+    "https://www.nationalgeographic.com/magazine/article/terra-cotta-warriors",
+    "https://paper.people.com.cn/rmrb/html/2024-11/02/nw.D110000renmrb_20241102_2-07.htm"
+   ]
+  },
+  {
+   "id": "f8",
+   "afirmacao": "A tinta que restou começa a mudar 15 segundos após a exposição ao ar. Xia Yin, do Departamento de Proteção de Relíquias do Museu do Mausoléu, no Diário do Povo (2024): '那些保存下来的颜料出土后15秒就开始变化，4分钟内就完全脱水、起翘、剥落，有的就遗留在泥层上'. National Geographic (2012): 'One study showed that once exposed, the lacquer underneath the paint begins to curl after 15 seconds and flake off in just four minutes'. Não vale para todas as figuras: a maior parte das cores não sobreviveu ao tempo ou à exposição (National Geographic). O contador da cena fica em 2024, porque o número é de 2012 e 2024, não uma medida feita em 1974.",
+   "fontes": [
+    "https://paper.people.com.cn/rmrb/html/2024-11/02/nw.D110000renmrb_20241102_2-07.htm",
+    "https://www.nationalgeographic.com/magazine/article/terra-cotta-warriors"
+   ]
+  },
+  {
+   "id": "f9",
+   "afirmacao": "Em até 4 minutos, a laca perde água, encolhe e se solta, levando a pintura. Diário do Povo: '4分钟内就完全脱水、起翘、剥落'. National Geographic: 'flake off in just four minutes', no 'dry Xian air'. Sixth Tone: em ar mais seco, as camadas de laca 'will shrink, deform, crack, and detach'. TUM: 'The lacquer shrinks and the paint flakes off'. Wikipedia: 'much of the color coating', ou seja, não necessariamente toda a cor. A fala não diz 'toda'.",
+   "fontes": [
+    "https://paper.people.com.cn/rmrb/html/2024-11/02/nw.D110000renmrb_20241102_2-07.htm",
+    "https://www.nationalgeographic.com/magazine/article/terra-cotta-warriors",
+    "https://www.tum.de/en/about-tum/news/press-releases/details/32291/",
+    "https://en.wikipedia.org/wiki/Terracotta_Army",
+    "https://www.sixthtone.com/news/1004855/the-new-face-of-the-terra-cotta-warriors"
+   ]
+  },
+  {
+   "id": "f10",
+   "afirmacao": "A conservação melhorou, mas a proteção é parcial. Spray e plástico: National Geographic (o conservante é o PEG; 'workers sprayed any bit of exposed color with the solution, then wrapped it in plastic') e Sixth Tone ('spraying newly excavated objects with a preservative', 'plastic membrane', estável por 'more than 10 years'). Proteção parcial: Diário do Povo ('减缓了褪色速度', reduz a velocidade do desbotamento) e Futura Sciences (ainda não há garantia de proteção duradoura para material orgânico exposto). Fora do vídeo: 'escurece' e 'racha' só têm a TUM (2015), sobre o PEG, e a rachadura é condicional.",
+   "fontes": [
+    "https://www.nationalgeographic.com/magazine/article/terra-cotta-warriors",
+    "https://www.sixthtone.com/news/1004855/the-new-face-of-the-terra-cotta-warriors",
+    "https://www.tum.de/en/about-tum/news/press-releases/details/32291/",
+    "https://paper.people.com.cn/rmrb/html/2024-11/02/nw.D110000renmrb_20241102_2-07.htm",
+    "https://www.futura-sciences.com/en/?p=38800"
+   ]
+  },
+  {
+   "id": "f11",
+   "afirmacao": "A orientação oficial é esperar condições técnicas de proteção. Aviso do Conselho de Estado de 1997, reproduzido no diário oficial de Shenzhen: '目前，由于文物保护方面的科学技术、手段等条件尚不具备，对大型帝王陵寝暂不进行主动发掘'. O texto diz 'por ora' (暂) e 'ativa' (主动): escavação de salvamento continua possível. The Paper registra o aviso e, com o professor Gao Menghe, da Universidade Fudan, liga a regra ao desastre de Dingling, nos anos 1950. The Star parafraseia o mesmo aviso. Xataka: autoridades parecem esperar tecnologia que reduza o dano. Futura Sciences: intervenção física deve esperar tecnologia de preservação. Wikipedia: a Administração Estatal do Patrimônio exige plano de proteção. Futura Sciences e Wikipedia usam a pintura do exército como exemplo dos opositores da escavação, e o aviso não cita a pintura. A origem declarada da regra é Dingling; a pintura é exemplo, não causa. O vídeo não diz que a China não abre a tumba por causa da tinta.",
+   "fontes": [
+    "https://www.sz.gov.cn/zfgb/1997/gb119/content/post_10107223.html",
+    "https://www.thepaper.cn/newsDetail_forward_1660436",
+    "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/03/online-claims-revive-mercury-mystery-around-tomb-of-first-chinese-emperor",
+    "https://www.xatakaon.com/research/these-are-the-real-reasons-why-archaeologists-are-reluctant-to-open-the-tomb-of-chinas-first-emperor",
+    "https://www.futura-sciences.com/en/?p=38800",
+    "https://en.wikipedia.org/wiki/Mausoleum_of_Qin_Shi_Huang"
+   ]
+  },
+  {
+   "id": "f12",
+   "afirmacao": "As armadilhas não têm confirmação em nenhum sentido. Xataka: não se sabe se existiram ou se foram inventadas para afastar saqueadores. Business Insider: a tumba nunca foi aberta, e há cientistas que tratam os relatos como fantasiosos. O vídeo não afirma que elas não existem.",
+   "fontes": [
+    "https://www.xatakaon.com/research/these-are-the-real-reasons-why-archaeologists-are-reluctant-to-open-the-tomb-of-chinas-first-emperor",
+    "https://www.yahoo.com/news/archeologists-too-scared-open-tomb-122512929.html?fr=sycsrp_catchall"
+   ]
+  },
+  {
+   "id": "f13",
+   "afirmacao": "O solo acima da tumba tem mercúrio alto, medido fora da câmara; a quantidade total é desconhecida. The Star, sobre relatório de 21/09/2026: os levantamentos só mostram solo com níveis anormalmente altos. National Geographic: concentrações incomumente altas no morro. Scientific Reports (2020) também mediu o ar (até 27 ng/m³ contra 5 a 10 ng/m³ da região), dado fora do vídeo por ter uma só origem. Por isso a fala diz 'pista'. 'Mais de 70 vezes' é fala de Wu Yongqi, só na The Star. '100 toneladas' é estimativa citada no estudo de 2020, não medição. Ambos ficam de fora. A Wikipedia registra, sem autor, a alegação de poluição industrial local.",
+   "fontes": [
+    "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/03/online-claims-revive-mercury-mystery-around-tomb-of-first-chinese-emperor",
+    "https://www.nationalgeographic.com/history/archaeology/emperor-qin/",
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC7319949&resultType=core&format=json",
+    "https://en.wikipedia.org/wiki/Mausoleum_of_Qin_Shi_Huang"
+   ]
+  },
+  {
+   "id": "f14",
+   "afirmacao": "A tumba fica no distrito de Lintong, em Xi'an, província de Shaanxi (Wikipedia). A Xataka situa o complexo em Shaanxi, e o título do estudo da Scientific Reports fala em 'Emperor Qin Tomb in Xi'an'.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Mausoleum_of_Qin_Shi_Huang",
+    "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC7319949&resultType=core&format=json",
+    "https://www.xatakaon.com/research/these-are-the-real-reasons-why-archaeologists-are-reluctant-to-open-the-tomb-of-chinas-first-emperor"
+   ]
+  }
+ ]
+}

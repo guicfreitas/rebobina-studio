@@ -1,0 +1,93 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #15120b; overflow: hidden; }
+    #c04-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c04-svg { position: absolute; left: 0; top: 0; }
+    #c04-n { position: absolute; left: 90px; top: 14px; font-size: 150px; color: var(--acento); white-space: nowrap; -webkit-text-stroke: 16px #15120b; paint-order: stroke fill; }
+    #c04-ab { position: absolute; left: 90px; top: 630px; font-size: 118px; color: var(--rec); white-space: nowrap; -webkit-text-stroke: 16px #15120b; paint-order: stroke fill; }
+  </style>
+  <div id="root" data-composition-id="c04" data-width="1080" data-height="1920">
+    <div id="c04-w" class="clip" data-start="0" data-duration="4.71" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c04-palco">
+        <svg id="c04-svg" width="1080" height="760" viewBox="0 0 1080 760" fill="none">
+          <g id="c04-trigo"></g>
+          <g id="c04-cerca"></g>
+          <g id="c04-mare" stroke="#E8B04B" stroke-width="10" stroke-linecap="round"></g>
+          <g id="c04-fluxo" stroke="#E8B04B" stroke-width="10" stroke-linecap="round"></g>
+        </svg>
+        <div id="c04-n" class="rb-titulo">~20.000 EMUS</div>
+        <div id="c04-ab" class="rb-titulo">CERCAS ABERTAS</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c04";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // carimbo bate (1,5 → 1); peça aparece com pequeno deslocamento; texto datilografado em passos
+    const bate = (el, t, de = -9, ate = -5, op = 0.96) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)", immediateRender: false }, t); };
+    const surge = (el, t, dy = 24, dx = 0) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy, x: dx }, { y: 0, x: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, t); };
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    const treme = (el, t, a = 7) => tl.fromTo(el, { x: a }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, t);
+    let s = 40417; const rnd = () => ((s = (s * 16807) % 2147483647) / 2147483647);
+    const NS = "http://www.w3.org/2000/svg", el = (pai, tag, at) => { const e = document.createElementNS(NS, tag); for (const k in at) e.setAttribute(k, at[k]); document.getElementById(pai).appendChild(e); return e; };
+    const pts = (n, x0, x1, y0, y1) => { let d = ""; for (let i = 0; i < n; i++) d += `M${Math.round(x0 + rnd() * (x1 - x0))} ${Math.round(y0 + rnd() * (y1 - y0))}h0`; return d; };
+    // de frente: espigas atrás da cerca, chão, mourões e fios; os emus vêm do leste pela frente da cerca
+    const CHAO = 478, VAO = 108, QUEBRA = [2, 5, 7], FIOS = [336, 382, 428];
+    const M = T("mil"), Cm = T("Comem"), F = T("furam"), espigas = [];
+    const espiga = (x, y, cor, base) => {
+      let d = `M${x} ${base}V${y + 8}`;
+      for (let k = 0; k < 5; k++) { const yy = y + 10 + k * 15; d += `M${x} ${yy + 12}L${x - 13} ${yy}M${x} ${yy + 12}L${x + 13} ${yy}`; }
+      d += `M${x} ${y + 8}V${y - 12}`;
+      const e = el("c04-trigo", "path", { d, stroke: cor, "stroke-width": 6, "stroke-linecap": "round" });
+      gsap.set(e, { svgOrigin: `${x} ${base}` });
+      espigas.push({ e, x });
+      return e;
+    };
+    for (let x = 30; x < 1080; x += 76) espiga(x, 214, "#8f7330", CHAO);        // fileira de trás, mais escura
+    for (let x = 68; x < 1080; x += 76) espiga(x, 262, "#E8B04B", CHAO);        // fileira da frente
+    espigas.forEach((o, i) => { for (let t = 0.1; t < D; t += 0.2) tl.set(o.e, { rotation: (Math.round(t * 5) + i) % 2 ? 1.6 : -1.6 }, t); });
+    el("c04-cerca", "line", { x1: 0, y1: CHAO, x2: 1080, y2: CHAO, stroke: "#6a5a30", "stroke-width": 6 });
+    // fios: cada vão tem as duas metades, presas aos mourões vizinhos; o vão rompido cai
+    const metades = {};
+    for (let i = 0; i < 10; i++) {
+      const xa = i * VAO + 6, xb = xa + VAO; metades[i] = [];
+      FIOS.forEach((y) => {
+        const a = el("c04-cerca", "line", { x1: xa, y1: y, x2: xa + VAO / 2, y2: y, stroke: "#F1E8D3", "stroke-width": 5 });
+        const b = el("c04-cerca", "line", { x1: xa + VAO / 2, y1: y, x2: xb, y2: y, stroke: "#F1E8D3", "stroke-width": 5 });
+        gsap.set(a, { svgOrigin: `${xa} ${y}` }); gsap.set(b, { svgOrigin: `${xb} ${y}` });
+        metades[i].push(a, b);
+      });
+    }
+    const mouroes = [];
+    for (let i = 0; i <= 10; i++) {
+      const x = i * VAO + 6;
+      const m = el("c04-cerca", "rect", { x: x - 10, y: 306, width: 20, height: CHAO - 306 + 6, fill: "#c9b98f", stroke: "#15120b", "stroke-width": 3 });
+      gsap.set(m, { svgOrigin: `${x} ${CHAO}` });
+      mouroes.push(m);
+    }
+    // maré vinda do leste, no chão à frente da cerca
+    const lotes = [];
+    for (let i = 0; i < 9; i++) lotes.push(el("c04-mare", "path", { d: pts(120, 90, 1090, 496, 626) }));
+    lotes.forEach((p, i) => {
+      gsap.set(p, { x: 1000 });
+      tl.to(p, { x: 0, duration: 0.5, ease: "power3.out" }, M + i * 0.1 - 0.1);
+      for (let t = Cm; t < D; t += 2 / 30) tl.set(p, { y: Math.round(rnd() * 12 - 6) }, t);
+    });
+    surge("#c04-n", T("vinte") - 0.08, 0, -30);
+    // comem: as espigas mais a leste escurecem antes da cerca abrir
+    espigas.filter((o) => o.x > 880).forEach((o, i) => tl.to(o.e, { stroke: "#3c3115", duration: 0.2, ease: "steps(3)" }, T("trigo") + i * 0.1));
+    // furam: 3 vãos rompem; os fios caem, o mourão entorta, os pontos passam e o trigo some atrás deles
+    [F, F + 0.37, F + 0.74].forEach((t, n) => {
+      const q = QUEBRA[n], xa = q * VAO + 6, xb = xa + VAO;
+      metades[q].forEach((l, k) => tl.to(l, { rotation: k % 2 ? -66 : 66, duration: 0.12, ease: "back.out(3)" }, t));
+      tl.to(mouroes[q], { rotation: n % 2 ? 9 : -9, duration: 0.12, ease: "back.out(3)" }, t);
+      const f = el("c04-fluxo", "path", { d: pts(90, xa + 14, xb - 14, 440, 520) });
+      gsap.set(f, { opacity: 0 }); tl.set(f, { opacity: 1 }, t);
+      tl.to(f, { y: -250, duration: Math.max(D - t, 0.5), ease: "steps(14)" }, t);
+      espigas.filter((o) => o.x > xa - 4 && o.x < xb + 4).forEach((o) => tl.to(o.e, { stroke: "#3c3115", duration: 0.3, ease: "steps(3)" }, t + 0.1));
+    });
+    surge("#c04-ab", F + 0.1, 0, -30);
+    window.__timelines["c04"] = tl;
+  </script>
+</template>

@@ -1,0 +1,55 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #16170f; overflow: hidden; }
+    #c06-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c06-giro { position: absolute; left: 90px; top: 34px; width: 900px; height: 690px; }
+    #c06-f { position: absolute; left: 0; top: 0; width: 900px; height: 690px; background: #e2d7b8; box-shadow: 0 24px 50px rgba(0,0,0,.6); }
+    #c06-faixa { position: absolute; left: 0; top: 0; width: 900px; height: 40px; background: #6b6b3c; }
+    #c06-sil { position: absolute; left: 48px; top: 82px; width: 230px; height: 280px; border: 6px dashed #6d6650; }
+    #c06-nome { position: absolute; left: 40px; top: 400px; font-size: 60px; white-space: nowrap; }
+    #c06-a1 { position: absolute; left: 40px; top: 492px; font-size: 58px; white-space: nowrap; }
+    #c06-a2 { position: absolute; left: 40px; top: 578px; font-size: 58px; white-space: nowrap; }
+    #c06-clipe { position: absolute; left: 690px; top: 540px; width: 76px; height: 150px; }
+    #c06-rolo { position: absolute; left: 500px; top: 76px; width: 300px; height: 300px; }
+    .c06-bar { position: absolute; left: 330px; height: 14px; background: #b3a784; }
+  </style>
+  <div id="root" data-composition-id="c06" data-width="1080" data-height="1920">
+    <div id="c06-w" class="clip" data-start="0" data-duration="4.87" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c06-palco">
+        <div id="c06-giro">
+          <div id="c06-f">
+            <div id="c06-faixa"></div>
+            <svg id="c06-sil" viewBox="0 0 230 280"><circle cx="115" cy="92" r="52" fill="#b3a784"/><path d="M28 280C28 196 66 164 115 164C164 164 202 196 202 280Z" fill="#b3a784"/></svg>
+            <div id="c06-nome" class="rb-doc">MAJ. G.P.W. MEREDITH</div>
+            <div id="c06-a1" class="rb-doc">+ 2 MILITARES</div>
+            <div id="c06-a2" class="rb-doc">+ 1 CINEGRAFISTA</div>
+            <svg id="c06-rolo" viewBox="0 0 300 300"><g id="c06-disco"><circle cx="150" cy="150" r="142" fill="#1b1a17"/><circle cx="150" cy="150" r="24" fill="#e2d7b8"/><circle cx="150" cy="62" r="40" fill="#e2d7b8"/><circle cx="150" cy="238" r="40" fill="#e2d7b8"/><circle cx="62" cy="150" r="40" fill="#e2d7b8"/><circle cx="238" cy="150" r="40" fill="#e2d7b8"/></g></svg>
+            <svg id="c06-clipe" viewBox="0 0 76 150" fill="none"><path d="M18 40V116A20 20 0 0 0 58 116V28A14 14 0 0 0 30 28V104A6 6 0 0 0 44 104V40" stroke="#5c5c66" stroke-width="7" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c06";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // carimbo bate (1,5 → 1); peça aparece com pequeno deslocamento; texto datilografado em passos
+    const bate = (el, t, de = -9, ate = -5, op = 0.96) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)", immediateRender: false }, t); };
+    const surge = (el, t, dy = 24, dx = 0) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy, x: dx }, { y: 0, x: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, t); };
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    const treme = (el, t, a = 7) => tl.fromTo(el, { x: a }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, t);
+    gsap.set("#c06-giro", { rotation: -2 });
+    tl.fromTo("#c06-f", { y: 720 }, { y: 0, duration: 0.22, ease: "power3.out" }, 0.04);
+    tl.fromTo("#c06-giro", { scale: 1 }, { scale: 1.025, duration: D, ease: "none" }, 0);
+    dat("#c06-nome", T("major") - 0.05, 0.62, 20);
+    dat("#c06-a1", T("dois"), 0.4, 13);
+    dat("#c06-a2", T("um") - 0.05, 0.46, 16);
+    const Cn = T("cinegrafista");
+    surge("#c06-clipe", Cn, -30);
+    surge("#c06-rolo", Cn, 16);
+    gsap.set("#c06-disco", { svgOrigin: "150 150" });
+    tl.to("#c06-disco", { rotation: 360, duration: D - Cn, ease: `steps(${Math.max(8, Math.round((D - Cn) * 15))})` }, Cn);
+    window.__timelines["c06"] = tl;
+  </script>
+</template>

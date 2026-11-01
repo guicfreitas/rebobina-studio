@@ -1,0 +1,58 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #100e0d; overflow: hidden; }
+    #c13-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c13-t1 { position: absolute; left: 90px; top: 12px; font-size: 104px; white-space: nowrap; }
+    #c13-t2 { position: absolute; left: 90px; top: 104px; font-size: 230px; color: var(--rec); white-space: nowrap; }
+    #c13-porta { position: absolute; left: 430px; top: 300px; width: 500px; height: 460px; }
+    #c13-lacre { position: absolute; left: 618px; top: 508px; width: 124px; height: 124px; border-radius: 50%; background: var(--rec); border: 8px solid #7c120c; }
+    #c13-lacre i { position: absolute; left: 22px; top: 22px; width: 64px; height: 64px; border: 7px solid #7c120c; }
+    #c13-flecha { position: absolute; left: 90px; top: 560px; width: 340px; height: 60px; }
+  </style>
+  <div id="root" data-composition-id="c13" data-width="1080" data-height="1920">
+    <div id="c13-w" class="clip" data-start="0" data-duration="7.75" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c13-palco">
+        <div id="c13-t1" class="rb-titulo">A ARMADILHA:</div>
+        <div id="c13-t2" class="rb-titulo">ABRIR</div>
+        <div id="c13-porta"><!--@svg:simbolos/porta--><svg class="porta" viewBox="0 0 520 480" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#f1e8d3" stroke-width="7" stroke-linejoin="round">
+<path d="M6 474V62L64 8h392l58 54v412"/><path d="M6 62h508" stroke-width="5"/>
+<path id="c13-pt-folha-e" d="M46 474V96h214v378" fill="#191720"/>
+<path id="c13-pt-folha-d" d="M260 474V96h214v378" fill="#191720"/>
+<path d="M0 474h520" stroke-width="10"/>
+<g fill="#f1e8d3" stroke="none">
+<circle cx="90" cy="150" r="9"/><circle cx="150" cy="150" r="9"/><circle cx="210" cy="150" r="9"/><circle cx="310" cy="150" r="9"/><circle cx="370" cy="150" r="9"/><circle cx="430" cy="150" r="9"/>
+<circle cx="90" cy="222" r="9"/><circle cx="150" cy="222" r="9"/><circle cx="210" cy="222" r="9"/><circle cx="310" cy="222" r="9"/><circle cx="370" cy="222" r="9"/><circle cx="430" cy="222" r="9"/>
+<circle cx="90" cy="366" r="9"/><circle cx="150" cy="366" r="9"/><circle cx="210" cy="366" r="9"/><circle cx="310" cy="366" r="9"/><circle cx="370" cy="366" r="9"/><circle cx="430" cy="366" r="9"/>
+<circle cx="90" cy="438" r="9"/><circle cx="150" cy="438" r="9"/><circle cx="210" cy="438" r="9"/><circle cx="310" cy="438" r="9"/><circle cx="370" cy="438" r="9"/><circle cx="430" cy="438" r="9"/>
+</g>
+<path d="M46 294h428" stroke-width="16" stroke="#6f6a60"/>
+</svg><!--/@svg:simbolos/porta--></div>
+        <div id="c13-lacre"><i></i></div>
+        <svg id="c13-flecha" viewBox="0 0 340 60" fill="none" stroke="#ffd23f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 30H320"/><path d="M286 8l44 22-44 22z" fill="#ffd23f"/><path d="M10 30 34 8M10 30l24 22M40 30 64 8M40 30l24 22"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c13";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    tl.fromTo("#c13-porta", { scale: 0.97, transformOrigin: "50% 100%" }, { scale: 1, duration: D, ease: "none" }, 0);
+    dat("#c13-t1", T("armadilha"), 0.32, 12);
+    // a flecha se apaga da ponta para a cauda; sobra o lacre
+    tl.to("#c13-flecha", { clipPath: "inset(-30% 100% -30% 0%)", duration: 0.34, ease: "steps(10)" }, Tf("flechas") - 0.05);
+    gsap.set("#c13-flecha", { clipPath: "inset(-30% 0% -30% 0%)" });
+    // "quando alguém": o lacre se prepara
+    tl.fromTo("#c13-porta", { y: 3 }, { y: 0, duration: 0.3, ease: "steps(5)", immediateRender: false }, T("quando"));
+    // em "abre": a palavra bate, o lacre treme, a porta não abre
+    gsap.set("#c13-t2", { autoAlpha: 0 });
+    const ta = Tf("abre") - 0.1;
+    tl.set("#c13-t2", { autoAlpha: 1 }, ta);
+    tl.fromTo("#c13-t2", { scale: 1.2, transformOrigin: "0% 60%" }, { scale: 1, duration: 0.16, ease: "back.out(2)", immediateRender: false }, ta);
+    tl.fromTo("#c13-lacre", { x: -9, rotation: -7 }, { x: 0, rotation: 0, duration: 0.42, ease: "steps(8)", immediateRender: false }, ta);
+    tl.fromTo("#c13-lacre", { x: 6, rotation: 5 }, { x: 0, rotation: 0, duration: 0.3, ease: "steps(6)", immediateRender: false }, T("terra"));
+    window.__timelines["c13"] = tl;
+  </script>
+</template>

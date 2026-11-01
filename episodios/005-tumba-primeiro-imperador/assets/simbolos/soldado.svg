@@ -1,0 +1,23 @@
+<svg class="soldado" viewBox="0 0 300 700" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+<g id="so-barro" fill="#c9b08a" stroke="#1b1a17" stroke-width="5" stroke-linejoin="round">
+<ellipse cx="168" cy="24" rx="16" ry="14"/><rect x="132" y="108" width="36" height="34"/><ellipse cx="150" cy="70" rx="38" ry="46"/>
+<rect x="56" y="652" width="188" height="34"/><path d="M80 630h64v22H80zM156 630h64v22h-64z"/>
+<ellipse cx="60" cy="418" rx="19" ry="21"/><ellipse cx="240" cy="418" rx="19" ry="21"/>
+<path id="so-b-pernas" d="M92 505 88 630h50l2-115zM160 515l2 115h50l-4-125z"/>
+<path id="so-b-manto" d="M80 332Q150 352 220 332L240 500Q150 520 60 500Z"/>
+<path id="so-b-bracos" d="M88 142 50 170 36 330l8 70h34l6-70 8-100zM212 142l38 28 14 160-8 70h-34l-6-70-8-100z"/>
+<path id="so-b-armadura" d="M88 140Q150 120 212 140L222 330Q150 350 78 330Z"/>
+</g>
+<g id="so-cor" stroke="#1b1a17" stroke-width="5" stroke-linejoin="round">
+<path id="so-pernas" fill="#8e5bd0" d="M92 505 88 630h50l2-115zM160 515l2 115h50l-4-125z"/>
+<path id="so-manto" fill="#2fbf71" d="M80 332Q150 352 220 332L240 500Q150 520 60 500Z"/>
+<path id="so-bracos" fill="#2f6fde" d="M88 142 50 170 36 330l8 70h34l6-70 8-100zM212 142l38 28 14 160-8 70h-34l-6-70-8-100z"/>
+<path id="so-armadura" fill="#d8352a" d="M88 140Q150 120 212 140L222 330Q150 350 78 330Z"/>
+</g>
+<g id="so-traco" fill="#1b1a17" opacity=".55">
+<circle cx="110" cy="180" r="5"/><circle cx="150" cy="176" r="5"/><circle cx="190" cy="180" r="5"/>
+<circle cx="106" cy="225" r="5"/><circle cx="150" cy="222" r="5"/><circle cx="194" cy="225" r="5"/>
+<circle cx="104" cy="270" r="5"/><circle cx="150" cy="270" r="5"/><circle cx="196" cy="270" r="5"/>
+<circle cx="102" cy="312" r="5"/><circle cx="150" cy="316" r="5"/><circle cx="198" cy="312" r="5"/>
+</g>
+</svg>

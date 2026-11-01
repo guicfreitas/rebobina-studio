@@ -1,0 +1,26 @@
+[
+  {
+    "text": "the",
+    "start": 0.84,
+    "end": 30,
+    "id": "w0"
+  },
+  {
+    "text": "it",
+    "start": 30.84,
+    "end": 60,
+    "id": "w1"
+  },
+  {
+    "text": "the",
+    "start": 60.84,
+    "end": 90,
+    "id": "w2"
+  },
+  {
+    "text": "we",
+    "start": 90.84,
+    "end": 120,
+    "id": "w3"
+  }
+]

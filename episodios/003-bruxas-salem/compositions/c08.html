@@ -1,0 +1,56 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c08-corte { position: absolute; left: 0; top: 0; width: 1080px; height: 1060px; overflow: hidden; }
+    #c08-card { position: absolute; left: 70px; top: 330px; width: 940px; height: 690px; }
+    #c08-tab { position: absolute; left: 40px; top: 12px; width: 240px; height: 52px; background: var(--papel-sombra); border-radius: 12px 12px 0 0; }
+    #c08-tt { position: absolute; left: 66px; top: 22px; font-size: 32px; color: var(--tinta); }
+    #c08-f { position: absolute; left: 0; top: 56px; width: 940px; height: 634px; }
+    #c08-sil { position: absolute; left: 664px; top: 34px; width: 190px; height: 240px; border: 4px dashed #6b6250; background: #d9cdb2; }
+    #c08-n1, #c08-n2 { position: absolute; left: 44px; font-size: 68px; white-space: nowrap; }
+    #c08-n1 { top: 34px; } #c08-n2 { top: 112px; }
+    #c08-id { position: absolute; left: 44px; top: 214px; font-size: 44px; white-space: nowrap; }
+    #c08-s1, #c08-s2 { position: absolute; font-size: 56px; white-space: nowrap; }
+    #c08-s1 { left: 44px; top: 300px; color: #d3241a; border-color: #d3241a; mix-blend-mode: normal; } #c08-s2 { left: 490px; top: 320px; color: #5a2fc8; border-color: #5a2fc8; }
+    #c08-fio { position: absolute; left: 896px; top: 60px; }
+    #c08-g { position: absolute; left: 40px; top: 900px; width: 1000px; height: 160px; background: #2a2730; border-top: 8px solid #4a4752; box-shadow: 0 -18px 30px rgba(0,0,0,.55); }
+    #c08-pux { position: absolute; left: 420px; top: 68px; width: 160px; height: 22px; background: #8a8590; border-radius: 10px; }
+    #c08-lab { position: absolute; left: 48px; top: 40px; font-size: 40px; }
+
+  </style>
+  <div id="root" data-composition-id="c08" data-width="1080" data-height="1920">
+    <div id="c08-w" class="clip" data-start="0" data-duration="8.26" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c08-corte"><div id="c08-card">
+        <div id="c08-tab"></div><div id="c08-tt" class="rb-doc">ARQUIVO</div>
+        <div id="c08-f" class="rb-papel">
+          <div id="c08-sil"><svg viewBox="0 0 190 240" width="182" height="232"><circle cx="91" cy="82" r="42" fill="none" stroke="#6b6250" stroke-width="4" stroke-dasharray="10 8"/><path d="M18 232 C22 165 58 142 91 142 C124 142 160 165 164 232" fill="none" stroke="#6b6250" stroke-width="4" stroke-dasharray="10 8"/></svg></div>
+          <div id="c08-n1" class="rb-doc">ELIZABETH</div>
+          <div id="c08-n2" class="rb-doc">JOHNSON JR.</div>
+          <div id="c08-id" class="rb-doc">22 ANOS &middot; JAN 1693</div>
+          <div id="c08-s1" class="rb-carimbo">CONDENADA</div>
+          <div id="c08-s2" class="rb-carimbo">POUPADA</div>
+        </div>
+        <svg id="c08-fio" width="44" height="540" viewBox="0 0 44 540"><path d="M22 0 C4 110 40 210 18 320 C8 400 34 460 24 540" fill="none" stroke="#ff3b30" stroke-width="5"/></svg>
+      </div></div>
+      <div id="c08-g"><div id="c08-pux"></div><div id="c08-lab" class="rb-mono">GAVETA 1693</div></div>
+    </div>
+  </div>
+  <script>
+    const C = "c08"; const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // entra no gatilho, sem atravessar a tela: carimbo bate (1,5 → 1); peça aparece com um pequeno deslocamento
+    const bate = (el, t, de = 0, ate = 0, op = 1) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)" }, t); };
+    const surge = (el, t, dy = 24) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy }, { y: 0, duration: 0.18, ease: "power3.out" }, t); };
+    const dat = (el, t, n) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0%)" }, { clipPath: "inset(-30% 0% -30% 0%)", duration: n * 0.03, ease: "steps(" + n + ")" }, t);
+    tl.fromTo("#c08-card", { y: 520 }, { y: 0, duration: 0.3, ease: "power3.out" }, 0);
+    // a "ponta solta": um fio vermelho balança na ficha
+    tl.fromTo("#c08-fio", { rotation: 7, transformOrigin: "50% 0%", opacity: 0 }, { rotation: 7, opacity: 1, duration: 0.1, ease: "steps(2)" }, T("ponta"));
+    for (let t = T("ponta"), i = 0; t < D; t += 0.3, i++) tl.to("#c08-fio", { rotation: i % 2 ? 6 : -6, duration: 0.3, ease: "sine.inOut" }, t);
+    dat("#c08-n1", T("Elizabeth") - 0.05, 9);
+    dat("#c08-n2", T("Johnson") - 0.05, 11);
+    dat("#c08-id", T("vinte") - 0.05, 18);
+    bate("#c08-s1", T("condenada"), -14, -6, 0.92);
+    bate("#c08-s2", T("poupou") - 0.03, 2, 6, 0.92);
+    window.__timelines["c08"] = tl;
+  </script>
+</template>

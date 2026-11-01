@@ -1,0 +1,395 @@
+{
+ "id": "003",
+ "slug": "bruxas-salem",
+ "idioma": "pt-BR",
+ "tema": "As bruxas de Salem (1692) não foram queimadas: a lei inglesa punia bruxaria com a forca, e a última condenada só foi inocentada em 2022, por causa de uma turma do oitavo ano",
+ "era": "colonial",
+ "regiao": "América do Norte",
+ "acento": "#B48CFF",
+ "objeto_simbolo": "palito de fósforo: aceso na abertura, apagado no fecho",
+ "motor_voz": "colab",
+ "voz": "pm_alex",
+ "velocidade": 0.92,
+ "serie": {
+  "proxima_fita": null
+ },
+ "cenas": [
+  {
+   "id": "c01",
+   "batida": "gancho",
+   "forma": "citacao-poster",
+   "ano": 2026,
+   "fala": "As bruxas de Salem queimaram na fogueira. Todo mundo já viu essa cena.",
+   "fala_tts": "As bruxas de Sálem queimaram na fogueira. Todo mundo já viu essa cena.",
+   "tela": [
+    "\"QUEIMADAS",
+    "NA FOGUEIRA\"",
+    "SALEM, 1692"
+   ],
+   "visual": "Frame 0: frase em aspas em League Gothic gigante sobre um pôster, com o palito de fósforo aceso em lilás ao lado. Em 'cena', a chama do fósforo tremula mais forte.",
+   "fatos": [
+    "f1"
+   ]
+  },
+  {
+   "id": "c02",
+   "batida": "quebra",
+   "forma": "numero-que-cai",
+   "ano": 2026,
+   "fala": "A conta real. Pessoas queimadas em Salem: nenhuma.",
+   "fala_tts": "A conta real. Pessoas queimadas em Sálem: nenhuma.",
+   "tela": [
+    "QUEIMADAS EM SALEM",
+    "0"
+   ],
+   "visual": "Tela preta com contador de fita: os dígitos embaralham em passos e travam em '0' gigante exatamente em 'nenhuma'. Depois, rebobina para 1692.",
+   "fatos": [
+    "f1"
+   ]
+  },
+  {
+   "id": "c03",
+   "batida": "rebobinar",
+   "forma": "mapa",
+   "ano": 1692,
+   "fala": "Mil seiscentos e noventa e dois: Massachusetts, colônia inglesa. Acusações de bruxaria tomam a região de Salem.",
+   "fala_tts": "Mil seiscentos e noventa e dois: Massatchúsets, colônia inglesa. Acusações de bruxaria tomam a região de Sálem.",
+   "tela": [
+    "1692 · MASSACHUSETTS",
+    "COLÔNIA INGLESA"
+   ],
+   "visual": "Mapa da costa da Nova Inglaterra; o contorno de Massachusetts se traça e um ponto marca Salem em 'Salem'. Pontos de acusação se espalham pelas cidades vizinhas.",
+   "fatos": [
+    "f2"
+   ]
+  },
+  {
+   "id": "c04",
+   "batida": "escalada",
+   "forma": "multidao-de-pontos",
+   "ano": 1692,
+   "fala": "Mais de cento e sessenta pessoas são acusadas. Dezenove acabam na forca: catorze mulheres e cinco homens.",
+   "tela": [
+    "160+ ACUSADOS",
+    "19 ENFORCADOS",
+    "14 MULHERES · 5 HOMENS"
+   ],
+   "visual": "160 pontos papel enchem o palco em 'cento e sessenta', e alguns pontos só em contorno, em aberto, ficam na borda, porque o total exato varia entre as fontes; em 'dezenove', 19 acendem em vermelho e os demais escurecem; em 'cinco homens', 5 mudam para lilás. Sem desenho de forca.",
+   "fatos": [
+    "f3",
+    "f4"
+   ]
+  },
+  {
+   "id": "c05",
+   "batida": "escalada",
+   "forma": "objeto-simbolo",
+   "ano": 1692,
+   "fala": "Giles Corey se recusou a responder ao tribunal e morreu sob pedras. Outros morreram na cadeia. Fogueira, nenhuma.",
+   "fala_tts": "Jáiuls Córi se recusou a responder ao tribunal e morreu sob pedras. Outros morreram na cadeia. Fogueira, nenhuma.",
+   "tela": [
+    "GILES COREY",
+    "19 SET 1692",
+    "FOGUEIRAS: 0"
+   ],
+   "visual": "Pedras geométricas caem em passos e empilham no palco, sem corpo nem figura humana. Em 'nenhuma', o rótulo 'FOGUEIRAS: 0' bate como carimbo.",
+   "fatos": [
+    "f5",
+    "f6"
+   ]
+  },
+  {
+   "id": "c06",
+   "batida": "escalada",
+   "forma": "documento",
+   "ano": 1692,
+   "fala": "Por que não o fogo? Na lei inglesa, bruxaria era crime contra o governo. A pena: forca.",
+   "tela": [
+    "LEI INGLESA DE 1604",
+    "BRUXARIA: CRIME, NÃO HERESIA",
+    "PENA: FORCA"
+   ],
+   "visual": "Página de lei em papel, com as linhas datilografadas; 'CRIME' é sublinhado em 'crime' e o carimbo 'PENA: FORCA' bate em 'forca'.",
+   "fatos": [
+    "f7"
+   ]
+  },
+  {
+   "id": "c07",
+   "batida": "virada",
+   "forma": "mapa",
+   "ano": 1692,
+   "fala": "Em boa parte da Europa, bruxaria contava como heresia. A pena costumava ser o fogo. A fogueira existiu. Só não chegou a Salem.",
+   "fala_tts": "Em boa parte da Europa, bruxaria contava como heresia. A pena costumava ser o fogo. A fogueira existiu. Só não chegou a Sálem.",
+   "tela": [
+    "BOA PARTE DA EUROPA: FOGO",
+    "INGLATERRA: FORCA"
+   ],
+   "visual": "Mapa da Europa em cor neutra: em 'fogo', focos laranja acendem espalhados pelo continente, sem preencher tudo, e a Escócia ganha a cor do fogo; a Inglaterra fica em lilás. Em 'Salem', a câmera atravessa o Atlântico e o ponto de Salem continua sem cor de fogo.",
+   "fatos": [
+    "f8",
+    "f9",
+    "f13"
+   ]
+  },
+  {
+   "id": "c08",
+   "batida": "virada",
+   "forma": "ficha-de-arquivo",
+   "ano": 1693,
+   "fala": "Mas sobrou uma ponta solta. Elizabeth Johnson Júnior, vinte e dois anos, condenada à morte. O governador a poupou.",
+   "fala_tts": "Mas sobrou uma ponta solta. Elizabeth Djônson Júnior, vinte e dois anos, condenada à morte. O governador a poupou.",
+   "tela": [
+    "ELIZABETH JOHNSON JR.",
+    "22 ANOS · JAN 1693",
+    "CONDENADA · POUPADA"
+   ],
+   "visual": "Ficha datilografada sem foto, só silhueta de arquivo vazia. 'CONDENADA' bate em vermelho em 'condenada'; 'POUPADA' entra em 'poupou'.",
+   "fatos": [
+    "f10"
+   ]
+  },
+  {
+   "id": "c09",
+   "batida": "virada",
+   "forma": "linha-do-tempo",
+   "ano": 2001,
+   "fala": "Só que a condenação continuou valendo. Várias vezes, outros nomes foram limpos. O dela, não. Por quê, ninguém sabe ao certo. Ela pediu, em vão. E não deixou filhos.",
+   "tela": [
+    "1711 · FORA DA LISTA",
+    "1957 · NÃO NOMEADA",
+    "2001 · FORA DA LISTA"
+   ],
+   "visual": "Linha do tempo vertical avança ano a ano junto com o contador; em 1711 e 2001, uma lista de nomes passa sem o dela, com um 'X' vermelho; em 1957, passa um único nome, 'ANN PUDEATOR', seguido de 'E OUTRAS PESSOAS', com o mesmo 'X'. Em 'filhos', a ficha da cena anterior volta pequena.",
+   "fatos": [
+    "f11"
+   ],
+   "marcos_ano": [
+    [
+     "Várias",
+     1711
+    ],
+    [
+     "nomes",
+     1957
+    ],
+    [
+     "limpos",
+     2001
+    ]
+   ]
+  },
+  {
+   "id": "c10",
+   "batida": "virada",
+   "forma": "antes-e-depois",
+   "ano": 2022,
+   "fala": "Até que uma turma do oitavo ano levou o caso aos legisladores. Em dois mil e vinte e dois, ela foi inocentada.",
+   "tela": [
+    "1693: CULPADA",
+    "2022: INOCENTADA",
+    "8º ANO · NORTH ANDOVER"
+   ],
+   "visual": "Divisão da tela: à esquerda o carimbo CULPADA de 1693; à direita um caderno escolar empurra a divisão até cobrir tudo; 'INOCENTADA' bate em 'inocentada'.",
+   "fatos": [
+    "f12"
+   ]
+  },
+  {
+   "id": "c11",
+   "batida": "fecho",
+   "forma": "numero-que-cai",
+   "ano": 2022,
+   "fala": "Foram trezentos e vinte e nove anos entre a sentença e a inocência.",
+   "tela": [
+    "329 ANOS"
+   ],
+   "visual": "Contador de fita gira em passos de 1693 até 2022; em 'inocência', a diferença '329' bate grande em amarelo no centro.",
+   "fatos": [
+    "f12"
+   ]
+  },
+  {
+   "id": "c12",
+   "batida": "fecho",
+   "forma": "citacao-poster",
+   "ano": 2022,
+   "fala": "Salem nunca acendeu uma fogueira. Mas apagar aquela sentença levou mais de três séculos.",
+   "fala_tts": "Sálem nunca acendeu uma fogueira. Mas apagar aquela sentença levou mais de três séculos.",
+   "tela": [
+    "NENHUMA FOGUEIRA",
+    "329 ANOS PARA APAGAR"
+   ],
+   "visual": "O pôster do gancho volta; 'QUEIMADAS NA FOGUEIRA' é riscado em vermelho e o fósforo solta fumaça, apagado, em 'apagar'; tela azul + STOP.",
+   "fatos": [
+    "f1",
+    "f12"
+   ]
+  }
+ ],
+ "fatos": [
+  {
+   "id": "f1",
+   "afirmacao": "A ideia de que as acusadas de Salem foram queimadas é uma crença popular falsa: ninguém foi queimado na fogueira nos julgamentos de Salem.",
+   "fontes": [
+    "https://salemwitchmuseum.com/faqs/",
+    "https://www.salem.org/salem-witch-trials-faq/",
+    "https://historyofmassachusetts.org/witches-burned-stake-salem/"
+   ]
+  },
+  {
+   "id": "f2",
+   "afirmacao": "Os julgamentos ocorreram em 1692-1693 em Massachusetts, colônia inglesa, envolvendo Salem e cidades do condado de Essex. Cidades vizinhas com acusados confirmados, para os pontos da c03 (números = posição em 'fontes'): Andover [1, 4]; Topsfield [1, 7]; Ipswich [1, 4, 7]; Boxford [4, 6, 8, 9]; Lynn [1, 4, 5]. O contorno de Massachusetts no mapa da c03 é o atual, usado só como localizador: não representa as divisas de 1692.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Salem_witch_trials",
+    "https://salemwitchmuseum.com/faqs/",
+    "https://www.pem.org/the-salem-witch-trials-of-1692",
+    "https://www.legendsofamerica.com/ma-witchtrialtowns/3/",
+    "https://salem.lib.virginia.edu/n34.html",
+    "https://salem.lib.virginia.edu/n44.html",
+    "https://historicipswich.net/2023/01/18/ipswich-and-the-salem-witchcraft-trials/",
+    "https://historyofmassachusetts.org/boxford-ma-history/",
+    "https://www.witchesmassbay.com/roadtrips/boxford/"
+   ]
+  },
+  {
+   "id": "f3",
+   "afirmacao": "O total de acusados diverge: 'mais de 160' (Universidade da Virgínia), 'mais de 170' (Peabody Essex Museum) e 'mais de 200' (Wikipédia); os '150 a 200' do Salem Witch Museum são presos, não acusados. A fala usa 'mais de cento e sessenta', verdadeiro em todas as fontes.",
+   "fontes": [
+    "https://salem.lib.virginia.edu/overview.html",
+    "https://www.pem.org/the-salem-witch-trials-of-1692",
+    "https://en.wikipedia.org/wiki/Salem_witch_trials",
+    "https://salemwitchmuseum.com/faqs/"
+   ]
+  },
+  {
+   "id": "f4",
+   "afirmacao": "Dezenove pessoas foram enforcadas: 14 mulheres e 5 homens.",
+   "fontes": [
+    "https://www.pem.org/the-salem-witch-trials-of-1692",
+    "https://en.wikipedia.org/wiki/Salem_witch_trials",
+    "https://www.salem.org/salem-witch-trials-faq/"
+   ]
+  },
+  {
+   "id": "f5",
+   "afirmacao": "Giles Corey morreu em 19/09/1692, sob pedras, depois de se recusar a se declarar culpado ou inocente.",
+   "fontes": [
+    "https://www.pem.org/the-salem-witch-trials-of-1692",
+    "https://salemwitchmuseum.com/faqs/",
+    "https://en.wikipedia.org/wiki/Salem_witch_trials"
+   ]
+  },
+  {
+   "id": "f6",
+   "afirmacao": "Outros acusados morreram na prisão; as fontes dão 'cerca de quatro' ou 'pelo menos cinco', por isso a fala não dá número.",
+   "fontes": [
+    "https://www.salem.org/salem-witch-trials-faq/",
+    "https://www.pem.org/the-salem-witch-trials-of-1692",
+    "https://historyofmassachusetts.org/witches-burned-stake-salem/"
+   ]
+  },
+  {
+   "id": "f7",
+   "afirmacao": "Na Inglaterra e em suas colônias, bruxaria era crime comum (felony) contra o governo, julgado por tribunais comuns e não eclesiásticos, e a maioria dos condenados era enforcada; o estatuto inglês de 1604 previa a morte 'as a Felon' para os crimes graves. Delitos menores da primeira vez davam prisão.",
+   "fontes": [
+    "http://www.nationalarchives.gov.uk/education/teaching-resources/early-modern-witch-trials-accusation-and-trial/",
+    "https://en.wikipedia.org/wiki/Witchcraft_Acts",
+    "https://salemwitchmuseum.com/faqs/",
+    "https://www.salem.org/salem-witch-trials-faq/",
+    "https://www.mentalfloss.com/why-english-law-hanged-witches-scottish-law-burned"
+   ]
+  },
+  {
+   "id": "f8",
+   "afirmacao": "Em boa parte da Europa continental, bruxaria era tratada de forma semelhante à heresia e a fogueira era a punição típica, embora não exclusiva.",
+   "fontes": [
+    "https://salemwitchmuseum.com/faqs/",
+    "https://www.salem.org/salem-witch-trials-faq/",
+    "https://historyofmassachusetts.org/witches-burned-stake-salem/"
+   ]
+  },
+  {
+   "id": "f9",
+   "afirmacao": "Na Escócia, o usual era estrangular o condenado na estaca e queimar o corpo; poucos foram queimados vivos (o mapa pinta a Escócia na cor do fogo, em 'fogo'; a fala não cita a Escócia).",
+   "fontes": [
+    "https://witches.hca.ed.ac.uk/faq/",
+    "https://en.wikipedia.org/wiki/Witch_trials_in_Scotland",
+    "https://www.mentalfloss.com/why-english-law-hanged-witches-scottish-law-burned"
+   ]
+  },
+  {
+   "id": "f10",
+   "afirmacao": "Elizabeth Johnson Jr., de 22 anos, foi condenada à morte em janeiro de 1693 e poupada pelo governador William Phips.",
+   "fontes": [
+    "https://www.nbcnews.com/news/us-news/last-unpardoned-salem-witch-cleared-329-years-later-rcna30801",
+    "https://www.thehistoryblog.com/archives/64803",
+    "https://witchesmassbay.com/2022/08/24/last-convicted-salem-witch-exonerated"
+   ]
+  },
+  {
+   "id": "f11",
+   "afirmacao": "A condenação dela continuou tecnicamente válida. Outros nomes foram limpos em 1703 (Abigail Faulkner e outros), 1711, 1957 e 2001; a lei de 1711 lista 22 nomes, e o dela não está entre eles (American Heritage fala em 21 absolvidos de 27 condenados; Lowering the Bar, em 'about two dozen'; o texto da lei tem 22 nomes, número usado na tela) e o resolve de 1957 nomeou só Ann Pudeator e citou 'certain other persons'; a emenda de 2001 nomeou mais cinco executados: Bridget Bishop, Susannah Martin, Alice Parker, Wilmot Redd e Margaret Scott; Johnson só entrou pela emenda de 2022. O motivo não é claro. O irmão pediu em 1710 e ela mesma pediu em 1711/12, sem resultado. Ela não teve filhos, logo não havia descendentes para agir em seu nome.",
+   "fontes": [
+    "https://www.thehistoryblog.com/archives/64803",
+    "https://witchesmassbay.com/2022/08/24/last-convicted-salem-witch-exonerated",
+    "https://www.witchesmassbay.com/research/timeline-for-salem-witch-hunts/",
+    "https://en.wikipedia.org/wiki/Salem_witch_trials",
+    "https://www.nbcnews.com/news/us-news/last-unpardoned-salem-witch-cleared-329-years-later-rcna30801",
+    "https://www.kunc.org/npr-news/2022-05-26/after-329-years-a-woman-accused-of-being-a-witch-in-salem-has-been-exonerated",
+    "https://ktvz.com/news/national-world/cnn-national/2022/08/06/the-last-salem-witch-has-been-exonerated-thanks-to-an-eighth-grade-teacher-and-her-students/",
+    "https://historyfacts.com/us-history/fact/the-last-person-from-the-salem-witch-trials-cleared/",
+    "https://www.loweringthebar.net/2022/07/last-salem-witch-finally-cleared.html",
+    "https://americanheritage.com/free-salem-five",
+    "https://pages.uoregon.edu/mjdennis/courses/wk3_reversal.htm",
+    "http://agencychecklists.com/2021/07/30/lawmakers-asked-to-clear-one-more-name-from-witch-trials-53325/"
+   ]
+  },
+  {
+   "id": "f12",
+   "afirmacao": "Uma turma de educação cívica do oitavo ano de North Andover, com a professora Carrie LaPierre, assumiu o caso; a senadora Diana DiZoglio apresentou o texto e Johnson foi inocentada em 2022, 329 anos depois da condenação.",
+   "fontes": [
+    "https://www.nbcnews.com/news/us-news/last-unpardoned-salem-witch-cleared-329-years-later-rcna30801",
+    "https://www.kunc.org/npr-news/2022-05-26/after-329-years-a-woman-accused-of-being-a-witch-in-salem-has-been-exonerated",
+    "https://ktvz.com/news/national-world/cnn-national/2022/08/06/the-last-salem-witch-has-been-exonerated-thanks-to-an-eighth-grade-teacher-and-her-students/"
+   ]
+  },
+  {
+   "id": "f13",
+   "afirmacao": "Focos de fogueira do mapa da c07, sem nome, data ou contagem na tela e de épocas diferentes, não todos de 1692. Em cada lugar houve condenados por bruxaria mortos na fogueira ou queimados na execução (números = posição em 'fontes'): Trier, 1587-1593 [1, 2, 3]; Würzburg, 1625-1631 [4, 5]; Bamberg, 1628 e entorno [6, 7, 8]; Colônia, 1627 [9, 10, 11]; Ellwangen, 1611-1616 [12, 13, 14]; Logroño, 1610 [15, 16]; Ribe, 1641 [17, 18]; Mora, 1669 [19, 20, 21]; Valais, 1428 e anos 1460 [22, 23]; Labourd, 1609 [16, 24, 25]; Milão, 1390-1641 [26, 27, 28, 29]. Ressalva, como a de f9 para a Escócia: nem todos foram queimados vivos. Em Mora, os condenados foram decapitados e os corpos queimados depois. Colônia (Katharina Henot) e Milão (Caterina Medici) têm casos de estrangulamento antes do fogo; em Ellwangen há 'enthauptet und verbrannt', e a Schwäbische registra a troca das sentenças por forca ou espada [31]; em Würzburg houve queimados vivos e também decapitados ou estrangulados antes. Na Suíça, a decapitação também era comum [30]. As fronteiras do mapa da c07 são as atuais, usadas só como localizador: não representam as de 1692. As contagens divergem (Logroño: 6, 7 ou 11 contando 5 em efígie; Labourd: 70 ou 80) e por isso não entram no vídeo.",
+   "fontes": [
+    "https://www.deutsche-biographie.de/sfz16352.html",
+    "https://history.hanover.edu/texts/trier.html",
+    "https://exhibits.library.cornell.edu/witchcraft/feature/two-sensational-trials",
+    "https://journals.bibliothek.uni-wuerzburg.de/frl-nf/article/download/8003/8045/8305",
+    "https://en.wikipedia.org/wiki/W%C3%BCrzburg_witch_trial",
+    "https://bamberg.info/media-download/pdf/broschuere-hexenprozesse-in-bamberg.pdf",
+    "https://history.hanover.edu/courses/excerpts/244bamb.html",
+    "https://www.uni-bamberg.de/news/artikel/hexenverfolgung-bamberg/",
+    "https://www.sbs.com.au/news/article/in-germany-facing-the-cruel-legacy-of-witch-hunts/xrv7f8dz0",
+    "https://www.evangelisch.de/inhalte/107744/13-02-2012/koelner-ratsausschuss-verurteilt-hexenprozesse",
+    "https://www.museen.koeln/en/discovery/entertainment/explain-to-me/explain-city-history-to-me-koelnisches-stadtmuseum/hartger-henot-and-the-horsemen-of-the-apocalypse",
+    "https://www.aalen.de/sixcms/media.php/166/Hexenverfolgungen.158172.pdf",
+    "https://en.wikipedia.org/wiki/Ellwangen_witch_trial",
+    "https://www.schwaebische.de/regional/ostalb/ellwangen/von-hexen-gerbern-und-kulinarischen-genuessen-249186",
+    "https://www.psupress.org/sample_chapter/Homza_introduction.pdf",
+    "https://revista-hsj-historia.unavarra.es/article/download/3181/3706/8293",
+    "https://www.visitdenmark.com/denmark/plan-your-trip/memorial-to-maren-spliid-in-ribe-gdk841860",
+    "https://cphpost.dk/2016-04-17/history/denmarks-answer-to-salem-took-place-in-ribe-and-involved-a-king",
+    "https://en.wikipedia.org/wiki/Mora_witch_trial",
+    "https://olinfoundation.com/publikationer/rb36/336/",
+    "https://hhogman.se/witch-trials-sweden.htm",
+    "https://www.vs.ch/web/communication/detail?articleId=9494773",
+    "https://en.wikipedia.org/wiki/Valais_witch_trials",
+    "https://en.wikipedia.org/wiki/Labourd_witch-hunt_of_1609",
+    "https://www.vd.ch/actualites/actualite/news/25669-sorcieres-chronique-dun-massacre",
+    "https://bdigital.uncu.edu.ar/objetos_digitales/16504/25-galli-revlitmod20-87.pdf",
+    "https://en.wikipedia.org/wiki/Caterina_Medici_da_Broni",
+    "https://www.ilgiornale.it/news/streghe-e-roghi-milano-non-solo-storia-medioevo.html",
+    "https://www.milanofree.it/milano/tradizioni/streghe-a-milano-piazza-vetra-i-processi-e-le-leggende-piu-nere.html",
+    "https://hls-dhs-dss.ch/fr/articles/011450/2014-10-16/",
+    "https://www.schwaebische.de/regional/ostalb/ellwangen/hexenwahn-16-jaehrige-ellwangerin-geht-freiwillig-in-den-tod-164602"
+   ]
+  }
+ ]
+}

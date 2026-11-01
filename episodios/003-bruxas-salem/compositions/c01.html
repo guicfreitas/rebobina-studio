@@ -1,0 +1,46 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    .pos { position: absolute; left: 70px; top: 320px; width: 940px; height: 730px; background: var(--fita-2); overflow: hidden; }
+    .pos-p { position: absolute; left: 0; top: 0; width: 940px; height: 410px; background: var(--papel); box-shadow: inset 0 0 90px rgba(120,90,40,.28); }
+    .pos-t { position: absolute; left: 22px; width: 900px; color: var(--tinta); font-size: 212px; white-space: nowrap; }
+    .pos-g { position: absolute; left: 500px; top: 410px; width: 420px; height: 320px; background: radial-gradient(circle at 60% 30%, rgba(180,140,255,.5), transparent 68%); }
+    .pos-m { position: absolute; left: 610px; top: 412px; }
+
+    #c01-sub { position: absolute; left: 40px; top: 520px; font-size: 62px; color: var(--papel); }
+    #c01-traco { position: absolute; left: 40px; top: 610px; width: 470px; height: 10px; background: var(--acento); }
+
+  </style>
+  <div id="root" data-composition-id="c01" data-width="1080" data-height="1920">
+    <div id="c01-w" class="clip" data-start="0" data-duration="4.83" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c01-pos" class="pos">
+        <div id="c01-g" class="pos-g"></div>
+        <div class="pos-p"></div>
+        <div class="pos-t rb-titulo" style="top:12px">&ldquo;QUEIMADAS</div>
+        <div class="pos-t rb-titulo" style="top:204px">NA FOGUEIRA&rdquo;</div>
+        <div id="c01-m" class="pos-m"><svg class="m-svg" viewBox="0 0 200 460" width="130" height="299">
+        <rect x="88" y="170" width="24" height="290" fill="#c9a36a"/><rect x="88" y="170" width="7" height="290" fill="#e6c48c"/>
+        <path d="M84 176 Q80 132 100 124 Q120 132 116 176 Q100 188 84 176Z" fill="#3b2a55"/>
+        <g id="c01-fl"><path d="M100 4 C128 52 158 78 150 122 C144 158 122 172 100 172 C78 172 54 158 50 122 C44 88 76 66 100 4Z" fill="#b48cff"/>
+        <path d="M100 70 C114 96 130 108 126 132 C122 154 112 162 100 162 C88 162 76 154 74 132 C72 112 90 100 100 70Z" fill="#f1e8d3"/></g></svg></div>
+        <div id="c01-sub" class="rb-mono">SALEM, 1692</div>
+        <div id="c01-traco"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c01"; const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    gsap.set("#c01-fl", { svgOrigin: "100 172" });
+    tl.fromTo("#c01-pos", { scale: 1 }, { scale: 1.035, duration: D, ease: "none" }, 0);
+    // chama tremula em passos; em "cena" cresce e treme mais forte
+    const forte = T("cena");
+    for (let t = 0.1; t < D; t += 0.1) {
+      const k = t >= forte ? 2.4 : 1;
+      tl.set("#c01-fl", { scaleY: 1 + (k > 1 ? 0.22 : 0) + 0.07 * k * Math.sin(t * 37), scaleX: 1 + 0.04 * k * Math.sin(t * 53), skewX: 5 * k * Math.sin(t * 23) }, t);
+    }
+    tl.to("#c01-g", { opacity: 1.0, scale: 1.45, duration: 0.14, ease: "steps(2)" }, forte);
+    tl.fromTo("#c01-traco", { scaleX: 0, transformOrigin: "0 50%" }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, T("Todo"));
+    window.__timelines["c01"] = tl;
+  </script>
+</template>

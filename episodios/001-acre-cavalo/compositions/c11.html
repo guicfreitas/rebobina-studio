@@ -1,0 +1,45 @@
+<template>
+  <!-- c11 · fecho · mito-x-fato: a conta real do Acre. Cavalo riscado; dinheiro, terra, trilhos e guerra marcados. -->
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c11-cab { position: absolute; left: 90px; top: 330px; font-size: 30px; opacity: .85; }
+    .c11-l { position: absolute; left: 90px; height: 120px; display: flex; align-items: center; gap: 30px; }
+    .c11-l .rb-titulo { font-size: 116px; }
+    .c11-l svg { width: 90px; height: 90px; overflow: visible; }
+    .c11-l svg path { fill: none; stroke-width: 16; stroke-linecap: round; stroke-linejoin: round; }
+    .ok path { stroke: var(--acento); }
+    .x path { stroke: var(--rec); }
+    #c11-l1 { top: 390px; } #c11-l2 { top: 520px; } #c11-l3 { top: 640px; } #c11-l4 { top: 760px; } #c11-l5 { top: 885px; height: 160px; }
+    #c11-l1 .rb-titulo { color: #8f8a99; }
+    #c11-risco { position: absolute; left: -10px; top: 56px; width: 330px; height: 12px; background: var(--rec); transform-origin: 0 50%; }
+    #c11-l5 .rb-titulo { font-size: 168px; color: var(--rec); }
+  </style>
+  <div id="root" data-composition-id="c11" data-width="1080" data-height="1920">
+    <div id="c11-lista" class="clip" data-start="0" data-duration="6" data-layout-allow-overlap>
+      <div id="c11-cab" class="rb-mono">O QUE O ACRE CUSTOU DE VERDADE</div>
+      <div id="c11-l1" class="c11-l"><div style="position:relative"><div class="rb-titulo">Cavalo</div><div id="c11-risco"></div></div><svg class="x" viewBox="0 0 90 90"><path id="c11-x1" d="M10 10 L80 80 M80 10 L10 80" /></svg></div>
+      <div id="c11-l2" class="c11-l"><div class="rb-titulo">Dinheiro</div><svg class="ok" viewBox="0 0 90 90"><path d="M8 48 L34 74 L84 14" /></svg></div>
+      <div id="c11-l3" class="c11-l"><div class="rb-titulo">Terra</div><svg class="ok" viewBox="0 0 90 90"><path d="M8 48 L34 74 L84 14" /></svg></div>
+      <div id="c11-l4" class="c11-l"><div class="rb-titulo">Trilhos</div><svg class="ok" viewBox="0 0 90 90"><path d="M8 48 L34 74 L84 14" /></svg></div>
+      <div id="c11-l5" class="c11-l"><div class="rb-titulo">Guerra</div><svg class="ok" viewBox="0 0 90 90" style="width:120px;height:120px"><path d="M8 48 L34 74 L84 14" style="stroke:var(--rec)" /></svg></div>
+    </div>
+  </div>
+  <script>
+    const C = "c11", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c11-cab", { opacity: 0 }, { opacity: 0.85, duration: 0.12, ease: "steps(3)" }, 0.05);
+    const entra = (sel, t) => {
+      tl.fromTo(sel + " .rb-titulo", { x: -60, opacity: 0 }, { x: 0, opacity: 1, duration: 0.18, ease: "power3.out" }, t - 0.12);
+      tl.fromTo(sel + " svg path", { strokeDasharray: 200, strokeDashoffset: 200 }, { strokeDashoffset: 0, duration: 0.2, ease: "power2.out" }, t + 0.08);
+    };
+    entra("#c11-l1", T("cavalo"));
+    tl.fromTo("#c11-risco", { scaleX: 0 }, { scaleX: 1, duration: 0.15, ease: "power2.out" }, T("cavalo") + 0.15);
+    entra("#c11-l2", T("dinheiro"));
+    entra("#c11-l3", T("terra"));
+    entra("#c11-l4", T("trilhos"));
+    entra("#c11-l5", T("guerra"));
+    tl.fromTo("#c11-l5 .rb-titulo", { scale: 1.3, transformOrigin: "0 50%" }, { scale: 1, duration: 0.22, ease: "back.out(2)" }, T("guerra") - 0.12);
+    tl.fromTo("#c11-lista", { y: 0 }, { y: -12, duration: 0.05, ease: "steps(1)", yoyo: true, repeat: 3 }, T("guerra"));
+    window.__timelines["c11"] = tl;
+  </script>
+</template>

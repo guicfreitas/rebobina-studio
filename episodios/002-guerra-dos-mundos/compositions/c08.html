@@ -1,0 +1,37 @@
+<template>
+  <!-- c08 · escalada · documento: ficha de checagem — relato × checagem, lupa passando. -->
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c08-ficha { position: absolute; left: 90px; top: 360px; width: 900px; height: 600px; background: var(--fita-2); border: 3px solid #3a3744; border-radius: 16px; padding: 46px 50px; }
+    .c08-rot { font-family: var(--f-mono); font-weight: 700; font-size: 30px; letter-spacing: .14em; color: #8f8a99; }
+    .c08-val { font-family: var(--f-doc); font-size: 60px; color: var(--papel); margin-top: 10px; white-space: nowrap; }
+    #c08-b2 { margin-top: 70px; }
+    #c08-res { font-family: var(--f-titulo); font-size: 120px; color: var(--rec); text-transform: uppercase; line-height: .95; margin-top: 12px; white-space: nowrap; }
+    #c08-lupa { position: absolute; left: 0; top: 0; width: 180px; height: 180px; }
+    #c08-lupa .aro { position: absolute; left: 0; top: 0; width: 150px; height: 150px; border-radius: 50%; border: 14px solid var(--vhs); background: rgba(255,210,63,.08); }
+    #c08-lupa .cabo { position: absolute; left: 128px; top: 128px; width: 80px; height: 22px; background: var(--vhs); border-radius: 8px; transform: rotate(45deg); transform-origin: 0 50%; }
+  </style>
+  <div id="root" data-composition-id="c08" data-width="1080" data-height="1920">
+    <div id="c08-w" class="clip" data-start="0" data-duration="7" data-layout-allow-overlap>
+      <div id="c08-ficha">
+        <div id="c08-b1"><div class="c08-rot">RELATO DOS JORNAIS</div><div class="c08-val">“Gente no hospital”</div></div>
+        <div id="c08-b2"><div class="c08-rot">CHECAGEM DOS PESQUISADORES</div><div id="c08-res"><span>Não confirmado</span></div></div>
+      </div>
+      <div id="c08-lupa-w"><div id="c08-lupa"><div class="aro"></div><div class="cabo"></div></div></div>
+    </div>
+  </div>
+  <script>
+    const C = "c08", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c08-ficha", { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 0.22, ease: "power3.out" }, 0.05);
+    tl.fromTo("#c08-b1", { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "steps(3)" }, 0.2);
+    tl.fromTo("#c08-b2 .c08-rot", { opacity: 0 }, { opacity: 1, duration: 0.1, ease: "steps(2)" }, T("pesquisadores") - 0.1);
+    // a lupa varre o relato enquanto "foram atrás desses relatos"
+    tl.fromTo("#c08-lupa", { x: 120, y: 420, opacity: 0 }, { x: 120, y: 420, opacity: 1, duration: 0.1 }, T("pesquisadores"));
+    tl.to("#c08-lupa", { x: 700, duration: T("confirmar") - T("pesquisadores") - 0.2, ease: "sine.inOut" }, T("pesquisadores") + 0.1);
+    tl.to("#c08-lupa", { opacity: 0, duration: 0.1 }, T("confirmar") - 0.05);
+    tl.fromTo("#c08-res span", { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: 0.35, ease: "steps(14)" }, T("não") - 0.05);
+    tl.fromTo("#c08-ficha", { x: 0 }, { x: 8, duration: 0.05, ease: "steps(1)", yoyo: true, repeat: 3 }, T("confirmar"));
+    window.__timelines["c08"] = tl;
+  </script>
+</template>

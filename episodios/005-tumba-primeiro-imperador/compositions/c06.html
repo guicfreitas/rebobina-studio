@@ -1,0 +1,72 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #14110e; overflow: hidden; }
+    #c06-palco { position: absolute; left: 90px; top: 310px; width: 840px; height: 740px; overflow: hidden; }
+    #c06-cam { position: absolute; left: 0; top: 0; width: 837px; height: 688px; transform-origin: 0 0; }
+    #c06-cam svg { display: block; overflow: visible; }
+    #c06-placa { position: absolute; left: 0; top: 150px; width: 840px; height: 300px; background: var(--fita); border-top: 8px solid var(--vhs); border-bottom: 8px solid var(--vhs); }
+    #c06-num { position: absolute; left: 30px; top: 42px; font-size: 210px; color: var(--vhs); white-space: nowrap; }
+    #c06-fig { position: absolute; left: 510px; top: 44px; font-size: 108px; white-space: nowrap; }
+    #c06-est { position: absolute; left: 510px; top: 168px; font-size: 42px; white-space: nowrap; }
+    #c06-rod { position: absolute; left: 0; top: 520px; width: 840px; height: 214px; background: var(--fita); border: 6px solid #6f6a60; }
+    #c06-gua { position: absolute; left: 30px; top: 22px; font-size: 84px; line-height: .98; white-space: nowrap; color: var(--acento); }
+    #c06-morro { position: absolute; left: 430px; top: 16px; width: 380px; height: 186px; }
+  </style>
+  <div id="root" data-composition-id="c06" data-width="1080" data-height="1920">
+    <div id="c06-w" class="clip" data-start="0" data-duration="4.23" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c06-palco">
+        <div id="c06-cam">
+          <!-- 93 × 86 = 7.998 figuras, uma por célula: a conta bate com o número da tela -->
+          <svg width="837" height="688" viewBox="0 0 837 688">
+            <defs>
+              <pattern id="c06-fig-p" width="9" height="8" patternUnits="userSpaceOnUse">
+                <circle cx="4.5" cy="1.6" r="1.4" fill="#d8c29c"/><path d="M2.5 3.4h4l.8 4.1H1.7z" fill="#b39a72"/>
+              </pattern>
+            </defs>
+            <rect id="c06-bloco" x="0" y="0" width="9" height="8" fill="url(#c06-fig-p)"/>
+          </svg>
+        </div>
+        <div id="c06-placa">
+          <div id="c06-num" class="rb-titulo">~1</div>
+          <div id="c06-fig" class="rb-titulo">FIGURAS</div>
+          <div id="c06-est" class="rb-mono">ESTIMATIVA</div>
+        </div>
+        <div id="c06-rod">
+          <div id="c06-gua" class="rb-titulo">GUARDA<br>DA TUMBA</div>
+          <svg id="c06-morro" viewBox="0 0 380 186" stroke="#f1e8d3" stroke-width="6" stroke-linejoin="round" fill="#3d3324">
+            <path d="M6 176 112 48h150l112 128z"/><path d="M0 178h380" fill="none"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c06";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    const surge = (el, t, dy = 24, dx = 0) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy, x: dx }, { y: 0, x: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, t); };
+    // câmera: começa colada numa figura só e recua até caber o bloco inteiro
+    const P = (s, cx, cy) => ({ scale: s, x: 420 - s * cx, y: 344 - s * cy });
+    gsap.set("#c06-cam", P(34, 4.5, 4));
+    const t1 = T("exercito"), t2 = T("cerca"), t3 = Tf("mil") - 0.04, t4 = T("figuras");
+    // figura → fila
+    tl.to("#c06-bloco", { attr: { width: 837 }, duration: t2 - t1 - 0.05, ease: "steps(12)" }, t1);
+    tl.to("#c06-cam", { ...P(4, 104.5, 4), duration: t2 - t1 - 0.05, ease: "steps(12)" }, t1);
+    // fila → bloco
+    tl.to("#c06-bloco", { attr: { height: 688 }, duration: t3 - t2, ease: "steps(10)" }, t2);
+    tl.to("#c06-cam", { scale: 1, x: 1, y: 0, duration: t3 - t2, ease: "steps(10)" }, t2);
+    // o número sobe em passos e trava em "mil"
+    surge("#c06-placa", t2, 0, -40);
+    const seq = ["~1", "~90", "~300", "~700", "~1.500", "~2.600", "~4.100", "~5.800", "~7.200", "~8.000"];
+    seq.forEach((v, i) => tl.set("#c06-num", { textContent: "​" + v }, t2 + (i * (t3 - t2)) / (seq.length - 1)));
+    tl.fromTo("#c06-placa", { x: 8 }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, t3 + 0.02);
+    tl.fromTo("#c06-num", { scale: 1.1, transformOrigin: "0% 60%" }, { scale: 1, duration: 0.14, ease: "steps(3)", immediateRender: false }, t3);
+    gsap.set("#c06-fig, #c06-est", { autoAlpha: 0 });
+    tl.set("#c06-fig", { autoAlpha: 1 }, t4 - 0.04);
+    tl.set("#c06-est", { autoAlpha: 1 }, t4 + 0.28);
+    // a tumba entra embaixo; o pequeno morro surge no canto
+    surge("#c06-rod", T("perto") - 0.05, 214);
+    tl.fromTo("#c06-morro", { y: 190 }, { y: 0, duration: 0.24, ease: "power3.out" }, T("tumba") - 0.04);
+    window.__timelines["c06"] = tl;
+  </script>
+</template>

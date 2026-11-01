@@ -1,0 +1,322 @@
+{
+ "id": "001",
+ "slug": "acre-cavalo",
+ "idioma": "pt-BR",
+ "tema": "O Acre foi trocado por um cavalo? A história real da anexação do Acre (1867–1903)",
+ "era": "república",
+ "regiao": "América do Sul",
+ "acento": "#2FBF71",
+ "objeto_simbolo": "♞",
+ "motor_voz": "kokoro",
+ "voz": "pm_alex",
+ "velocidade": 0.92,
+ "serie": {
+  "proxima_fita": "Ferrovia Madeira-Mamoré, a Ferrovia do Diabo"
+ },
+ "cenas": [
+  {
+   "id": "c01",
+   "batida": "gancho",
+   "forma": "objeto-simbolo",
+   "ano": 2026,
+   "fala": "Dizem que o Brasil comprou o Acre da Bolívia… em troca de um cavalo.",
+   "tela": [
+    "O ACRE FOI",
+    "TROCADO POR",
+    "UM CAVALO?"
+   ],
+   "visual": "Frame 0: pergunta gigante em League Gothic + cavalo de xadrez ♞ enorme atrás, em verde-acento. Contador marca 2026.",
+   "fatos": [
+    "f1"
+   ]
+  },
+  {
+   "id": "c02",
+   "batida": "quebra",
+   "forma": "mito-x-fato",
+   "ano": 2026,
+   "fala": "É mentira. Mas o cavalo existiu.",
+   "tela": [
+    "MITO",
+    "…MAS O CAVALO EXISTIU"
+   ],
+   "visual": "Carimbo vermelho MITO bate sobre a pergunta; o ♞ continua, e surge 'mas o cavalo existiu'. Rebobina para 1867.",
+   "fatos": [
+    "f2"
+   ]
+  },
+  {
+   "id": "c03",
+   "batida": "rebobinar",
+   "forma": "ficha-de-arquivo",
+   "ano": 1867,
+   "fala": "Mil oitocentos e sessenta e sete. O presidente da Bolívia, Mariano Melgarejo, era louco por cavalos de raça.",
+   "tela": [
+    "FICHA Nº 1867",
+    "MARIANO MELGAREJO",
+    "PRESIDENTE DA BOLÍVIA",
+    "PAIXÃO: CAVALOS DE RAÇA"
+   ],
+   "visual": "Ficha de arquivo em papel envelhecido datilografada; sem rosto (silhueta de ♞ no lugar da foto).",
+   "fatos": [
+    "f12",
+    "f2",
+    "f3"
+   ]
+  },
+  {
+   "id": "c04",
+   "batida": "rebobinar",
+   "forma": "objeto-simbolo",
+   "ano": 1867,
+   "fala": "Um diplomata brasileiro deu a ele medalhas e um cavalo de presente. Logo depois, os dois países assinaram um tratado de fronteira.",
+   "tela": [
+    "2 MEDALHAS",
+    "+ 1 CAVALO",
+    "TRATADO DE AYACUCHO"
+   ],
+   "visual": "Duas medalhas caem com fita, o ♞ chega; vira um documento com o título do tratado e uma assinatura sendo traçada.",
+   "fatos": [
+    "f12",
+    "f2",
+    "f4"
+   ]
+  },
+  {
+   "id": "c05",
+   "batida": "escalada",
+   "forma": "mapa",
+   "ano": 1867,
+   "fala": "Só que esse tratado não deu o Acre ao Brasil. A região continuou boliviana.",
+   "tela": [
+    "ACRE (ÁREA ATUAL)",
+    "BOLÍVIA"
+   ],
+   "visual": "Mapa: Brasil em cinza-claro, Bolívia em ouro; a área do atual Acre pisca e fica do lado boliviano.",
+   "fatos": [
+    "f4"
+   ]
+  },
+  {
+   "id": "c06",
+   "batida": "escalada",
+   "forma": "multidao-de-pontos",
+   "ano": 1901,
+   "fala": "Aí veio a febre da borracha. Dezenas de milhares de seringueiros brasileiros subiram os rios e ocuparam a floresta.",
+   "tela": [
+    "FEBRE DA BORRACHA",
+    "DEZENAS DE MILHARES"
+   ],
+   "visual": "Rios do mapa viram linhas; pontos (seringueiros) sobem os rios e se multiplicam dentro da área do Acre.",
+   "fatos": [
+    "f5"
+   ]
+  },
+  {
+   "id": "c07",
+   "batida": "escalada",
+   "forma": "documento",
+   "ano": 1901,
+   "fala": "Em mil novecentos e um, a Bolívia arrendou a região para uma empresa anglo-americana, o Bolivian Syndicate.",
+   "fala_tts": "Em mil novecentos e um, a Bolívia arrendou a região para uma empresa anglo-americana, o Bolívian Síndiqueit.",
+   "tela": [
+    "CONTRATO DE ARRENDAMENTO",
+    "BOLIVIAN SYNDICATE",
+    "ARRENDADO"
+   ],
+   "visual": "Contrato datilografado; carimbo ARRENDADO bate em vermelho.",
+   "fatos": [
+    "f6"
+   ]
+  },
+  {
+   "id": "c08",
+   "batida": "escalada",
+   "forma": "linha-do-tempo",
+   "ano": 1902,
+   "fala": "Os seringueiros não aceitaram. Liderados pelo gaúcho Plácido de Castro, pegaram em armas em mil novecentos e dois.",
+   "tela": [
+    "6 AGO 1902",
+    "PLÁCIDO DE CASTRO",
+    "XAPURI"
+   ],
+   "visual": "Linha do tempo 1899→1903 com as revoltas; marcador para em 6 AGO 1902 com o nome de Plácido de Castro.",
+   "fatos": [
+    "f7",
+    "f11"
+   ]
+  },
+  {
+   "id": "c09",
+   "batida": "virada",
+   "forma": "mapa",
+   "ano": 1903,
+   "fala": "A disputa terminou na diplomacia. Em mil novecentos e três, pelo Tratado de Petrópolis, o Acre passou para o Brasil.",
+   "tela": [
+    "17 NOV 1903",
+    "TRATADO DE PETRÓPOLIS"
+   ],
+   "visual": "Mapa volta; a área do Acre escorre do ouro boliviano para o verde do Brasil.",
+   "fatos": [
+    "f8"
+   ]
+  },
+  {
+   "id": "c10",
+   "batida": "virada",
+   "forma": "recibo",
+   "ano": 1903,
+   "fala": "O preço: dois milhões de libras esterlinas, um pedaço do Mato Grosso, e a promessa de uma ferrovia no meio da selva.",
+   "tela": [
+    "RECIBO",
+    "£ 2.000.000",
+    "~3 MIL KM² DO MATO GROSSO",
+    "1 FERROVIA"
+   ],
+   "visual": "Recibo de papel imprime linha a linha, cada item no momento em que é falado.",
+   "fatos": [
+    "f8",
+    "f9"
+   ]
+  },
+  {
+   "id": "c11",
+   "batida": "fecho",
+   "forma": "mito-x-fato",
+   "ano": 1903,
+   "fala": "Ou seja: o Acre não saiu por um cavalo. Saiu por dinheiro, terra, trilhos… e uma guerra.",
+   "tela": [
+    "CAVALO ✗",
+    "DINHEIRO ✓",
+    "TERRA ✓",
+    "TRILHOS ✓",
+    "GUERRA ✓"
+   ],
+   "visual": "Total do recibo: linha 'cavalo' riscada em vermelho; as outras ganham ✓; 'guerra' entra por último, maior.",
+   "fatos": [
+    "f1",
+    "f8",
+    "f7"
+   ]
+  },
+  {
+   "id": "c12",
+   "batida": "fecho",
+   "forma": "objeto-simbolo",
+   "ano": 1903,
+   "fala": "E essa ferrovia ganhou um apelido: Ferrovia do Diabo. Mas essa é outra fita.",
+   "tela": [
+    "FERROVIA DO DIABO",
+    "PRÓXIMA FITA ▶▶"
+   ],
+   "visual": "Trilhos desenhados em perspectiva sumindo no escuro; título em vermelho; tela azul + STOP no fim.",
+   "fatos": [
+    "f10"
+   ]
+  }
+ ],
+ "fatos": [
+  {
+   "id": "f1",
+   "afirmacao": "Circula no Brasil e na Bolívia a ideia de que o Acre foi trocado por um cavalo; historiadores a tratam como mito.",
+   "fontes": [
+    "https://portalamazonia.com/cidades/a-verdade-por-tras-do-mito-acre-foi-trocado-por-um-cavalo/",
+    "https://portalamazonia.com/amazonia/tratado-de-petropolis-a-certidao-de-nascimento-do-estado-do-acre/"
+   ]
+  },
+  {
+   "id": "f2",
+   "afirmacao": "Em 1867, o diplomata brasileiro Regino Correa presenteou o presidente boliviano Mariano Melgarejo com medalhas e um cavalo de raça antes de negociar a fronteira (origem da lenda, segundo o historiador Marcos Vinicius Neves).",
+   "fontes": [
+    "https://portalamazonia.com/acre/tratado-de-petropolis-conheca-mais-sobre-a-luta-do-acre-para-ser-brasileiro/",
+    "https://portalamazonia.com/cidades/a-verdade-por-tras-do-mito-acre-foi-trocado-por-um-cavalo/"
+   ]
+  },
+  {
+   "id": "f3",
+   "afirmacao": "Mariano Melgarejo era presidente da Bolívia em 1867.",
+   "fontes": [
+    "https://es.wikipedia.org/wiki/Mariano_Melgarejo",
+    "https://www.infoescola.com/historia/tratado-de-ayacucho/"
+   ]
+  },
+  {
+   "id": "f4",
+   "afirmacao": "O Tratado de Ayacucho (1867) entre Brasil e Bolívia deixou o Acre como território boliviano.",
+   "fontes": [
+    "https://periodicos.ufac.br/index.php/Uaquiri/article/download/5106/2940",
+    "https://en.wikipedia.org/wiki/Treaty_of_Ayacucho",
+    "https://www.infoescola.com/historia/tratado-de-ayacucho/"
+   ]
+  },
+  {
+   "id": "f5",
+   "afirmacao": "Com o ciclo da borracha, dezenas de milhares de brasileiros migraram para os seringais do Acre a partir de 1870 (≥ 20 mil; ~60 mil por volta de 1900).",
+   "fontes": [
+    "https://www.todamateria.com.br/revolucao-acreana/",
+    "https://portalamazonia.com/educacao/a-guerra-pelo-acre/"
+   ]
+  },
+  {
+   "id": "f6",
+   "afirmacao": "Em 1901 a Bolívia arrendou o Acre ao Bolivian Syndicate, companhia de capital anglo-americano.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Acre_War",
+    "https://www.todamateria.com.br/revolucao-acreana/",
+    "https://www.infoescola.com/historia/revolucao-acreana"
+   ]
+  },
+  {
+   "id": "f7",
+   "afirmacao": "Em 6 de agosto de 1902, o gaúcho José Plácido de Castro iniciou a luta armada dos seringueiros tomando Xapuri; os combates foram até janeiro de 1903.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Acre_War",
+    "https://portalamazonia.com/educacao/a-guerra-pelo-acre/",
+    "https://periodicos.ufac.br/index.php/mui/article/download/627/340"
+   ]
+  },
+  {
+   "id": "f8",
+   "afirmacao": "Pelo Tratado de Petrópolis (17/11/1903), o Acre passou ao Brasil, que pagou 2 milhões de libras esterlinas, cedeu terras do Mato Grosso e se comprometeu a construir a Estrada de Ferro Madeira-Mamoré.",
+   "fontes": [
+    "https://periodicos.ufam.edu.br/index.php/Canoa_do_Tempo/article/download/8092/6242",
+    "https://www.infopedia.pt/artigos/$tratado-de-petropolis",
+    "https://atom-mhn.museus.gov.br/downloads/questao-acreana.pdf"
+   ]
+  },
+  {
+   "id": "f9",
+   "afirmacao": "A área cedida pelo Brasil foi de cerca de 3 mil km² (as fontes citam 3.164 a 3.196 km²).",
+   "fontes": [
+    "https://jus.com.br/artigos/69625/a-questao-do-acre"
+   ]
+  },
+  {
+   "id": "f10",
+   "afirmacao": "A Estrada de Ferro Madeira-Mamoré ficou conhecida como 'Ferrovia do Diabo'.",
+   "fontes": [
+    "https://seer.ufu.br/index.php/campoterritorio/article/download/11934/6974/44161",
+    "https://bdtd.ibict.br/vufind/Record/UFG_e8bbe959d8cc9c222b9eeddcde03b5fc",
+    "https://www.gov.br/iphan/pt-br/superintendencias/rondonia/Boletim_12.pdf"
+   ]
+  },
+  {
+   "id": "f11",
+   "afirmacao": "A luta armada de Plácido de Castro (1902) foi a quarta insurreição brasileira no Acre; antes houve dois levantes em 1899 (José de Carvalho; República do Acre de Luis Gálvez) e a Expedição dos Poetas (1900).",
+   "fontes": [
+    "https://periodicos.ufac.br/index.php/mui/article/download/627/340",
+    "https://en.wikipedia.org/wiki/Acre_War",
+    "https://portalamazonia.com/estados/acre/revolucao-acreana-historiador-diz-que-guerra-que-tornou-o-acre-independente-atrasou-por-falta-de-armas"
+   ]
+  },
+  {
+   "id": "f12",
+   "afirmacao": "O Tratado de Ayacucho foi assinado em 27 de março de 1867; Melgarejo governou a Bolívia de 1864 a 1871.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Treaty_of_Ayacucho",
+    "https://treaties.un.org/doc/Publication/UNTS/Volume%20888/volume-888-II-698-Other.pdf",
+    "https://military-history.fandom.com/wiki/Mariano_Melgarejo"
+   ]
+  }
+ ]
+}

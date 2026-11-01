@@ -1,0 +1,32 @@
+<template>
+  <!-- c01 · gancho · objeto-símbolo. Frame 0 = capa: pergunta + cavalo já na tela. -->
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c01-cavalo { position: absolute; left: 420px; top: 300px; width: 640px; height: 817px; color: var(--acento); opacity: 0.92; }
+    #c01-cavalo svg { width: 100%; height: 100%; }
+    #c01-pergunta { position: absolute; left: 90px; top: 340px; width: 900px; }
+    #c01-pergunta div { font-size: 214px; text-shadow: 0 10px 40px rgba(0, 0, 0, 0.75); transform-origin: 0 50%; }
+    #c01-l3 { color: var(--vhs); }
+  </style>
+  <div id="root" data-composition-id="c01" data-width="1080" data-height="1920">
+    <div id="c01-cavalo" class="clip" data-start="0" data-duration="5" data-layout-allow-overlap><div id="c01-cavalo-in"><!--@cavalo--><svg class="simbolo-cavalo" viewBox="0 0 1172 1496" xmlns="http://www.w3.org/2000/svg"><path transform="translate(-332,1496) scale(1,-1)" d="M790 1254Q827 1277 827 1316Q827 1341 812.0 1369.5Q797 1398 797 1420Q797 1466 855 1496Q940 1415 947.5 1370.5Q955 1326 955 1313Q955 1266 921 1254H925Q925 1253 923 1253Q1459 913 1504 0H534Q521 56 521 114Q521 274 723.5 415.5Q926 557 926 670Q926 678 925 685Q859 518 742 518Q742 518 732 518Q642 372 539 372Q535 372 532 372L580 476L473 396Q359 424 332 507Q420 736 420 926Q420 953 418 979Q466 1088 565 1192Q568 1202 568 1211Q568 1239 545.5 1252.0Q523 1265 523 1300Q523 1337 543 1403Q647 1376 703 1254ZM533 999V983Q537 953 545 953H566Q635 953 635 1002Q635 1036 678 1084H672Q576 1084 539 1020ZM424 549V525Q424 496 452 496H462Q534 511 534 564L527 598Q465 598 424 549ZM922 1174 974 1085Q1349 816 1355 52H1432Q1387 902 922 1174Z"/></svg><!--/@cavalo--></div></div>
+    <div id="c01-pergunta" class="clip" data-start="0" data-duration="5" data-layout-allow-overlap>
+      <div id="c01-l1" class="rb-titulo">O Acre foi</div>
+      <div id="c01-l2" class="rb-titulo">trocado por</div>
+      <div id="c01-l3" class="rb-titulo">um cavalo?</div>
+    </div>
+  </div>
+  <script>
+    const C = "c01", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // o cavalo avança devagar o tempo todo (nada parado), com leve tremida de fita
+    tl.fromTo("#c01-cavalo-in", { scale: 1, x: 0 }, { scale: 1.07, x: -30, duration: D, ease: "none" }, 0);
+    tl.fromTo("#c01-cavalo-in", { y: 0 }, { y: -6, duration: 0.07, ease: "steps(2)", yoyo: true, repeat: 3 }, 0.05);
+    // ênfase quando a voz diz "Acre", "comprou" e "cavalo"
+    tl.fromTo("#c01-l1", { scale: 1 }, { scale: 1.06, duration: 0.12, ease: "power3.out", yoyo: true, repeat: 1 }, T("Acre"));
+    tl.fromTo("#c01-l2", { scale: 1 }, { scale: 1.06, duration: 0.12, ease: "power3.out", yoyo: true, repeat: 1 }, T("troca"));
+    tl.fromTo("#c01-l3", { scale: 1 }, { scale: 1.14, duration: 0.14, ease: "back.out(3)", yoyo: true, repeat: 1 }, T("cavalo"));
+    tl.fromTo("#c01-cavalo", { opacity: 0.92 }, { opacity: 1, duration: 0.1, ease: "steps(2)" }, T("cavalo"));
+    window.__timelines["c01"] = tl;
+  </script>
+</template>

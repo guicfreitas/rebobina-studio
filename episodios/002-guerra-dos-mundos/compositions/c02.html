@@ -1,0 +1,30 @@
+<template>
+  <!-- c02 · quebra · mito-x-fato: checagem em duas linhas (✓ e ?). -->
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    .c02-l { position: absolute; left: 90px; width: 900px; display: flex; align-items: center; gap: 30px; }
+    .c02-l .rb-titulo { font-size: 118px; }
+    #c02-l1 { top: 420px; } #c02-l2 { top: 660px; }
+    #c02-ok { width: 110px; height: 110px; } #c02-ok path { fill: none; stroke: var(--vhs); stroke-width: 18; stroke-linecap: round; stroke-linejoin: round; }
+    #c02-q { font-family: var(--f-titulo); font-size: 220px; color: var(--rec); line-height: .8; }
+    #c02-rot { position: absolute; left: 90px; top: 340px; font-size: 30px; opacity: .8; }
+  </style>
+  <div id="root" data-composition-id="c02" data-width="1080" data-height="1920">
+    <div id="c02-w" class="clip" data-start="0" data-duration="5" data-layout-allow-overlap>
+      <div id="c02-rot" class="rb-mono">CHECAGEM</div>
+      <div id="c02-l1" class="c02-l"><div class="rb-titulo">O programa<br />existiu</div><svg id="c02-ok" viewBox="0 0 110 110"><path id="c02-ok-p" d="M10 60 L42 92 L100 18" /></svg></div>
+      <div id="c02-l2" class="c02-l"><div class="rb-titulo">O pânico<br />em massa</div><div id="c02-q">?</div></div>
+    </div>
+  </div>
+  <script>
+    const C = "c02", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c02-rot", { opacity: 0 }, { opacity: 0.8, duration: 0.1, ease: "steps(2)" }, 0.05);
+    tl.fromTo("#c02-l1 .rb-titulo", { x: -80, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2, ease: "power3.out" }, 0.05);
+    tl.fromTo("#c02-ok-p", { strokeDasharray: 200, strokeDashoffset: 200 }, { strokeDashoffset: 0, duration: 0.2, ease: "power2.out" }, T("existiu"));
+    tl.fromTo("#c02-l2 .rb-titulo", { x: -80, opacity: 0 }, { x: 0, opacity: 1, duration: 0.2, ease: "power3.out" }, T("pânico") - 0.2);
+    tl.fromTo("#c02-q", { scale: 2, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.16, ease: "back.out(2)" }, T("nem"));
+    for (let t = T("nem") + 0.4; t < D - 0.3; t += 0.4) tl.set("#c02-q", { opacity: (Math.round((t - T("nem")) / 0.4) % 2) ? 0.25 : 1 }, t);
+    window.__timelines["c02"] = tl;
+  </script>
+</template>

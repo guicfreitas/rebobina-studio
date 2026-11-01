@@ -1,0 +1,91 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #12110c; overflow: hidden; }
+    #c07-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    .c07-camada { position: absolute; left: 0; top: 0; width: 1080px; height: 760px; }
+    #c07-b { background: #1a1a10; }
+    #c07-div { position: absolute; left: 596px; top: 0; width: 8px; height: 760px; background: var(--papel); }
+    #c07-mira { position: absolute; left: 170px; top: 220px; width: 300px; height: 300px; }
+    #c07-doze { position: absolute; left: 0; top: 0; }
+    #c07-dt { position: absolute; left: 90px; top: 14px; font-size: 56px; color: var(--vhs); white-space: nowrap; -webkit-text-stroke: 10px #12110c; paint-order: stroke fill; }
+    #c07-n { position: absolute; left: 90px; top: 92px; font-size: 120px; color: var(--acento); white-space: nowrap; -webkit-text-stroke: 14px #12110c; paint-order: stroke fill; }
+    #c07-faixa { position: absolute; left: 0; top: 636px; width: 1080px; height: 124px; background: #12110c; }
+    #c07-m1, #c07-m2 { position: absolute; top: 650px; font-size: 100px; white-space: nowrap; }
+    #c07-m1 { left: 90px; } #c07-m2 { left: 572px; color: var(--rec); }
+  </style>
+  <div id="root" data-composition-id="c07" data-width="1080" data-height="1920">
+    <div id="c07-w" class="clip" data-start="0" data-duration="5.47" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c07-palco">
+        <svg id="c07-a" class="c07-camada" viewBox="0 0 1080 760" fill="none"></svg>
+        <svg id="c07-b" class="c07-camada" viewBox="0 0 1080 760" fill="none"></svg>
+        <svg id="c07-doze" width="1080" height="760" viewBox="0 0 1080 760" fill="#E8B04B"></svg>
+        <div id="c07-div"></div>
+        <svg id="c07-mira" viewBox="0 0 300 300" fill="none" stroke="#FF3B30" stroke-width="7"><circle cx="150" cy="150" r="104"/><path d="M150 14V96M150 204V286M14 150H96M204 150H286"/></svg>
+        <div id="c07-dt" class="rb-mono">4 NOV 1932</div>
+        <div id="c07-n" class="rb-titulo">~1.000 EMUS</div>
+        <div id="c07-faixa"></div>
+        <div id="c07-m1" class="rb-titulo">METRALHADORA:</div>
+        <div id="c07-m2" class="rb-titulo">TRAVADA</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c07";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // carimbo bate (1,5 → 1); peça aparece com pequeno deslocamento; texto datilografado em passos
+    const bate = (el, t, de = -9, ate = -5, op = 0.96) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)", immediateRender: false }, t); };
+    const surge = (el, t, dy = 24, dx = 0) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy, x: dx }, { y: 0, x: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, t); };
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    const treme = (el, t, a = 7) => tl.fromTo(el, { x: a }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, t);
+    let s = 72211; const rnd = () => ((s = (s * 16807) % 2147483647) / 2147483647);
+    const NS = "http://www.w3.org/2000/svg", el = (pai, tag, at) => { const e = document.createElementNS(NS, tag); for (const k in at) e.setAttribute(k, at[k]); pai.appendChild(e); return e; };
+    const CX = 540, CY = 400, REP = "M410 370C430 302 520 302 590 316C660 330 712 362 696 418C682 470 610 500 530 490C450 482 392 436 410 370Z";
+    const A = document.getElementById("c07-a"), B = document.getElementById("c07-b");
+    // 988 pontos em volta da represa + 12 na mira = 1.000. Oito setores, cada um foge para o seu lado.
+    const setores = 8, setA = [], setB = [];
+    const dSet = Array(setores).fill("");
+    for (let i = 0; i < 988; i++) {
+      const a = rnd() * Math.PI * 2, r = 180 + Math.pow(rnd(), 1.5) * 130;
+      const x = Math.round(CX + Math.cos(a) * r), y = Math.round(CY + Math.sin(a) * r * 0.84);
+      dSet[Math.floor((a / (Math.PI * 2)) * setores)] += `M${x} ${y}h0`;
+    }
+    [[A, setA], [B, setB]].forEach(([camada, lista]) => {
+      el(camada, "path", { d: REP, fill: "#2f7fd1", stroke: "#8ec3f5", "stroke-width": 5, class: "c07-rep" });
+      dSet.forEach((d) => lista.push(el(camada, "path", { d, stroke: "#E8B04B", "stroke-width": 8, "stroke-linecap": "round", "vector-effect": "non-scaling-stroke" })));
+    });
+    const doze = document.getElementById("c07-doze"), cir = [];
+    [[300,372],[338,340],[352,392],[282,424],[336,436],[356,312],[262,384],[318,396],[350,446],[270,340],[376,412],[322,304]].forEach(([cx, cy]) => cir.push(el(doze, "circle", { cx, cy, r: 8 })));
+    const Rp = T("represa"), Cc = T("cerca"), M = T("mil"), Me = T("metralhadora"), Tv = T("trava");
+    // antes: a mira procura; a represa aparece; os pontos chegam em lotes
+    gsap.set(".c07-rep", { opacity: 0 });
+    tl.set(".c07-rep", { opacity: 1 }, Rp);
+    tl.fromTo("#c07-a .c07-rep", { scale: 0.86, svgOrigin: `${CX} ${CY}` }, { scale: 1, duration: 0.2, ease: "power3.out", immediateRender: false }, Rp);
+    setA.forEach((p, i) => { gsap.set(p, { opacity: 0 }); tl.set(p, { opacity: 1 }, Cc + i * ((M + 0.3 - Cc) / setores)); });
+    cir.forEach((c, i) => { gsap.set(c, { opacity: 0 }); tl.set(c, { opacity: 1 }, Cc + i * 0.06); });
+    tl.fromTo("#c07-mira", { x: 480, y: -130 }, { x: 110, y: 20, duration: Rp, ease: "steps(14)" }, 0.05);
+    tl.to("#c07-mira", { x: 0, y: 0, duration: Cc - Rp, ease: "steps(8)" }, Rp);
+    surge("#c07-dt", 0.06, 0, -30);
+    surge("#c07-n", M - 0.04, 0, -30);
+    // rajada: os 12 apagam um a um até a palavra "trava"
+    const R0 = Tv - 0.56;
+    cir.forEach((c, i) => tl.to(c, { opacity: 0, duration: 0.03, ease: "steps(1)" }, R0 + i * (0.5 / 12)));
+    for (let t = R0; t < Tv; t += 2 / 30) tl.set("#c07-mira", { x: Math.round(rnd() * 10 - 5), y: Math.round(rnd() * 10 - 5) }, t);
+    tl.set("#c07-mira", { x: 0, y: 0 }, Tv);
+    surge("#c07-faixa", Me - 0.05, 0, 0);
+    surge("#c07-m1", Me - 0.05, 0, -24);
+    bate("#c07-m2", Tv, -4, -2, 1);
+    // depois: tela dividida, à direita da divisória os pontos já fugiram
+    gsap.set("#c07-b", { autoAlpha: 0, clipPath: "inset(0 0 0 100%)" });
+    gsap.set("#c07-div", { autoAlpha: 0 });
+    tl.set("#c07-b", { autoAlpha: 1 }, Tv);
+    tl.set("#c07-div", { autoAlpha: 1 }, Tv);
+    tl.to("#c07-b", { clipPath: "inset(0 0 0 55.56%)", duration: 0.18, ease: "power3.out" }, Tv);
+    tl.fromTo("#c07-div", { x: 484 }, { x: 0, duration: 0.18, ease: "power3.out", immediateRender: false }, Tv);
+    setB.forEach((p, i) => {
+      gsap.set(p, { svgOrigin: `${CX} ${CY}` });
+      tl.to(p, { scale: 1.75 + (i % 3) * 0.3, duration: D - Tv, ease: "steps(12)" }, Tv);
+    });
+    window.__timelines["c07"] = tl;
+  </script>
+</template>

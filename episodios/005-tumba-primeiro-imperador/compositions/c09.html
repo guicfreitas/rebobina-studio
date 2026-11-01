@@ -1,0 +1,97 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #12100f; overflow: hidden; }
+    #c09-so { position: absolute; left: 590px; top: 306px; width: 317px; height: 740px; }
+    #c09-cam { position: absolute; left: 590px; top: 306px; width: 317px; height: 740px; overflow: visible; }
+    .c09-furo { fill: #c9b08a; stroke: #c9b08a; stroke-width: 1; }
+    /* a cor continua desbotada como c08 termina (00:15) */
+    #c09-so-cor { opacity: .67; }
+    .c09-lasca { stroke: #1b1a17; stroke-width: 3; }
+    #c09-chao { position: absolute; left: 90px; top: 1036px; width: 840px; height: 8px; background: #6f6a60; }
+    #c09-vis { position: absolute; left: 90px; top: 322px; width: 450px; height: 176px; background: #000; border: 8px solid #4a4850; }
+    #c09-num { position: absolute; left: 34px; top: 14px; font-size: 112px; color: var(--vhs); white-space: nowrap; letter-spacing: 0; }
+    .c09-t { position: absolute; left: 90px; font-size: 118px; line-height: .94; white-space: nowrap; }
+    #c09-t1 { top: 516px; }
+    #c09-t2 { top: 742px; color: var(--rec); }
+    #c09-ar { position: absolute; left: 90px; top: 982px; font-size: 38px; white-space: nowrap; }
+  </style>
+  <div id="root" data-composition-id="c09" data-width="1080" data-height="1920">
+    <div id="c09-w" class="clip" data-start="0" data-duration="6.17" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c09-chao"></div>
+      <div id="c09-so"><!--@svg:simbolos/soldado--><svg class="soldado" viewBox="0 0 300 700" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+<g id="c09-so-barro" fill="#c9b08a" stroke="#1b1a17" stroke-width="5" stroke-linejoin="round">
+<ellipse cx="168" cy="24" rx="16" ry="14"/><rect x="132" y="108" width="36" height="34"/><ellipse cx="150" cy="70" rx="38" ry="46"/>
+<rect x="56" y="652" width="188" height="34"/><path d="M80 630h64v22H80zM156 630h64v22h-64z"/>
+<ellipse cx="60" cy="418" rx="19" ry="21"/><ellipse cx="240" cy="418" rx="19" ry="21"/>
+<path id="c09-so-b-pernas" d="M92 505 88 630h50l2-115zM160 515l2 115h50l-4-125z"/>
+<path id="c09-so-b-manto" d="M80 332Q150 352 220 332L240 500Q150 520 60 500Z"/>
+<path id="c09-so-b-bracos" d="M88 142 50 170 36 330l8 70h34l6-70 8-100zM212 142l38 28 14 160-8 70h-34l-6-70-8-100z"/>
+<path id="c09-so-b-armadura" d="M88 140Q150 120 212 140L222 330Q150 350 78 330Z"/>
+</g>
+<g id="c09-so-cor" stroke="#1b1a17" stroke-width="5" stroke-linejoin="round">
+<path id="c09-so-pernas" fill="#8e5bd0" d="M92 505 88 630h50l2-115zM160 515l2 115h50l-4-125z"/>
+<path id="c09-so-manto" fill="#2fbf71" d="M80 332Q150 352 220 332L240 500Q150 520 60 500Z"/>
+<path id="c09-so-bracos" fill="#2f6fde" d="M88 142 50 170 36 330l8 70h34l6-70 8-100zM212 142l38 28 14 160-8 70h-34l-6-70-8-100z"/>
+<path id="c09-so-armadura" fill="#d8352a" d="M88 140Q150 120 212 140L222 330Q150 350 78 330Z"/>
+</g>
+<g id="c09-so-traco" fill="#1b1a17" opacity=".55">
+<circle cx="110" cy="180" r="5"/><circle cx="150" cy="176" r="5"/><circle cx="190" cy="180" r="5"/>
+<circle cx="106" cy="225" r="5"/><circle cx="150" cy="222" r="5"/><circle cx="194" cy="225" r="5"/>
+<circle cx="104" cy="270" r="5"/><circle cx="150" cy="270" r="5"/><circle cx="196" cy="270" r="5"/>
+<circle cx="102" cy="312" r="5"/><circle cx="150" cy="316" r="5"/><circle cx="198" cy="312" r="5"/>
+</g>
+</svg><!--/@svg:simbolos/soldado--></div>
+      <svg id="c09-cam" viewBox="0 0 300 700">
+        <defs><clipPath id="c09-cp-armadura"><path d="M88 140Q150 120 212 140L222 330Q150 350 78 330Z"/></clipPath><clipPath id="c09-cp-manto"><path d="M80 332Q150 352 220 332L240 500Q150 520 60 500Z"/></clipPath><clipPath id="c09-cp-bracos"><path d="M88 142 50 170 36 330l8 70h34l6-70 8-100zM212 142l38 28 14 160-8 70h-34l-6-70-8-100z"/></clipPath><clipPath id="c09-cp-pernas"><path d="M92 505 88 630h50l2-115zM160 515l2 115h50l-4-125z"/></clipPath></defs>
+        <g clip-path="url(#c09-cp-armadura)"><polygon id="c09-f0" class="c09-furo" points="78,130 126,130 126,182 78,182"/><polygon id="c09-f1" class="c09-furo" points="78,182 126,182 126,235 78,235"/><polygon id="c09-f2" class="c09-furo" points="78,235 126,235 126,288 78,288"/><polygon id="c09-f3" class="c09-furo" points="78,288 126,288 126,340 78,340"/><polygon id="c09-f4" class="c09-furo" points="126,130 174,130 174,182 126,182"/><polygon id="c09-f5" class="c09-furo" points="126,235 174,235 174,288 126,288"/><polygon id="c09-f6" class="c09-furo" points="126,288 174,288 174,340 126,340"/><polygon id="c09-f7" class="c09-furo" points="174,130 222,130 222,182 174,182"/><polygon id="c09-f8" class="c09-furo" points="174,182 222,182 222,235 174,235"/><polygon id="c09-f9" class="c09-furo" points="174,235 222,235 222,288 174,288"/></g><g clip-path="url(#c09-cp-manto)"><polygon id="c09-f10" class="c09-furo" points="60,332 105,332 105,394 60,394"/><polygon id="c09-f11" class="c09-furo" points="60,394 105,394 105,456 60,456"/><polygon id="c09-f12" class="c09-furo" points="60,456 105,456 105,518 60,518"/><polygon id="c09-f13" class="c09-furo" points="105,332 150,332 150,394 105,394"/><polygon id="c09-f14" class="c09-furo" points="105,394 150,394 150,456 105,456"/><polygon id="c09-f15" class="c09-furo" points="150,332 195,332 195,394 150,394"/><polygon id="c09-f16" class="c09-furo" points="150,394 195,394 195,456 150,456"/><polygon id="c09-f17" class="c09-furo" points="150,456 195,456 195,518 150,518"/><polygon id="c09-f18" class="c09-furo" points="195,332 240,332 240,394 195,394"/><polygon id="c09-f19" class="c09-furo" points="195,394 240,394 240,456 195,456"/></g><g clip-path="url(#c09-cp-bracos)"><polygon id="c09-f20" class="c09-furo" points="36,142 92,142 92,194 36,194"/><polygon id="c09-f21" class="c09-furo" points="36,194 92,194 92,245 36,245"/><polygon id="c09-f22" class="c09-furo" points="36,245 92,245 92,297 36,297"/><polygon id="c09-f23" class="c09-furo" points="36,297 92,297 92,348 36,348"/><polygon id="c09-f24" class="c09-furo" points="36,348 92,348 92,400 36,400"/><polygon id="c09-f25" class="c09-furo" points="208,194 264,194 264,245 208,245"/><polygon id="c09-f26" class="c09-furo" points="208,245 264,245 264,297 208,297"/><polygon id="c09-f27" class="c09-furo" points="208,297 264,297 264,348 208,348"/><polygon id="c09-f28" class="c09-furo" points="208,348 264,348 264,400 208,400"/></g><g clip-path="url(#c09-cp-pernas)"><polygon id="c09-f29" class="c09-furo" points="88,505 140,505 140,547 88,547"/><polygon id="c09-f30" class="c09-furo" points="88,588 140,588 140,630 88,630"/><polygon id="c09-f31" class="c09-furo" points="160,505 212,505 212,547 160,547"/><polygon id="c09-f32" class="c09-furo" points="160,547 212,547 212,588 160,588"/><polygon id="c09-f33" class="c09-furo" points="160,588 212,588 212,630 160,630"/></g>
+        <g id="c09-rachas" fill="none" stroke="#1b1a17" stroke-width="3" stroke-linecap="round">
+          <path d="M112 150l14 34-10 30 18 40"/><path d="M186 160l-10 42 16 36-12 44"/><path d="M90 360l22 30-6 40 18 40"/><path d="M204 366l-18 34 10 42-14 30"/><path d="M60 210l6 44-8 40"/><path d="M240 214l-6 40 8 42"/>
+        </g>
+        <g id="c09-lascas"><polygon id="c09-l0" class="c09-lasca" fill="#d8352a" points="82,133 123,132 123,181 87,176" data-cy="156"/><polygon id="c09-l1" class="c09-lasca" fill="#d8352a" points="79,187 124,192 120,227 83,230" data-cy="209"/><polygon id="c09-l2" class="c09-lasca" fill="#d8352a" points="87,243 119,237 123,279 81,278" data-cy="261"/><polygon id="c09-l3" class="c09-lasca" fill="#d8352a" points="82,297 116,290 118,332 79,338" data-cy="314"/><polygon id="c09-l4" class="c09-lasca" fill="#d8352a" points="133,131 169,134 166,181 130,181" data-cy="156"/><polygon id="c09-l5" class="c09-lasca" fill="#d8352a" points="128,243 168,244 166,278 133,283" data-cy="261"/><polygon id="c09-l6" class="c09-lasca" fill="#d8352a" points="136,292 167,295 171,334 133,334" data-cy="314"/><polygon id="c09-l7" class="c09-lasca" fill="#d8352a" points="178,140 221,140 219,180 183,179" data-cy="156"/><polygon id="c09-l8" class="c09-lasca" fill="#d8352a" points="180,188 212,193 214,234 182,232" data-cy="209"/><polygon id="c09-l9" class="c09-lasca" fill="#d8352a" points="176,237 215,242 217,284 183,284" data-cy="261"/><polygon id="c09-l10" class="c09-lasca" fill="#2fbf71" points="63,335 96,334 97,385 64,392" data-cy="363"/><polygon id="c09-l11" class="c09-lasca" fill="#2fbf71" points="66,396 100,403 99,446 68,445" data-cy="425"/><polygon id="c09-l12" class="c09-lasca" fill="#2fbf71" points="63,457 97,468 104,512 66,508" data-cy="487"/><polygon id="c09-l13" class="c09-lasca" fill="#2fbf71" points="109,335 145,340 141,392 114,387" data-cy="363"/><polygon id="c09-l14" class="c09-lasca" fill="#2fbf71" points="107,405 147,396 146,452 113,448" data-cy="425"/><polygon id="c09-l15" class="c09-lasca" fill="#2fbf71" points="158,335 188,339 194,391 151,387" data-cy="363"/><polygon id="c09-l16" class="c09-lasca" fill="#2fbf71" points="155,398 190,403 189,445 156,455" data-cy="425"/><polygon id="c09-l17" class="c09-lasca" fill="#2fbf71" points="151,461 190,465 187,509 153,515" data-cy="487"/><polygon id="c09-l18" class="c09-lasca" fill="#2fbf71" points="201,336 237,337 236,390 201,389" data-cy="363"/><polygon id="c09-l19" class="c09-lasca" fill="#2fbf71" points="202,401 237,399 233,454 199,450" data-cy="425"/><polygon id="c09-l20" class="c09-lasca" fill="#2f6fde" points="47,147 83,146 85,191 41,191" data-cy="168"/><polygon id="c09-l21" class="c09-lasca" fill="#2f6fde" points="44,198 88,196 84,243 38,241" data-cy="219"/><polygon id="c09-l22" class="c09-lasca" fill="#2f6fde" points="37,247 86,251 82,294 38,291" data-cy="271"/><polygon id="c09-l23" class="c09-lasca" fill="#2f6fde" points="40,300 88,306 89,343 40,342" data-cy="323"/><polygon id="c09-l24" class="c09-lasca" fill="#2f6fde" points="41,352 87,352 81,391 43,396" data-cy="374"/><polygon id="c09-l25" class="c09-lasca" fill="#2f6fde" points="217,198 259,204 258,237 219,236" data-cy="219"/><polygon id="c09-l26" class="c09-lasca" fill="#2f6fde" points="216,254 255,255 257,290 213,292" data-cy="271"/><polygon id="c09-l27" class="c09-lasca" fill="#2f6fde" points="217,299 253,303 256,342 218,346" data-cy="323"/><polygon id="c09-l28" class="c09-lasca" fill="#2f6fde" points="215,358 259,358 258,393 213,399" data-cy="374"/><polygon id="c09-l29" class="c09-lasca" fill="#8e5bd0" points="91,510 137,509 133,539 93,543" data-cy="526"/><polygon id="c09-l30" class="c09-lasca" fill="#8e5bd0" points="89,589 135,594 138,622 97,626" data-cy="609"/><polygon id="c09-l31" class="c09-lasca" fill="#8e5bd0" points="165,512 207,507 205,542 168,541" data-cy="526"/><polygon id="c09-l32" class="c09-lasca" fill="#8e5bd0" points="161,552 211,548 207,582 161,584" data-cy="568"/><polygon id="c09-l33" class="c09-lasca" fill="#8e5bd0" points="167,594 211,593 204,625 169,626" data-cy="609"/></g>
+      </svg>
+      <div id="c09-vis"><div id="c09-num" class="rb-mono">00:15</div></div>
+      <div id="c09-t1" class="c09-t rb-titulo"><div id="c09-t1a">LACA</div><div id="c09-t1b">ENCOLHE</div></div>
+      <div id="c09-t2" class="c09-t rb-titulo">A TINTA<br>CAI</div>
+      <div id="c09-ar" class="rb-mono">AR SECO DE XI'AN</div>
+    </div>
+  </div>
+  <script>
+    const C = "c09";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    const surge = (el, t, dy = 24, dx = 0) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy, x: dx }, { y: 0, x: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, t); };
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    // o relógio segue de 00:15 até 04:00 em passos, e só trava em "tinta"
+    const t0 = 0.05, t1 = T("tinta") + 0.4;
+    const pass = 30;
+    for (let i = 1; i <= pass; i++) {
+      const seg = Math.round(15 + (240 - 15) * (i / pass)), m = Math.floor(seg / 60), s = seg % 60;
+      tl.set("#c09-num", { textContent: "\u200B" + String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0") }, t0 + (i / pass) * (t1 - t0));
+    }
+    tl.set("#c09-vis", { borderColor: "#ff3b30" }, t1);
+    tl.fromTo("#c09-vis", { x: 8 }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, t1 + 0.02);
+    // "seca": as rachaduras aparecem; "encolhe": a camada de cor enruga, em passos
+    gsap.set("#c09-rachas path", { autoAlpha: 0 });
+    tl.set("#c09-rachas path", { autoAlpha: 1, stagger: 0.05 }, T("seca"));
+    gsap.set("#c09-t2", { autoAlpha: 0 });
+    dat("#c09-t1a", T("laca") - 0.05, 0.16, 4);
+    dat("#c09-t1b", T("encolhe") - 0.1, 0.26, 7);
+    tl.to("#c09-so-cor", { scaleX: 0.965, scaleY: 0.985, transformOrigin: "50% 50%", duration: 0.3, ease: "steps(4)" }, T("encolhe"));
+    tl.to("#c09-so-cor", { x: 3, y: 2, duration: 0.3, ease: "steps(4)" }, T("encolhe") + 0.05);
+    // "solta": as placas caem em passos até o chão; onde caem, sobra barro; algumas ficam
+    const lascas = gsap.utils.toArray(".c09-lasca"), furos = gsap.utils.toArray(".c09-furo");
+    const a = T("solta") + 0.2, b = D - 0.6;
+    gsap.set(furos, { autoAlpha: 0 }); gsap.set(lascas, { autoAlpha: 0 });
+    lascas.forEach((el, i) => {
+      const k = (i * 37) % lascas.length, t = a + (k / lascas.length) * (b - a);
+      const cy = Number(el.dataset.cy), queda = 690 - 12 - ((i * 13) % 8) - cy, dx = ((i * 53) % 74) - 37;
+      tl.set(furos[i], { autoAlpha: 1 }, t);
+      tl.set(el, { autoAlpha: 0.67 }, t);
+      tl.fromTo(el, { y: 0, x: 0, rotation: 0, transformOrigin: "50% 50%" }, { y: queda, x: dx, rotation: ((i * 71) % 120) - 60, duration: 0.5, ease: "steps(6)", immediateRender: false }, t);
+    });
+    dat("#c09-t2", T("leva") - 0.05, 0.3, 7);
+    tl.set("#c09-t2", { autoAlpha: 1 }, T("leva") - 0.05);
+    dat("#c09-ar", T("seca"), 0.36, 16);
+    window.__timelines["c09"] = tl;
+  </script>
+</template>

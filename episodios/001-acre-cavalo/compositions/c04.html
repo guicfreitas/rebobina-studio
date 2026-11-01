@@ -1,0 +1,69 @@
+<template>
+  <!-- c04 · rebobinar · objeto-símbolo → documento: medalhas + cavalo, depois o Tratado de Ayacucho. -->
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c04-rot { position: absolute; left: 90px; top: 330px; width: 900px; font-family: var(--f-titulo); font-size: 112px; line-height: .92; text-transform: uppercase; color: var(--papel); }
+    .c04-med { position: absolute; top: 590px; width: 210px; }
+    .c04-fita { width: 120px; height: 150px; margin: 0 auto; background: linear-gradient(90deg, var(--acento) 0 33%, var(--vhs) 33% 66%, var(--acento) 66%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%); }
+    .c04-disco { width: 210px; height: 210px; border-radius: 50%; margin-top: -40px;
+      background: radial-gradient(circle at 38% 32%, #ffe9a6 0 8%, #e8b04b 30%, #a8771f 75%, #6e4c12 100%);
+      box-shadow: inset 0 0 0 12px rgba(110,76,18,.5), 0 20px 40px rgba(0,0,0,.6);
+      display: flex; align-items: center; justify-content: center; font-family: var(--f-titulo); font-size: 110px; color: #6e4c12; }
+    #c04-m1 { left: 90px; } #c04-m2 { left: 330px; }
+    #c04-mais { position: absolute; left: 570px; top: 720px; font-size: 140px; color: var(--papel); }
+    #c04-cav { position: absolute; left: 670px; top: 560px; width: 270px; height: 345px; color: var(--papel); }
+    #c04-cav svg { width: 100%; height: 100%; }
+    .c04-leg { position: absolute; top: 950px; font-size: 86px; color: var(--vhs); }
+    #c04-leg1 { left: 110px; } #c04-leg2 { left: 690px; }
+    #c04-doc { position: absolute; left: 90px; top: 360px; width: 900px; height: 680px; padding: 50px 56px; border-radius: 4px; }
+    #c04-doc h2 { font-family: var(--f-doc); font-weight: 400; font-size: 64px; text-align: center; line-height: 1.05; }
+    #c04-doc .meta { font-family: var(--f-mono); font-weight: 700; font-size: 28px; text-align: center; letter-spacing: .12em; color: #6d5f45; margin-top: 16px; }
+    .c04-barra { height: 16px; background: rgba(27,26,23,.18); margin-top: 26px; border-radius: 3px; }
+    #c04-ass { position: absolute; left: 110px; bottom: 60px; width: 420px; height: 130px; }
+    #c04-ass path { fill: none; stroke: #1d2a6b; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+    #c04-ass-linha { position: absolute; left: 110px; bottom: 70px; width: 420px; height: 3px; background: #1b1a17; }
+    #c04-ass-txt { position: absolute; left: 110px; bottom: 30px; font-family: var(--f-mono); font-size: 28px; color: #6d5f45; letter-spacing: .1em; }
+  </style>
+  <div id="root" data-composition-id="c04" data-width="1080" data-height="1920">
+    <div id="c04-presente" class="clip" data-start="0" data-duration="9" data-layout-allow-overlap>
+      <div id="c04-rot">Presente de um<br />diplomata brasileiro</div>
+      <div id="c04-m1" class="c04-med"><div class="c04-fita"></div><div class="c04-disco">★</div></div>
+      <div id="c04-m2" class="c04-med"><div class="c04-fita"></div><div class="c04-disco">★</div></div>
+      <div id="c04-mais" class="rb-titulo">+</div>
+      <div id="c04-cav"><!--@cavalo--><svg class="simbolo-cavalo" viewBox="0 0 1172 1496" xmlns="http://www.w3.org/2000/svg"><path transform="translate(-332,1496) scale(1,-1)" d="M790 1254Q827 1277 827 1316Q827 1341 812.0 1369.5Q797 1398 797 1420Q797 1466 855 1496Q940 1415 947.5 1370.5Q955 1326 955 1313Q955 1266 921 1254H925Q925 1253 923 1253Q1459 913 1504 0H534Q521 56 521 114Q521 274 723.5 415.5Q926 557 926 670Q926 678 925 685Q859 518 742 518Q742 518 732 518Q642 372 539 372Q535 372 532 372L580 476L473 396Q359 424 332 507Q420 736 420 926Q420 953 418 979Q466 1088 565 1192Q568 1202 568 1211Q568 1239 545.5 1252.0Q523 1265 523 1300Q523 1337 543 1403Q647 1376 703 1254ZM533 999V983Q537 953 545 953H566Q635 953 635 1002Q635 1036 678 1084H672Q576 1084 539 1020ZM424 549V525Q424 496 452 496H462Q534 511 534 564L527 598Q465 598 424 549ZM922 1174 974 1085Q1349 816 1355 52H1432Q1387 902 922 1174Z"/></svg><!--/@cavalo--></div>
+      <div id="c04-leg1" class="c04-leg rb-titulo">2 medalhas</div>
+      <div id="c04-leg2" class="c04-leg rb-titulo">1 cavalo</div>
+    </div>
+    <div id="c04-doc-w" class="clip" data-start="0" data-duration="9" data-layout-allow-overlap>
+      <div id="c04-doc" class="rb-papel">
+        <h2>TRATADO DE<br />AYACUCHO</h2>
+        <div class="meta">BRASIL × BOLÍVIA · 27 MAR 1867</div>
+        <div class="c04-barra" style="width:100%;margin-top:44px"></div><div class="c04-barra" style="width:92%"></div>
+        <div class="c04-barra" style="width:97%"></div><div class="c04-barra" style="width:60%"></div>
+        <div id="c04-ass-linha"></div>
+        <svg id="c04-ass" viewBox="0 0 420 130"><path id="c04-ass-p" d="M10 95 C 40 20, 70 20, 60 90 S 110 40, 130 70 S 170 100, 190 55 C 200 30, 215 95, 240 70 S 290 30, 300 80 C 320 120, 350 40, 410 60" /></svg>
+        <div id="c04-ass-txt">ASSINATURAS</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c04", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c04-rot", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.2, ease: "power3.out" }, 0.08);
+    tl.fromTo("#c04-m1", { y: -1100 }, { y: 0, duration: 0.35, ease: "bounce.out" }, T("deu") - 0.1);
+    tl.fromTo("#c04-m2", { y: -1100 }, { y: 0, duration: 0.35, ease: "bounce.out" }, T("deu") + 0.1);
+    tl.fromTo("#c04-leg1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.18, ease: "power3.out" }, T("medalhas") - 0.05);
+    tl.fromTo("#c04-mais", { scale: 0 }, { scale: 1, duration: 0.15, ease: "back.out(3)" }, T("cavalo") - 0.2);
+    tl.fromTo("#c04-cav", { x: 500 }, { x: 0, duration: 0.3, ease: "power3.out" }, T("cavalo") - 0.1);
+    tl.fromTo("#c04-leg2", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.18, ease: "power3.out" }, T("cavalo") + 0.2);
+    tl.fromTo(".c04-disco", { rotation: -8 }, { rotation: 8, duration: 0.9, ease: "sine.inOut", yoyo: true, repeat: 2 }, T("medalhas") + 0.4);
+    // "Logo depois": o presente sobe e sai, o tratado entra por baixo
+    tl.to("#c04-presente", { y: -1100, duration: 0.4, ease: "power3.in" }, T("Logo") - 0.05);
+    tl.fromTo("#c04-doc", { y: 1700, rotation: 3 }, { y: 0, rotation: 0.8, duration: 0.4, ease: "power3.out" }, T("Logo") + 0.2);
+    tl.fromTo(".c04-barra", { scaleX: 0, transformOrigin: "0 50%" }, { scaleX: 1, duration: 0.18, stagger: 0.08, ease: "steps(6)" }, T("Logo") + 0.55);
+    tl.fromTo("#c04-ass-p", { strokeDasharray: 1100, strokeDashoffset: 1100 }, { strokeDashoffset: 0, duration: 0.9, ease: "power1.inOut" }, T("assinaram"));
+    tl.fromTo("#c04-doc", { scale: 1 }, { scale: 1.04, duration: D - T("Logo"), ease: "none" }, T("Logo") + 0.6);
+    window.__timelines["c04"] = tl;
+  </script>
+</template>

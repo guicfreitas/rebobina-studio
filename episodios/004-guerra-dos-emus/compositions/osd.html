@@ -1,0 +1,40 @@
+<template>
+  <!-- GERADO por ferramentas/montar.py -->
+  <style>
+    #root { position: absolute; inset: 0; pointer-events: none; }
+    #osd-play, #osd-ano, #osd-fita { position: absolute; font-family: var(--f-mono); font-weight: 700;
+      color: var(--papel); text-shadow: 3px 0 rgba(255,59,48,.55), -3px 0 rgba(63,167,255,.55); }
+    #osd-play { left: 90px; top: 196px; font-size: 46px; letter-spacing: .06em; }
+    #osd-ano { right: 90px; top: 188px; font-size: 64px; letter-spacing: .04em; }
+    #osd-fita { right: 92px; top: 262px; font-size: 28px; opacity: .7; letter-spacing: .12em; }
+    #osd-ponto { display: inline-block; width: 24px; height: 24px; border-radius: 50%; background: var(--rec);
+      margin-right: 16px; vertical-align: 4px; }
+  </style>
+  <div id="root" data-composition-id="osd" data-width="1080" data-height="1920">
+    <div id="osd-play" class="clip" data-start="0" data-duration="89.8"><span id="osd-ponto"></span><span id="osd-modo">PLAY ▶</span></div>
+    <div id="osd-ano" class="clip" data-start="0" data-duration="89.8"><span id="osd-ano-txt">2026</span></div>
+    <div id="osd-fita" class="clip" data-start="0" data-duration="89.8">FITA 004</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const TOTAL = 89.8, ERAS = [[0.0, 2026], [9.44, 1932], [65.93, 1934], [78.86, 1908], [81.25, 2026]];
+    const ponto = "#osd-ponto", modo = "#osd-modo", ano = "#osd-ano-txt";
+    for (let t = 0; t < TOTAL; t += 0.5) tl.set(ponto, { opacity: (Math.round(t * 2) % 2) ? 0.15 : 1 }, t);
+    // rebobinar: o contador rola em passos (como contador de fita) até o novo ano
+    for (let i = 1; i < ERAS.length; i++) {
+      const [t, alvo] = ERAS[i], de = ERAS[i - 1][1], passos = 14, t0 = Math.max(t - 0.28, 0);
+      tl.set(modo, { textContent: alvo < de ? "◀◀ REW" : "▶▶ FF" }, t0);
+      tl.set(ponto, { backgroundColor: "#ffd23f" }, t0);
+      for (let k = 1; k <= passos; k++) {
+        const v = Math.round(de + (alvo - de) * (1 - Math.pow(1 - k / passos, 2)));
+        tl.set(ano, { textContent: String(v) }, t0 + k * (0.62 / passos));
+      }
+      tl.set(modo, { textContent: "PLAY ▶" }, t0 + 0.7);
+      tl.set(ponto, { backgroundColor: "#ff3b30" }, t0 + 0.7);
+      tl.fromTo("#osd-ano", { x: -10 }, { x: 0, duration: 0.3, ease: "steps(4)" }, t0 + 0.62);
+    }
+    tl.set(modo, { textContent: "■ STOP" }, TOTAL - 0.9);
+    tl.set(ponto, { opacity: 0 }, TOTAL - 0.9);
+    window.__timelines["osd"] = tl;
+  </script>
+</template>

@@ -1,0 +1,57 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #101010; overflow: hidden; }
+    #c12-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c12-flecha { position: absolute; left: 90px; top: 34px; width: 840px; height: 90px; }
+    #c12-c { position: absolute; left: 215px; top: 32px; font-size: 48px; white-space: nowrap; }
+    #c12-corte { position: absolute; left: 90px; top: 280px; width: 840px; height: 470px; }
+    .c12-t { position: absolute; font-size: 80px; line-height: .96; white-space: nowrap; }
+    #c12-t1 { left: 90px; top: 268px; color: #c8ced6; }
+    #c12-t2 { left: 734px; top: 268px; }
+    #c12-t3 { left: 90px; top: 168px; font-size: 44px; color: var(--vhs); white-space: nowrap; position: absolute; }
+    #c12-cam { position: absolute; left: 428px; top: 590px; width: 224px; height: 140px; border: 7px dashed var(--papel); background: #0c0b0a; }
+  </style>
+  <div id="root" data-composition-id="c12" data-width="1080" data-height="1920">
+    <div id="c12-w" class="clip" data-start="0" data-duration="6.78" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c12-palco">
+        <div id="c12-topo" style="position:absolute;left:0;top:0;width:1080px;height:160px"><svg id="c12-flecha" viewBox="0 0 840 90" fill="none" stroke="#f1e8d3" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 45H810"/><path d="M766 14l52 31-52 31z" fill="#f1e8d3"/><path d="M10 45 42 14M10 45l32 31M52 45 84 14M52 45l32 31"/>
+        </svg>
+        <div id="c12-c" class="rb-carimbo claro" style="background:#101010">SEM CONFIRMAÇÃO</div></div>
+        <div id="c12-t3" class="rb-mono">ORIGEM AINDA EM DEBATE</div>
+        <svg id="c12-corte" viewBox="0 0 840 470">
+          <path d="M0 470V240H190L340 100H500L650 240H840V470Z" fill="#5a4630" stroke="#f1e8d3" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M0 240H840" stroke="#3a2d1f" stroke-width="6"/>
+          <g id="c12-pontos" fill="#d6dde4"><circle cx="350" cy="122" r="6"/><circle cx="400" cy="122" r="7"/><circle cx="450" cy="122" r="6"/><circle cx="490" cy="122" r="7"/><circle cx="325" cy="158" r="6"/><circle cx="375" cy="158" r="7"/><circle cx="425" cy="158" r="6"/><circle cx="475" cy="158" r="7"/><circle cx="525" cy="158" r="6"/><circle cx="285" cy="198" r="7"/><circle cx="340" cy="198" r="6"/><circle cx="395" cy="198" r="7"/><circle cx="450" cy="198" r="6"/><circle cx="505" cy="198" r="7"/><circle cx="560" cy="198" r="6"/><circle cx="250" cy="230" r="7"/><circle cx="310" cy="230" r="6"/><circle cx="370" cy="230" r="7"/><circle cx="430" cy="230" r="6"/><circle cx="490" cy="230" r="7"/><circle cx="550" cy="230" r="6"/><circle cx="610" cy="230" r="7"/></g>
+        </svg>
+        <div id="c12-cam"></div>
+        <div id="c12-t1" class="c12-t rb-titulo">MERCÚRIO<br>ALTO<br>NO SOLO</div>
+        <div id="c12-t2" class="c12-t rb-titulo">MEDIDO<br>FORA DA<br>CÂMARA</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c12";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    const bate = (el, t, de = -9, ate = -4, op = 1) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)", immediateRender: false }, t); };
+    const surge = (el, t, dy = 24, dx = 0) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy, x: dx }, { y: 0, x: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, t); };
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    tl.fromTo("#c12-flecha", { x: -930 }, { x: 0, duration: 0.24, ease: "power3.out", immediateRender: false }, T("as") - 0.05);
+    gsap.set("#c12-flecha", { x: -930 });
+    gsap.set("#c12-topo", { y: 300 });
+    tl.to("#c12-topo", { y: 0, duration: 0.24, ease: "power3.out" }, T("mercurio") - 0.3);
+    const tc = Tf("confirmou") - 0.03;
+    bate("#c12-c", tc);
+    tl.fromTo("#c12-flecha", { y: 6 }, { y: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, tc + 0.03);
+    // corte do morro: só a terra de cima tem pontos; a câmara fica vazia e tracejada
+    surge("#c12-corte", T("mercurio") - 0.22, 480);
+    surge("#c12-cam", T("mercurio") - 0.22, 480);
+    tl.fromTo("#c12-pontos circle", { opacity: 0 }, { opacity: 1, duration: 0.01, stagger: 0.03 }, T("mercurio"));
+    surge("#c12-t1", T("mercurio"), 0, -30);
+    dat("#c12-t3", T("pista") - 0.1, 0.46, 22);
+    surge("#c12-t2", T("fora"), 0, 30);
+    tl.fromTo("#c12-cam", { borderColor: "#f1e8d3" }, { borderColor: "#ffd23f", duration: 0.1, ease: "steps(2)" }, T("camara"));
+    window.__timelines["c12"] = tl;
+  </script>
+</template>

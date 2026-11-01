@@ -1,0 +1,46 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c10-e { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; background: var(--papel); box-shadow: inset 0 0 90px rgba(120,90,40,.3); }
+    #c10-a1 { position: absolute; left: 90px; top: 48px; font-size: 190px; color: var(--tinta); }
+    #c10-c1 { position: absolute; left: 90px; top: 340px; font-size: 56px; white-space: nowrap; color: #d3241a; border-color: #d3241a; mix-blend-mode: normal; }
+    #c10-cad { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; background: #e9eef8; border-left: 14px solid #1c1a22; overflow: hidden; }
+    .c10-pt { position: absolute; left: 0; width: 1080px; height: 3px; background: #9db8e0; }
+    .c10-f { position: absolute; left: 22px; width: 26px; height: 26px; border-radius: 50%; background: #1c1a22; }
+    #c10-mg { position: absolute; left: 70px; top: 0; width: 4px; height: 760px; background: #ff3b30; opacity: .7; }
+    #c10-t1 { position: absolute; left: 100px; top: 48px; font-size: 170px; color: #1d2c6b; }
+    #c10-t2 { position: absolute; left: 100px; top: 212px; font-size: 42px; color: #1d2c6b; white-space: nowrap; }
+    #c10-a2 { position: absolute; left: 100px; top: 340px; font-size: 190px; color: #1d2c6b; }
+    #c10-s { position: absolute; left: 110px; top: 540px; font-size: 94px; color: #2432b8; border-color: #2432b8; white-space: nowrap; mix-blend-mode: normal; }
+
+  </style>
+  <div id="root" data-composition-id="c10" data-width="1080" data-height="1920">
+    <div id="c10-w" class="clip" data-start="0" data-duration="7.67" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c10-e"><div id="c10-a1" class="rb-titulo">1693</div><div id="c10-c1" class="rb-carimbo">CULPADA</div></div>
+      <div id="c10-cad"><i class="c10-pt" style="top:70px"></i><i class="c10-pt" style="top:132px"></i><i class="c10-pt" style="top:194px"></i><i class="c10-pt" style="top:256px"></i><i class="c10-pt" style="top:318px"></i><i class="c10-pt" style="top:380px"></i><i class="c10-pt" style="top:442px"></i><i class="c10-pt" style="top:504px"></i><i class="c10-pt" style="top:566px"></i><i class="c10-pt" style="top:628px"></i><i class="c10-pt" style="top:690px"></i><i class="c10-pt" style="top:752px"></i><i class="c10-f" style="top:50px"></i><i class="c10-f" style="top:158px"></i><i class="c10-f" style="top:266px"></i><i class="c10-f" style="top:374px"></i><i class="c10-f" style="top:482px"></i><i class="c10-f" style="top:590px"></i><i class="c10-f" style="top:698px"></i><i id="c10-mg"></i>
+        <div id="c10-t1" class="rb-titulo">8&ordm; ANO</div>
+        <div id="c10-t2" class="rb-mono">NORTH ANDOVER</div>
+        <div id="c10-a2" class="rb-titulo">2022</div>
+        <div id="c10-s" class="rb-carimbo">INOCENTADA</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c10"; const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // entra no gatilho, sem atravessar a tela: carimbo bate (1,5 → 1); peça aparece com um pequeno deslocamento
+    const bate = (el, t, de = 0, ate = 0, op = 1) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)" }, t); };
+    const surge = (el, t, dy = 24) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy }, { y: 0, duration: 0.18, ease: "power3.out" }, t); };
+    tl.fromTo("#c10-c1", { scale: 1.5, rotation: -14 }, { scale: 1, rotation: -7, duration: 0.16, ease: "back.out(2)" }, 0.05);
+    tl.fromTo("#c10-cad", { x: 1100 }, { x: 540, duration: 0.26, ease: "power3.out" }, T("turma") - 0.15);
+    tl.fromTo("#c10-t2", { x: 700 }, { x: 0, duration: 0.2, ease: "power3.out" }, T("oitavo"));
+    tl.fromTo("#c10-cad", { y: 5 }, { y: 0, duration: 0.1, ease: "steps(2)", immediateRender: false }, T("legisladores"));
+    // o caderno empurra a divisão até cobrir tudo
+    tl.to("#c10-cad", { x: 470, duration: 0.5, ease: "power1.inOut" }, T("levou"));
+    tl.to("#c10-cad", { x: 0, duration: 0.3, ease: "power3.in" }, T("dois") - 0.05);
+    tl.set("#c10-e", { y: -2200 }, T("dois") + 0.27);
+    surge("#c10-a2", T("vinte"));
+    bate("#c10-s", T("inocentada"), -10, -4, 0.92);
+    window.__timelines["c10"] = tl;
+  </script>
+</template>

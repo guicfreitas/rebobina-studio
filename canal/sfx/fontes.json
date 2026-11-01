@@ -1,0 +1,102 @@
+{
+ "pagina": {
+  "titulo": "page turn sound effect",
+  "autor": "stumpbutt",
+  "licenca": "CC0",
+  "pagina": "https://freesound.org/people/stumpbutt/sounds/431871",
+  "descricao": "virar página de jornal, livro ou documento (ataque lento: desloca -0.39)",
+  "ataque": 0.39
+ },
+ "papel": {
+  "titulo": "Paper Rustle",
+  "autor": "BenjaminNelan",
+  "licenca": "CC0",
+  "pagina": "https://freesound.org/people/BenjaminNelan/sounds/353125",
+  "descricao": "papel deslizando, ficha entrando (ataque lento: desloca -0.64)",
+  "ataque": 0.64
+ },
+ "carimbo": {
+  "titulo": "Thump.mp3",
+  "autor": "mpuffenbarger",
+  "licenca": "CC0",
+  "pagina": "https://freesound.org/people/mpuffenbarger/sounds/683031",
+  "descricao": "carimbo batendo no papel"
+ },
+ "maquina": {
+  "titulo": "Typewriter snippet 03",
+  "autor": "cabled_mess",
+  "licenca": "CC0",
+  "pagina": "https://freesound.org/people/cabled_mess/sounds/360601",
+  "descricao": "datilografia curta, texto surgindo"
+ },
+ "estatica": {
+  "titulo": "radio static 01.wav",
+  "autor": "pushkin",
+  "licenca": "CC0",
+  "pagina": "https://freesound.org/people/pushkin/sounds/100417",
+  "descricao": "estática de rádio"
+ },
+ "baque": {
+  "titulo": "ANI Big Pipe Hit",
+  "autor": "ani_music",
+  "licenca": "CC0",
+  "pagina": "https://freesound.org/people/ani_music/sounds/244983",
+  "descricao": "impacto forte, revelação de número"
+ },
+ "tique": {
+  "titulo": "clock-tick-01.flac",
+  "autor": "pbimal",
+  "licenca": "CC0",
+  "pagina": "https://freesound.org/people/pbimal/sounds/534094",
+  "descricao": "tique de contador ou relógio"
+ },
+ "tiro": {
+  "titulo": "Machine Gun Burst",
+  "autor": "qubodup",
+  "licenca": "CC0",
+  "pagina": "https://freesound.org/people/qubodup/sounds/482121",
+  "descricao": "rajada de metralhadora, curta e sem gore"
+ },
+ "passaros": {
+  "titulo": "short pigeon wing flap",
+  "autor": "zouzmusic",
+  "licenca": "CC0",
+  "pagina": "https://freesound.org/people/zouzmusic/sounds/414671",
+  "descricao": "asas batendo"
+ },
+ "gaveta": {
+  "titulo": "Drawer open Mid.wav",
+  "autor": "HonorHunter",
+  "licenca": "CC0",
+  "pagina": "https://freesound.org/people/HonorHunter/sounds/271659",
+  "descricao": "gaveta de arquivo abrindo"
+ },
+ "swoosh": {
+  "titulo": "whoosh-short",
+  "autor": "Pixabay (biblioteca do HyperFrames)",
+  "licenca": "Pixabay Content License",
+  "pagina": "https://pixabay.com/service/license-summary/",
+  "descricao": "troca de cena, elemento entrando"
+ },
+ "vhs": {
+  "titulo": "glitch-2",
+  "autor": "Pixabay (biblioteca do HyperFrames)",
+  "licenca": "Pixabay Content License",
+  "pagina": "https://pixabay.com/service/license-summary/",
+  "descricao": "interferência de fita, rebobinar, REW"
+ },
+ "clique": {
+  "titulo": "click",
+  "autor": "Pixabay (biblioteca do HyperFrames)",
+  "licenca": "Pixabay Content License",
+  "pagina": "https://pixabay.com/service/license-summary/",
+  "descricao": "clique de botão, PLAY/STOP"
+ },
+ "riser": {
+  "titulo": "riser",
+  "autor": "Pixabay (biblioteca do HyperFrames)",
+  "licenca": "Pixabay Content License",
+  "pagina": "https://pixabay.com/service/license-summary/",
+  "descricao": "subida de tensão antes da virada"
+ }
+}

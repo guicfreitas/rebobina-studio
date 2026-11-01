@@ -1,0 +1,102 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #12110e; overflow: hidden; }
+    #c05-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c05-ficha { position: absolute; left: 110px; top: 54px; width: 800px; height: 640px; background: #e9dcbc; box-shadow: 0 -8px 30px rgba(0,0,0,.5); }
+    #c05-aba { position: absolute; left: 110px; top: -2px; width: 220px; height: 60px; background: #e9dcbc; text-align: center; font-size: 44px; color: var(--tinta); line-height: 60px; }
+    .c05-l { position: absolute; left: 40px; white-space: nowrap; font-size: 56px; }
+    #c05-l1 { top: 44px; font-size: 76px; }
+    #c05-l2 { top: 160px; } #c05-l2b { top: 226px; }
+    #c05-l3 { top: 342px; } #c05-l3b { top: 408px; }
+    #c05-corte { position: absolute; left: 420px; top: 34px; width: 344px; height: 480px; overflow: hidden; background: #5a4630; border: 6px solid var(--tinta); }
+    #c05-corte i { position: absolute; left: 0; width: 100%; height: 6px; background: #4a3825; }
+    #c05-ceu { position: absolute; left: 0; top: 0; width: 100%; height: 86px; background: #cfc3a4; border-bottom: 6px solid var(--tinta); }
+    #c05-so { position: absolute; left: 80px; top: 200px; width: 180px; height: 420px; }
+    #c05-pa { position: absolute; left: 170px; top: -280px; width: 150px; height: 300px; }
+    #c05-ano { position: absolute; left: 90px; top: 120px; font-size: 400px; color: var(--papel); white-space: nowrap; }
+    #c05-so-cor, #c05-so-traco { display: none; }
+    #c05-gaveta { position: absolute; left: 70px; top: 590px; width: 880px; height: 170px; background: #2b2a2e; border-top: 10px solid #4a4850; }
+    #c05-placa { position: absolute; left: 310px; top: 28px; width: 260px; height: 60px; background: #d9cdb2; border: 5px solid #111; text-align: center; font-size: 40px; line-height: 50px; color: var(--tinta); }
+    #c05-puxa { position: absolute; left: 370px; top: 110px; width: 140px; height: 26px; border-radius: 13px; background: #77747e; }
+  </style>
+  <div id="root" data-composition-id="c05" data-width="1080" data-height="1920">
+    <div id="c05-w" class="clip" data-start="0" data-duration="6.2" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c05-palco">
+        <div id="c05-ano" class="rb-titulo" data-layout-allow-occlusion>1974</div>
+        <div id="c05-card">
+          <div id="c05-aba" class="rb-mono">1974</div>
+          <div id="c05-ficha">
+            <div id="c05-l1" class="c05-l rb-doc">UM POÇO</div>
+            <div id="c05-l2" class="c05-l rb-doc">PERTO DE</div>
+            <div id="c05-l2b" class="c05-l rb-doc">XI'AN</div>
+            <div id="c05-l3" class="c05-l rb-doc">TAMANHO</div>
+            <div id="c05-l3b" class="c05-l rb-doc">REAL</div>
+            <div id="c05-corte">
+              <i style="top:190px"></i><i style="top:300px"></i><i style="top:400px"></i>
+              <div id="c05-ceu"></div>
+              <div id="c05-so"><!--@svg:simbolos/soldado--><svg class="soldado" viewBox="0 0 300 700" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+<g id="c05-so-barro" fill="#c9b08a" stroke="#1b1a17" stroke-width="5" stroke-linejoin="round">
+<ellipse cx="168" cy="24" rx="16" ry="14"/><rect x="132" y="108" width="36" height="34"/><ellipse cx="150" cy="70" rx="38" ry="46"/>
+<rect x="56" y="652" width="188" height="34"/><path d="M80 630h64v22H80zM156 630h64v22h-64z"/>
+<ellipse cx="60" cy="418" rx="19" ry="21"/><ellipse cx="240" cy="418" rx="19" ry="21"/>
+<path id="c05-so-b-pernas" d="M92 505 88 630h50l2-115zM160 515l2 115h50l-4-125z"/>
+<path id="c05-so-b-manto" d="M80 332Q150 352 220 332L240 500Q150 520 60 500Z"/>
+<path id="c05-so-b-bracos" d="M88 142 50 170 36 330l8 70h34l6-70 8-100zM212 142l38 28 14 160-8 70h-34l-6-70-8-100z"/>
+<path id="c05-so-b-armadura" d="M88 140Q150 120 212 140L222 330Q150 350 78 330Z"/>
+</g>
+<g id="c05-so-cor" stroke="#1b1a17" stroke-width="5" stroke-linejoin="round">
+<path id="c05-so-pernas" fill="#8e5bd0" d="M92 505 88 630h50l2-115zM160 515l2 115h50l-4-125z"/>
+<path id="c05-so-manto" fill="#2fbf71" d="M80 332Q150 352 220 332L240 500Q150 520 60 500Z"/>
+<path id="c05-so-bracos" fill="#2f6fde" d="M88 142 50 170 36 330l8 70h34l6-70 8-100zM212 142l38 28 14 160-8 70h-34l-6-70-8-100z"/>
+<path id="c05-so-armadura" fill="#d8352a" d="M88 140Q150 120 212 140L222 330Q150 350 78 330Z"/>
+</g>
+<g id="c05-so-traco" fill="#1b1a17" opacity=".55">
+<circle cx="110" cy="180" r="5"/><circle cx="150" cy="176" r="5"/><circle cx="190" cy="180" r="5"/>
+<circle cx="106" cy="225" r="5"/><circle cx="150" cy="222" r="5"/><circle cx="194" cy="225" r="5"/>
+<circle cx="104" cy="270" r="5"/><circle cx="150" cy="270" r="5"/><circle cx="196" cy="270" r="5"/>
+<circle cx="102" cy="312" r="5"/><circle cx="150" cy="316" r="5"/><circle cx="198" cy="312" r="5"/>
+</g>
+</svg><!--/@svg:simbolos/soldado--></div>
+              <svg id="c05-pa" viewBox="0 0 150 300" fill="none" stroke="#1b1a17" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M100 0 66 210"/><path d="M34 196l76 14-14 76-32 14-38-30z" fill="#6b6a70"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div id="c05-gaveta"><div id="c05-placa" class="rb-mono">ARQUIVO</div><div id="c05-puxa"></div></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c05";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    // a ficha sobe de dentro da gaveta, em passos
+    gsap.set("#c05-card", { y: 640 });
+    const ts = Tf("quatro") - 0.05;
+    tl.fromTo("#c05-ano", { scale: 0.92, transformOrigin: "50% 100%" }, { scale: 1, duration: 1.2, ease: "steps(12)" }, 0.1);
+    tl.fromTo("#c05-gaveta", { y: 30 }, { y: 0, duration: 0.2, ease: "steps(4)" }, 0.08);
+    tl.to("#c05-card", { y: 0, duration: 0.42, ease: "steps(9)" }, ts);
+    tl.set("#c05-ano", { autoAlpha: 0 }, ts + 0.3);
+    tl.fromTo("#c05-gaveta", { y: 6 }, { y: 0, duration: 0.14, ease: "steps(3)", immediateRender: false }, ts + 0.3);
+    dat("#c05-l2", T("Agricultores"), 0.24, 8);
+    dat("#c05-l2b", T("Agricultores") + 0.26, 0.16, 5);
+    dat("#c05-l1", T("poco") - 0.04, 0.3, 7);
+    // a pá cava em dois golpes e bate no soldado em "barro"
+    gsap.set("#c05-so", { autoAlpha: 0.0 });
+    tl.to("#c05-pa", { y: 180, duration: 0.14, ease: "steps(3)" }, T("cavam"));
+    tl.to("#c05-pa", { y: 120, duration: 0.2, ease: "steps(3)" }, T("cavam") + 0.3);
+    tl.to("#c05-pa", { y: 260, duration: 0.14, ease: "steps(3)" }, T("poco"));
+    tl.to("#c05-pa", { y: 200, duration: 0.2, ease: "steps(3)" }, T("poco") + 0.3);
+    tl.set("#c05-so", { autoAlpha: 1 }, T("soldados"));
+    tl.fromTo("#c05-so", { y: 20 }, { y: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, T("soldados"));
+    dat("#c05-l3", T("soldados"), 0.24, 7);
+    dat("#c05-l3b", T("soldados") + 0.24, 0.14, 4);
+    const tb = T("barro") + 0.28;
+    tl.to("#c05-pa", { y: 262, duration: 0.1, ease: "steps(2)" }, tb - 0.1);
+    tl.fromTo("#c05-corte", { x: 7 }, { x: 0, duration: 0.12, ease: "steps(3)", immediateRender: false }, tb);
+    tl.fromTo("#c05-so", { y: 5 }, { y: 0, duration: 0.14, ease: "steps(3)", immediateRender: false }, tb);
+    window.__timelines["c05"] = tl;
+  </script>
+</template>

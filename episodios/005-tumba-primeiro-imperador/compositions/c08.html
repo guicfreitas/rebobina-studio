@@ -1,0 +1,62 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #101113; overflow: hidden; }
+    #c08-vis { position: absolute; left: 90px; top: 330px; width: 540px; height: 220px; background: #000; border: 8px solid #4a4850; }
+    #c08-num { position: absolute; left: 34px; top: 22px; font-size: 136px; color: var(--vhs); white-space: nowrap; letter-spacing: 0; }
+    #c08-t { position: absolute; left: 90px; top: 580px; font-size: 136px; line-height: .94; }
+    #c08-mu { position: absolute; left: 90px; top: 990px; font-size: 38px; white-space: nowrap; }
+    #c08-so { position: absolute; left: 655px; top: 400px; width: 270px; height: 630px; }
+  </style>
+  <div id="root" data-composition-id="c08" data-width="1080" data-height="1920">
+    <div id="c08-w" class="clip" data-start="0" data-duration="4.69" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c08-so"><!--@svg:simbolos/soldado--><svg class="soldado" viewBox="0 0 300 700" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+<g id="c08-so-barro" fill="#c9b08a" stroke="#1b1a17" stroke-width="5" stroke-linejoin="round">
+<ellipse cx="168" cy="24" rx="16" ry="14"/><rect x="132" y="108" width="36" height="34"/><ellipse cx="150" cy="70" rx="38" ry="46"/>
+<rect x="56" y="652" width="188" height="34"/><path d="M80 630h64v22H80zM156 630h64v22h-64z"/>
+<ellipse cx="60" cy="418" rx="19" ry="21"/><ellipse cx="240" cy="418" rx="19" ry="21"/>
+<path id="c08-so-b-pernas" d="M92 505 88 630h50l2-115zM160 515l2 115h50l-4-125z"/>
+<path id="c08-so-b-manto" d="M80 332Q150 352 220 332L240 500Q150 520 60 500Z"/>
+<path id="c08-so-b-bracos" d="M88 142 50 170 36 330l8 70h34l6-70 8-100zM212 142l38 28 14 160-8 70h-34l-6-70-8-100z"/>
+<path id="c08-so-b-armadura" d="M88 140Q150 120 212 140L222 330Q150 350 78 330Z"/>
+</g>
+<g id="c08-so-cor" stroke="#1b1a17" stroke-width="5" stroke-linejoin="round">
+<path id="c08-so-pernas" fill="#8e5bd0" d="M92 505 88 630h50l2-115zM160 515l2 115h50l-4-125z"/>
+<path id="c08-so-manto" fill="#2fbf71" d="M80 332Q150 352 220 332L240 500Q150 520 60 500Z"/>
+<path id="c08-so-bracos" fill="#2f6fde" d="M88 142 50 170 36 330l8 70h34l6-70 8-100zM212 142l38 28 14 160-8 70h-34l-6-70-8-100z"/>
+<path id="c08-so-armadura" fill="#d8352a" d="M88 140Q150 120 212 140L222 330Q150 350 78 330Z"/>
+</g>
+<g id="c08-so-traco" fill="#1b1a17" opacity=".55">
+<circle cx="110" cy="180" r="5"/><circle cx="150" cy="176" r="5"/><circle cx="190" cy="180" r="5"/>
+<circle cx="106" cy="225" r="5"/><circle cx="150" cy="222" r="5"/><circle cx="194" cy="225" r="5"/>
+<circle cx="104" cy="270" r="5"/><circle cx="150" cy="270" r="5"/><circle cx="196" cy="270" r="5"/>
+<circle cx="102" cy="312" r="5"/><circle cx="150" cy="316" r="5"/><circle cx="198" cy="312" r="5"/>
+</g>
+</svg><!--/@svg:simbolos/soldado--></div>
+      <div id="c08-vis"><div id="c08-num" class="rb-mono">00:00</div></div>
+      <div id="c08-t" class="rb-titulo"><div id="c08-t1">A COR</div><div id="c08-t2">COMEÇA</div><div id="c08-t3">A MUDAR</div></div>
+      <div id="c08-mu" class="rb-mono">MUSEU DA TUMBA, 2024</div>
+    </div>
+  </div>
+  <script>
+    const C = "c08";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    dat("#c08-mu", 0.12, 0.3, 20);
+    // contador em passos: 00:00 → 00:15, travando em "segundos"; a cor perde brilho a cada passo, sem sumir
+    const t0 = T("Exposta"), t1 = T("segundos") + 0.4;
+    for (let s = 1; s <= 15; s++) {
+      const t = t0 + (s / 15) * (t1 - t0);
+      tl.set("#c08-num", { textContent: "​00:" + String(s).padStart(2, "0") }, t);
+      tl.set("#c08-so-cor", { opacity: 1 - 0.022 * s }, t);
+    }
+    tl.fromTo("#c08-vis", { x: 8 }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, t1 + 0.02);
+    tl.set("#c08-vis", { borderColor: "#ff3b30" }, t1);
+    tl.fromTo("#c08-num", { scale: 1.08, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.14, ease: "steps(3)", immediateRender: false }, t1);
+    // o título cresce com a fala
+    dat("#c08-t1", T("tinta") - 0.05, 0.2, 5);
+    dat("#c08-t2", T("comeca") - 0.05, 0.22, 6);
+    dat("#c08-t3", T("mudar") - 0.12, 0.22, 7);
+    window.__timelines["c08"] = tl;
+  </script>
+</template>

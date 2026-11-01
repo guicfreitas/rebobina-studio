@@ -1,0 +1,43 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c05-t { position: absolute; left: 90px; top: 316px; width: 900px; font-size: 176px; white-space: nowrap; }
+    #c05-dt { position: absolute; left: 90px; top: 480px; font-size: 48px; color: var(--acento); }
+    #c05-p { position: absolute; left: 0; top: 300px; overflow: hidden; }
+    #c05-bv { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c05-bi { position: absolute; left: 0; top: 0; width: 1080px; height: 760px; }
+    .c05-b { position: absolute; top: 0; width: 26px; height: 760px; background: #0a090c; border-left: 5px solid #5a5663; }
+    #c05-stamp { position: absolute; left: 150px; top: 690px; font-size: 88px; background: var(--fita); white-space: nowrap; }
+
+  </style>
+  <div id="root" data-composition-id="c05" data-width="1080" data-height="1920">
+    <div id="c05-w" class="clip" data-start="0" data-duration="8.44" data-layout-allow-overlap data-layout-allow-overflow>
+      <svg id="c05-p" width="1080" height="760" viewBox="0 0 1080 760"><line x1="60" y1="752" x2="1020" y2="752" stroke="#3a3744" stroke-width="6"/><polygon class="c05-s" points="90,750 160,690 300,700 335,750" fill="#57535f" stroke="#141217" stroke-width="5"/><polygon class="c05-s" points="330,750 370,680 560,670 610,720 590,750" fill="#454250" stroke="#141217" stroke-width="5"/><polygon class="c05-s" points="605,750 640,690 780,680 810,750" fill="#67626f" stroke="#141217" stroke-width="5"/><polygon class="c05-s" points="805,750 845,700 960,695 990,750" fill="#57535f" stroke="#141217" stroke-width="5"/><polygon class="c05-s" points="175,690 225,590 395,575 435,680 300,695" fill="#454250" stroke="#141217" stroke-width="5"/><polygon class="c05-s" points="430,668 480,560 650,550 685,665 560,660" fill="#67626f" stroke="#141217" stroke-width="5"/><polygon class="c05-s" points="680,675 720,585 855,600 880,690 780,672" fill="#57535f" stroke="#141217" stroke-width="5"/><polygon class="c05-s" points="290,570 345,480 505,470 545,555 395,568" fill="#454250" stroke="#141217" stroke-width="5"/><polygon class="c05-s" points="540,548 590,470 730,480 765,575 650,545" fill="#67626f" stroke="#141217" stroke-width="5"/><polygon class="c05-s" points="420,465 470,395 610,390 640,465" fill="#57535f" stroke="#141217" stroke-width="5"/></svg>
+      <div id="c05-bv"><div id="c05-bi"><i class="c05-b" style="left:70px"></i><i class="c05-b" style="left:175px"></i><i class="c05-b" style="left:280px"></i><i class="c05-b" style="left:385px"></i><i class="c05-b" style="left:490px"></i><i class="c05-b" style="left:595px"></i><i class="c05-b" style="left:700px"></i><i class="c05-b" style="left:805px"></i><i class="c05-b" style="left:910px"></i><i class="c05-b" style="left:1015px"></i></div></div>
+      <div id="c05-t" class="rb-titulo">GILES COREY</div>
+      <div id="c05-dt" class="rb-mono">19 SET 1692</div>
+      <div id="c05-stamp" class="rb-carimbo claro">FOGUEIRAS: 0</div>
+    </div>
+  </div>
+  <script>
+    const C = "c05"; const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // entra no gatilho, sem atravessar a tela: carimbo bate (1,5 → 1); peça aparece com um pequeno deslocamento
+    const bate = (el, t, de = 0, ate = 0, op = 1) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)" }, t); };
+    const surge = (el, t, dy = 24) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy }, { y: 0, duration: 0.18, ease: "power3.out" }, t); };
+    tl.fromTo("#c05-dt", { x: -900 }, { x: 0, duration: 0.2, ease: "power3.out" }, 0.15);
+    const pedras = gsap.utils.toArray(".c05-s");
+    const t0 = T("recusou"), t1 = T("tribunal"), m = T("morreu"), p = Tf("pedras") + 0.25;
+    const quando = [t0, t1, m];
+    for (let i = 3; i < pedras.length; i++) quando.push(m + 0.2 + (i - 3) * ((p - m - 0.2) / (pedras.length - 4)));
+    pedras.forEach((el, i) => {
+      tl.fromTo(el, { y: -1300 }, { y: 0, duration: 0.16, ease: "power3.in" }, quando[i] - 0.16);
+      tl.fromTo("#c05-p", { x: i % 2 ? 7 : -7 }, { x: 0, duration: 0.07, ease: "steps(2)", immediateRender: false }, quando[i]);
+    });
+    const o = T("Outros"), f = T("Fogueira");
+    tl.fromTo("#c05-bi", { y: -800 }, { y: 0, duration: 0.3, ease: "power3.in" }, T("cadeia") - 0.3);
+    tl.to("#c05-bi", { y: -800, duration: 0.18, ease: "power3.in" }, f - 0.12);
+    bate("#c05-stamp", T("nenhuma"), -8, -5, 0.92);
+    window.__timelines["c05"] = tl;
+  </script>
+</template>

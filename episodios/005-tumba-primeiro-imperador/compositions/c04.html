@@ -1,0 +1,67 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #17120d; overflow: hidden; }
+    #c04-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c04-folha { position: absolute; left: 110px; top: 34px; width: 800px; height: 684px; overflow: hidden; background: #e6d8b6;
+      box-shadow: inset 0 0 90px rgba(120,90,40,.4); }
+    .c04-rolo { position: absolute; left: 70px; width: 880px; height: 40px; border-radius: 20px; background: #5a3a20; border: 5px solid #2a1a0e; }
+    #c04-r1 { top: 12px; }
+    #c04-r2 { top: 16px; }
+    .c04-l { position: absolute; left: 40px; font-size: 56px; white-space: nowrap; }
+    .c04-g { font-size: 72px; }
+    #c04-rios { position: absolute; left: 0; top: 300px; width: 800px; height: 130px; }
+    #c04-setas { position: absolute; left: 0; top: 560px; width: 800px; height: 110px; }
+  </style>
+  <div id="root" data-composition-id="c04" data-width="1080" data-height="1920">
+    <div id="c04-w" class="clip" data-start="0" data-duration="7.29" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c04-palco">
+        <div id="c04-folha">
+          <div id="c04-l1" class="c04-l rb-doc" style="top:44px">~100 ANOS DEPOIS</div>
+          <div id="c04-l2" class="c04-l rb-doc" style="top:116px">HISTORIADOR SIMA QIAN</div>
+          <div id="c04-l3" class="c04-l c04-g rb-doc" style="top:208px">"RIOS" DE MERCÚRIO</div>
+          <svg id="c04-rios" viewBox="0 0 800 130" fill="none" stroke="#7f8a94" stroke-width="7" stroke-linecap="round">
+            <path id="c04-r-a" d="M0 26C90 2 170 50 260 26S430 2 520 26 700 50 800 26"/>
+            <path id="c04-r-b" d="M0 66C90 42 170 90 260 66S430 42 520 66 700 90 800 66"/>
+            <path id="c04-r-c" d="M0 106C90 82 170 130 260 106S430 82 520 106 700 130 800 106"/>
+          </svg>
+          <div id="c04-l4" class="c04-l c04-g rb-doc" style="top:452px">BESTAS ARMADAS</div>
+          <svg id="c04-setas" viewBox="0 0 800 110" fill="none" stroke="#a5261c" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+            <g id="c04-s1"><path d="M0 22H150"/><path d="M128 8l26 14-26 14"/></g>
+            <g id="c04-s2"><path d="M0 56H150"/><path d="M128 42l26 14-26 14"/></g>
+            <g id="c04-s3"><path d="M0 90H150"/><path d="M128 76l26 14-26 14"/></g>
+          </svg>
+        </div>
+        <div id="c04-r1" class="c04-rolo"></div>
+        <div id="c04-r2" class="c04-rolo"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c04";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    // o rolo desce e abre o papel junto com o rolete de baixo
+    tl.fromTo("#c04-folha", { clipPath: "inset(0% 0% 100% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.34, ease: "power3.out" }, 0.1);
+    tl.fromTo("#c04-r2", { y: 0 }, { y: 690, duration: 0.34, ease: "power3.out" }, 0.1);
+    tl.fromTo("#c04-folha", { x: -4 }, { x: 4, duration: D, ease: "none" }, 0);
+    dat("#c04-l1", T("seculo") - 0.05, 0.42, 16);
+    dat("#c04-l2", T("Sima"), 0.6, 21);
+    dat("#c04-l3", T("Rios") - 0.04, 0.4, 18);
+    // rios prateados: traço corre pela folha até o fim da cena, em passos
+    ["#c04-r-a", "#c04-r-b", "#c04-r-c"].forEach((r, i) => {
+      gsap.set(r, { attr: { pathLength: 1 }, strokeDasharray: "0.26 0.12" });
+      tl.fromTo(r, { opacity: 0 }, { opacity: 1, duration: 0.01 }, T("mercurio") + i * 0.1);
+      tl.fromTo(r, { strokeDashoffset: i * 0.13 }, { strokeDashoffset: i * 0.13 - 2.4, duration: D - T("mercurio"), ease: "steps(36)" }, T("mercurio"));
+    });
+    dat("#c04-l4", T("flechas"), 0.34, 14);
+    // três traços cruzam a folha de uma borda à outra e ficam cravados à direita
+    ["#c04-s1", "#c04-s2", "#c04-s3"].forEach((s, i) => {
+      gsap.set(s, { autoAlpha: 0 });
+      const t = T("flechas") + 0.14 + i * 0.2;
+      tl.set(s, { autoAlpha: 1 }, t);
+      tl.fromTo(s, { x: -160 }, { x: 610 + i * 20, duration: 0.24, ease: "power3.out", immediateRender: false }, t);
+    });
+    window.__timelines["c04"] = tl;
+  </script>
+</template>

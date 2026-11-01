@@ -1,0 +1,62 @@
+<template>
+  <!-- c08 · escalada · linha do tempo: revoltas de 1899 e 1900 falham; em 1902, Plácido de Castro. -->
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c08-eixo { position: absolute; left: 110px; top: 600px; width: 860px; height: 6px; background: #4a4752; transform-origin: 0 50%; }
+    .c08-marco { position: absolute; top: 578px; width: 50px; height: 50px; margin-left: -25px; border-radius: 50%; background: #4a4752; border: 6px solid var(--fita); }
+    .c08-ano { position: absolute; top: 650px; width: 200px; margin-left: -100px; text-align: center; font-size: 40px; }
+    .c08-nota { position: absolute; top: 704px; width: 220px; margin-left: -110px; text-align: center; font-size: 28px; opacity: .7; line-height: 1.3; }
+    #c08-m1, #c08-a1, #c08-n1 { left: 170px; }
+    #c08-m2, #c08-a2, #c08-n2 { left: 385px; }
+    #c08-m3, #c08-a3 { left: 761px; }
+    #c08-m4, #c08-a4 { left: 958px; }
+    #c08-m3 { background: var(--acento); width: 70px; height: 70px; margin-left: -35px; top: 568px; }
+    #c08-a3 { color: var(--acento); }
+    #c08-risco1, #c08-risco2 { position: absolute; top: 600px; width: 70px; height: 6px; margin-left: -35px; background: var(--rec); transform: rotate(45deg); }
+    #c08-risco1 { left: 170px; } #c08-risco2 { left: 385px; }
+    #c08-cab { position: absolute; left: 90px; top: 330px; font-size: 32px; opacity: .85; }
+    #c08-quarta { position: absolute; left: 90px; top: 380px; font-size: 140px; color: var(--vhs); }
+    #c08-data { position: absolute; left: 470px; top: 520px; white-space: nowrap; font-size: 44px; color: var(--vhs); }
+    #c08-nome { position: absolute; left: 90px; top: 770px; width: 900px; }
+    #c08-nome .rb-titulo { font-size: 128px; color: var(--papel); }
+    #c08-nome .rb-mono { font-size: 30px; margin-top: 12px; color: var(--acento); }
+  </style>
+  <div id="root" data-composition-id="c08" data-width="1080" data-height="1920">
+    <div id="c08-linha" class="clip" data-start="0" data-duration="9" data-layout-allow-overlap>
+      <div id="c08-cab" class="rb-mono">LEVANTES DOS SERINGUEIROS</div><div id="c08-quarta" class="rb-titulo">4ª tentativa</div>
+      <div id="c08-eixo"></div>
+      <div id="c08-m1" class="c08-marco"></div><div id="c08-a1" class="c08-ano rb-mono">1899</div><div id="c08-n1" class="c08-nota rb-mono">2 LEVANTES</div>
+      <div id="c08-m2" class="c08-marco"></div><div id="c08-a2" class="c08-ano rb-mono">1900</div><div id="c08-n2" class="c08-nota rb-mono">1 LEVANTE</div>
+      <div id="c08-risco1"></div><div id="c08-risco2"></div>
+      <div id="c08-m4" class="c08-marco"></div><div id="c08-a4" class="c08-ano rb-mono">1903</div>
+      <div id="c08-m3" class="c08-marco"></div><div id="c08-a3" class="c08-ano rb-mono">1902</div>
+      <div id="c08-data" class="rb-mono">6 AGO 1902 · XAPURI</div>
+    </div>
+    <div id="c08-nome" class="clip" data-start="0" data-duration="9">
+      <div class="rb-titulo" id="c08-nome1">Plácido</div>
+      <div class="rb-titulo" id="c08-nome2">de Castro</div>
+      <div class="rb-mono" id="c08-nome3">GAÚCHO · LÍDER DOS SERINGUEIROS</div>
+    </div>
+  </div>
+  <script>
+    const C = "c08", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c08-cab", { opacity: 0 }, { opacity: 0.85, duration: 0.12, ease: "steps(3)" }, 0.1);
+    tl.fromTo("#c08-eixo", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.out" }, 0.1);
+    // "não aceitaram": as duas revoltas anteriores aparecem e são riscadas
+    const t0 = T("seringueiros") - 0.2;
+    tl.fromTo("#c08-m1, #c08-a1, #c08-m2, #c08-a2, #c08-m4, #c08-a4", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.15, stagger: 0.06, ease: "power3.out" }, t0);
+    tl.fromTo("#c08-risco1, #c08-risco2", { scaleX: 0 }, { scaleX: 1, duration: 0.12, stagger: 0.12, ease: "power2.out" }, T("aceitaram"));
+    tl.fromTo("#c08-n1, #c08-n2", { opacity: 0 }, { opacity: 0.7, duration: 0.1, ease: "steps(2)" }, t0 + 0.2);
+    tl.fromTo("#c08-quarta", { scale: 1.4, opacity: 0, transformOrigin: "0 50%" }, { scale: 1, opacity: 1, duration: 0.2, ease: "back.out(2)" }, T("aceitaram") + 0.25);
+    // "Plácido de Castro": o nome entra grande
+    tl.fromTo("#c08-nome1", { x: -1100 }, { x: 0, duration: 0.28, ease: "power3.out" }, T("gaúcho") - 0.1);
+    tl.fromTo("#c08-nome2", { x: 1200 }, { x: 0, duration: 0.28, ease: "power3.out" }, T("Plácido") + 0.05);
+    tl.fromTo("#c08-nome3", { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "steps(3)" }, T("Castro") + 0.2);
+    // "pegaram em armas em 1902": o marco de 1902 bate
+    tl.fromTo("#c08-m3, #c08-a3", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.2, ease: "back.out(3)" }, T("armas") - 0.1);
+    tl.fromTo("#c08-data", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.18, ease: "power3.out" }, T("armas") + 0.15);
+    tl.fromTo("#c08-linha", { y: 0 }, { y: -10, duration: 0.05, ease: "steps(1)", yoyo: true, repeat: 3 }, T("armas") - 0.05);
+    window.__timelines["c08"] = tl;
+  </script>
+</template>

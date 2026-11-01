@@ -1,0 +1,64 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c01-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c01-pontos { position: absolute; left: 0; top: 0; }
+    .c01-l { position: absolute; left: 90px; white-space: nowrap; -webkit-text-stroke: 16px var(--fita); paint-order: stroke fill; }
+    #c01-l1 { top: 10px; font-size: 186px; }
+    #c01-l2 { top: 180px; font-size: 136px; }
+    #c01-l3 { top: 340px; font-size: 212px; color: var(--acento); }
+    #c01-l4 { top: 530px; font-size: 212px; color: var(--acento); }
+    #c01-tres { position: absolute; left: 640px; top: 72px; width: 300px; height: 80px; }
+    .c01-h { position: absolute; top: 0; width: 56px; height: 56px; border-radius: 50%; background: var(--rec); border: 6px solid var(--fita); }
+    #c01-emu { position: absolute; left: 590px; top: 292px; width: 303px; height: 483px; color: var(--papel); }
+    #c01-emu svg { width: 100%; height: 100%; display: block; overflow: visible; }
+  </style>
+  <div id="root" data-composition-id="c01" data-width="1080" data-height="1920">
+    <div id="c01-w" class="clip" data-start="0" data-duration="4.1" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c01-palco">
+        <svg id="c01-pontos" width="1080" height="760" viewBox="0 0 1080 760" fill="none" stroke="#E8B04B" stroke-width="10" stroke-linecap="round"></svg>
+        <div id="c01-emu"><!--@svg:simbolos/emu--><svg class="emu" viewBox="0 0 400 640" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="currentColor" stroke-width="19" stroke-linecap="round" stroke-linejoin="round">
+<path d="M186 380L206 476L186 592L240 608M186 592L158 610"/>
+<path d="M256 366L276 466L264 592L320 608M264 592L236 610"/>
+</g>
+<path fill="currentColor" d="M306 18C322 18 336 28 340 38L374 49L340 60C334 68 328 74 320 78C318 110 320 140 324 170C332 205 348 240 344 286C340 320 328 350 306 372L298 400L280 376L262 412L246 384L224 422L206 388L182 420L170 386L140 410L130 374L96 392L96 352C60 340 44 300 56 256C68 210 130 170 190 160C228 154 258 146 268 120C274 92 266 60 274 42C280 28 292 18 306 18Z"/>
+<circle cx="316" cy="40" r="6" fill="#0e0d10"/>
+<path fill="none" stroke="#0e0d10" stroke-opacity=".26" stroke-width="5" stroke-linecap="round" d="M104 290L84 330M150 250L112 322M196 224L150 330M240 240L196 346M284 256L250 346"/>
+</svg><!--/@svg:simbolos/emu--></div>
+        <div id="c01-l1" class="c01-l rb-titulo">3 HOMENS</div>
+        <div id="c01-l2" class="c01-l rb-titulo">2 METRALHADORAS</div>
+        <div id="c01-l3" class="c01-l rb-titulo">~20.000</div>
+        <div id="c01-l4" class="c01-l rb-titulo">EMUS</div>
+        <div id="c01-tres"><i class="c01-h" style="left:0"></i><i class="c01-h" style="left:84px"></i><i class="c01-h" style="left:168px"></i></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c01"; const T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    let s = 90132; const rnd = () => ((s = (s * 16807) % 2147483647) / 2147483647);
+    // 3.000 pontos em 10 lotes: enchem o palco de uma vez em "guerra" e param em "ave"
+    const NS = "http://www.w3.org/2000/svg", lotes = [];
+    for (let i = 0; i < 10; i++) {
+      let d = "";
+      for (let k = 0; k < 300; k++) d += `M${Math.round(rnd() * 1120 - 20)} ${Math.round(rnd() * 800 - 20)}h0`;
+      const p = document.createElementNS(NS, "path");
+      p.setAttribute("d", d); p.setAttribute("opacity", "0"); p.id = "c01-lote" + i;
+      document.getElementById("c01-pontos").appendChild(p); lotes.push(p);
+    }
+    const G = T("guerra"), A = T("ave");
+    lotes.forEach((p, i) => {
+      tl.set(p, { opacity: 1 }, G + i * (1 / 30) * 0.6);
+      for (let t = G + 0.03; t < A; t += 2 / 30) tl.set(p, { x: Math.round(rnd() * 28 - 14), y: Math.round(rnd() * 28 - 14) }, t);
+      tl.set(p, { x: 0, y: 0 }, A);
+    });
+    // antes da multidão: cada linha reage à palavra dela
+    tl.fromTo(".c01-h", { scale: 1.45 }, { scale: 1, duration: 0.2, stagger: 0.07, ease: "back.out(2)", immediateRender: false }, T("homens") - 0.1);
+    tl.fromTo("#c01-l2", { x: -9 }, { x: 0, duration: 0.3, ease: "steps(5)", immediateRender: false }, T("metralhadoras"));
+    tl.fromTo("#c01-l3, #c01-l4", { scale: 1.14, transformOrigin: "0% 50%" }, { scale: 1, duration: 0.2, ease: "back.out(2)", immediateRender: false }, G);
+    tl.fromTo("#c01-emu", { x: -8 }, { x: 0, duration: 0.14, ease: "steps(3)", immediateRender: false }, A);
+    tl.set("#c01-w", { opacity: 1 }, D - 0.01);
+    window.__timelines["c01"] = tl;
+  </script>
+</template>

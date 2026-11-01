@@ -1,0 +1,58 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #121014; overflow: hidden; }
+    #c05-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c05-vao { position: absolute; left: 130px; top: 0; width: 820px; height: 668px; overflow: hidden; }
+    #c05-rec { position: absolute; left: 20px; top: 0; width: 780px; height: 640px; }
+    .c05-l { position: absolute; left: 44px; font-size: 48px; white-space: nowrap; }
+    #c05-c { position: absolute; left: 50px; top: 400px; font-size: 62px; white-space: nowrap; }
+    .c05-picote { position: absolute; left: 0; width: 780px; border-top: 5px dashed #a79c84; }
+    #c05-maq { position: absolute; left: 70px; top: 660px; width: 940px; height: 100px; background: #24222b; border-top: 8px solid #4b4855; }
+    #c05-fen { position: absolute; left: 80px; top: -8px; width: 780px; height: 16px; background: #000; }
+    .c05-t { position: absolute; top: 40px; width: 34px; height: 34px; border-radius: 50%; background: #3a3744; }
+  </style>
+  <div id="root" data-composition-id="c05" data-width="1080" data-height="1920">
+    <div id="c05-w" class="clip" data-start="0" data-duration="6.04" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c05-palco">
+        <div id="c05-vao">
+          <div id="c05-rec" class="rb-papel">
+            <div class="c05-picote" style="top:18px"></div>
+            <div id="c05-l1" class="c05-l rb-doc" style="top:52px">2 METRALHADORAS LEWIS</div>
+            <div id="c05-l2" class="c05-l rb-doc" style="top:128px">10.000 CARTUCHOS</div>
+            <div class="c05-picote" style="top:204px"></div>
+            <div id="c05-l3" class="c05-l rb-doc" style="top:232px">MUNIÇÃO: GOVERNO ESTADUAL</div>
+            <div id="c05-l4" class="c05-l rb-doc" style="top:304px">E FAZENDEIROS</div>
+            <div id="c05-c" class="rb-carimbo">DEFESA NÃO PAGA</div>
+          </div>
+        </div>
+        <div id="c05-maq"><div id="c05-fen"></div><i class="c05-t" style="left:60px"></i><i class="c05-t" style="left:120px"></i><i class="c05-t" style="left:180px"></i></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c05";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // carimbo bate (1,5 → 1); peça aparece com pequeno deslocamento; texto datilografado em passos
+    const bate = (el, t, de = -9, ate = -5, op = 0.96) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)", immediateRender: false }, t); };
+    const surge = (el, t, dy = 24, dx = 0) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy, x: dx }, { y: 0, x: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, t); };
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    const treme = (el, t, a = 7) => tl.fromTo(el, { x: a }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, t);
+    // o papel sobe da máquina, em passos: a linha nova nasce rente à fenda
+    const Y = (fundo) => 668 - fundo - 12;
+    gsap.set("#c05-rec", { y: 668 });
+    tl.to("#c05-rec", { y: Y(112), duration: 0.3, ease: "steps(6)" }, T("Fazendeiros"));
+    tl.to("#c05-rec", { y: Y(400), duration: 0.32, ease: "steps(7)" }, T("metralhadoras") - 0.12);
+    dat("#c05-l1", T("metralhadoras"), 0.5, 21);
+    tl.to("#c05-rec", { y: Y(490), duration: 0.26, ease: "steps(6)" }, T("ministro") - 0.1);
+    dat("#c05-l2", T("ministro"), 0.42, 16);
+    tl.fromTo("#c05-maq", { y: 3 }, { y: 0, duration: 0.3, ease: "steps(6)", immediateRender: false }, T("topa"));
+    tl.to("#c05-rec", { y: Y(590), duration: 0.2, ease: "steps(5)" }, T("topa") - 0.1);
+    dat("#c05-l3", T("topa"), 0.34, 16);
+    dat("#c05-l4", T("mas"), 0.24, 10);
+    tl.to("#c05-rec", { y: 30, duration: 0.2, ease: "steps(5)" }, T("paga") - 0.14);
+    bate("#c05-c", T("paga"), -10, -5);
+    tl.fromTo("#c05-vao", { x: 8 }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, T("paga") + 0.02);
+    window.__timelines["c05"] = tl;
+  </script>
+</template>

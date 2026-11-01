@@ -1,0 +1,58 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #100f14; overflow: hidden; }
+    #c02-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c02-folha { position: absolute; left: 130px; top: 16px; width: 800px; height: 350px; }
+    #c02-lenda { position: absolute; left: 0; top: 0; width: 800px; height: 350px; padding: 26px 0 0 44px; }
+    #c02-lenda .rb-titulo { color: var(--tinta); font-size: 250px; }
+    #c02-int { font-size: 54px; margin-top: 4px; }
+    #c02-fato { position: absolute; left: 310px; top: 34px; font-size: 136px; background: rgba(241,232,211,.08); white-space: nowrap; }
+    #c02-data { position: absolute; left: 90px; top: 376px; font-size: 64px; color: var(--vhs); white-space: nowrap; }
+    #c02-op { position: absolute; left: 90px; top: 468px; font-size: 118px; white-space: nowrap; }
+    #c02-rel { position: absolute; left: 90px; top: 602px; width: 840px; height: 158px; padding: 18px 40px 0; overflow: hidden; }
+    #c02-rel .rb-doc { font-size: 62px; white-space: nowrap; }
+    .c02-b { height: 12px; background: #b9ad93; margin-top: 16px; }
+  </style>
+  <div id="root" data-composition-id="c02" data-width="1080" data-height="1920">
+    <div id="c02-w" class="clip" data-start="0" data-duration="5.34" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c02-palco">
+        <div id="c02-folha">
+          <div id="c02-lenda" class="rb-papel">
+            <div class="rb-titulo">LENDA</div>
+            <div id="c02-int" class="rb-doc">de internet?</div>
+          </div>
+          <div id="c02-fato" class="rb-carimbo claro">FATO</div>
+        </div>
+        <div id="c02-data" class="rb-mono">2 NOV 1932</div>
+        <div id="c02-op" class="rb-titulo">OPERAÇÃO MILITAR</div>
+        <div id="c02-rel" class="rb-papel">
+          <div class="rb-doc">AUSTRÁLIA</div>
+          <div class="c02-b" style="width:620px"></div>
+          <div class="c02-b" style="width:700px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c02";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // carimbo bate (1,5 → 1); peça aparece com pequeno deslocamento; texto datilografado em passos
+    const bate = (el, t, de = -9, ate = -5, op = 0.96) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)", immediateRender: false }, t); };
+    const surge = (el, t, dy = 24, dx = 0) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy, x: dx }, { y: 0, x: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, t); };
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    const treme = (el, t, a = 7) => tl.fromTo(el, { x: a }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, t);
+    tl.fromTo("#c02-lenda", { y: -390 }, { y: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, 0.02);
+    gsap.set("#c02-lenda", { y: -390 });
+    tl.fromTo("#c02-lenda", { rotation: -3 }, { rotation: -1.5, duration: T("Mas") - 0.2, ease: "none" }, 0.2);
+    dat("#c02-int", T("internet"), 0.34, 12);
+    tl.fromTo("#c02-lenda", { scale: 1.05 }, { scale: 1, duration: 0.14, ease: "steps(3)", immediateRender: false }, T("lenda"));
+    bate("#c02-fato", T("Mas"), -14, -9);
+    treme("#c02-folha", T("Mas") + 0.02, 10);
+    tl.set("#c02-lenda .rb-titulo", { opacity: 0.28 }, T("Mas"));
+    surge("#c02-data", T("data"), 0, -30);
+    surge("#c02-op", T("major") - 0.05, 0, -30);
+    surge("#c02-rel", T("relat") - 0.06, 190);
+    window.__timelines["c02"] = tl;
+  </script>
+</template>

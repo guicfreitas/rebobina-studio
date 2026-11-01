@@ -1,0 +1,49 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c02-l { position: absolute; left: 90px; top: 326px; width: 900px; font-size: 122px; }
+    .c02-p { position: absolute; top: 500px; width: 240px; height: 400px; background: #17151b; border: 6px solid #3a3744; }
+    .c02-n { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-family: var(--f-mono); font-weight: 700; font-size: 240px; color: var(--papel); }
+    #c02-z { position: absolute; left: 90px; top: 410px; width: 900px; text-align: center; font-size: 720px; color: var(--vhs); }
+    #c02-corte { position: absolute; left: 90px; top: 925px; width: 840px; height: 14px; background: var(--rec); }
+
+  </style>
+  <div id="root" data-composition-id="c02" data-width="1080" data-height="1920">
+    <div id="c02-w" class="clip" data-start="0" data-duration="4.08" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c02-l" class="rb-titulo">QUEIMADAS EM SALEM</div>
+      <div id="c02-ps">
+        <div id="c02-p1" class="c02-p" style="left:150px"><div id="c02-a" class="c02-n">8</div></div>
+        <div id="c02-p2" class="c02-p" style="left:420px"><div id="c02-b" class="c02-n">4</div></div>
+        <div id="c02-p3" class="c02-p" style="left:690px"><div id="c02-c" class="c02-n">7</div></div>
+      </div>
+      <div id="c02-corte"></div>
+      <div id="c02-z" class="rb-titulo">0</div>
+    </div>
+  </div>
+  <script>
+    const C = "c02"; const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // entra no gatilho, sem atravessar a tela: carimbo bate (1,5 → 1); peça aparece com um pequeno deslocamento
+    const bate = (el, t, de = 0, ate = 0, op = 1) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)" }, t); };
+    const surge = (el, t, dy = 24) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy }, { y: 0, duration: 0.18, ease: "power3.out" }, t); };
+    const N = T("nenhuma");
+    let s = 91;
+    const r = () => (s = (s * 16807) % 2147483647) % 10;
+    // os dígitos embaralham; travam da esquerda para a direita, e o último cai em "nenhuma"
+    for (let t = 0; t < N; t += 0.07) {
+      if (t < N * 0.62) tl.set("#c02-a", { textContent: "\u200B" + r() }, t); else r();
+      if (t < N * 0.84) tl.set("#c02-b", { textContent: "\u200B" + r() }, t); else r();
+      tl.set("#c02-c", { textContent: "\u200B" + r() }, t);
+    }
+    tl.set("#c02-a", { textContent: "\u200B0", color: "#ffd23f" }, N * 0.62);
+    tl.set("#c02-b", { textContent: "\u200B0", color: "#ffd23f" }, N * 0.84);
+    tl.fromTo("#c02-p1", { x: -7 }, { x: 0, duration: 0.1, ease: "steps(2)" }, N * 0.62);
+    tl.fromTo("#c02-p2", { x: 7 }, { x: 0, duration: 0.1, ease: "steps(2)" }, N * 0.84);
+    surge("#c02-l", T("Pessoas") - 0.1, -24);
+    tl.fromTo("#c02-corte", { scaleX: 0, transformOrigin: "0 50%" }, { scaleX: 1, duration: N, ease: "none" }, 0);
+    tl.set("#c02-ps, #c02-corte", { y: -2600 }, N);
+    bate("#c02-z", N);
+    for (let t = N + 0.3, i = 0; t < D; t += 0.14, i++) tl.set("#c02-z", { x: i % 2 ? 4 : -4 }, t);
+    window.__timelines["c02"] = tl;
+  </script>
+</template>

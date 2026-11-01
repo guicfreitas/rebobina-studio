@@ -1,0 +1,52 @@
+<template>
+  <!-- c01 · gancho · manchete-de-jornal. Frame 0 = capa: manchete + rádio já na tela. -->
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c01-jornal { position: absolute; left: 60px; top: 330px; width: 960px; height: 700px; padding: 34px 50px; border-radius: 3px; }
+    #c01-topo { display: flex; justify-content: space-between; font-family: var(--f-mono); font-weight: 700; font-size: 28px; letter-spacing: .12em; color: #6d5f45;
+      border-bottom: 6px double #1b1a17; padding-bottom: 12px; }
+    #c01-manchete { margin-top: 26px; font-family: var(--f-jornal); font-weight: 900; font-size: 126px; line-height: .95; color: var(--tinta); letter-spacing: -.01em; }
+    #c01-l1 { color: #b3261e; }
+    #c01-radio { position: absolute; left: 730px; top: 690px; width: 280px; height: 329px; }
+    #c01-radio .r-gab { fill: var(--acento); }
+    .c01-onda { position: absolute; left: 870px; top: 700px; width: 120px; height: 120px; margin: -60px 0 0 -60px; border-radius: 50%; border: 8px solid var(--acento); opacity: 0; }
+  </style>
+  <div id="root" data-composition-id="c01" data-width="1080" data-height="1920">
+    <div id="c01-jornal-w" class="clip" data-start="0" data-duration="8" data-layout-allow-overlap>
+      <div id="c01-jornal" class="rb-papel">
+        <div id="c01-topo"><span>EDIÇÃO EXTRA</span><span>★ ★ ★</span></div>
+        <div id="c01-manchete"><div id="c01-l1">MARCIANOS</div><div id="c01-l2">INVADEM</div><div id="c01-l3">OS EUA?</div></div>
+      </div>
+      <div id="c01-o1" class="c01-onda"></div><div id="c01-o2" class="c01-onda"></div>
+      <div id="c01-radio"><!--@svg:simbolos/radio--><svg class="simbolo-radio" viewBox="0 0 400 470" xmlns="http://www.w3.org/2000/svg">
+ <rect class="r-base" x="6" y="440" width="388" height="26" rx="6" fill="#3b2412"/>
+ <path class="r-gab" d="M24 445 L24 205 Q24 22 200 22 Q376 22 376 205 L376 445 Z"/>
+ <path class="r-grade" d="M78 300 L78 205 Q78 78 200 78 Q322 78 322 205 L322 300 Z" fill="#24160d"/>
+ <g class="r-barras" stroke="#8a5a32" stroke-width="9" stroke-linecap="round">
+  <line x1="112" y1="160" x2="112" y2="292"/><line x1="140" y1="122" x2="140" y2="292"/><line x1="168" y1="100" x2="168" y2="292"/>
+  <line x1="200" y1="92" x2="200" y2="292"/><line x1="232" y1="100" x2="232" y2="292"/><line x1="260" y1="122" x2="260" y2="292"/>
+  <line x1="288" y1="160" x2="288" y2="292"/>
+ </g>
+ <rect class="r-dial" x="92" y="326" width="216" height="72" rx="12" fill="#f1e8d3"/>
+ <g stroke="#6d5f45" stroke-width="3"><line x1="112" y1="340" x2="112" y2="356"/><line x1="142" y1="340" x2="142" y2="350"/><line x1="172" y1="340" x2="172" y2="356"/><line x1="202" y1="340" x2="202" y2="350"/><line x1="232" y1="340" x2="232" y2="356"/><line x1="262" y1="340" x2="262" y2="350"/><line x1="292" y1="340" x2="292" y2="356"/></g>
+ <line id="c01-agulha" class="r-agulha" x1="120" y1="334" x2="120" y2="390" stroke="#ff3b30" stroke-width="5" stroke-linecap="round"/>
+ <circle class="r-botao" cx="72" cy="412" r="20" fill="#24160d"/><circle class="r-botao" cx="328" cy="412" r="20" fill="#24160d"/>
+</svg><!--/@svg:simbolos/radio--></div>
+    </div>
+  </div>
+  <script>
+    const C = "c01", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c01-jornal", { rotation: -2, scale: 1 }, { rotation: -1, scale: 1.04, duration: D, ease: "none" }, 0);
+    // ondas saem do rádio em pulsos (em passos, cara de fita)
+    for (let t = 0.2; t < D - 0.5; t += 1.1) {
+      ["#c01-o1", "#c01-o2"].forEach((o, i) =>
+        tl.fromTo(o, { scale: 0.3, opacity: 0.9 }, { scale: 2.6, opacity: 0, duration: 0.9, ease: "steps(6)" }, t + i * 0.35));
+    }
+    tl.fromTo("#c01-radio", { rotation: 0 }, { rotation: -4, duration: 0.06, ease: "steps(1)", yoyo: true, repeat: 5 }, T("rádio"));
+    tl.fromTo("#c01-l1", { x: 0 }, { x: 10, duration: 0.05, ease: "steps(1)", yoyo: true, repeat: 7 }, T("marcianos"));
+    tl.fromTo("#c01-l1", { scale: 1 }, { scale: 1.06, transformOrigin: "0 50%", duration: 0.12, ease: "power3.out", yoyo: true, repeat: 1 }, T("marcianos"));
+    tl.fromTo("#c01-l2, #c01-l3", { scale: 1 }, { scale: 1.04, transformOrigin: "0 50%", duration: 0.1, yoyo: true, repeat: 1 }, T("pânico"));
+    window.__timelines["c01"] = tl;
+  </script>
+</template>

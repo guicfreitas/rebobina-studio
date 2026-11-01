@@ -1,0 +1,40 @@
+<template>
+  <!-- c02 · quebra · mito-x-fato: carimbo MITO, depois "mas o cavalo existiu". -->
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c02-cavalo { position: absolute; left: 380px; top: 290px; width: 685px; height: 874px; color: var(--acento); }
+    #c02-cavalo svg { width: 100%; height: 100%; }
+    #c02-pergunta { position: absolute; left: 90px; top: 340px; width: 900px; }
+    #c02-pergunta div { font-size: 214px; }
+    #c02-carimbo { position: absolute; left: 150px; top: 470px; font-size: 190px; padding: 0 44px; border-width: 16px;
+      background: rgba(14, 13, 16, 0.35); mix-blend-mode: normal; }
+    #c02-mas { position: absolute; left: 90px; top: 700px; width: 900px; }
+    #c02-mas div { font-size: 150px; color: var(--vhs); text-shadow: 0 10px 40px #000; }
+  </style>
+  <div id="root" data-composition-id="c02" data-width="1080" data-height="1920">
+    <div id="c02-cavalo" class="clip" data-start="0" data-duration="3" data-layout-allow-overlap><div id="c02-cavalo-in"><!--@cavalo--><svg class="simbolo-cavalo" viewBox="0 0 1172 1496" xmlns="http://www.w3.org/2000/svg"><path transform="translate(-332,1496) scale(1,-1)" d="M790 1254Q827 1277 827 1316Q827 1341 812.0 1369.5Q797 1398 797 1420Q797 1466 855 1496Q940 1415 947.5 1370.5Q955 1326 955 1313Q955 1266 921 1254H925Q925 1253 923 1253Q1459 913 1504 0H534Q521 56 521 114Q521 274 723.5 415.5Q926 557 926 670Q926 678 925 685Q859 518 742 518Q742 518 732 518Q642 372 539 372Q535 372 532 372L580 476L473 396Q359 424 332 507Q420 736 420 926Q420 953 418 979Q466 1088 565 1192Q568 1202 568 1211Q568 1239 545.5 1252.0Q523 1265 523 1300Q523 1337 543 1403Q647 1376 703 1254ZM533 999V983Q537 953 545 953H566Q635 953 635 1002Q635 1036 678 1084H672Q576 1084 539 1020ZM424 549V525Q424 496 452 496H462Q534 511 534 564L527 598Q465 598 424 549ZM922 1174 974 1085Q1349 816 1355 52H1432Q1387 902 922 1174Z"/></svg><!--/@cavalo--></div></div>
+    <div id="c02-pergunta" class="clip" data-start="0" data-duration="3" data-layout-allow-overlap>
+      <div class="rb-titulo">O Acre foi</div><div class="rb-titulo">trocado por</div><div class="rb-titulo" style="color:var(--vhs)">um cavalo?</div>
+    </div>
+    <div id="c02-carimbo-w" class="clip" data-start="0" data-duration="3" data-layout-allow-overlap><div id="c02-carimbo" class="rb-carimbo claro">MITO</div></div>
+    <div id="c02-mas" class="clip" data-start="0" data-duration="3" data-layout-allow-overlap>
+      <div class="rb-titulo" id="c02-mas1">…mas o cavalo</div><div class="rb-titulo" id="c02-mas2">existiu.</div>
+    </div>
+  </div>
+  <script>
+    const C = "c02", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c02-cavalo-in", { scale: 1.07, x: -30 }, { scale: 1.1, x: -40, duration: D, ease: "none" }, 0);
+    // carimbo bate em "mentira"
+    tl.fromTo("#c02-carimbo", { scale: 1.6, rotation: -14, opacity: 0 }, { scale: 1, rotation: -9, opacity: 1, duration: 0.16, ease: "back.out(2)" }, T("mentira") - 0.05);
+    tl.fromTo("#c02-pergunta", { opacity: 1 }, { opacity: 0.35, duration: 0.1, ease: "steps(2)" }, T("mentira") + 0.05);
+    tl.fromTo("#c02-cavalo", { opacity: 1 }, { opacity: 0.25, duration: 0.1, ease: "steps(2)" }, T("mentira") + 0.05);
+    // "mas o cavalo existiu": a pergunta sobe e some, o cavalo volta forte
+    tl.to("#c02-pergunta", { y: -80, opacity: 0, duration: 0.2, ease: "power3.in" }, T("Mas") - 0.1);
+    tl.to("#c02-carimbo", { y: -120, scale: 0.55, x: 330, duration: 0.25, ease: "power3.inOut" }, T("Mas") - 0.1);
+    tl.fromTo("#c02-mas1", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.22, ease: "power3.out" }, T("Mas"));
+    tl.fromTo("#c02-mas2", { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 0.22, ease: "power3.out" }, T("existiu"));
+    tl.to("#c02-cavalo", { opacity: 1, duration: 0.12, ease: "steps(3)" }, T("cavalo"));
+    window.__timelines["c02"] = tl;
+  </script>
+</template>

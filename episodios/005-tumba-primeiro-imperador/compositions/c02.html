@@ -1,0 +1,58 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #14110f; overflow: hidden; }
+    #c02-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c02-cord { position: absolute; left: 500px; top: 0; width: 80px; height: 70px; }
+    #c02-tag { position: absolute; left: 90px; top: 38px; width: 840px; height: 710px; background: var(--papel); color: var(--tinta);
+      clip-path: polygon(70px 0, 770px 0, 840px 70px, 840px 710px, 0 710px, 0 70px); }
+    #c02-furo { position: absolute; left: 396px; top: 18px; width: 48px; height: 48px; border-radius: 50%; background: #14110f; border: 7px solid #b9ad93; }
+    #c02-cab { position: absolute; left: 44px; top: 82px; width: 752px; font-size: 40px; color: var(--tinta); border-bottom: 5px solid var(--tinta); padding-bottom: 12px; text-align: center; }
+    .c02-l { position: absolute; left: 44px; font-size: 60px; white-space: nowrap; }
+    #c02-carimbo { position: absolute; left: 440px; top: 150px; font-size: 44px; white-space: nowrap; }
+    #c02-faixa { position: absolute; left: 0; top: 376px; width: 840px; height: 192px; background: var(--acento); }
+    #c02-faixa .c02-l { font-size: 68px; }
+    #c02-cred { position: absolute; left: 44px; top: 612px; font-size: 42px; white-space: nowrap; }
+  </style>
+  <div id="root" data-composition-id="c02" data-width="1080" data-height="1920">
+    <div id="c02-w" class="clip" data-start="0" data-duration="3.95" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c02-palco">
+        <div id="c02-pend">
+          <svg id="c02-cord" viewBox="0 0 80 70"><path d="M40 0V70" stroke="#b9ad93" stroke-width="6"/></svg>
+          <div id="c02-tag">
+            <div id="c02-furo"></div>
+            <div id="c02-cab" class="rb-mono">MUSEU DA TUMBA</div>
+            <div id="c02-l1" class="c02-l rb-doc" style="top:172px">ARMADILHAS:</div>
+            <div id="c02-l2" class="c02-l rb-doc" style="top:260px">SEM CONFIRMAÇÃO</div>
+            <div id="c02-carimbo" class="rb-carimbo">OUTRO MEDO</div>
+            <div id="c02-faixa">
+              <div id="c02-l3" class="c02-l rb-doc" style="top:18px">RELÍQUIAS:</div>
+              <div id="c02-l4" class="c02-l rb-doc" style="top:98px">"MUITO FRÁGEIS"</div>
+            </div>
+            <div id="c02-cred" class="rb-doc">DIRETOR HONORÁRIO DO MUSEU</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c02";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    const bate = (el, t, de = -14, ate = -6, op = 0.95) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)", immediateRender: false }, t); };
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    // a etiqueta entra pendurada e balança no fio, sem sair da coluna
+    gsap.set("#c02-pend", { transformOrigin: "540px 0px" });
+    tl.fromTo("#c02-pend", { y: -760 }, { y: 0, duration: 0.24, ease: "power3.out", immediateRender: false }, 0);
+    gsap.set("#c02-pend", { y: -760 });
+    dat("#c02-cab", 0.1, 0.2, 7);
+    dat("#c02-l1", T("museu"), 0.3, 11);
+    dat("#c02-l2", T("museu") + 0.32, 0.4, 15);
+    const tm = Tf("medo") - 0.05;
+    bate("#c02-carimbo", tm);
+    tl.fromTo("#c02-tag", { x: 7 }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, tm + 0.03);
+    tl.fromTo("#c02-faixa", { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.22, ease: "power3.out" }, T("estragar"));
+    tl.fromTo("#c02-l3, #c02-l4", { x: -24 }, { x: 0, duration: 0.22, ease: "power3.out" }, T("estragar"));
+    dat("#c02-cred", T("dentro") - 0.12, 0.34, 26);
+    window.__timelines["c02"] = tl;
+  </script>
+</template>

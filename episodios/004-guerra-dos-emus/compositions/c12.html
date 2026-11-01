@@ -1,0 +1,76 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #121214; overflow: hidden; }
+    #c12-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c12-big { position: absolute; left: 90px; top: 120px; width: 840px; text-align: center; font-size: 520px; color: var(--papel); }
+    #c12-rot { position: absolute; left: 90px; top: 644px; font-size: 44px; color: var(--papel); white-space: nowrap; }
+    #c12-bar { position: absolute; left: 90px; top: 708px; width: 300px; height: 18px; background: var(--papel); }
+    #c12-coluna { position: absolute; left: 610px; top: 0; width: 320px; height: 760px; }
+    .c12-f { position: absolute; left: 0; width: 320px; height: 24px; background: var(--papel); border-bottom: 2px solid #a79c84; }
+    .c12-f::after { content: ""; position: absolute; left: 244px; top: 5px; width: 44px; height: 12px; background: var(--rec); opacity: .8; }
+    #c12-num { position: absolute; left: 90px; top: 0; font-size: 190px; color: var(--vhs); white-space: nowrap; }
+    #c12-p1 { position: absolute; left: 90px; top: 180px; font-size: 100px; white-space: nowrap; }
+    #c12-p2 { position: absolute; left: 90px; top: 266px; font-size: 100px; white-space: nowrap; }
+    #c12-m1 { position: absolute; left: 90px; top: 396px; font-size: 118px; color: var(--acento); white-space: nowrap; }
+    #c12-m2 { position: absolute; left: 90px; top: 500px; font-size: 118px; color: var(--acento); white-space: nowrap; }
+  </style>
+  <div id="root" data-composition-id="c12" data-width="1080" data-height="1920">
+    <div id="c12-w" class="clip" data-start="0" data-duration="8.27" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c12-palco">
+        <div id="c12-coluna"></div>
+        <div id="c12-rot" class="rb-mono">EXÉRCITO: 986</div>
+        <div id="c12-bar"></div>
+        <div id="c12-big" class="rb-titulo">986</div>
+        <div id="c12-num" class="rb-titulo">57.034</div>
+        <div id="c12-p1" class="rb-titulo">PEDIDOS DE</div>
+        <div id="c12-p2" class="rb-titulo">RECOMPENSA:</div>
+        <div id="c12-m1" class="rb-titulo">6 MESES</div>
+        <div id="c12-m2" class="rb-titulo">DE 1934</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c12";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // carimbo bate (1,5 → 1); peça aparece com pequeno deslocamento; texto datilografado em passos
+    const bate = (el, t, de = -9, ate = -5, op = 0.96) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)", immediateRender: false }, t); };
+    const surge = (el, t, dy = 24, dx = 0) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy, x: dx }, { y: 0, x: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, t); };
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    const treme = (el, t, a = 7) => tl.fromTo(el, { x: a }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, t);
+    // escala real: 57.034 ÷ 986 ≈ 58 barras de 18 px = 1.043 px. Não cabe nos 760 px do palco, de propósito.
+    const Rc = T("recompensa"), Se = T("seis"), N = 44, H = 24, ALT = 760;
+    const col = document.getElementById("c12-coluna"), Fs = [];
+    for (let i = 0; i < N; i++) {
+      const f = document.createElement("div"); f.className = "c12-f"; f.id = "c12-f" + i;
+      f.style.top = (ALT - (i + 1) * H) + "px"; col.appendChild(f); Fs.push(f);
+    }
+    const passo = (Se - 0.3 - Rc) / N;
+    Fs.forEach((f, i) => {
+      gsap.set(f, { autoAlpha: 0 });
+      const t = Rc + i * passo;
+      tl.set(f, { autoAlpha: 1 }, t);
+      tl.fromTo(f, { y: -56 }, { y: 0, duration: 2 / 30, ease: "steps(2)", immediateRender: false }, t);
+      if (i % 6 === 5) tl.fromTo("#c12-coluna", { x: 4 }, { x: 0, duration: 0.07, ease: "steps(2)", immediateRender: false }, t);
+    });
+    // estoura: a coluna passa do topo do palco e tudo treme
+    const E = Rc + N * passo;
+    for (let k = 0; k < 6; k++) tl.set("#c12-palco", { x: k === 5 ? 0 : (k % 2 ? -8 : 8) }, E + k * (1 / 30));
+    // 986 encolhe num bloco no canto
+    gsap.set("#c12-big", { transformOrigin: "50% 50%" });
+    tl.fromTo("#c12-big", { scale: 0.9 }, { scale: 1, duration: 0.12, ease: "power3.out" }, 0.03);
+    tl.to("#c12-big", { scale: 0.06, x: -270, y: 340, duration: 0.3, ease: "power3.in" }, T("conta") - 0.2);
+    tl.to("#c12-big", { autoAlpha: 0, duration: 0.01 }, T("conta") + 0.1);
+    gsap.set("#c12-bar, #c12-rot", { autoAlpha: 0 });
+    tl.set("#c12-bar, #c12-rot", { autoAlpha: 1 }, T("conta") + 0.1);
+    tl.fromTo("#c12-bar", { scaleX: 1.14, transformOrigin: "0 50%" }, { scaleX: 1, duration: 0.12, ease: "steps(3)", immediateRender: false }, T("conta") + 0.1);
+    surge("#c12-num", T("cinquenta") - 0.04, 0, -30);
+    surge("#c12-p1", T("pedidos"), 0, -30);
+    surge("#c12-p2", T("recompensa"), 0, -30);
+    surge("#c12-m1", Se, 0, -30);
+    surge("#c12-m2", T("de", 2), 0, -30);
+    tl.fromTo("#c12-num", { scale: 1 }, { scale: 1.06, duration: 0.14, ease: "steps(3)", transformOrigin: "0 50%" }, T("meses"));
+    tl.to("#c12-num", { scale: 1, duration: 0.14, ease: "steps(3)" }, T("meses") + 0.14);
+    window.__timelines["c12"] = tl;
+  </script>
+</template>

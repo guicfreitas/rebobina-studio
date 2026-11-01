@@ -1,0 +1,103 @@
+{
+ "largura": 1000,
+ "altura": 720,
+ "bbox": [
+  112,
+  -44,
+  155,
+  -10
+ ],
+ "centroides": {
+  "pais-australia": [
+   514,
+   285
+  ]
+ },
+ "pontos": {
+  "ponto-campion": {
+   "nome": "campion",
+   "x": 243,
+   "y": 388
+  },
+  "ponto-lim-n": {
+   "nome": "lim-n",
+   "x": 423,
+   "y": 70
+  },
+  "ponto-lim-s": {
+   "nome": "lim-s",
+   "x": 423,
+   "y": 408
+  },
+  "ponto-w1": {
+   "nome": "w1",
+   "x": 174,
+   "y": 328
+  },
+  "ponto-w2": {
+   "nome": "w2",
+   "x": 208,
+   "y": 334
+  },
+  "ponto-w3": {
+   "nome": "w3",
+   "x": 248,
+   "y": 366
+  },
+  "ponto-w4": {
+   "nome": "w4",
+   "x": 265,
+   "y": 391
+  },
+  "ponto-w5": {
+   "nome": "w5",
+   "x": 268,
+   "y": 420
+  },
+  "ponto-w6": {
+   "nome": "w6",
+   "x": 294,
+   "y": 428
+  },
+  "ponto-w7": {
+   "nome": "w7",
+   "x": 316,
+   "y": 442
+  },
+  "ponto-w8": {
+   "nome": "w8",
+   "x": 303,
+   "y": 461
+  },
+  "ponto-w9": {
+   "nome": "w9",
+   "x": 234,
+   "y": 473
+  },
+  "ponto-w10": {
+   "nome": "w10",
+   "x": 210,
+   "y": 440
+  },
+  "ponto-w11": {
+   "nome": "w11",
+   "x": 200,
+   "y": 418
+  },
+  "ponto-w12": {
+   "nome": "w12",
+   "x": 193,
+   "y": 397
+  },
+  "ponto-w13": {
+   "nome": "w13",
+   "x": 179,
+   "y": 367
+  },
+  "ponto-w14": {
+   "nome": "w14",
+   "x": 164,
+   "y": 340
+  }
+ }
+}

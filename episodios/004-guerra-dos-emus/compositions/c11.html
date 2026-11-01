@@ -1,0 +1,74 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #17140f; overflow: hidden; }
+    #c11-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c11-pag { position: absolute; left: 60px; top: 14px; width: 960px; height: 732px; }
+    #c11-tit { position: absolute; left: 50px; top: 30px; font-size: 100px; color: var(--tinta); white-space: nowrap; }
+    .c11-j { position: absolute; left: 50px; height: 222px; background: #15131a; border: 8px solid #15131a; display: flex; gap: 6px; overflow: hidden; }
+    #c11-j1 { top: 148px; } #c11-j2 { top: 448px; }
+    .c11-col { position: relative; width: 142px; height: 206px; background: #24212b; overflow: hidden; }
+    .c11-tira { position: absolute; left: 0; top: 0; width: 142px; }
+    .c11-tira b { display: block; height: 206px; line-height: 206px; text-align: center; font-family: var(--f-mono); font-weight: 700; font-size: 168px; color: var(--papel); }
+    .c11-pto { width: 44px; height: 206px; line-height: 300px; text-align: center; font-family: var(--f-mono); font-weight: 700; font-size: 110px; color: var(--papel); }
+    .c11-rot { position: absolute; font-size: 52px; line-height: 1.12; white-space: nowrap; }
+    #c11-r1 { left: 530px; top: 200px; } #c11-r2 { left: 716px; top: 526px; }
+    #c11-folha { position: absolute; left: 60px; top: 14px; width: 960px; height: 732px; background: #d9cdb2; }
+  </style>
+  <div id="root" data-composition-id="c11" data-width="1080" data-height="1920">
+    <div id="c11-w" class="clip" data-start="0" data-duration="7.9" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c11-palco">
+        <div id="c11-pag" class="rb-papel">
+          <div id="c11-tit" class="rb-titulo">CONTA DO PRÓPRIO MAJOR</div>
+          <div id="c11-j1" class="c11-j"></div>
+          <div id="c11-j2" class="c11-j"></div>
+          <div id="c11-r1" class="c11-rot rb-doc">EMUS<br>CONFIRMADOS</div>
+          <div id="c11-r2" class="c11-rot rb-doc">BALAS</div>
+        </div>
+        <div id="c11-folha"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c11";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // carimbo bate (1,5 → 1); peça aparece com pequeno deslocamento; texto datilografado em passos
+    const bate = (el, t, de = -9, ate = -5, op = 0.96) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)", immediateRender: false }, t); };
+    const surge = (el, t, dy = 24, dx = 0) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy, x: dx }, { y: 0, x: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, t); };
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    const treme = (el, t, a = 7) => tl.fromTo(el, { x: a }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, t);
+    // contador de fita: cada dígito é uma tira de 0 a 9 repetida; rola em passos e trava no valor certo
+    const H = 206, VOLTAS = 3;
+    const monta = (pai, digitos, comPonto) => {
+      const j = document.getElementById(pai), tiras = [];
+      digitos.forEach((v, i) => {
+        if (comPonto && i === 1) { const p = document.createElement("div"); p.className = "c11-pto"; p.textContent = "."; p.setAttribute("data-layout-allow-occlusion", ""); j.appendChild(p); }
+        const col = document.createElement("div"); col.className = "c11-col";
+        const tira = document.createElement("div"); tira.className = "c11-tira"; tira.id = `${pai}-t${i}`;
+        for (let k = 0; k < VOLTAS * 10; k++) { const b = document.createElement("b"); b.textContent = String(k % 10); b.setAttribute("data-layout-allow-occlusion", ""); tira.appendChild(b); }
+        col.appendChild(tira); j.appendChild(col); tiras.push(tira);
+      });
+      return tiras;
+    };
+    const roda = (tiras, digitos, t0, t1) => tiras.forEach((tira, i) => {
+      const destino = 10 * Math.min(tiras.length - 1 - i, VOLTAS - 1) + digitos[i];
+      tl.to(tira, { y: -destino * H, duration: t1 - t0, ease: `steps(${Math.max(destino, 1)})` }, t0);
+    });
+    const D1 = [9, 8, 6], D2 = [9, 8, 6, 0];
+    const t1 = monta("c11-j1", D1, false), t2 = monta("c11-j2", D2, true);
+    const trava = (id, t) => { tl.set(id, { borderColor: "#FF3B30" }, t); tl.set(id + " b", { color: "#FFD23F" }, t); tl.fromTo(id, { x: 8 }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, t); };
+    // página vira no início
+    gsap.set("#c11-folha", { transformOrigin: "0 50%" });
+    tl.to("#c11-folha", { scaleX: 0, duration: 0.34, ease: "power2.in" }, 0.06);
+    tl.to("#c11-folha", { autoAlpha: 0, duration: 0.01 }, 0.41);
+    const Mj = T("major"), Cf = T("confirmados"), Qs = T("quase"), Bl = T("balas");
+    dat("#c11-tit", T("conta") - 0.05, 0.44, 22);
+    roda(t1, D1, Mj, Cf);
+    surge("#c11-r1", T("emus"), 0, -24);
+    trava("#c11-j1", Cf);
+    roda(t2, D2, Qs, Bl);
+    surge("#c11-r2", Bl, 0, -24);
+    trava("#c11-j2", Bl);
+    window.__timelines["c11"] = tl;
+  </script>
+</template>

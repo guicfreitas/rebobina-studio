@@ -1,0 +1,461 @@
+{
+ "id": "004",
+ "slug": "guerra-dos-emus",
+ "idioma": "pt-BR",
+ "tema": "A Guerra dos Emus (Austrália, 02/11/1932): a operação com metralhadoras existiu e entrou para a história como derrota. O major contou 986 aves confirmadas, as recompensas somaram 57.034 pedidos em seis meses de 1934, e o emu já estava no brasão do país desde 1908",
+ "era": "século XX",
+ "regiao": "Oceania",
+ "acento": "#E8B04B",
+ "objeto_simbolo": "silhueta de emu de pé, intacta: sozinha na abertura, com a medalha no peito na c10 e como apoio de um escudo no fecho",
+ "motor_voz": "colab",
+ "voz": "pm_alex",
+ "velocidade": 0.92,
+ "serie": {
+  "proxima_fita": null
+ },
+ "cenas": [
+  {
+   "id": "c01",
+   "batida": "gancho",
+   "forma": "multidao-de-pontos",
+   "ano": 2026,
+   "fala": "Três homens com metralhadoras perderam uma guerra para uma ave?",
+   "tela": [
+    "3 HOMENS",
+    "2 METRALHADORAS",
+    "~20.000 EMUS"
+   ],
+   "visual": "Frame 0: texto em League Gothic gigante e a silhueta do emu de pé, com 3 pontos vermelhos de um lado. Em 'guerra', milhares de pontos cor de acento enchem o palco de uma vez, com o som de um contador disparando. Em 'ave', todos param.",
+   "fatos": [
+    "f1",
+    "f2"
+   ]
+  },
+  {
+   "id": "c02",
+   "batida": "quebra",
+   "forma": "mito-x-fato",
+   "ano": 2026,
+   "fala": "Parece lenda de internet. Mas tem data, major e relatório.",
+   "fala_tts": "Parece lenda de internet. Mas tem data, majór e relatório.",
+   "tela": [
+    "OPERAÇÃO MILITAR",
+    "2 NOV 1932",
+    "AUSTRÁLIA"
+   ],
+   "visual": "A palavra 'LENDA' em papel; em 'Mas', o carimbo vermelho 'FATO' bate por cima, com som de carimbo. Em 'relatório', uma folha desliza para dentro do quadro, com som de papel.",
+   "fatos": [
+    "f3"
+   ]
+  },
+  {
+   "id": "c03",
+   "batida": "rebobinar",
+   "forma": "mapa",
+   "ano": 1932,
+   "fala": "Mil novecentos e trinta e dois, Austrália Ocidental. Veteranos de guerra plantam trigo, e o preço já despencou.",
+   "tela": [
+    "1932 · AUSTRÁLIA OCIDENTAL",
+    "VETERANOS DA 1ª GUERRA",
+    "SUBSÍDIO PROMETIDO: NÃO VEIO"
+   ],
+   "visual": "Rebobina até 1932. O contorno da Austrália se traça e a Austrália Ocidental enche de cor em 'Ocidental'; um ponto marca Campion. Em 'trigo', a região do cinturão do trigo escorre em ouro; em 'despencou', uma linha de preço cai em degraus, com o som de um contador.",
+   "fatos": [
+    "f4"
+   ]
+  },
+  {
+   "id": "c04",
+   "batida": "escalada",
+   "forma": "multidao-de-pontos",
+   "ano": 1932,
+   "fala": "Aí chegam uns vinte mil emus. Comem trigo e furam as cercas.",
+   "fala_tts": "Aí chegam uns vinte mil emús. Comem trigo e furam as cêrcas.",
+   "tela": [
+    "~20.000 EMUS",
+    "CERCAS ABERTAS"
+   ],
+   "visual": "Linha de cerca atravessa o palco, com trigo atrás. Em 'emus', uma maré de pontos entra pela borda leste; em 'furam', a cerca rompe em três trechos, com um estalo seco de arame a cada trecho, e os pontos passam.",
+   "fatos": [
+    "f1",
+    "f5"
+   ]
+  },
+  {
+   "id": "c05",
+   "batida": "escalada",
+   "forma": "recibo",
+   "ano": 1932,
+   "fala": "Fazendeiros pedem metralhadoras. O ministro da Defesa topa, mas não paga a munição.",
+   "tela": [
+    "2 METRALHADORAS LEWIS",
+    "10.000 CARTUCHOS",
+    "MUNIÇÃO: GOVERNO ESTADUAL",
+    "E FAZENDEIROS"
+   ],
+   "visual": "Recibo em papel sai da máquina, com som de datilografia e de papel. As linhas surgem uma a uma; em 'paga', o carimbo vermelho 'DEFESA NÃO PAGA' bate no fim, com som de carimbo.",
+   "fatos": [
+    "f6"
+   ],
+   "fala_tts": "Fazendeiros pedem metralhadoras. O ministro da Defesa tópa, mas não paga a munição."
+  },
+  {
+   "id": "c06",
+   "batida": "escalada",
+   "forma": "ficha-de-arquivo",
+   "ano": 1932,
+   "fala": "Partem o major Meredith, dois ajudantes e um cinegrafista.",
+   "fala_tts": "Partem, o majór Méredit, dois ajudantes e um cinegrafista.",
+   "tela": [
+    "MAJ. G.P.W. MEREDITH",
+    "+ 2 MILITARES",
+    "+ 1 CINEGRAFISTA"
+   ],
+   "visual": "Ficha datilografada, sem foto, com silhueta de arquivo vazia. Em 'cinegrafista', um clipe prende a última linha com som de clique, e um rolo de filme gira no canto.",
+   "fatos": [
+    "f2",
+    "f7"
+   ]
+  },
+  {
+   "id": "c07",
+   "batida": "escalada",
+   "forma": "antes-e-depois",
+   "ano": 1932,
+   "fala": "Emboscada numa represa: cerca de mil emus. E a metralhadora trava.",
+   "fala_tts": "Emboscada numa represa: cêrca de mil emús. E a metralhadora trava.",
+   "tela": [
+    "4 NOV 1932",
+    "~1.000 EMUS",
+    "METRALHADORA: TRAVADA"
+   ],
+   "visual": "Antes: pontos juntos em volta de uma represa azul, vistos de cima, com a mira marcando o grupo. Em 'trava', uma dúzia de pontos se apaga, a rajada para num clique seco e os demais se espalham, com a tela dividida no lado depois. Sem sangue nem queda.",
+   "fatos": [
+    "f8"
+   ]
+  },
+  {
+   "id": "c08",
+   "batida": "escalada",
+   "forma": "linha-do-tempo",
+   "ano": 1932,
+   "fala": "Num caminhão, a mira piora. Em seis dias, o governo manda recuar.",
+   "tela": [
+    "2 NOV · CHEGADA",
+    "4 NOV · TRAVOU",
+    "8 NOV · RECUO"
+   ],
+   "visual": "Um caminhão em traço simples sacoleja numa linha de terra, e a linha de mira treme junto. Em 'seis dias', a linha do tempo avança de 2 a 8 de novembro com som de contador. Em 'recuar', o carimbo 'RECUO' bate no último marco.",
+   "fatos": [
+    "f9"
+   ]
+  },
+  {
+   "id": "c09",
+   "batida": "escalada",
+   "forma": "citacao-poster",
+   "ano": 1932,
+   "fala": "O major resumiu: eles podem enfrentar metralhadoras com a invulnerabilidade de tanques.",
+   "tela": [
+    "\"A INVULNERABILIDADE",
+    "DE TANQUES\"",
+    "MAJ. MEREDITH"
+   ],
+   "visual": "Pôster de papel é colado de um golpe, com som de papel. Em 'tanques', a silhueta do emu de pé desliza atrás do texto, com um tanque em traço simples ao lado, do mesmo tamanho.",
+   "fatos": [
+    "f10"
+   ]
+  },
+  {
+   "id": "c10",
+   "batida": "escalada",
+   "forma": "objeto-simbolo",
+   "ano": 1932,
+   "fala": "No Parlamento, perguntam se haverá medalha. Um deputado responde: os emus venceram todos os rounds até agora.",
+   "fala_tts": "No Parlamento, perguntam se haverá medalha. Um deputado responde: os emús venceram todos os ráunds até agora.",
+   "tela": [
+    "PARLAMENTO · 8 NOV 1932",
+    "\"VENCERAM TODOS OS ROUNDS",
+    "ATÉ AGORA\""
+   ],
+   "visual": "Uma medalha grande gira no palco em passos, com som de moeda. Em 'emus', ela cai no peito da silhueta do emu, com um tilintar, como piada visual. Em 'rounds', toca uma sineta curta de luta.",
+   "fatos": [
+    "f11"
+   ]
+  },
+  {
+   "id": "c11",
+   "batida": "virada",
+   "forma": "numero-que-cai",
+   "ano": 1932,
+   "fala": "O Exército volta. Na conta do major: novecentos e oitenta e seis emus confirmados. Quase dez mil balas.",
+   "fala_tts": "O Exército volta. Na conta do major: novecentos e oitenta e seis emús confirmados. Quase dez mil balas.",
+   "tela": [
+    "986 EMUS CONFIRMADOS",
+    "9.860 BALAS",
+    "CONTA DO PRÓPRIO MAJOR"
+   ],
+   "visual": "Página de relatório vira com som de página. Dois contadores de fita rolam em passos, com som de contador: travam em '986' em 'confirmados' e em '9.860' em 'balas'. Só números, sem nenhuma ave na tela.",
+   "fatos": [
+    "f12"
+   ]
+  },
+  {
+   "id": "c12",
+   "batida": "virada",
+   "forma": "comparacao-de-escala",
+   "ano": 1934,
+   "fala": "Outra conta: cinquenta e sete mil pedidos de recompensa por emu. Em só seis meses de mil novecentos e trinta e quatro.",
+   "tela": [
+    "EXÉRCITO: 986",
+    "PEDIDOS DE RECOMPENSA: 57.034",
+    "6 MESES DE 1934"
+   ],
+   "visual": "O '986' encolhe num bloco pequeno no canto. Em 'recompensa', fichas de papel caem em passos e empilham numa coluna que sobe até estourar o palco, com som de carimbo em série e de papel. Sem aves na tela.",
+   "fatos": [
+    "f13"
+   ],
+   "fala_tts": "Outra conta: cinquenta e sete mil pedidos de recompensa por emú. Em só seis meses de mil novecentos e trinta e quatro."
+  },
+  {
+   "id": "c13",
+   "batida": "virada",
+   "forma": "documento",
+   "ano": 1934,
+   "fala": "Fazendeiros pedem o Exército de novo. O governo diz não.",
+   "tela": [
+    "1934: NEGADO"
+   ],
+   "visual": "Um ofício datilografado entra no palco, com som de papel. Em 'não', o carimbo 'NEGADO' bate no ofício de 1934, com som de carimbo.",
+   "fatos": [
+    "f14"
+   ]
+  },
+  {
+   "id": "c14",
+   "batida": "fecho",
+   "forma": "objeto-simbolo",
+   "ano": 2026,
+   "fala": "Desde mil novecentos e oito, o emu está no brasão da Austrália. O país atirou na ave do próprio brasão. E entrou para a história como perdedor.",
+   "fala_tts": "Desde mil novecentos e oito, o emú está no brasão da Austrália. O país atirou na ave do próprio brasão. E entrou para a história como perdedor.",
+   "tela": [
+    "BRASÃO · DESDE 1908",
+    "EMU: AINDA LÁ"
+   ],
+   "visual": "A silhueta do emu, com a medalha, sobe ao lado de um escudo genérico em traço simples, sem copiar o brasão oficial. O contador vai a 1908 em 'Desde' e a 2026 em 'brasão', com som de contador. Em 'perdedor', um último clique seco de metralhadora travada; tela azul + STOP. Em 'atirou', uma mira em traço simples enquadra a silhueta, com um clique, sem tiro. Em 'história', a medalha balança no peito do emu.",
+   "fatos": [
+    "f15",
+    "f16"
+   ],
+   "marcos_ano": [
+    [
+     "Desde",
+     1908
+    ],
+    [
+     "brasão",
+     2026
+    ]
+   ]
+  }
+ ],
+ "fatos": [
+  {
+   "id": "f1",
+   "afirmacao": "Cerca de 20 mil emus chegaram à região de trigo da Austrália Ocidental no fim de 1932; algumas fontes escrevem 'quase' ou 'mais de' 20 mil, daí o '~' na tela e 'uns' na fala.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Emu_War",
+    "https://www.historyhit.com/the-great-emu-war/",
+    "https://www.nationalgeographic.com/history/article/australian-emu-war-history",
+    "https://www.straightdope.com/21344046/did-the-australian-army-once-wage-war-on-emus"
+   ]
+  },
+  {
+   "id": "f2",
+   "afirmacao": "A operação teve 3 militares e 2 metralhadoras Lewis. Patentes divergem: a Wikipedia e a History Hit citam major, sargento e artilheiro; a Popular Science e a Straight Dope, um oficial e dois artilheiros. Por isso a fala diz 'dois ajudantes'.",
+   "fontes": [
+    "https://www.popsci.com/environment/emu-wars-australia/",
+    "https://www.historyhit.com/the-great-emu-war/",
+    "https://www.nationalgeographic.com/history/article/australian-emu-war-history",
+    "https://www.scientificamerican.com/blog/running-ponies/the-great-emu-war-in-which-some-large-flightless-birds-unwittingly-foiled-the-australian-army/"
+   ]
+  },
+  {
+   "id": "f3",
+   "afirmacao": "A operação começou em 2/11/1932, sob o major G.P.W. Meredith, que produziu relatório com o balanço. A chuva atrasou a saída; a Wikipedia registra o início em 2/11 e, como a Straight Dope, cita Campion como destino nessa data (\"On 2 November 1932, the men travelled to Campion\").",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Emu_War",
+    "https://www.straightdope.com/21344046/did-the-australian-army-once-wage-war-on-emus",
+    "https://www.nationalgeographic.com/history/article/australian-emu-war-history"
+   ]
+  },
+  {
+   "id": "f4",
+   "afirmacao": "Veteranos da Primeira Guerra receberam terras na Austrália Ocidental, plantaram trigo e sofreram com a queda de preço depois de 1929; o governo prometeu subsídios que não vieram.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Emu_War",
+    "https://www.popsci.com/environment/emu-wars-australia/",
+    "https://www.historyhit.com/the-great-emu-war/",
+    "https://www.scientificamerican.com/blog/running-ponies/the-great-emu-war-in-which-some-large-flightless-birds-unwittingly-foiled-the-australian-army/"
+   ]
+  },
+  {
+   "id": "f5",
+   "afirmacao": "Os emus comeram e pisotearam a lavoura e danificavam ou derrubavam cercas: o Hansard da Câmara de 9/11/1932 fala em 'damaging rabbit-proof fences', e Pearce, no Senado em 18/11/1932, diz que eles 'knock them down'.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Emu_War",
+    "https://historichansard.net/hofreps/1932/19321109_reps_13_136/",
+    "https://historichansard.net/senate/1932/19321118_senate_13_137/",
+    "https://www.historyhit.com/the-great-emu-war/",
+    "https://www.freightwaves.com/news/how-australia-lost-a-war-with-emus"
+   ]
+  },
+  {
+   "id": "f6",
+   "afirmacao": "Fazendeiros ex-soldados pediram metralhadoras ao ministro da Defesa, Sir George Pearce. Foram 2 metralhadoras Lewis e 10 mil cartuchos. Quem pagou a munição diverge: a Wikipedia e o Pickering Brook dizem que os fazendeiros. Pearce, no Senado (18/11/1932), diz que eles se ofereceram, mas que o acordo fechado foi o governo estadual pagar as passagens e a munição usada, com um arranjo próprio entre Estado e fazendeiros. O Hansard da Câmara (9/11/1932) fala em custo dividido entre o Estado e os colonos. Lyons (Câmara, 8/11/1932) e Pearce dizem que a Defesa e o governo federal não arcariam com o custo. Por isso a fala só diz que a Defesa não paga, e a tela segue Pearce.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Emu_War",
+    "https://www.straightdope.com/21344046/did-the-australian-army-once-wage-war-on-emus",
+    "https://www.popsci.com/environment/emu-wars-australia/",
+    "https://www.historyhit.com/the-great-emu-war/",
+    "https://historichansard.net/senate/1932/19321118_senate_13_137/",
+    "https://historichansard.net/hofreps/1932/19321109_reps_13_136/",
+    "https://historichansard.net/hofreps/1932/19321108_reps_13_136/",
+    "https://pickeringbrookheritagegroup.com.au/?p=18692"
+   ]
+  },
+  {
+   "id": "f7",
+   "afirmacao": "Um cinegrafista acompanhou a operação. A Wikipedia e a Straight Dope citam a Fox Movietone; a Popular Science credita as imagens à British Movietone. Por isso a empresa não é nomeada.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Emu_War",
+    "https://www.straightdope.com/21344046/did-the-australian-army-once-wage-war-on-emus",
+    "https://www.popsci.com/environment/emu-wars-australia/"
+   ]
+  },
+  {
+   "id": "f8",
+   "afirmacao": "Em 4/11/1932, uma emboscada perto de uma represa, diante de cerca de mil emus ('mais de mil' na Wikipedia), falhou porque a metralhadora travou. A NatGeo confirma a metralhadora travada num bebedouro, mas situa o fato 'dois dias depois' dos três primeiros dias, sem dar a data. A metralhadora travou depois de cerca de 12 aves abatidas, e o resto se espalhou (Wikipedia, Straight Dope).",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Emu_War",
+    "https://www.historyhit.com/the-great-emu-war/",
+    "https://www.straightdope.com/21344046/did-the-australian-army-once-wage-war-on-emus",
+    "https://www.nationalgeographic.com/history/article/australian-emu-war-history"
+   ]
+  },
+  {
+   "id": "f9",
+   "afirmacao": "A metralhadora montada em caminhão não funcionou: o terreno impedia a mira (a FreightWaves diz que o caminhão não acompanhava as aves; a Popular Science escreve 'Jeep'). As tropas foram retiradas em 8/11/1932, seis dias depois do início. A Wikipedia e a History Hit atribuem a ordem a Pearce, e a Straight Dope, ao primeiro-ministro; por isso a fala diz 'o governo'.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Emu_War",
+    "https://www.historyhit.com/the-great-emu-war/",
+    "https://www.straightdope.com/21344046/did-the-australian-army-once-wage-war-on-emus",
+    "https://www.popsci.com/environment/emu-wars-australia/",
+    "https://www.freightwaves.com/news/how-australia-lost-a-war-with-emus"
+   ]
+  },
+  {
+   "id": "f10",
+   "afirmacao": "Meredith disse que os emus 'can face machine guns with the invulnerability of tanks'. A tradução é nossa. A fala não repete a comparação dele com os zulus.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Emu_War",
+    "https://www.popsci.com/environment/emu-wars-australia/",
+    "https://www.historyhit.com/the-great-emu-war/",
+    "https://www.nationalgeographic.com/history/article/australian-emu-war-history"
+   ]
+  },
+  {
+   "id": "f11",
+   "afirmacao": "Registro mais antigo: The West Australian, 9/11/1932, p. 20, sobre a sessão da Câmara de 8/11/1932. Thorby pergunta ao primeiro-ministro quem responde pela operação e quem paga. Rowley James: 'Is a medal to be struck for this war? (Laughter)'. A.E. Green: 'The emus have won every round so far'. A tradução é nossa. O relato não fala em medalhas para os emus: essa versão só aparece em fontes tardias (Australian Geographic, Straight Dope, Scientific American, FreightWaves), e por isso a fala não a usa. O Hansard da Câmara de 9/11/1932 confirma a pergunta de Thorby no dia anterior, mas não traz o aparte de James e Green: a frase é registro de imprensa. A medalha no peito do emu é só piada visual.",
+   "fontes": [
+    "https://web.archive.org/web/20251226192447/https://trove.nla.gov.au/newspaper/article/32587930",
+    "https://historichansard.net/hofreps/1932/19321109_reps_13_136/",
+    "https://historichansard.net/hofreps/1932/19321108_reps_13_136/",
+    "https://www.australiangeographic.com.au/topics/wildlife/2016/10/australias-emu-wars/",
+    "https://www.straightdope.com/21344046/did-the-australian-army-once-wage-war-on-emus",
+    "https://www.scientificamerican.com/blog/running-ponies/the-great-emu-war-in-which-some-large-flightless-birds-unwittingly-foiled-the-australian-army/",
+    "https://www.freightwaves.com/news/how-australia-lost-a-war-with-emus"
+   ]
+  },
+  {
+   "id": "f12",
+   "afirmacao": "As tropas voltaram em 13/11/1932 e foram retiradas em 10/12/1932. Pela conta do major Meredith: 986 emus confirmados e 9.860 balas, 10 por ave ('quase dez mil' na fala). O mesmo relatório soma 2.500 aves feridas que teriam morrido, número que o historiador Murray Johnson diz não haver como conhecer; a NatGeo dá cerca de 2.500 mortos e 45 dias. A Wikipedia lista 2.500 tiros até 8/11 e 9.860 na segunda fase, o que passa dos 10 mil cartuchos entregues; outras fontes tratam 9.860 como total. Por isso o vídeo nada soma e diz 'na conta do major'.",
+   "fontes": [
+    "https://www.popsci.com/environment/emu-wars-australia/",
+    "https://www.straightdope.com/21344046/did-the-australian-army-once-wage-war-on-emus",
+    "https://en.wikipedia.org/wiki/Emu_War",
+    "https://www.nationalgeographic.com/history/article/australian-emu-war-history"
+   ]
+  },
+  {
+   "id": "f13",
+   "afirmacao": "Em seis meses de 1934 foram pedidas 57.034 recompensas por emu. O número é de recompensas pedidas, não de abates confirmados, embora a FreightWaves e a Scientific American escrevam como mortes. A Australian Geographic e a History Hit apresentam as recompensas como mais eficazes que a operação militar. A Wikipedia data o sistema de 1923; a Straight Dope o apresenta como posterior à operação, então a fala não dá a origem.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Emu_War",
+    "https://www.historyhit.com/the-great-emu-war/",
+    "https://www.scientificamerican.com/blog/running-ponies/the-great-emu-war-in-which-some-large-flightless-birds-unwittingly-foiled-the-australian-army/",
+    "https://pickeringbrookheritagegroup.com.au/?p=18692",
+    "https://www.freightwaves.com/news/how-australia-lost-a-war-with-emus",
+    "https://www.australiangeographic.com.au/topics/wildlife/2016/10/australias-emu-wars/"
+   ]
+  },
+  {
+   "id": "f14",
+   "afirmacao": "Em 1934, os fazendeiros voltaram a pedir ajuda militar e foram recusados (Wikipedia citando Johnson; Mental Floss; Pickering Brook Heritage Group). Os outros anos divergem e ficam de fora: a Wikipedia traz 1943 e 1948, e o Pickering Brook, 1938 e 1943. O artigo que a Wikipedia cita para 1943 (The Mail, 3/7/1943) diz só que 'some farmers want' bombas e metralhadoras, e que o inspetor-chefe de caça chamou a agitação de infundada, sem pedido ao Exército nem recusa do governo.",
+   "fontes": [
+    "https://en.wikipedia.org/wiki/Emu_War",
+    "https://www.mentalfloss.com/article/84904/when-australia-went-war-its-emus",
+    "https://pickeringbrookheritagegroup.com.au/?p=18692",
+    "https://web.archive.org/web/20250421082708/https://trove.nla.gov.au/newspaper/article/55872191"
+   ]
+  },
+  {
+   "id": "f15",
+   "afirmacao": "O primeiro brasão da Austrália, concedido em 1908, já trazia o canguru e o emu como apoios do escudo. O brasão de 1912, ainda em uso, manteve os dois. Portanto, em 1932 o emu já estava no brasão. Essa ligação entre o brasão e a operação é uma dedução nossa a partir das datas; as fontes não a fazem. 'Brasão' e não 'símbolo': a Wikipedia registra que o emu e o canguru do escudo nunca foram designados emblemas animais oficiais. A fala só justapõe as datas e não afirma que o brasão motivou ou agravou a operação. Fontes de 1908 com o emu: o Centre of Democracy (Austrália do Sul) expõe a peça 'Advance Australia', da State Library of South Australia (SP 929.6 C 734D), como o primeiro brasão, concedido em 7/5/1908; o texto da página não nomeia os animais, mas a imagem da peça os mostra e a descrição dela diz 'A kangaroo and an emu holding up a shield'. A Wikipedia traz os apoios de 1908: 'a kangaroo and an emu'. A ANBG saiu porque não diz que o emu já estava em 1908. APH e AWM responderam 403 e não foram lidos.",
+   "fontes": [
+    "https://centreofdemocracy.sa.gov.au/?p=1620",
+    "https://en.wikipedia.org/wiki/Coat_of_arms_of_Australia"
+   ]
+  },
+  {
+   "id": "f16",
+   "afirmacao": "Não houve vencedor oficial: 'perdedor' é a leitura dominante da história, não um resultado registrado, e por isso a fala diz 'entrou para a história como perdedor'. Pela derrota: NatGeo, History Hit e Straight Dope dão a vitória aos emus, e Murray Johnson (2006, via Popular Science) escreve que as metralhadoras 'actually exacerbated the crop losses'. Contra: o Coolgardie Miner (23/8/1935), citando o Nungarin Standard, escreveu que o método 'proved effective and saved what remained of the wheat', num texto a favor de nova operação.",
+   "fontes": [
+    "https://web.archive.org/web/20250425234256/https://trove.nla.gov.au/newspaper/article/217998228",
+    "https://www.popsci.com/environment/emu-wars-australia/",
+    "https://www.nationalgeographic.com/history/article/australian-emu-war-history",
+    "https://www.historyhit.com/the-great-emu-war/",
+    "https://www.straightdope.com/21344046/did-the-australian-army-once-wage-war-on-emus"
+   ]
+  }
+ ],
+ "fontes_lidas_no_internet_archive": {
+  "motivo": "O Trove bloqueou o acesso direto; as três matérias foram lidas nestas cópias do Internet Archive.",
+  "copias": [
+   {
+    "url": "https://web.archive.org/web/20251226192447/https://trove.nla.gov.au/newspaper/article/32587930",
+    "original": "http://nla.gov.au/nla.news-article32587930",
+    "materia": "The West Australian, 9/11/1932, p. 20, \"Questions in Representatives\"",
+    "fatos": [
+     "f11"
+    ]
+   },
+   {
+    "url": "https://web.archive.org/web/20250421082708/https://trove.nla.gov.au/newspaper/article/55872191",
+    "original": "http://nla.gov.au/nla.news-article55872191",
+    "materia": "The Mail (Adelaide), 3/7/1943, p. 12, \"Request to use bombs to kill emus\"",
+    "fatos": [
+     "f14"
+    ]
+   },
+   {
+    "url": "https://web.archive.org/web/20250425234256/https://trove.nla.gov.au/newspaper/article/217998228",
+    "original": "http://nla.gov.au/nla.news-article217998228",
+    "materia": "Coolgardie Miner, 23/8/1935, p. 2, \"Another Emu War?\"",
+    "fatos": [
+     "f16"
+    ]
+   }
+  ]
+ }
+}

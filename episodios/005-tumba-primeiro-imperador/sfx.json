@@ -1,0 +1,182 @@
+[
+ {
+  "som": "baque",
+  "cena": "c01",
+  "palavra": "fechada",
+  "desloca": 0.25,
+  "volume": 0.28
+ },
+ {
+  "som": "swoosh",
+  "cena": "c01",
+  "palavra": "armadilhas",
+  "desloca": -0.24,
+  "volume": 0.24
+ },
+ {
+  "som": "carimbo",
+  "cena": "c02",
+  "palavra": "medo",
+  "desloca": 0.25,
+  "volume": 0.42
+ },
+ {
+  "som": "vhs",
+  "cena": "c03",
+  "em": 0,
+  "desloca": -0.32,
+  "dur": 0.7,
+  "volume": 0.3
+ },
+ {
+  "som": "clique",
+  "cena": "c03",
+  "palavra": "Qin",
+  "desloca": -0.1,
+  "volume": 0.26
+ },
+ {
+  "som": "pagina",
+  "cena": "c04",
+  "em": 0.06,
+  "desloca": -0.39,
+  "dur": 0.9,
+  "volume": 0.32
+ },
+ {
+  "som": "swoosh",
+  "cena": "c04",
+  "palavra": "flechas",
+  "desloca": 0.14,
+  "volume": 0.24
+ },
+ {
+  "som": "vhs",
+  "cena": "c05",
+  "em": 0,
+  "desloca": -0.32,
+  "dur": 0.7,
+  "volume": 0.3
+ },
+ {
+  "som": "gaveta",
+  "cena": "c05",
+  "palavra": "quatro",
+  "desloca": 0.255,
+  "volume": 0.34
+ },
+ {
+  "som": "baque",
+  "cena": "c05",
+  "palavra": "barro",
+  "desloca": 0.28,
+  "volume": 0.28
+ },
+ {
+  "som": "baque",
+  "cena": "c06",
+  "palavra": "mil",
+  "desloca": 0.22,
+  "volume": 0.26
+ },
+ {
+  "som": "clique",
+  "cena": "c07",
+  "palavra": "verde",
+  "desloca": -0.08,
+  "volume": 0.24
+ },
+ {
+  "som": "clique",
+  "cena": "c07",
+  "palavra": "roxo",
+  "desloca": -0.08,
+  "volume": 0.24
+ },
+ {
+  "som": "clique",
+  "cena": "c07",
+  "palavra": "vermelho",
+  "desloca": -0.08,
+  "volume": 0.24
+ },
+ {
+  "som": "clique",
+  "cena": "c07",
+  "palavra": "azul",
+  "desloca": -0.08,
+  "volume": 0.24
+ },
+ {
+  "som": "vhs",
+  "cena": "c08",
+  "em": 0,
+  "desloca": -0.32,
+  "dur": 0.7,
+  "volume": 0.3
+ },
+ {
+  "som": "baque",
+  "cena": "c08",
+  "palavra": "segundos",
+  "desloca": 0.4,
+  "volume": 0.3
+ },
+ {
+  "som": "papel",
+  "cena": "c09",
+  "palavra": "solta",
+  "desloca": -0.64,
+  "volume": 0.3
+ },
+ {
+  "som": "baque",
+  "cena": "c09",
+  "palavra": "tinta",
+  "desloca": 0.4,
+  "volume": 0.28
+ },
+ {
+  "som": "carimbo",
+  "cena": "c10",
+  "palavra": "garantida",
+  "desloca": 0.25,
+  "volume": 0.42
+ },
+ {
+  "som": "carimbo",
+  "cena": "c11",
+  "palavra": "escavada",
+  "desloca": 0.5,
+  "volume": 0.42
+ },
+ {
+  "som": "pagina",
+  "cena": "c11",
+  "palavra": "sem",
+  "desloca": -0.35,
+  "volume": 0.32,
+  "dur": 0.9
+ },
+ {
+  "som": "carimbo",
+  "cena": "c12",
+  "palavra": "confirmou",
+  "desloca": 0.6,
+  "volume": 0.42
+ },
+ {
+  "som": "clique",
+  "cena": "c13",
+  "palavra": "abre",
+  "desloca": 0.24,
+  "volume": 0.3
+ },
+ {
+  "som": "vhs",
+  "cena": "c13",
+  "em": 6.75,
+  "dur": 0.7,
+  "volume": 0.3
+ }
+]

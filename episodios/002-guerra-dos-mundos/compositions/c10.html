@@ -1,0 +1,48 @@
+<template>
+  <!-- c10 · virada · mito-x-fato: balança — "alguns assustados" (real) × "pânico nacional" (exagero). -->
+  <style>
+    #root { position: absolute; inset: 0; background: #121016; overflow: hidden; }
+    #c10-bal { position: absolute; left: 90px; top: 380px; width: 900px; height: 620px; }
+    #c10-pe { position: absolute; left: 430px; top: 140px; width: 40px; height: 430px; background: #6b6772; border-radius: 6px; }
+    #c10-base { position: absolute; left: 300px; top: 560px; width: 300px; height: 30px; background: #6b6772; border-radius: 8px; }
+    #c10-braco { position: absolute; left: 110px; top: 120px; width: 680px; height: 40px; }
+    #c10-viga { position: absolute; left: 0; top: 10px; width: 680px; height: 20px; background: var(--papel); border-radius: 10px; }
+    .c10-prato { position: absolute; top: 20px; width: 260px; transform-origin: 50% 0; }
+    .c10-prato .fio { width: 4px; height: 120px; background: #8f8a99; margin: 0 auto; }
+    .c10-prato .pr { height: 30px; background: #8f8a99; border-radius: 0 0 130px 130px; }
+    .c10-prato .rot { position: absolute; left: 0; top: -150px; width: 260px; text-align: center; font-size: 56px; }
+    #c10-p1 { left: -130px; } #c10-p2 { left: 550px; }
+    #c10-p1 .rot { color: var(--acento); } #c10-p2 .rot { color: var(--papel); }
+    #c10-ok { position: absolute; left: 0; top: 340px; width: 340px; text-align: center; font-family: var(--f-mono); font-weight: 700; font-size: 34px; color: var(--acento); }
+    #c10-exag { position: absolute; left: 520px; top: 330px; font-size: 64px; border-width: 8px; padding: 2px 18px; }
+    #c10-risco { position: absolute; left: 20px; top: -102px; width: 220px; height: 10px; background: var(--rec); transform-origin: 0 50%; }
+  </style>
+  <div id="root" data-composition-id="c10" data-width="1080" data-height="1920">
+    <div id="c10-w" class="clip" data-start="0" data-duration="8" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c10-bal">
+        <div id="c10-pe"></div><div id="c10-base"></div>
+        <div id="c10-braco"><div id="c10-viga"></div>
+          <div id="c10-p1" class="c10-prato"><div class="rot rb-titulo">Alguns<br />assustados</div><div class="fio"></div><div class="pr"></div></div>
+          <div id="c10-p2" class="c10-prato"><div class="rot rb-titulo">Pânico<br />nacional</div><div id="c10-risco"></div><div class="fio"></div><div class="pr"></div></div>
+        </div>
+        <div id="c10-ok">REAL ✓</div>
+                <div id="c10-exag" class="rb-carimbo claro">EXAGERO</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c10", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c10-bal", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.22, ease: "power3.out" }, 0.05);
+    // começa pendendo para o "pânico nacional" (a versão famosa)
+    tl.fromTo("#c10-braco", { rotation: 0 }, { rotation: 8, duration: 0.5, ease: "power2.out" }, 0.2);
+    tl.fromTo("#c10-p1, #c10-p2", { rotation: 0 }, { rotation: -8, duration: 0.5, ease: "power2.out" }, 0.2);
+    tl.fromTo("#c10-ok", { opacity: 0 }, { opacity: 1, duration: 0.1, ease: "steps(2)" }, T("sim") - 0.05);
+    // "em boa parte, uma história contada pelos jornais": riscado + carimbo, a balança vira
+    tl.fromTo("#c10-risco", { scaleX: 0 }, { scaleX: 1, duration: 0.15, ease: "power2.out" }, T("boa") - 0.1);
+    tl.fromTo("#c10-exag", { scale: 1.7, rotation: 6, opacity: 0 }, { scale: 1, rotation: -8, opacity: 1, duration: 0.16, ease: "back.out(2)" }, T("jornais") - 0.3);
+    tl.to("#c10-braco", { rotation: -6, duration: 0.6, ease: "back.out(1.6)" }, T("história") - 0.1);
+    tl.to("#c10-p1, #c10-p2", { rotation: 6, duration: 0.6, ease: "back.out(1.6)" }, T("história") - 0.1);
+    window.__timelines["c10"] = tl;
+  </script>
+</template>

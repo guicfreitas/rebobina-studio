@@ -1,0 +1,55 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #100e0d; overflow: hidden; }
+    #c01-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    .c01-t { position: absolute; left: 90px; white-space: nowrap; font-size: 150px; }
+    #c01-t1 { top: 14px; }
+    #c01-t2 { top: 150px; color: var(--vhs); }
+    #c01-porta { position: absolute; left: 430px; top: 300px; width: 500px; height: 460px; }
+    #c01-lacre { position: absolute; left: 618px; top: 508px; width: 124px; height: 124px; border-radius: 50%; background: var(--rec); border: 8px solid #7c120c; }
+    #c01-lacre i { position: absolute; left: 22px; top: 22px; width: 64px; height: 64px; border: 7px solid #7c120c; }
+    #c01-flecha { position: absolute; left: 90px; top: 560px; width: 340px; height: 60px; }
+  </style>
+  <div id="root" data-composition-id="c01" data-width="1080" data-height="1920">
+    <div id="c01-w" class="clip" data-start="0" data-duration="5.8" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c01-palco">
+        <div id="c01-t1" class="c01-t rb-titulo">FECHADA POR MEDO</div>
+        <div id="c01-t2" class="c01-t rb-titulo">DAS ARMADILHAS?</div>
+        <div id="c01-porta"><!--@svg:simbolos/porta--><svg class="porta" viewBox="0 0 520 480" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#f1e8d3" stroke-width="7" stroke-linejoin="round">
+<path d="M6 474V62L64 8h392l58 54v412"/><path d="M6 62h508" stroke-width="5"/>
+<path id="c01-pt-folha-e" d="M46 474V96h214v378" fill="#191720"/>
+<path id="c01-pt-folha-d" d="M260 474V96h214v378" fill="#191720"/>
+<path d="M0 474h520" stroke-width="10"/>
+<g fill="#f1e8d3" stroke="none">
+<circle cx="90" cy="150" r="9"/><circle cx="150" cy="150" r="9"/><circle cx="210" cy="150" r="9"/><circle cx="310" cy="150" r="9"/><circle cx="370" cy="150" r="9"/><circle cx="430" cy="150" r="9"/>
+<circle cx="90" cy="222" r="9"/><circle cx="150" cy="222" r="9"/><circle cx="210" cy="222" r="9"/><circle cx="310" cy="222" r="9"/><circle cx="370" cy="222" r="9"/><circle cx="430" cy="222" r="9"/>
+<circle cx="90" cy="366" r="9"/><circle cx="150" cy="366" r="9"/><circle cx="210" cy="366" r="9"/><circle cx="310" cy="366" r="9"/><circle cx="370" cy="366" r="9"/><circle cx="430" cy="366" r="9"/>
+<circle cx="90" cy="438" r="9"/><circle cx="150" cy="438" r="9"/><circle cx="210" cy="438" r="9"/><circle cx="310" cy="438" r="9"/><circle cx="370" cy="438" r="9"/><circle cx="430" cy="438" r="9"/>
+</g>
+<path d="M46 294h428" stroke-width="16" stroke="#6f6a60"/>
+</svg><!--/@svg:simbolos/porta--></div>
+        <div id="c01-lacre"><i></i></div>
+        <svg id="c01-flecha" viewBox="0 0 340 60" fill="none" stroke="#ffd23f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 30H320"/><path d="M286 8l44 22-44 22z" fill="#ffd23f"/><path d="M10 30 34 8M10 30l24 22M40 30 64 8M40 30l24 22"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c01";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // capa: pergunta e porta já na tela no frame 0
+    tl.fromTo("#c01-porta", { scale: 0.94, transformOrigin: "50% 100%" }, { scale: 1, duration: D, ease: "steps(40)" }, 0);
+    tl.fromTo("#c01-palco", { x: 5 }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, T("imperador"));
+    gsap.set("#c01-lacre", { autoAlpha: 0 });
+    const tl1 = T("fechada") + 0.25; // mesmo instante do baque em sfx.json
+    tl.set("#c01-lacre", { autoAlpha: 1 }, tl1);
+    tl.fromTo("#c01-lacre", { scale: 1.6, rotation: -14 }, { scale: 1, rotation: 0, duration: 0.16, ease: "back.out(2)", immediateRender: false }, tl1);
+    tl.fromTo("#c01-porta", { x: 7 }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, tl1 + 0.03);
+    // a flecha entra pela esquerda e para diante da porta
+    tl.fromTo("#c01-flecha", { x: -440 }, { x: 0, duration: 0.22, ease: "power3.out" }, T("armadilhas") - 0.22);
+    tl.fromTo("#c01-flecha", { y: 3 }, { y: 0, duration: 0.2, ease: "steps(4)", immediateRender: false }, T("armadilhas"));
+    window.__timelines["c01"] = tl;
+  </script>
+</template>

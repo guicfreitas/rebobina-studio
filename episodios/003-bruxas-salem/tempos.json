@@ -1,0 +1,1752 @@
+{
+ "motor": "arquivos",
+ "voz": "pm_alex",
+ "cenas": [
+  {
+   "id": "c01",
+   "inicio": 0.15,
+   "fim": 4.59
+  },
+  {
+   "id": "c02",
+   "inicio": 4.87,
+   "fim": 8.67
+  },
+  {
+   "id": "c03",
+   "inicio": 8.95,
+   "fim": 16.72
+  },
+  {
+   "id": "c04",
+   "inicio": 17.0,
+   "fim": 24.59
+  },
+  {
+   "id": "c05",
+   "inicio": 24.87,
+   "fim": 33.03
+  },
+  {
+   "id": "c06",
+   "inicio": 33.31,
+   "fim": 40.39
+  },
+  {
+   "id": "c07",
+   "inicio": 40.67,
+   "fim": 49.6
+  },
+  {
+   "id": "c08",
+   "inicio": 49.88,
+   "fim": 57.86
+  },
+  {
+   "id": "c09",
+   "inicio": 58.14,
+   "fim": 70.48
+  },
+  {
+   "id": "c10",
+   "inicio": 70.76,
+   "fim": 78.15
+  },
+  {
+   "id": "c11",
+   "inicio": 78.43,
+   "fim": 82.4
+  },
+  {
+   "id": "c12",
+   "inicio": 82.68,
+   "fim": 88.29
+  }
+ ],
+ "palavras": [
+  {
+   "id": "w0",
+   "cena": "c01",
+   "text": "As",
+   "start": 0.23,
+   "end": 0.42,
+   "medido": true
+  },
+  {
+   "id": "w1",
+   "cena": "c01",
+   "text": "bruxas",
+   "start": 0.42,
+   "end": 0.75,
+   "medido": false
+  },
+  {
+   "id": "w2",
+   "cena": "c01",
+   "text": "de",
+   "start": 0.75,
+   "end": 0.9,
+   "medido": true
+  },
+  {
+   "id": "w3",
+   "cena": "c01",
+   "text": "Salem",
+   "start": 0.9,
+   "end": 1.27,
+   "medido": true
+  },
+  {
+   "id": "w4",
+   "cena": "c01",
+   "text": "queimaram",
+   "start": 1.27,
+   "end": 1.93,
+   "medido": true
+  },
+  {
+   "id": "w5",
+   "cena": "c01",
+   "text": "na",
+   "start": 1.93,
+   "end": 2.16,
+   "medido": true
+  },
+  {
+   "id": "w6",
+   "cena": "c01",
+   "text": "fogueira.",
+   "start": 2.16,
+   "end": 2.57,
+   "medido": true
+  },
+  {
+   "id": "w7",
+   "cena": "c01",
+   "text": "Todo",
+   "start": 2.98,
+   "end": 3.19,
+   "medido": true
+  },
+  {
+   "id": "w8",
+   "cena": "c01",
+   "text": "mundo",
+   "start": 3.19,
+   "end": 3.48,
+   "medido": true
+  },
+  {
+   "id": "w9",
+   "cena": "c01",
+   "text": "já",
+   "start": 3.48,
+   "end": 3.6,
+   "medido": true
+  },
+  {
+   "id": "w10",
+   "cena": "c01",
+   "text": "viu",
+   "start": 3.6,
+   "end": 3.78,
+   "medido": true
+  },
+  {
+   "id": "w11",
+   "cena": "c01",
+   "text": "essa",
+   "start": 3.78,
+   "end": 4.02,
+   "medido": true
+  },
+  {
+   "id": "w12",
+   "cena": "c01",
+   "text": "cena.",
+   "start": 4.02,
+   "end": 4.47,
+   "medido": true
+  },
+  {
+   "id": "w13",
+   "cena": "c02",
+   "text": "A",
+   "start": 4.95,
+   "end": 5.151,
+   "medido": true
+  },
+  {
+   "id": "w14",
+   "cena": "c02",
+   "text": "conta",
+   "start": 5.151,
+   "end": 5.5,
+   "medido": false
+  },
+  {
+   "id": "w15",
+   "cena": "c02",
+   "text": "real.",
+   "start": 5.5,
+   "end": 5.74,
+   "medido": true
+  },
+  {
+   "id": "w16",
+   "cena": "c02",
+   "text": "Pessoas",
+   "start": 6.15,
+   "end": 6.67,
+   "medido": true
+  },
+  {
+   "id": "w17",
+   "cena": "c02",
+   "text": "queimadas",
+   "start": 6.67,
+   "end": 7.23,
+   "medido": true
+  },
+  {
+   "id": "w18",
+   "cena": "c02",
+   "text": "em",
+   "start": 7.23,
+   "end": 7.36,
+   "medido": true
+  },
+  {
+   "id": "w19",
+   "cena": "c02",
+   "text": "Salem:",
+   "start": 7.36,
+   "end": 7.7,
+   "medido": true
+  },
+  {
+   "id": "w20",
+   "cena": "c02",
+   "text": "nenhuma.",
+   "start": 8.01,
+   "end": 8.55,
+   "medido": true
+  },
+  {
+   "id": "w21",
+   "cena": "c03",
+   "text": "Mil",
+   "start": 9.03,
+   "end": 9.242,
+   "medido": false
+  },
+  {
+   "id": "w22",
+   "cena": "c03",
+   "text": "seiscentos",
+   "start": 9.242,
+   "end": 9.768,
+   "medido": false
+  },
+  {
+   "id": "w23",
+   "cena": "c03",
+   "text": "e",
+   "start": 9.768,
+   "end": 9.98,
+   "medido": false
+  },
+  {
+   "id": "w24",
+   "cena": "c03",
+   "text": "noventa",
+   "start": 9.98,
+   "end": 10.506,
+   "medido": false
+  },
+  {
+   "id": "w25",
+   "cena": "c03",
+   "text": "e",
+   "start": 10.506,
+   "end": 10.718,
+   "medido": false
+  },
+  {
+   "id": "w26",
+   "cena": "c03",
+   "text": "dois:",
+   "start": 10.718,
+   "end": 10.93,
+   "medido": false
+  },
+  {
+   "id": "w27",
+   "cena": "c03",
+   "text": "Massachusetts,",
+   "start": 11.24,
+   "end": 12.114,
+   "medido": true
+  },
+  {
+   "id": "w28",
+   "cena": "c03",
+   "text": "colônia",
+   "start": 12.114,
+   "end": 12.787,
+   "medido": false
+  },
+  {
+   "id": "w29",
+   "cena": "c03",
+   "text": "inglesa.",
+   "start": 12.787,
+   "end": 13.46,
+   "medido": false
+  },
+  {
+   "id": "w30",
+   "cena": "c03",
+   "text": "Acusações",
+   "start": 13.87,
+   "end": 14.42,
+   "medido": true
+  },
+  {
+   "id": "w31",
+   "cena": "c03",
+   "text": "de",
+   "start": 14.42,
+   "end": 14.56,
+   "medido": true
+  },
+  {
+   "id": "w32",
+   "cena": "c03",
+   "text": "bruxaria",
+   "start": 14.56,
+   "end": 15.19,
+   "medido": true
+  },
+  {
+   "id": "w33",
+   "cena": "c03",
+   "text": "tomam",
+   "start": 15.19,
+   "end": 15.57,
+   "medido": true
+  },
+  {
+   "id": "w34",
+   "cena": "c03",
+   "text": "a",
+   "start": 15.57,
+   "end": 15.64,
+   "medido": true
+  },
+  {
+   "id": "w35",
+   "cena": "c03",
+   "text": "região",
+   "start": 15.64,
+   "end": 16.11,
+   "medido": true
+  },
+  {
+   "id": "w36",
+   "cena": "c03",
+   "text": "de",
+   "start": 16.11,
+   "end": 16.25,
+   "medido": true
+  },
+  {
+   "id": "w37",
+   "cena": "c03",
+   "text": "Salem.",
+   "start": 16.25,
+   "end": 16.6,
+   "medido": true
+  },
+  {
+   "id": "w38",
+   "cena": "c04",
+   "text": "Mais",
+   "start": 17.08,
+   "end": 17.35,
+   "medido": true
+  },
+  {
+   "id": "w39",
+   "cena": "c04",
+   "text": "de",
+   "start": 17.35,
+   "end": 17.547,
+   "medido": true
+  },
+  {
+   "id": "w40",
+   "cena": "c04",
+   "text": "cento",
+   "start": 17.547,
+   "end": 17.89,
+   "medido": false
+  },
+  {
+   "id": "w41",
+   "cena": "c04",
+   "text": "e",
+   "start": 17.89,
+   "end": 18.088,
+   "medido": false
+  },
+  {
+   "id": "w42",
+   "cena": "c04",
+   "text": "sessenta",
+   "start": 18.088,
+   "end": 18.577,
+   "medido": false
+  },
+  {
+   "id": "w43",
+   "cena": "c04",
+   "text": "pessoas",
+   "start": 18.577,
+   "end": 18.92,
+   "medido": false
+  },
+  {
+   "id": "w44",
+   "cena": "c04",
+   "text": "são",
+   "start": 18.92,
+   "end": 19.21,
+   "medido": true
+  },
+  {
+   "id": "w45",
+   "cena": "c04",
+   "text": "acusadas.",
+   "start": 19.21,
+   "end": 19.89,
+   "medido": true
+  },
+  {
+   "id": "w46",
+   "cena": "c04",
+   "text": "Dezenove",
+   "start": 20.3,
+   "end": 20.72,
+   "medido": false
+  },
+  {
+   "id": "w47",
+   "cena": "c04",
+   "text": "acabam",
+   "start": 20.72,
+   "end": 21.26,
+   "medido": true
+  },
+  {
+   "id": "w48",
+   "cena": "c04",
+   "text": "na",
+   "start": 21.26,
+   "end": 21.58,
+   "medido": true
+  },
+  {
+   "id": "w49",
+   "cena": "c04",
+   "text": "forca:",
+   "start": 21.58,
+   "end": 21.96,
+   "medido": true
+  },
+  {
+   "id": "w50",
+   "cena": "c04",
+   "text": "catorze",
+   "start": 22.27,
+   "end": 22.7,
+   "medido": false
+  },
+  {
+   "id": "w51",
+   "cena": "c04",
+   "text": "mulheres",
+   "start": 22.7,
+   "end": 23.51,
+   "medido": true
+  },
+  {
+   "id": "w52",
+   "cena": "c04",
+   "text": "e",
+   "start": 23.51,
+   "end": 23.656,
+   "medido": true
+  },
+  {
+   "id": "w53",
+   "cena": "c04",
+   "text": "cinco",
+   "start": 23.656,
+   "end": 23.91,
+   "medido": false
+  },
+  {
+   "id": "w54",
+   "cena": "c04",
+   "text": "homens.",
+   "start": 23.91,
+   "end": 24.47,
+   "medido": true
+  },
+  {
+   "id": "w55",
+   "cena": "c05",
+   "text": "Giles",
+   "start": 24.95,
+   "end": 25.31,
+   "medido": false
+  },
+  {
+   "id": "w56",
+   "cena": "c05",
+   "text": "Corey",
+   "start": 25.31,
+   "end": 25.69,
+   "medido": true
+  },
+  {
+   "id": "w57",
+   "cena": "c05",
+   "text": "se",
+   "start": 25.69,
+   "end": 25.87,
+   "medido": true
+  },
+  {
+   "id": "w58",
+   "cena": "c05",
+   "text": "recusou",
+   "start": 25.87,
+   "end": 26.37,
+   "medido": true
+  },
+  {
+   "id": "w59",
+   "cena": "c05",
+   "text": "a",
+   "start": 26.37,
+   "end": 26.44,
+   "medido": true
+  },
+  {
+   "id": "w60",
+   "cena": "c05",
+   "text": "responder",
+   "start": 26.44,
+   "end": 27.15,
+   "medido": true
+  },
+  {
+   "id": "w61",
+   "cena": "c05",
+   "text": "ao",
+   "start": 27.15,
+   "end": 27.3,
+   "medido": true
+  },
+  {
+   "id": "w62",
+   "cena": "c05",
+   "text": "tribunal",
+   "start": 27.3,
+   "end": 27.86,
+   "medido": true
+  },
+  {
+   "id": "w63",
+   "cena": "c05",
+   "text": "e",
+   "start": 28.17,
+   "end": 28.334,
+   "medido": true
+  },
+  {
+   "id": "w64",
+   "cena": "c05",
+   "text": "morreu",
+   "start": 28.334,
+   "end": 28.62,
+   "medido": false
+  },
+  {
+   "id": "w65",
+   "cena": "c05",
+   "text": "sob",
+   "start": 28.62,
+   "end": 29.03,
+   "medido": true
+  },
+  {
+   "id": "w66",
+   "cena": "c05",
+   "text": "pedras.",
+   "start": 29.03,
+   "end": 29.43,
+   "medido": true
+  },
+  {
+   "id": "w67",
+   "cena": "c05",
+   "text": "Outros",
+   "start": 29.84,
+   "end": 30.17,
+   "medido": true
+  },
+  {
+   "id": "w68",
+   "cena": "c05",
+   "text": "morreram",
+   "start": 30.17,
+   "end": 30.7,
+   "medido": true
+  },
+  {
+   "id": "w69",
+   "cena": "c05",
+   "text": "na",
+   "start": 30.7,
+   "end": 30.83,
+   "medido": true
+  },
+  {
+   "id": "w70",
+   "cena": "c05",
+   "text": "cadeia.",
+   "start": 30.83,
+   "end": 31.22,
+   "medido": true
+  },
+  {
+   "id": "w71",
+   "cena": "c05",
+   "text": "Fogueira,",
+   "start": 31.63,
+   "end": 32.17,
+   "medido": true
+  },
+  {
+   "id": "w72",
+   "cena": "c05",
+   "text": "nenhuma.",
+   "start": 32.37,
+   "end": 32.91,
+   "medido": true
+  },
+  {
+   "id": "w73",
+   "cena": "c06",
+   "text": "Por",
+   "start": 33.39,
+   "end": 33.58,
+   "medido": false
+  },
+  {
+   "id": "w74",
+   "cena": "c06",
+   "text": "que",
+   "start": 33.58,
+   "end": 33.77,
+   "medido": false
+  },
+  {
+   "id": "w75",
+   "cena": "c06",
+   "text": "não",
+   "start": 33.77,
+   "end": 34.0,
+   "medido": true
+  },
+  {
+   "id": "w76",
+   "cena": "c06",
+   "text": "o",
+   "start": 34.0,
+   "end": 34.07,
+   "medido": true
+  },
+  {
+   "id": "w77",
+   "cena": "c06",
+   "text": "fogo?",
+   "start": 34.07,
+   "end": 34.26,
+   "medido": true
+  },
+  {
+   "id": "w78",
+   "cena": "c06",
+   "text": "Na",
+   "start": 34.67,
+   "end": 34.74,
+   "medido": true
+  },
+  {
+   "id": "w79",
+   "cena": "c06",
+   "text": "lei",
+   "start": 34.74,
+   "end": 34.94,
+   "medido": true
+  },
+  {
+   "id": "w80",
+   "cena": "c06",
+   "text": "inglesa,",
+   "start": 34.94,
+   "end": 35.58,
+   "medido": true
+  },
+  {
+   "id": "w81",
+   "cena": "c06",
+   "text": "bruxaria",
+   "start": 35.89,
+   "end": 36.54,
+   "medido": true
+  },
+  {
+   "id": "w82",
+   "cena": "c06",
+   "text": "era",
+   "start": 36.54,
+   "end": 36.82,
+   "medido": true
+  },
+  {
+   "id": "w83",
+   "cena": "c06",
+   "text": "crime",
+   "start": 36.82,
+   "end": 37.29,
+   "medido": true
+  },
+  {
+   "id": "w84",
+   "cena": "c06",
+   "text": "contra",
+   "start": 37.29,
+   "end": 37.85,
+   "medido": true
+  },
+  {
+   "id": "w85",
+   "cena": "c06",
+   "text": "o",
+   "start": 37.85,
+   "end": 37.94,
+   "medido": true
+  },
+  {
+   "id": "w86",
+   "cena": "c06",
+   "text": "governo.",
+   "start": 37.94,
+   "end": 38.45,
+   "medido": true
+  },
+  {
+   "id": "w87",
+   "cena": "c06",
+   "text": "A",
+   "start": 38.86,
+   "end": 39.08,
+   "medido": true
+  },
+  {
+   "id": "w88",
+   "cena": "c06",
+   "text": "pena:",
+   "start": 39.08,
+   "end": 39.38,
+   "medido": true
+  },
+  {
+   "id": "w89",
+   "cena": "c06",
+   "text": "forca.",
+   "start": 39.69,
+   "end": 40.27,
+   "medido": true
+  },
+  {
+   "id": "w90",
+   "cena": "c07",
+   "text": "Em",
+   "start": 40.75,
+   "end": 40.83,
+   "medido": true
+  },
+  {
+   "id": "w91",
+   "cena": "c07",
+   "text": "boa",
+   "start": 40.83,
+   "end": 41.07,
+   "medido": true
+  },
+  {
+   "id": "w92",
+   "cena": "c07",
+   "text": "parte",
+   "start": 41.07,
+   "end": 41.49,
+   "medido": true
+  },
+  {
+   "id": "w93",
+   "cena": "c07",
+   "text": "da",
+   "start": 41.49,
+   "end": 41.63,
+   "medido": true
+  },
+  {
+   "id": "w94",
+   "cena": "c07",
+   "text": "Europa,",
+   "start": 41.63,
+   "end": 42.15,
+   "medido": true
+  },
+  {
+   "id": "w95",
+   "cena": "c07",
+   "text": "bruxaria",
+   "start": 42.46,
+   "end": 42.91,
+   "medido": true
+  },
+  {
+   "id": "w96",
+   "cena": "c07",
+   "text": "contava",
+   "start": 42.91,
+   "end": 43.49,
+   "medido": true
+  },
+  {
+   "id": "w97",
+   "cena": "c07",
+   "text": "como",
+   "start": 43.49,
+   "end": 43.79,
+   "medido": true
+  },
+  {
+   "id": "w98",
+   "cena": "c07",
+   "text": "heresia.",
+   "start": 43.79,
+   "end": 44.18,
+   "medido": true
+  },
+  {
+   "id": "w99",
+   "cena": "c07",
+   "text": "A",
+   "start": 44.59,
+   "end": 44.71,
+   "medido": true
+  },
+  {
+   "id": "w100",
+   "cena": "c07",
+   "text": "pena",
+   "start": 44.78,
+   "end": 44.95,
+   "medido": false
+  },
+  {
+   "id": "w101",
+   "cena": "c07",
+   "text": "costumava",
+   "start": 44.95,
+   "end": 45.79,
+   "medido": true
+  },
+  {
+   "id": "w102",
+   "cena": "c07",
+   "text": "ser",
+   "start": 45.79,
+   "end": 46.07,
+   "medido": true
+  },
+  {
+   "id": "w103",
+   "cena": "c07",
+   "text": "o",
+   "start": 46.07,
+   "end": 46.161,
+   "medido": true
+  },
+  {
+   "id": "w104",
+   "cena": "c07",
+   "text": "fogo.",
+   "start": 46.161,
+   "end": 46.32,
+   "medido": false
+  },
+  {
+   "id": "w105",
+   "cena": "c07",
+   "text": "A",
+   "start": 46.73,
+   "end": 46.888,
+   "medido": true
+  },
+  {
+   "id": "w106",
+   "cena": "c07",
+   "text": "fogueira",
+   "start": 46.888,
+   "end": 47.28,
+   "medido": false
+  },
+  {
+   "id": "w107",
+   "cena": "c07",
+   "text": "existiu.",
+   "start": 47.28,
+   "end": 47.72,
+   "medido": true
+  },
+  {
+   "id": "w108",
+   "cena": "c07",
+   "text": "Só",
+   "start": 48.13,
+   "end": 48.335,
+   "medido": true
+  },
+  {
+   "id": "w109",
+   "cena": "c07",
+   "text": "não",
+   "start": 48.335,
+   "end": 48.54,
+   "medido": false
+  },
+  {
+   "id": "w110",
+   "cena": "c07",
+   "text": "chegou",
+   "start": 48.54,
+   "end": 48.8,
+   "medido": true
+  },
+  {
+   "id": "w111",
+   "cena": "c07",
+   "text": "a",
+   "start": 48.8,
+   "end": 48.87,
+   "medido": true
+  },
+  {
+   "id": "w112",
+   "cena": "c07",
+   "text": "Salem.",
+   "start": 48.87,
+   "end": 49.48,
+   "medido": true
+  },
+  {
+   "id": "w113",
+   "cena": "c08",
+   "text": "Mas",
+   "start": 49.96,
+   "end": 50.11,
+   "medido": true
+  },
+  {
+   "id": "w114",
+   "cena": "c08",
+   "text": "sobrou",
+   "start": 50.11,
+   "end": 50.56,
+   "medido": true
+  },
+  {
+   "id": "w115",
+   "cena": "c08",
+   "text": "uma",
+   "start": 50.56,
+   "end": 50.79,
+   "medido": true
+  },
+  {
+   "id": "w116",
+   "cena": "c08",
+   "text": "ponta",
+   "start": 50.79,
+   "end": 51.17,
+   "medido": true
+  },
+  {
+   "id": "w117",
+   "cena": "c08",
+   "text": "solta.",
+   "start": 51.17,
+   "end": 51.4,
+   "medido": true
+  },
+  {
+   "id": "w118",
+   "cena": "c08",
+   "text": "Elizabeth",
+   "start": 51.81,
+   "end": 52.45,
+   "medido": true
+  },
+  {
+   "id": "w119",
+   "cena": "c08",
+   "text": "Johnson",
+   "start": 52.45,
+   "end": 52.906,
+   "medido": true
+  },
+  {
+   "id": "w120",
+   "cena": "c08",
+   "text": "Júnior,",
+   "start": 52.906,
+   "end": 53.361,
+   "medido": false
+  },
+  {
+   "id": "w121",
+   "cena": "c08",
+   "text": "vinte",
+   "start": 53.361,
+   "end": 53.817,
+   "medido": false
+  },
+  {
+   "id": "w122",
+   "cena": "c08",
+   "text": "e",
+   "start": 53.817,
+   "end": 54.078,
+   "medido": false
+  },
+  {
+   "id": "w123",
+   "cena": "c08",
+   "text": "dois",
+   "start": 54.078,
+   "end": 54.34,
+   "medido": false
+  },
+  {
+   "id": "w124",
+   "cena": "c08",
+   "text": "anos,",
+   "start": 54.34,
+   "end": 54.63,
+   "medido": true
+  },
+  {
+   "id": "w125",
+   "cena": "c08",
+   "text": "condenada",
+   "start": 54.94,
+   "end": 55.79,
+   "medido": true
+  },
+  {
+   "id": "w126",
+   "cena": "c08",
+   "text": "à",
+   "start": 55.79,
+   "end": 55.86,
+   "medido": true
+  },
+  {
+   "id": "w127",
+   "cena": "c08",
+   "text": "morte.",
+   "start": 55.86,
+   "end": 56.09,
+   "medido": true
+  },
+  {
+   "id": "w128",
+   "cena": "c08",
+   "text": "O",
+   "start": 56.5,
+   "end": 56.678,
+   "medido": true
+  },
+  {
+   "id": "w129",
+   "cena": "c08",
+   "text": "governador",
+   "start": 56.678,
+   "end": 57.252,
+   "medido": false
+  },
+  {
+   "id": "w130",
+   "cena": "c08",
+   "text": "a",
+   "start": 57.252,
+   "end": 57.43,
+   "medido": false
+  },
+  {
+   "id": "w131",
+   "cena": "c08",
+   "text": "poupou.",
+   "start": 57.53,
+   "end": 57.74,
+   "medido": false
+  },
+  {
+   "id": "w132",
+   "cena": "c09",
+   "text": "Só",
+   "start": 58.22,
+   "end": 58.355,
+   "medido": true
+  },
+  {
+   "id": "w133",
+   "cena": "c09",
+   "text": "que",
+   "start": 58.355,
+   "end": 58.49,
+   "medido": false
+  },
+  {
+   "id": "w134",
+   "cena": "c09",
+   "text": "a",
+   "start": 58.49,
+   "end": 58.739,
+   "medido": true
+  },
+  {
+   "id": "w135",
+   "cena": "c09",
+   "text": "condenação",
+   "start": 58.739,
+   "end": 59.543,
+   "medido": false
+  },
+  {
+   "id": "w136",
+   "cena": "c09",
+   "text": "continuou",
+   "start": 59.543,
+   "end": 60.161,
+   "medido": false
+  },
+  {
+   "id": "w137",
+   "cena": "c09",
+   "text": "valendo.",
+   "start": 60.161,
+   "end": 60.78,
+   "medido": false
+  },
+  {
+   "id": "w138",
+   "cena": "c09",
+   "text": "Várias",
+   "start": 60.78,
+   "end": 61.14,
+   "medido": true
+  },
+  {
+   "id": "w139",
+   "cena": "c09",
+   "text": "vezes,",
+   "start": 61.14,
+   "end": 61.58,
+   "medido": true
+  },
+  {
+   "id": "w140",
+   "cena": "c09",
+   "text": "outros",
+   "start": 61.58,
+   "end": 62.09,
+   "medido": true
+  },
+  {
+   "id": "w141",
+   "cena": "c09",
+   "text": "nomes",
+   "start": 62.09,
+   "end": 62.66,
+   "medido": true
+  },
+  {
+   "id": "w142",
+   "cena": "c09",
+   "text": "foram",
+   "start": 62.66,
+   "end": 62.95,
+   "medido": true
+  },
+  {
+   "id": "w143",
+   "cena": "c09",
+   "text": "limpos.",
+   "start": 62.95,
+   "end": 63.38,
+   "medido": true
+  },
+  {
+   "id": "w144",
+   "cena": "c09",
+   "text": "O",
+   "start": 63.79,
+   "end": 63.86,
+   "medido": true
+  },
+  {
+   "id": "w145",
+   "cena": "c09",
+   "text": "dela,",
+   "start": 63.86,
+   "end": 64.49,
+   "medido": true
+  },
+  {
+   "id": "w146",
+   "cena": "c09",
+   "text": "não.",
+   "start": 64.55,
+   "end": 64.92,
+   "medido": false
+  },
+  {
+   "id": "w147",
+   "cena": "c09",
+   "text": "Por",
+   "start": 65.33,
+   "end": 65.525,
+   "medido": false
+  },
+  {
+   "id": "w148",
+   "cena": "c09",
+   "text": "quê,",
+   "start": 65.525,
+   "end": 65.72,
+   "medido": false
+  },
+  {
+   "id": "w149",
+   "cena": "c09",
+   "text": "ninguém",
+   "start": 66.03,
+   "end": 66.28,
+   "medido": true
+  },
+  {
+   "id": "w150",
+   "cena": "c09",
+   "text": "sabe",
+   "start": 66.28,
+   "end": 66.53,
+   "medido": false
+  },
+  {
+   "id": "w151",
+   "cena": "c09",
+   "text": "ao",
+   "start": 66.53,
+   "end": 66.73,
+   "medido": true
+  },
+  {
+   "id": "w152",
+   "cena": "c09",
+   "text": "certo.",
+   "start": 66.73,
+   "end": 67.19,
+   "medido": true
+  },
+  {
+   "id": "w153",
+   "cena": "c09",
+   "text": "Ela",
+   "start": 67.6,
+   "end": 67.81,
+   "medido": true
+  },
+  {
+   "id": "w154",
+   "cena": "c09",
+   "text": "pediu,",
+   "start": 67.81,
+   "end": 68.23,
+   "medido": true
+  },
+  {
+   "id": "w155",
+   "cena": "c09",
+   "text": "em",
+   "start": 68.23,
+   "end": 68.48,
+   "medido": true
+  },
+  {
+   "id": "w156",
+   "cena": "c09",
+   "text": "vão.",
+   "start": 68.48,
+   "end": 68.94,
+   "medido": true
+  },
+  {
+   "id": "w157",
+   "cena": "c09",
+   "text": "E",
+   "start": 69.35,
+   "end": 69.553,
+   "medido": true
+  },
+  {
+   "id": "w158",
+   "cena": "c09",
+   "text": "não",
+   "start": 69.553,
+   "end": 69.755,
+   "medido": false
+  },
+  {
+   "id": "w159",
+   "cena": "c09",
+   "text": "deixou",
+   "start": 69.755,
+   "end": 70.108,
+   "medido": false
+  },
+  {
+   "id": "w160",
+   "cena": "c09",
+   "text": "filhos.",
+   "start": 70.108,
+   "end": 70.46,
+   "medido": false
+  },
+  {
+   "id": "w161",
+   "cena": "c10",
+   "text": "Até",
+   "start": 70.84,
+   "end": 71.02,
+   "medido": true
+  },
+  {
+   "id": "w162",
+   "cena": "c10",
+   "text": "que",
+   "start": 71.02,
+   "end": 71.22,
+   "medido": true
+  },
+  {
+   "id": "w163",
+   "cena": "c10",
+   "text": "uma",
+   "start": 71.22,
+   "end": 71.5,
+   "medido": true
+  },
+  {
+   "id": "w164",
+   "cena": "c10",
+   "text": "turma",
+   "start": 71.5,
+   "end": 71.81,
+   "medido": true
+  },
+  {
+   "id": "w165",
+   "cena": "c10",
+   "text": "do",
+   "start": 71.81,
+   "end": 71.93,
+   "medido": true
+  },
+  {
+   "id": "w166",
+   "cena": "c10",
+   "text": "oitavo",
+   "start": 71.93,
+   "end": 72.36,
+   "medido": true
+  },
+  {
+   "id": "w167",
+   "cena": "c10",
+   "text": "ano",
+   "start": 72.36,
+   "end": 72.64,
+   "medido": true
+  },
+  {
+   "id": "w168",
+   "cena": "c10",
+   "text": "levou",
+   "start": 72.64,
+   "end": 73.1,
+   "medido": true
+  },
+  {
+   "id": "w169",
+   "cena": "c10",
+   "text": "o",
+   "start": 73.1,
+   "end": 73.231,
+   "medido": true
+  },
+  {
+   "id": "w170",
+   "cena": "c10",
+   "text": "caso",
+   "start": 73.231,
+   "end": 73.46,
+   "medido": false
+  },
+  {
+   "id": "w171",
+   "cena": "c10",
+   "text": "aos",
+   "start": 73.46,
+   "end": 73.71,
+   "medido": true
+  },
+  {
+   "id": "w172",
+   "cena": "c10",
+   "text": "legisladores.",
+   "start": 73.71,
+   "end": 74.51,
+   "medido": true
+  },
+  {
+   "id": "w173",
+   "cena": "c10",
+   "text": "Em",
+   "start": 74.92,
+   "end": 75.165,
+   "medido": true
+  },
+  {
+   "id": "w174",
+   "cena": "c10",
+   "text": "dois",
+   "start": 75.165,
+   "end": 75.411,
+   "medido": false
+  },
+  {
+   "id": "w175",
+   "cena": "c10",
+   "text": "mil",
+   "start": 75.411,
+   "end": 75.656,
+   "medido": false
+  },
+  {
+   "id": "w176",
+   "cena": "c10",
+   "text": "e",
+   "start": 75.656,
+   "end": 75.902,
+   "medido": false
+  },
+  {
+   "id": "w177",
+   "cena": "c10",
+   "text": "vinte",
+   "start": 75.902,
+   "end": 76.329,
+   "medido": false
+  },
+  {
+   "id": "w178",
+   "cena": "c10",
+   "text": "e",
+   "start": 76.329,
+   "end": 76.575,
+   "medido": false
+  },
+  {
+   "id": "w179",
+   "cena": "c10",
+   "text": "dois,",
+   "start": 76.575,
+   "end": 76.82,
+   "medido": false
+  },
+  {
+   "id": "w180",
+   "cena": "c10",
+   "text": "ela",
+   "start": 76.82,
+   "end": 77.061,
+   "medido": true
+  },
+  {
+   "id": "w181",
+   "cena": "c10",
+   "text": "foi",
+   "start": 77.061,
+   "end": 77.2,
+   "medido": false
+  },
+  {
+   "id": "w182",
+   "cena": "c10",
+   "text": "inocentada.",
+   "start": 77.2,
+   "end": 78.03,
+   "medido": true
+  },
+  {
+   "id": "w183",
+   "cena": "c11",
+   "text": "Foram",
+   "start": 78.51,
+   "end": 78.802,
+   "medido": true
+  },
+  {
+   "id": "w184",
+   "cena": "c11",
+   "text": "trezentos",
+   "start": 78.802,
+   "end": 79.219,
+   "medido": false
+  },
+  {
+   "id": "w185",
+   "cena": "c11",
+   "text": "e",
+   "start": 79.219,
+   "end": 79.387,
+   "medido": false
+  },
+  {
+   "id": "w186",
+   "cena": "c11",
+   "text": "vinte",
+   "start": 79.387,
+   "end": 79.68,
+   "medido": false
+  },
+  {
+   "id": "w187",
+   "cena": "c11",
+   "text": "e",
+   "start": 79.68,
+   "end": 79.848,
+   "medido": false
+  },
+  {
+   "id": "w188",
+   "cena": "c11",
+   "text": "nove",
+   "start": 79.848,
+   "end": 80.14,
+   "medido": false
+  },
+  {
+   "id": "w189",
+   "cena": "c11",
+   "text": "anos",
+   "start": 80.14,
+   "end": 80.433,
+   "medido": false
+  },
+  {
+   "id": "w190",
+   "cena": "c11",
+   "text": "entre",
+   "start": 80.433,
+   "end": 80.725,
+   "medido": false
+  },
+  {
+   "id": "w191",
+   "cena": "c11",
+   "text": "a",
+   "start": 80.725,
+   "end": 80.893,
+   "medido": false
+  },
+  {
+   "id": "w192",
+   "cena": "c11",
+   "text": "sentença",
+   "start": 80.893,
+   "end": 81.31,
+   "medido": false
+  },
+  {
+   "id": "w193",
+   "cena": "c11",
+   "text": "e",
+   "start": 81.31,
+   "end": 81.38,
+   "medido": true
+  },
+  {
+   "id": "w194",
+   "cena": "c11",
+   "text": "a",
+   "start": 81.38,
+   "end": 81.593,
+   "medido": true
+  },
+  {
+   "id": "w195",
+   "cena": "c11",
+   "text": "inocência.",
+   "start": 81.593,
+   "end": 82.28,
+   "medido": false
+  },
+  {
+   "id": "w196",
+   "cena": "c12",
+   "text": "Salem",
+   "start": 82.76,
+   "end": 83.03,
+   "medido": true
+  },
+  {
+   "id": "w197",
+   "cena": "c12",
+   "text": "nunca",
+   "start": 83.03,
+   "end": 83.38,
+   "medido": true
+  },
+  {
+   "id": "w198",
+   "cena": "c12",
+   "text": "acendeu",
+   "start": 83.38,
+   "end": 83.87,
+   "medido": true
+  },
+  {
+   "id": "w199",
+   "cena": "c12",
+   "text": "uma",
+   "start": 83.87,
+   "end": 84.15,
+   "medido": true
+  },
+  {
+   "id": "w200",
+   "cena": "c12",
+   "text": "fogueira.",
+   "start": 84.15,
+   "end": 84.56,
+   "medido": true
+  },
+  {
+   "id": "w201",
+   "cena": "c12",
+   "text": "Mas",
+   "start": 84.97,
+   "end": 85.13,
+   "medido": true
+  },
+  {
+   "id": "w202",
+   "cena": "c12",
+   "text": "apagar",
+   "start": 85.13,
+   "end": 85.55,
+   "medido": true
+  },
+  {
+   "id": "w203",
+   "cena": "c12",
+   "text": "aquela",
+   "start": 85.55,
+   "end": 85.97,
+   "medido": true
+  },
+  {
+   "id": "w204",
+   "cena": "c12",
+   "text": "sentença",
+   "start": 85.97,
+   "end": 86.57,
+   "medido": true
+  },
+  {
+   "id": "w205",
+   "cena": "c12",
+   "text": "levou",
+   "start": 86.57,
+   "end": 86.86,
+   "medido": true
+  },
+  {
+   "id": "w206",
+   "cena": "c12",
+   "text": "mais",
+   "start": 86.86,
+   "end": 87.11,
+   "medido": true
+  },
+  {
+   "id": "w207",
+   "cena": "c12",
+   "text": "de",
+   "start": 87.11,
+   "end": 87.32,
+   "medido": true
+  },
+  {
+   "id": "w208",
+   "cena": "c12",
+   "text": "três",
+   "start": 87.32,
+   "end": 87.51,
+   "medido": true
+  },
+  {
+   "id": "w209",
+   "cena": "c12",
+   "text": "séculos.",
+   "start": 87.51,
+   "end": 88.17,
+   "medido": true
+  }
+ ],
+ "duracao_narracao": 88.29,
+ "duracao_video": 90.29,
+ "palavras_medidas": 149,
+ "tempos_medidos": false
+}

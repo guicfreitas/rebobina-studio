@@ -1,0 +1,44 @@
+<template>
+  <!-- c10 · virada · recibo: o preço do Acre, impresso linha a linha quando a voz fala cada item. -->
+  <style>
+    #root { position: absolute; inset: 0; background: #121016; overflow: hidden; }
+    #c10-recibo { position: absolute; left: 170px; top: 330px; width: 740px; height: 720px; overflow: hidden; }
+    #c10-papel { position: absolute; left: 0; top: 0; width: 740px; height: 720px; padding: 40px 46px; font-family: var(--f-mono); color: var(--tinta);
+      clip-path: polygon(0 0, 100% 0, 100% 97%, 95% 100%, 90% 97%, 85% 100%, 80% 97%, 75% 100%, 70% 97%, 65% 100%, 60% 97%, 55% 100%, 50% 97%, 45% 100%, 40% 97%, 35% 100%, 30% 97%, 25% 100%, 20% 97%, 15% 100%, 10% 97%, 5% 100%, 0 97%); }
+    #c10-cab { text-align: center; font-weight: 700; font-size: 34px; letter-spacing: .18em; }
+    #c10-sub { text-align: center; font-size: 28px; letter-spacing: .12em; color: #6d5f45; margin-top: 6px; }
+    .c10-sep { border-top: 4px dashed #6d5f45; margin: 22px 0; }
+    .c10-item { margin-top: 26px; }
+    .c10-item .v { font-family: var(--f-titulo); font-size: 96px; line-height: .95; }
+    .c10-item .d { font-size: 28px; letter-spacing: .08em; color: #4b4232; }
+    #c10-i1 .v { color: #0f6b3c; }
+  </style>
+  <div id="root" data-composition-id="c10" data-width="1080" data-height="1920">
+    <div id="c10-recibo" class="clip" data-start="0" data-duration="8" data-layout-allow-overflow>
+      <div id="c10-papel" class="rb-papel">
+        <div id="c10-cab">RECIBO · ACRE</div>
+        <div id="c10-sub">PETRÓPOLIS, 17 NOV 1903</div>
+        <div class="c10-sep"></div>
+        <div id="c10-i1" class="c10-item"><div class="v">£ 2.000.000</div><div class="d">LIBRAS ESTERLINAS, PAGAS À BOLÍVIA</div></div>
+        <div id="c10-i2" class="c10-item"><div class="v">≈ 3.000 KM²</div><div class="d">DE TERRAS DO MATO GROSSO</div></div>
+        <div id="c10-i3" class="c10-item"><div class="v">1 FERROVIA</div><div class="d">A MADEIRA-MAMORÉ, A CONSTRUIR</div></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c10", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // o papel sai da "impressora" em passos: cresce de cima para baixo conforme cada item é falado
+    const H = (h) => ({ clipPath: `inset(0 0 ${720 - h}px 0)` });
+    tl.fromTo("#c10-recibo", H(0), { ...H(190), duration: 0.3, ease: "steps(6)" }, 0.1);
+    tl.to("#c10-recibo", { ...H(360), duration: 0.25, ease: "steps(6)" }, T("dois") - 0.15);
+    tl.to("#c10-recibo", { ...H(520), duration: 0.25, ease: "steps(6)" }, T("pedaço") - 0.15);
+    tl.to("#c10-recibo", { ...H(720), duration: 0.25, ease: "steps(6)" }, T("ferrovia") - 0.15);
+    tl.fromTo("#c10-recibo", { y: -6 }, { y: 0, duration: 0.05, ease: "steps(1)", repeat: 5 }, T("dois") - 0.15);
+    tl.fromTo("#c10-recibo", { y: -6 }, { y: 0, duration: 0.05, ease: "steps(1)", repeat: 5 }, T("pedaço") - 0.15);
+    tl.fromTo("#c10-recibo", { y: -6 }, { y: 0, duration: 0.05, ease: "steps(1)", repeat: 5 }, T("ferrovia") - 0.15);
+    tl.fromTo("#c10-i1 .v", { scale: 1.25, transformOrigin: "0 50%" }, { scale: 1, duration: 0.2, ease: "back.out(2)" }, T("milhões"));
+    tl.fromTo("#c10-recibo", { scale: 1, transformOrigin: "50% 0%" }, { scale: 0.97, duration: D, ease: "none" }, 0);
+    window.__timelines["c10"] = tl;
+  </script>
+</template>

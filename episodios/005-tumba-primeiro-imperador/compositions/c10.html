@@ -1,0 +1,58 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #111014; overflow: hidden; }
+    #c10-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c10-maq { position: absolute; left: 90px; top: 8px; width: 840px; height: 104px; background: #2b2a2e; border-bottom: 10px solid #000; }
+    #c10-luz { position: absolute; left: 30px; top: 30px; width: 34px; height: 34px; border-radius: 50%; background: #4a4850; }
+    #c10-rot { position: absolute; left: 90px; top: 26px; font-size: 40px; white-space: nowrap; }
+    #c10-rec { position: absolute; left: 130px; top: 112px; width: 760px; height: 630px; background: #f4ecd9; overflow: hidden; }
+    .c10-l { position: absolute; left: 44px; font-size: 60px; white-space: nowrap; }
+    .c10-m { position: absolute; left: 44px; width: 672px; border-top: 5px dashed #a79c84; }
+    #c10-c { position: absolute; left: 100px; top: 468px; font-size: 54px; white-space: nowrap; }
+  </style>
+  <div id="root" data-composition-id="c10" data-width="1080" data-height="1920">
+    <div id="c10-w" class="clip" data-start="0" data-duration="6.29" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c10-palco">
+        <div id="c10-rec">
+          <div id="c10-l1" class="c10-l rb-doc" style="top:50px">SPRAY NA HORA</div>
+          <div id="c10-l2" class="c10-l rb-doc" style="top:140px">FILME PLÁSTICO</div>
+          <div class="c10-m" style="top:238px"></div>
+          <div id="c10-l3" class="c10-l rb-doc" style="top:276px">PROTEÇÃO</div>
+          <div id="c10-l4" class="c10-l rb-doc" style="top:360px">SEM GARANTIA</div>
+          <div id="c10-c" class="rb-carimbo">NÃO GARANTIDA</div>
+        </div>
+        <div id="c10-maq"><div id="c10-luz"></div><div id="c10-rot" class="rb-mono">LABORATÓRIO</div></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c10";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    const bate = (el, t, de = -13, ate = -6, op = 0.96) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)", immediateRender: false }, t); };
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    // o recibo sai da máquina, em passos, descendo a cada linha nova
+    const sai = (h, t, n = 6, d = 0.2) => {
+      tl.to("#c10-rec", { clipPath: `inset(0% 0% ${100 - h}% 0%)`, duration: d, ease: `steps(${n})` }, t);
+      tl.fromTo("#c10-maq", { y: 3 }, { y: 0, duration: d, ease: "steps(4)", immediateRender: false }, t);
+      tl.set("#c10-luz", { backgroundColor: "#2fbf71" }, t);
+      tl.set("#c10-luz", { backgroundColor: "#4a4850" }, t + d);
+    };
+    gsap.set("#c10-rec", { clipPath: "inset(0% 0% 100% 0%)" });
+    sai(9, 0.06, 3, 0.14);
+    sai(24, T("spray") - 0.1);
+    dat("#c10-l1", T("spray"), 0.34, 13);
+    sai(39, T("plastico") - 0.1);
+    dat("#c10-l2", T("plastico"), 0.36, 14);
+    sai(40, T("segurar"), 2, 0.1);
+    sai(58, T("Mas"), 6);
+    dat("#c10-l3", T("protecao"), 0.3, 8);
+    sai(72, T("ainda"), 5);
+    dat("#c10-l4", T("ainda"), 0.4, 12);
+    const tg = T("garantida") + 0.25;
+    sai(100, tg - 0.3, 6, 0.24);
+    bate("#c10-c", tg);
+    tl.fromTo("#c10-rec", { x: 7 }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, tg + 0.03);
+    window.__timelines["c10"] = tl;
+  </script>
+</template>

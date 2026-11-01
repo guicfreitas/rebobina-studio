@@ -1,0 +1,87 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #14101a; overflow: hidden; }
+    #c10-palco { position: absolute; left: 0; top: 300px; width: 1080px; height: 760px; overflow: hidden; }
+    #c10-h { position: absolute; left: 90px; top: 12px; font-size: 44px; color: var(--acento); white-space: nowrap; }
+    #c10-int { position: absolute; left: 470px; top: 72px; font-size: 520px; color: var(--rec); }
+    #c10-cordas { position: absolute; left: 0; top: 210px; width: 1080px; height: 400px; }
+    .c10-corda { position: absolute; left: 0; width: 1080px; height: 14px; background: #a11d16; }
+    #c10-emu { position: absolute; left: 590px; top: 210px; width: 344px; height: 550px; color: var(--papel); }
+    #c10-emu svg { width: 100%; height: 100%; display: block; overflow: visible; }
+    #c10-med { position: absolute; left: 430px; top: 130px; width: 240px; height: 360px; }
+    .c10-q { position: absolute; left: 90px; white-space: nowrap; -webkit-text-stroke: 14px #14101a; paint-order: stroke fill; }
+    #c10-q1 { top: 180px; font-size: 138px; } #c10-q2 { top: 304px; font-size: 138px; }
+    #c10-q3 { top: 428px; font-size: 168px; color: var(--vhs); } #c10-q4 { top: 584px; font-size: 138px; }
+  </style>
+  <div id="root" data-composition-id="c10" data-width="1080" data-height="1920">
+    <div id="c10-w" class="clip" data-start="0" data-duration="8.38" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c10-palco">
+        <div id="c10-cordas"><i class="c10-corda" style="top:50px"></i><i class="c10-corda" style="top:180px"></i><i class="c10-corda" style="top:310px"></i></div>
+        <div id="c10-h" class="rb-mono">PARLAMENTO · 8 NOV 1932</div>
+        <svg id="c10-plen" width="1080" height="760" viewBox="0 0 1080 760" style="position:absolute;left:0;top:0" fill="none" stroke="#6b6772" stroke-width="20" stroke-linecap="round"></svg>
+        <div id="c10-int" class="rb-titulo">?</div>
+        <div id="c10-emu"><!--@svg:simbolos/emu--><svg class="emu" viewBox="0 0 400 640" xmlns="http://www.w3.org/2000/svg">
+<g fill="none" stroke="currentColor" stroke-width="19" stroke-linecap="round" stroke-linejoin="round">
+<path d="M186 380L206 476L186 592L240 608M186 592L158 610"/>
+<path d="M256 366L276 466L264 592L320 608M264 592L236 610"/>
+</g>
+<path fill="currentColor" d="M306 18C322 18 336 28 340 38L374 49L340 60C334 68 328 74 320 78C318 110 320 140 324 170C332 205 348 240 344 286C340 320 328 350 306 372L298 400L280 376L262 412L246 384L224 422L206 388L182 420L170 386L140 410L130 374L96 392L96 352C60 340 44 300 56 256C68 210 130 170 190 160C228 154 258 146 268 120C274 92 266 60 274 42C280 28 292 18 306 18Z"/>
+<circle cx="316" cy="40" r="6" fill="#0e0d10"/>
+<path fill="none" stroke="#0e0d10" stroke-opacity=".26" stroke-width="5" stroke-linecap="round" d="M104 290L84 330M150 250L112 322M196 224L150 330M240 240L196 346M284 256L250 346"/>
+</svg><!--/@svg:simbolos/emu--></div>
+        <div id="c10-q1" class="c10-q rb-titulo">&ldquo;VENCERAM</div>
+        <div id="c10-q2" class="c10-q rb-titulo">TODOS OS</div>
+        <div id="c10-q3" class="c10-q rb-titulo">ROUNDS</div>
+        <div id="c10-q4" class="c10-q rb-titulo">ATÉ AGORA&rdquo;</div>
+        <svg id="c10-med" viewBox="0 0 200 300"><g id="c10-m"><path d="M58 0H142L118 120H82Z" fill="#FF3B30"/><path d="M92 0H108V120H92Z" fill="#F1E8D3"/><circle cx="100" cy="200" r="94" fill="#E8B04B" stroke="#7a5716" stroke-width="10"/><circle cx="100" cy="200" r="66" fill="none" stroke="#7a5716" stroke-width="6"/><path d="M100 150L114 186L152 188L122 212L132 250L100 228L68 250L78 212L48 188L86 186Z" fill="#7a5716"/></g></svg>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c10";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // carimbo bate (1,5 → 1); peça aparece com pequeno deslocamento; texto datilografado em passos
+    const bate = (el, t, de = -9, ate = -5, op = 0.96) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)", immediateRender: false }, t); };
+    const surge = (el, t, dy = 24, dx = 0) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy, x: dx }, { y: 0, x: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, t); };
+    const dat = (el, t, d = 0.4, n = 18) => tl.fromTo(el, { clipPath: "inset(-30% 100% -30% 0)" }, { clipPath: "inset(-30% 0% -30% 0)", duration: d, ease: `steps(${n})` }, t);
+    const treme = (el, t, a = 7) => tl.fromTo(el, { x: a }, { x: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, t);
+    dat("#c10-h", 0.1, 0.5, 23);
+    // plenário em fileiras retas de pontos neutros (não afirma a planta da Câmara), até a medalha entrar
+    const plen = document.getElementById("c10-plen"), fileiras = [];
+    [210, 330, 450, 570].forEach((y, i) => {
+      let d = ""; const n = 13;
+      for (let k = 0; k < n; k++) d += `M${130 + k * 68} ${y}h0`;
+      const f = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      f.setAttribute("d", d); f.id = "c10-fil" + i; plen.appendChild(f); fileiras.push(f);
+      gsap.set(f, { opacity: 0 }); tl.set(f, { opacity: 1 }, 0.1 + i * 0.1);
+    });
+    bate("#c10-int", T("perguntam"), -6, 0, 1);
+    const M = T("medalha"), Dp = T("deputado"), E = T("emus"), Vc = T("venceram"), Rd = T("rounds"), At = T("ate");
+    tl.to("#c10-int", { autoAlpha: 0, duration: 0.02 }, M - 0.02);
+    tl.to("#c10-plen", { autoAlpha: 0, duration: 0.02 }, M - 0.02);
+    // medalha gira em passos, no meio do palco, até cair no peito do emu
+    gsap.set("#c10-med", { autoAlpha: 0, transformOrigin: "50% 16%" });
+    tl.set("#c10-med", { autoAlpha: 1 }, M);
+    tl.fromTo("#c10-med", { scale: 1.25 }, { scale: 1, duration: 0.14, ease: "back.out(2)", immediateRender: false }, M);
+    gsap.set("#c10-m", { svgOrigin: "100 200" });
+    let k = 0;
+    for (let t = M + 0.14; t < E - 0.2; t += 0.1) tl.set("#c10-m", { scaleX: [1, 0.55, 0.12, 0.55][k++ % 4] }, t);
+    tl.set("#c10-m", { scaleX: 1 }, E - 0.2);
+    surge("#c10-emu", Dp, 560);
+    // peito do emu: x≈848, y≈420 no palco; a medalha desce e encolhe
+    tl.to("#c10-med", { x: 268, y: 208, scale: 0.42, duration: 0.2, ease: "power2.in" }, E - 0.14);
+    tl.fromTo("#c10-emu", { y: 7 }, { y: 0, duration: 0.1, ease: "steps(3)", immediateRender: false }, E + 0.06);
+    tl.to("#c10-med", { rotation: 14, duration: 0.1, ease: "steps(2)" }, E + 0.08);
+    tl.to("#c10-med", { rotation: -8, duration: 0.1, ease: "steps(2)" }, E + 0.18);
+    tl.to("#c10-med", { rotation: 0, duration: 0.1, ease: "steps(2)" }, E + 0.28);
+    surge("#c10-q1", Vc, 0, -24);
+    surge("#c10-q2", T("todos"), 0, -24);
+    bate("#c10-q3", Rd, -3, 0, 1);
+    gsap.set("#c10-cordas", { autoAlpha: 0 });
+    tl.set("#c10-cordas", { autoAlpha: 1 }, Rd);
+    tl.fromTo(".c10-corda", { scaleX: 0, transformOrigin: "0 50%" }, { scaleX: 1, duration: 0.16, stagger: 0.03, ease: "power3.out", immediateRender: false }, Rd);
+    surge("#c10-q4", At, 0, -24);
+    window.__timelines["c10"] = tl;
+  </script>
+</template>

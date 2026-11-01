@@ -1,0 +1,70 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #131114; overflow: hidden; }
+    #c07-so { position: absolute; left: 381px; top: 308px; width: 317px; height: 740px; }
+    #c07-t { position: absolute; left: 90px; top: 314px; font-size: 104px; line-height: .95; }
+    .c07-rot { position: absolute; font-size: 88px; white-space: nowrap; line-height: 1; }
+    .c07-fio { position: absolute; height: 6px; }
+    #c07-rv { left: 90px; top: 610px; color: #ff6a5e; }
+    #c07-rg { left: 90px; top: 800px; color: #4fdc92; }
+    #c07-ra { left: 730px; top: 530px; color: #71a3f5; }
+    #c07-rr { left: 730px; top: 920px; color: #c29bf0; }
+    #c07-fv { left: 340px; top: 656px; width: 140px; background: #ff6a5e; }
+    #c07-fg { left: 250px; top: 846px; width: 170px; background: #4fdc92; }
+    #c07-fa { left: 650px; top: 576px; width: 72px; background: #71a3f5; }
+    #c07-fr { left: 610px; top: 966px; width: 112px; background: #c29bf0; }
+  </style>
+  <div id="root" data-composition-id="c07" data-width="1080" data-height="1920">
+    <div id="c07-w" class="clip" data-start="0" data-duration="5.67" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c07-so"><!--@svg:simbolos/soldado--><svg class="soldado" viewBox="0 0 300 700" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+<g id="c07-so-barro" fill="#c9b08a" stroke="#1b1a17" stroke-width="5" stroke-linejoin="round">
+<ellipse cx="168" cy="24" rx="16" ry="14"/><rect x="132" y="108" width="36" height="34"/><ellipse cx="150" cy="70" rx="38" ry="46"/>
+<rect x="56" y="652" width="188" height="34"/><path d="M80 630h64v22H80zM156 630h64v22h-64z"/>
+<ellipse cx="60" cy="418" rx="19" ry="21"/><ellipse cx="240" cy="418" rx="19" ry="21"/>
+<path id="c07-so-b-pernas" d="M92 505 88 630h50l2-115zM160 515l2 115h50l-4-125z"/>
+<path id="c07-so-b-manto" d="M80 332Q150 352 220 332L240 500Q150 520 60 500Z"/>
+<path id="c07-so-b-bracos" d="M88 142 50 170 36 330l8 70h34l6-70 8-100zM212 142l38 28 14 160-8 70h-34l-6-70-8-100z"/>
+<path id="c07-so-b-armadura" d="M88 140Q150 120 212 140L222 330Q150 350 78 330Z"/>
+</g>
+<g id="c07-so-cor" stroke="#1b1a17" stroke-width="5" stroke-linejoin="round">
+<path id="c07-so-pernas" fill="#8e5bd0" d="M92 505 88 630h50l2-115zM160 515l2 115h50l-4-125z"/>
+<path id="c07-so-manto" fill="#2fbf71" d="M80 332Q150 352 220 332L240 500Q150 520 60 500Z"/>
+<path id="c07-so-bracos" fill="#2f6fde" d="M88 142 50 170 36 330l8 70h34l6-70 8-100zM212 142l38 28 14 160-8 70h-34l-6-70-8-100z"/>
+<path id="c07-so-armadura" fill="#d8352a" d="M88 140Q150 120 212 140L222 330Q150 350 78 330Z"/>
+</g>
+<g id="c07-so-traco" fill="#1b1a17" opacity=".55">
+<circle cx="110" cy="180" r="5"/><circle cx="150" cy="176" r="5"/><circle cx="190" cy="180" r="5"/>
+<circle cx="106" cy="225" r="5"/><circle cx="150" cy="222" r="5"/><circle cx="194" cy="225" r="5"/>
+<circle cx="104" cy="270" r="5"/><circle cx="150" cy="270" r="5"/><circle cx="196" cy="270" r="5"/>
+<circle cx="102" cy="312" r="5"/><circle cx="150" cy="316" r="5"/><circle cx="198" cy="312" r="5"/>
+</g>
+</svg><!--/@svg:simbolos/soldado--></div>
+      <div id="c07-t" class="rb-titulo">ORIGINAL:<br><span id="c07-t2" style="color:var(--vhs)">PINTADO</span></div>
+      <div id="c07-fv" class="c07-fio"></div><div id="c07-rv" class="c07-rot rb-titulo">VERMELHO</div>
+      <div id="c07-fg" class="c07-fio"></div><div id="c07-rg" class="c07-rot rb-titulo">VERDE</div>
+      <div id="c07-fa" class="c07-fio"></div><div id="c07-ra" class="c07-rot rb-titulo">AZUL</div>
+      <div id="c07-fr" class="c07-fio"></div><div id="c07-rr" class="c07-rot rb-titulo">ROXO</div>
+    </div>
+  </div>
+  <script>
+    const C = "c07";
+    const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // o soldado aproxima devagar; cada cor bate na palavra que a nomeia
+    tl.fromTo("#c07-so", { scale: 0.96, transformOrigin: "50% 100%" }, { scale: 1, duration: D, ease: "none" }, 0);
+    gsap.set("#c07-t", { autoAlpha: 0 });
+    tl.set("#c07-t", { autoAlpha: 1 }, T("barro") - 0.1);
+    tl.fromTo("#c07-t", { x: -30 }, { x: 0, duration: 0.2, ease: "power3.out", immediateRender: false }, T("barro") - 0.1);
+    const cor = (parte, rot, fio, t) => {
+      gsap.set(parte, { autoAlpha: 0 });
+      gsap.set([rot, fio], { autoAlpha: 0 });
+      tl.set([parte, rot, fio], { autoAlpha: 1 }, t);
+      tl.fromTo(rot, { scale: 1.3 }, { scale: 1, duration: 0.14, ease: "steps(3)", immediateRender: false }, t);
+    };
+    cor("#c07-so-manto", "#c07-rg", "#c07-fg", T("verde") - 0.08);
+    cor("#c07-so-pernas", "#c07-rr", "#c07-fr", T("roxo") - 0.08);
+    cor("#c07-so-armadura", "#c07-rv", "#c07-fv", T("vermelho") - 0.08);
+    cor("#c07-so-bracos", "#c07-ra", "#c07-fa", T("azul") - 0.08);
+    window.__timelines["c07"] = tl;
+  </script>
+</template>

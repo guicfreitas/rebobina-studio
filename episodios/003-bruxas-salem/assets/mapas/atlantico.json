@@ -1,0 +1,262 @@
+{
+ "largura": 2280,
+ "altura": 1000,
+ "bbox": [
+  -76,
+  34,
+  28,
+  63
+ ],
+ "centroides": {
+  "pais-ireland": [
+   1362,
+   624
+  ],
+  "pais-france": [
+   1383,
+   839
+  ],
+  "pais-spain": [
+   1425,
+   891
+  ],
+  "pais-portugal": [
+   1357,
+   902
+  ],
+  "pais-belgium": [
+   1542,
+   681
+  ],
+  "pais-netherlands": [
+   1546,
+   646
+  ],
+  "pais-germany": [
+   1622,
+   672
+  ],
+  "pais-denmark": [
+   1617,
+   556
+  ],
+  "pais-norway": [
+   1655,
+   251
+  ],
+  "pais-sweden": [
+   1705,
+   380
+  ],
+  "pais-finland": [
+   1844,
+   321
+  ],
+  "pais-poland": [
+   1749,
+   648
+  ],
+  "pais-austria": [
+   1674,
+   747
+  ],
+  "pais-switzerland": [
+   1592,
+   763
+  ],
+  "pais-italy": [
+   1648,
+   844
+  ],
+  "pais-czechia": [
+   1691,
+   701
+  ],
+  "pais-slovakia": [
+   1750,
+   723
+  ],
+  "pais-hungary": [
+   1748,
+   756
+  ],
+  "pais-slovenia": [
+   1684,
+   777
+  ],
+  "pais-croatia": [
+   1707,
+   798
+  ],
+  "pais-bosnia-and-herz-": [
+   1726,
+   816
+  ],
+  "pais-serbia": [
+   1768,
+   815
+  ],
+  "pais-romania": [
+   1827,
+   782
+  ],
+  "pais-bulgaria": [
+   1830,
+   843
+  ],
+  "pais-greece": [
+   1799,
+   912
+  ],
+  "pais-albania": [
+   1758,
+   874
+  ],
+  "pais-macedonia": [
+   1781,
+   865
+  ],
+  "pais-montenegro": [
+   1746,
+   842
+  ],
+  "pais-kosovo": [
+   1769,
+   847
+  ],
+  "pais-lithuania": [
+   1812,
+   572
+  ],
+  "pais-latvia": [
+   1826,
+   534
+  ],
+  "pais-estonia": [
+   1835,
+   486
+  ],
+  "pais-belarus": [
+   1869,
+   616
+  ],
+  "pais-ukraine": [
+   1916,
+   713
+  ],
+  "pais-moldova": [
+   1876,
+   755
+  ],
+  "pais-luxembourg": [
+   1562,
+   701
+  ],
+  "pais-iceland": [
+   1216,
+   297
+  ],
+  "pais-turkey": [
+   1970,
+   910
+  ],
+  "pais-morocco": [
+   1354,
+   1070
+  ],
+  "pais-algeria": [
+   1513,
+   1097
+  ],
+  "pais-tunisia": [
+   1611,
+   998
+  ],
+  "pais-canada": [
+   123,
+   438
+  ],
+  "pais-united-states-of-america": [
+   23,
+   804
+  ],
+  "reg-scotland": [
+   1418,
+   535
+  ],
+  "reg-england": [
+   1456,
+   638
+  ],
+  "reg-wales": [
+   1424,
+   643
+  ],
+  "reg-n-ireland": [
+   1383,
+   590
+  ]
+ },
+ "pontos": {
+  "ponto-trier": {
+   "nome": "Trier",
+   "x": 1570,
+   "y": 701
+  },
+  "ponto-wurzburg": {
+   "nome": "Wurzburg",
+   "x": 1616,
+   "y": 700
+  },
+  "ponto-bamberg": {
+   "nome": "Bamberg",
+   "x": 1629,
+   "y": 698
+  },
+  "ponto-colonia": {
+   "nome": "Colonia",
+   "x": 1574,
+   "y": 675
+  },
+  "ponto-labourd": {
+   "nome": "Labourd",
+   "x": 1456,
+   "y": 832
+  },
+  "ponto-logrono": {
+   "nome": "Logrono",
+   "x": 1442,
+   "y": 849
+  },
+  "ponto-ribe": {
+   "nome": "Ribe",
+   "x": 1599,
+   "y": 572
+  },
+  "ponto-ellwangen": {
+   "nome": "Ellwangen",
+   "x": 1619,
+   "y": 718
+  },
+  "ponto-mora": {
+   "nome": "Mora",
+   "x": 1680,
+   "y": 421
+  },
+  "ponto-valais": {
+   "nome": "Valais",
+   "x": 1582,
+   "y": 775
+  },
+  "ponto-milao": {
+   "nome": "Milao",
+   "x": 1605,
+   "y": 790
+  },
+  "ponto-salem": {
+   "nome": "Salem",
+   "x": 482,
+   "y": 848
+  }
+ }
+}

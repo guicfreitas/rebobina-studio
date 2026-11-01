@@ -1,0 +1,61 @@
+<template>
+  <!-- c09 · virada · antes-e-depois: anúncios migram do jornal para o rádio; o jornal revida com "PÂNICO!". -->
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c09-tit { position: absolute; left: 90px; top: 330px; width: 900px; text-align: center; font-size: 120px; }
+    #c09-jornal { position: absolute; left: 90px; top: 520px; width: 330px; height: 400px; padding: 22px; border-radius: 2px; }
+    #c09-jornal .mast { font-family: var(--f-jornal); font-weight: 900; font-size: 52px; color: var(--tinta); text-align: center; border-bottom: 5px double #1b1a17; padding-bottom: 6px; }
+    #c09-jornal .lin { height: 14px; background: rgba(27,26,23,.2); margin-top: 18px; border-radius: 3px; }
+    #c09-panico { position: absolute; left: 34px; top: 170px; font-family: var(--f-jornal); font-weight: 900; font-size: 76px; color: #b3261e; }
+    #c09-radio { position: absolute; left: 650px; top: 520px; width: 340px; height: 400px; }
+    #c09-radio .r-gab { fill: var(--acento); }
+    .c09-ad { position: absolute; left: 270px; top: 650px; width: 200px; height: 74px; background: var(--vhs); border-radius: 8px; font-family: var(--f-mono); font-weight: 700; font-size: 30px;
+      color: #1b1a17; display: flex; align-items: center; justify-content: center; letter-spacing: .08em; }
+    #c09-sub { position: absolute; left: 90px; top: 1005px; width: 900px; text-align: center; font-size: 34px; color: var(--vhs); }
+    #c09-seta { position: absolute; left: 90px; top: 940px; width: 900px; text-align: center; font-family: var(--f-mono); font-weight: 700; font-size: 38px; color: #ff6b5e; white-space: nowrap; }
+  </style>
+  <div id="root" data-composition-id="c09" data-width="1080" data-height="1920">
+    <div id="c09-w" class="clip" data-start="0" data-duration="10" data-layout-allow-overlap>
+      <div id="c09-tit" class="rb-titulo">Jornal × Rádio</div>
+      <div id="c09-jornal" class="rb-papel"><div class="mast">JORNAL</div><div class="lin"></div><div class="lin" style="width:80%"></div><div class="lin"></div><div class="lin" style="width:60%"></div><div class="lin"></div><div class="lin" style="width:85%"></div><div class="lin"></div><div id="c09-panico">PÂNICO!</div></div>
+      <div id="c09-radio"><!--@svg:simbolos/radio--><svg class="simbolo-radio" viewBox="0 0 400 470" xmlns="http://www.w3.org/2000/svg">
+ <rect class="r-base" x="6" y="440" width="388" height="26" rx="6" fill="#3b2412"/>
+ <path class="r-gab" d="M24 445 L24 205 Q24 22 200 22 Q376 22 376 205 L376 445 Z"/>
+ <path class="r-grade" d="M78 300 L78 205 Q78 78 200 78 Q322 78 322 205 L322 300 Z" fill="#24160d"/>
+ <g class="r-barras" stroke="#8a5a32" stroke-width="9" stroke-linecap="round">
+  <line x1="112" y1="160" x2="112" y2="292"/><line x1="140" y1="122" x2="140" y2="292"/><line x1="168" y1="100" x2="168" y2="292"/>
+  <line x1="200" y1="92" x2="200" y2="292"/><line x1="232" y1="100" x2="232" y2="292"/><line x1="260" y1="122" x2="260" y2="292"/>
+  <line x1="288" y1="160" x2="288" y2="292"/>
+ </g>
+ <rect class="r-dial" x="92" y="326" width="216" height="72" rx="12" fill="#f1e8d3"/>
+ <g stroke="#6d5f45" stroke-width="3"><line x1="112" y1="340" x2="112" y2="356"/><line x1="142" y1="340" x2="142" y2="350"/><line x1="172" y1="340" x2="172" y2="356"/><line x1="202" y1="340" x2="202" y2="350"/><line x1="232" y1="340" x2="232" y2="356"/><line x1="262" y1="340" x2="262" y2="350"/><line x1="292" y1="340" x2="292" y2="356"/></g>
+ <line id="c09-agulha" class="r-agulha" x1="120" y1="334" x2="120" y2="390" stroke="#ff3b30" stroke-width="5" stroke-linecap="round"/>
+ <circle class="r-botao" cx="72" cy="412" r="20" fill="#24160d"/><circle class="r-botao" cx="328" cy="412" r="20" fill="#24160d"/>
+</svg><!--/@svg:simbolos/radio--></div>
+      <div id="c09-a1" class="c09-ad">ANÚNCIO</div><div id="c09-a2" class="c09-ad">ANÚNCIO</div><div id="c09-a3" class="c09-ad">ANÚNCIO</div>
+      <div id="c09-seta" class="rb-mono">MANCHETE: RÁDIO = PERIGO</div>
+      <div id="c09-sub" class="rb-mono">A BRIGA PELOS ANUNCIANTES</div>
+    </div>
+  </div>
+  <script>
+    const C = "c09", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c09-tit", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.2, ease: "power3.out" }, 0.05);
+    tl.fromTo("#c09-jornal", { x: -500 }, { x: 0, duration: 0.3, ease: "power3.out" }, 0.1);
+    tl.fromTo("#c09-radio", { x: 500 }, { x: 0, duration: 0.3, ease: "power3.out" }, 0.2);
+    tl.set(".c09-ad", { opacity: 0 }, 0);
+    // em "roubando anunciantes": blocos saem do jornal e vão para o rádio
+    const t0 = T("roubando") - 0.1;
+    ["#c09-a1", "#c09-a2", "#c09-a3"].forEach((a, i) => {
+      tl.fromTo(a, { x: -60, y: -60 + i * 80, opacity: 0, scale: 0.6 }, { x: 0, y: -60 + i * 80, opacity: 1, scale: 1, duration: 0.15, ease: "back.out(2)" }, t0 + i * 0.22);
+      tl.to(a, { x: 470, scale: 0.5, opacity: 0, duration: 0.5, ease: "power2.in" }, t0 + i * 0.22 + 0.35);
+    });
+    tl.fromTo("#c09-sub", { opacity: 0 }, { opacity: 1, duration: 0.1, ease: "steps(2)" }, T("anunciantes") + 0.1);
+    tl.fromTo("#c09-jornal .lin", { opacity: 1 }, { opacity: 0.35, duration: 0.3, stagger: 0.04 }, T("anunciantes"));
+    // "o pânico provava que o rádio era perigoso": o jornal revida
+    tl.fromTo("#c09-panico", { opacity: 0, scale: 1.8, rotation: -14 }, { opacity: 1, scale: 1, rotation: -8, duration: 0.18, ease: "back.out(2)" }, T("pânico") - 0.1);
+    tl.fromTo("#c09-seta", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.2, ease: "power3.out" }, T("perigoso") - 0.3);
+    tl.fromTo("#c09-radio", { x: 0 }, { x: 10, duration: 0.05, ease: "steps(1)", yoyo: true, repeat: 5 }, T("perigoso"));
+    window.__timelines["c09"] = tl;
+  </script>
+</template>

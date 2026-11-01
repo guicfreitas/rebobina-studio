@@ -1,0 +1,107 @@
+{
+ "largura": 1080,
+ "altura": 700,
+ "bbox": [
+  -73.7,
+  41.1,
+  -69.8,
+  43
+ ],
+ "centroides": {
+  "reg-new-york": [
+   -539,
+   4
+  ],
+  "reg-vermont": [
+   289,
+   -404
+  ],
+  "reg-new-hampshire": [
+   586,
+   -257
+  ],
+  "reg-maine": [
+   1225,
+   -907
+  ],
+  "reg-connecticut": [
+   272,
+   509
+  ],
+  "reg-rhode-island": [
+   592,
+   490
+  ],
+  "reg-massachusetts": [
+   526,
+   275
+  ]
+ },
+ "pontos": {
+  "ponto-salem": {
+   "nome": "Salem",
+   "x": 773,
+   "y": 179
+  },
+  "ponto-andover": {
+   "nome": "Andover",
+   "x": 708,
+   "y": 128
+  },
+  "ponto-ipswich": {
+   "nome": "Ipswich",
+   "x": 789,
+   "y": 120
+  },
+  "ponto-topsfield": {
+   "nome": "Topsfield",
+   "x": 759,
+   "y": 135
+  },
+  "ponto-gloucester": {
+   "nome": "Gloucester",
+   "x": 838,
+   "y": 143
+  },
+  "ponto-marblehead": {
+   "nome": "Marblehead",
+   "x": 784,
+   "y": 186
+  },
+  "ponto-haverhill": {
+   "nome": "Haverhill",
+   "x": 724,
+   "y": 84
+  },
+  "ponto-amesbury": {
+   "nome": "Amesbury",
+   "x": 764,
+   "y": 53
+  },
+  "ponto-lynn": {
+   "nome": "Lynn",
+   "x": 759,
+   "y": 199
+  },
+  "ponto-rowley": {
+   "nome": "Rowley",
+   "x": 779,
+   "y": 106
+  },
+  "ponto-boxford": {
+   "nome": "Boxford",
+   "x": 745,
+   "y": 127
+  },
+  "ponto-beverly": {
+   "nome": "Beverly",
+   "x": 778,
+   "y": 165
+  },
+  "ponto-salisbury": {
+   "nome": "Salisbury",
+   "x": 783,
+   "y": 60
+  }
+ }
+}

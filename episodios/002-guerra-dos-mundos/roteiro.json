@@ -1,0 +1,274 @@
+{
+ "id": "002",
+ "slug": "guerra-dos-mundos",
+ "idioma": "pt-BR",
+ "tema": "A Guerra dos Mundos (30/10/1938): o programa de rádio existiu, mas o pânico nacional foi em boa parte criado pelos jornais",
+ "era": "século XX",
+ "regiao": "América do Norte",
+ "acento": "#E07A3B",
+ "objeto_simbolo": "rádio de mesa antigo com ondas saindo",
+ "motor_voz": "colab",
+ "voz": "pm_alex",
+ "velocidade": 0.92,
+ "serie": {
+  "proxima_fita": null
+ },
+ "cenas": [
+  {
+   "id": "c01",
+   "batida": "gancho",
+   "forma": "manchete-de-jornal",
+   "ano": 2026,
+   "fala": "Dizem que um programa de rádio fez os Estados Unidos entrarem em pânico com uma invasão de marcianos.",
+   "tela": [
+    "MARCIANOS",
+    "INVADEM",
+    "OS EUA?"
+   ],
+   "visual": "Frame 0: capa de jornal com a manchete gigante e o rádio antigo em terracota; 'marcianos' faz a manchete tremer.",
+   "fatos": [
+    "f1"
+   ]
+  },
+  {
+   "id": "c02",
+   "batida": "quebra",
+   "forma": "mito-x-fato",
+   "ano": 2026,
+   "fala": "O programa existiu. O pânico em massa… nem tanto.",
+   "tela": [
+    "O PROGRAMA EXISTIU ✓",
+    "O PÂNICO EM MASSA ?"
+   ],
+   "visual": "Duas linhas de checagem: a primeira ganha ✓; a segunda fica com um ? piscando. Rebobina para 1938.",
+   "fatos": [
+    "f1",
+    "f5"
+   ]
+  },
+  {
+   "id": "c03",
+   "batida": "rebobinar",
+   "forma": "objeto-simbolo",
+   "ano": 1938,
+   "fala": "Trinta de outubro de mil novecentos e trinta e oito, véspera do Halloween. Um ator de vinte e três anos, Orson Welles, adapta A Guerra dos Mundos para o rádio.",
+   "fala_tts": "Trinta de outubro de mil novecentos e trinta e oito, véspera do Rálouin. Um ator de vinte e três anos, Órsson Uélss, adapta A Guerra dos Mundos para o rádio.",
+   "tela": [
+    "30 OUT 1938 · 20H",
+    "ORSON WELLES, 23 ANOS",
+    "A GUERRA DOS MUNDOS"
+   ],
+   "visual": "Rádio de mesa desenhado; o ponteiro do dial anda até a estação; ondas saem do alto-falante. Textos entram na palavra.",
+   "fatos": [
+    "f2"
+   ]
+  },
+  {
+   "id": "c04",
+   "batida": "escalada",
+   "forma": "documento",
+   "ano": 1938,
+   "fala": "O roteiro imitava um noticiário: boletins urgentes, repórteres ao vivo e um astrônomo falando de explosões em Marte.",
+   "tela": [
+    "BOLETIM URGENTE",
+    "AO VIVO, NOVA JERSEY",
+    "EXPLOSÕES EM MARTE"
+   ],
+   "visual": "Folha de roteiro escura tipo teleprompter, linhas datilografadas em amarelo; luz vermelha 'NO AR' acesa.",
+   "fatos": [
+    "f3"
+   ]
+  },
+  {
+   "id": "c05",
+   "batida": "escalada",
+   "forma": "manchete-de-jornal",
+   "ano": 1938,
+   "fala": "No dia seguinte, os jornais estamparam na capa: ouvintes em pânico, gente no hospital, gente fugindo de casa.",
+   "tela": [
+    "OUVINTES DE RÁDIO EM PÂNICO",
+    "THE NEW YORK TIMES · 31/10/1938",
+    "FUGA DAS CIDADES",
+    "GENTE NO HOSPITAL"
+   ],
+   "visual": "Recorte de jornal com a manchete real traduzida e a atribuição; outros relatos da imprensa caem como recortes.",
+   "fatos": [
+    "f4"
+   ]
+  },
+  {
+   "id": "c06",
+   "batida": "escalada",
+   "forma": "numero-que-cai",
+   "ano": 1938,
+   "fala": "Só que, naquela mesma noite, uma empresa de audiência ligou para cinco mil casas. Só dois por cento ouviam o programa.",
+   "tela": [
+    "5.000 LIGAÇÕES",
+    "2%"
+   ],
+   "visual": "Grade de 100 casinhas; o contador de ligações sobe; só 2 casas acendem em terracota; '2%' bate grande.",
+   "fatos": [
+    "f5"
+   ]
+  },
+  {
+   "id": "c07",
+   "batida": "escalada",
+   "forma": "comparacao-de-escala",
+   "ano": 1938,
+   "fala": "Noventa e oito por cento estavam em outro programa, ou com o rádio desligado. Na emissora rival, o sucesso era um ventríloquo.",
+   "tela": [
+    "98% · OUTRO PROGRAMA OU RÁDIO DESLIGADO",
+    "2% · ORSON WELLES",
+    "O RIVAL: UM VENTRÍLOQUO"
+   ],
+   "visual": "Duas barras: 98% enche quase a tela, 2% é um fiapo terracota. Rótulo do rival entra em 'ventríloquo'.",
+   "fatos": [
+    "f5",
+    "f6"
+   ]
+  },
+  {
+   "id": "c08",
+   "batida": "escalada",
+   "forma": "documento",
+   "ano": 1938,
+   "fala": "E as pessoas no hospital? Quando pesquisadores foram atrás desses relatos, não conseguiram confirmar.",
+   "tela": [
+    "RELATO: GENTE NO HOSPITAL",
+    "CHECAGEM: NÃO CONFIRMADO"
+   ],
+   "visual": "Ficha de checagem: linha 'relato' e linha 'checagem'; uma lupa passa; o resultado aparece em vermelho.",
+   "fatos": [
+    "f7"
+   ]
+  },
+  {
+   "id": "c09",
+   "batida": "virada",
+   "forma": "antes-e-depois",
+   "ano": 1938,
+   "fala": "Por que exagerar? Segundo historiadores, o rádio estava roubando anunciantes dos jornais. E o pânico provava que o rádio era perigoso.",
+   "tela": [
+    "JORNAL × RÁDIO",
+    "A BRIGA PELOS ANUNCIANTES"
+   ],
+   "visual": "Jornal à esquerda, rádio à direita; blocos 'ANÚNCIO' saem do jornal e vão para o rádio; depois o jornal 'revida' com a manchete do pânico.",
+   "fatos": [
+    "f8"
+   ]
+  },
+  {
+   "id": "c10",
+   "batida": "virada",
+   "forma": "mito-x-fato",
+   "ano": 1938,
+   "fala": "Teve gente assustada, sim. Mas o pânico nacional foi, em boa parte, uma história contada pelos próprios jornais.",
+   "tela": [
+    "ASSUSTADOS: ALGUNS ✓",
+    "PÂNICO NACIONAL: EXAGERO"
+   ],
+   "visual": "Balança de dois pratos: 'alguns assustados' leve e real; 'pânico nacional' tachado como exagero.",
+   "fatos": [
+    "f7",
+    "f9"
+   ]
+  },
+  {
+   "id": "c11",
+   "batida": "fecho",
+   "forma": "manchete-de-jornal",
+   "ano": 1938,
+   "fala": "Ou seja: a maior notícia falsa daquela noite não foi a dos marcianos. Foi a do pânico.",
+   "tela": [
+    "A NOTÍCIA FALSA",
+    "ERA O PÂNICO"
+   ],
+   "visual": "A capa do gancho volta; 'MARCIANOS' é riscado e trocado por 'O PÂNICO'; tela azul + STOP.",
+   "fatos": [
+    "f1",
+    "f8"
+   ]
+  }
+ ],
+ "fatos": [
+  {
+   "id": "f1",
+   "afirmacao": "É amplamente repetido que a transmissão de A Guerra dos Mundos causou pânico em massa nos EUA; historiadores da mídia contestam a dimensão desse pânico.",
+   "fontes": [
+    "https://www.npr.org/sections/thetwo-way/2013/10/30/241797346/75-years-ago-war-of-the-worlds-started-a-panic-or-did-it",
+    "https://www.snopes.com/war-of-the-worlds/",
+    "https://slate.com/culture/2013/10/orson-welles-war-of-the-worlds-panic-myth-the-infamous-radio-broadcast-did-not-cause-a-nationwide-hysteria.html"
+   ]
+  },
+  {
+   "id": "f2",
+   "afirmacao": "Em 30/10/1938 (véspera do Halloween), às 20h em Nova York, Orson Welles, então com 23 anos, dirigiu na CBS a adaptação de A Guerra dos Mundos (H. G. Wells) no programa Mercury Theatre on the Air.",
+   "fontes": [
+    "https://www.history.com/articles/inside-the-war-of-the-worlds-broadcast",
+    "https://www.pbs.org/newshour/nation/the-legend-of-the-war-of-the-worlds"
+   ]
+  },
+  {
+   "id": "f3",
+   "afirmacao": "A adaptação foi escrita como uma sequência de boletins de notícias interrompendo a programação, com repórter ao vivo e um astrônomo fictício de Princeton (prof. Pierson); a invasão começava em Nova Jersey.",
+   "fontes": [
+    "https://exhibits.princetonlibrary.org/?p=1370",
+    "https://brewminate.com/jitterbugs-and-crack-pots-responses-in-1938-to-war-of-the-worlds/",
+    "https://www.npr.org/sections/thetwo-way/2013/10/30/241797346/75-years-ago-war-of-the-worlds-started-a-panic-or-did-it"
+   ]
+  },
+  {
+   "id": "f4",
+   "afirmacao": "Em 31/10/1938, jornais publicaram manchetes de pânico (The New York Times: 'Radio Listeners in Panic, Taking War Drama as Fact'), com relatos de hospitalizações e fugas de cidades.",
+   "fontes": [
+    "https://www.freethink.com/consumer-tech/war-of-the-worlds-anti-radio-propaganda",
+    "https://www.history.com/articles/inside-the-war-of-the-worlds-broadcast",
+    "https://www.smithsonianmag.com/history/infamous-war-worlds-radio-broadcast-was-magnificent-fluke-180955180/"
+   ]
+  },
+  {
+   "id": "f5",
+   "afirmacao": "Na noite da transmissão, o serviço de audiência C.E. Hooper telefonou para 5.000 casas; só 2% disseram ouvir o programa de Welles (98% ouviam outra coisa ou nada).",
+   "fontes": [
+    "https://www.npr.org/sections/thetwo-way/2013/10/30/241797346/75-years-ago-war-of-the-worlds-started-a-panic-or-did-it",
+    "https://www.wrvo.org/2013-10-30/75-years-ago-war-of-the-worlds-started-a-panic-or-did-it",
+    "https://www.snopes.com/war-of-the-worlds/"
+   ]
+  },
+  {
+   "id": "f6",
+   "afirmacao": "No mesmo horário, a concorrência transmitia um dos programas mais populares do país, o do ventríloquo Edgar Bergen (Chase and Sanborn Hour).",
+   "fontes": [
+    "https://www.npr.org/sections/thetwo-way/2013/10/30/241797346/75-years-ago-war-of-the-worlds-started-a-panic-or-did-it",
+    "https://theothertopic.substack.com/p/1938-the-war-of-the-worlds-broadcast"
+   ]
+  },
+  {
+   "id": "f7",
+   "afirmacao": "Pesquisadores que tentaram comprovar os relatos de pessoas tratadas em hospitais por choque após a transmissão não os confirmaram; houve, porém, ouvintes que se assustaram e ligaram para jornais e polícia.",
+   "fontes": [
+    "https://www.freethink.com/consumer-tech/war-of-the-worlds-anti-radio-propaganda",
+    "https://www.snopes.com/war-of-the-worlds/",
+    "https://theothertopic.substack.com/p/1938-the-war-of-the-worlds-broadcast"
+   ]
+  },
+  {
+   "id": "f8",
+   "afirmacao": "Segundo os historiadores Jefferson Pooley e Michael Socolow, os jornais, que perdiam anunciantes para o rádio, usaram o episódio para mostrar que o rádio não era confiável.",
+   "fontes": [
+    "https://www.pbs.org/newshour/nation/the-legend-of-the-war-of-the-worlds",
+    "https://www.history.com/articles/inside-the-war-of-the-worlds-broadcast",
+    "https://www.freethink.com/consumer-tech/war-of-the-worlds-anti-radio-propaganda"
+   ]
+  },
+  {
+   "id": "f9",
+   "afirmacao": "O estudo de Hadley Cantril (1940), base da ideia de pânico em massa, é criticado por confundir 'assustado' com 'em pânico' e por ter sido feito semanas depois.",
+   "fontes": [
+    "https://www.snopes.com/war-of-the-worlds/",
+    "https://exhibits.princetonlibrary.org/?p=1370"
+   ]
+  }
+ ]
+}

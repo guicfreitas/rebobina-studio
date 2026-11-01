@@ -1,0 +1,1690 @@
+{
+ "motor": "arquivos",
+ "voz": "pm_alex",
+ "cenas": [
+  {
+   "id": "c01",
+   "inicio": 0.15,
+   "fim": 3.86
+  },
+  {
+   "id": "c02",
+   "inicio": 4.14,
+   "fim": 9.2
+  },
+  {
+   "id": "c03",
+   "inicio": 9.48,
+   "fim": 17.22
+  },
+  {
+   "id": "c04",
+   "inicio": 17.5,
+   "fim": 21.93
+  },
+  {
+   "id": "c05",
+   "inicio": 22.21,
+   "fim": 27.97
+  },
+  {
+   "id": "c06",
+   "inicio": 28.25,
+   "fim": 32.84
+  },
+  {
+   "id": "c07",
+   "inicio": 33.12,
+   "fim": 38.31
+  },
+  {
+   "id": "c08",
+   "inicio": 38.59,
+   "fim": 43.84
+  },
+  {
+   "id": "c09",
+   "inicio": 44.12,
+   "fim": 49.41
+  },
+  {
+   "id": "c10",
+   "inicio": 49.69,
+   "fim": 57.79
+  },
+  {
+   "id": "c11",
+   "inicio": 58.07,
+   "fim": 65.69
+  },
+  {
+   "id": "c12",
+   "inicio": 65.97,
+   "fim": 73.96
+  },
+  {
+   "id": "c13",
+   "inicio": 74.24,
+   "fim": 78.5
+  },
+  {
+   "id": "c14",
+   "inicio": 78.78,
+   "fim": 87.8
+  }
+ ],
+ "palavras": [
+  {
+   "id": "w0",
+   "cena": "c01",
+   "text": "Três",
+   "start": 0.23,
+   "end": 0.38,
+   "medido": true
+  },
+  {
+   "id": "w1",
+   "cena": "c01",
+   "text": "homens",
+   "start": 0.38,
+   "end": 0.84,
+   "medido": true
+  },
+  {
+   "id": "w2",
+   "cena": "c01",
+   "text": "com",
+   "start": 0.84,
+   "end": 1.12,
+   "medido": true
+  },
+  {
+   "id": "w3",
+   "cena": "c01",
+   "text": "metralhadoras",
+   "start": 1.12,
+   "end": 1.87,
+   "medido": true
+  },
+  {
+   "id": "w4",
+   "cena": "c01",
+   "text": "perderam",
+   "start": 1.87,
+   "end": 2.34,
+   "medido": true
+  },
+  {
+   "id": "w5",
+   "cena": "c01",
+   "text": "uma",
+   "start": 2.34,
+   "end": 2.52,
+   "medido": true
+  },
+  {
+   "id": "w6",
+   "cena": "c01",
+   "text": "guerra",
+   "start": 2.52,
+   "end": 2.88,
+   "medido": true
+  },
+  {
+   "id": "w7",
+   "cena": "c01",
+   "text": "para",
+   "start": 2.88,
+   "end": 3.12,
+   "medido": true
+  },
+  {
+   "id": "w8",
+   "cena": "c01",
+   "text": "uma",
+   "start": 3.12,
+   "end": 3.3,
+   "medido": true
+  },
+  {
+   "id": "w9",
+   "cena": "c01",
+   "text": "ave?",
+   "start": 3.3,
+   "end": 3.74,
+   "medido": true
+  },
+  {
+   "id": "w10",
+   "cena": "c02",
+   "text": "Parece",
+   "start": 4.22,
+   "end": 4.67,
+   "medido": true
+  },
+  {
+   "id": "w11",
+   "cena": "c02",
+   "text": "lenda",
+   "start": 4.67,
+   "end": 5.11,
+   "medido": true
+  },
+  {
+   "id": "w12",
+   "cena": "c02",
+   "text": "de",
+   "start": 5.11,
+   "end": 5.28,
+   "medido": true
+  },
+  {
+   "id": "w13",
+   "cena": "c02",
+   "text": "internet.",
+   "start": 5.28,
+   "end": 5.86,
+   "medido": true
+  },
+  {
+   "id": "w14",
+   "cena": "c02",
+   "text": "Mas",
+   "start": 6.27,
+   "end": 6.6,
+   "medido": true
+  },
+  {
+   "id": "w15",
+   "cena": "c02",
+   "text": "tem",
+   "start": 6.6,
+   "end": 6.95,
+   "medido": true
+  },
+  {
+   "id": "w16",
+   "cena": "c02",
+   "text": "data,",
+   "start": 6.95,
+   "end": 7.19,
+   "medido": true
+  },
+  {
+   "id": "w17",
+   "cena": "c02",
+   "text": "major",
+   "start": 7.43,
+   "end": 8.008,
+   "medido": true
+  },
+  {
+   "id": "w18",
+   "cena": "c02",
+   "text": "e",
+   "start": 8.008,
+   "end": 8.16,
+   "medido": false
+  },
+  {
+   "id": "w19",
+   "cena": "c02",
+   "text": "relatório.",
+   "start": 8.34,
+   "end": 9.08,
+   "medido": true
+  },
+  {
+   "id": "w20",
+   "cena": "c03",
+   "text": "Mil",
+   "start": 9.56,
+   "end": 9.771,
+   "medido": false
+  },
+  {
+   "id": "w21",
+   "cena": "c03",
+   "text": "novecentos",
+   "start": 9.771,
+   "end": 10.449,
+   "medido": false
+  },
+  {
+   "id": "w22",
+   "cena": "c03",
+   "text": "e",
+   "start": 10.449,
+   "end": 10.66,
+   "medido": false
+  },
+  {
+   "id": "w23",
+   "cena": "c03",
+   "text": "trinta",
+   "start": 10.66,
+   "end": 11.026,
+   "medido": false
+  },
+  {
+   "id": "w24",
+   "cena": "c03",
+   "text": "e",
+   "start": 11.026,
+   "end": 11.237,
+   "medido": false
+  },
+  {
+   "id": "w25",
+   "cena": "c03",
+   "text": "dois,",
+   "start": 11.237,
+   "end": 11.447,
+   "medido": false
+  },
+  {
+   "id": "w26",
+   "cena": "c03",
+   "text": "Austrália",
+   "start": 11.447,
+   "end": 11.97,
+   "medido": false
+  },
+  {
+   "id": "w27",
+   "cena": "c03",
+   "text": "Ocidental.",
+   "start": 11.97,
+   "end": 12.87,
+   "medido": true
+  },
+  {
+   "id": "w28",
+   "cena": "c03",
+   "text": "Veteranos",
+   "start": 13.28,
+   "end": 13.81,
+   "medido": true
+  },
+  {
+   "id": "w29",
+   "cena": "c03",
+   "text": "de",
+   "start": 13.81,
+   "end": 13.96,
+   "medido": true
+  },
+  {
+   "id": "w30",
+   "cena": "c03",
+   "text": "guerra",
+   "start": 13.96,
+   "end": 14.38,
+   "medido": true
+  },
+  {
+   "id": "w31",
+   "cena": "c03",
+   "text": "plantam",
+   "start": 14.38,
+   "end": 14.9,
+   "medido": true
+  },
+  {
+   "id": "w32",
+   "cena": "c03",
+   "text": "trigo,",
+   "start": 14.9,
+   "end": 15.47,
+   "medido": true
+  },
+  {
+   "id": "w33",
+   "cena": "c03",
+   "text": "e",
+   "start": 15.78,
+   "end": 15.895,
+   "medido": true
+  },
+  {
+   "id": "w34",
+   "cena": "c03",
+   "text": "o",
+   "start": 15.895,
+   "end": 15.94,
+   "medido": false
+  },
+  {
+   "id": "w35",
+   "cena": "c03",
+   "text": "preço",
+   "start": 16.02,
+   "end": 16.21,
+   "medido": false
+  },
+  {
+   "id": "w36",
+   "cena": "c03",
+   "text": "já",
+   "start": 16.21,
+   "end": 16.466,
+   "medido": true
+  },
+  {
+   "id": "w37",
+   "cena": "c03",
+   "text": "despencou.",
+   "start": 16.466,
+   "end": 17.1,
+   "medido": false
+  },
+  {
+   "id": "w38",
+   "cena": "c04",
+   "text": "Aí",
+   "start": 17.58,
+   "end": 17.66,
+   "medido": true
+  },
+  {
+   "id": "w39",
+   "cena": "c04",
+   "text": "chegam",
+   "start": 17.66,
+   "end": 18.15,
+   "medido": true
+  },
+  {
+   "id": "w40",
+   "cena": "c04",
+   "text": "uns",
+   "start": 18.15,
+   "end": 18.42,
+   "medido": true
+  },
+  {
+   "id": "w41",
+   "cena": "c04",
+   "text": "vinte",
+   "start": 18.42,
+   "end": 18.89,
+   "medido": false
+  },
+  {
+   "id": "w42",
+   "cena": "c04",
+   "text": "mil",
+   "start": 18.89,
+   "end": 19.14,
+   "medido": true
+  },
+  {
+   "id": "w43",
+   "cena": "c04",
+   "text": "emus.",
+   "start": 19.14,
+   "end": 19.56,
+   "medido": true
+  },
+  {
+   "id": "w44",
+   "cena": "c04",
+   "text": "Comem",
+   "start": 19.97,
+   "end": 20.38,
+   "medido": true
+  },
+  {
+   "id": "w45",
+   "cena": "c04",
+   "text": "trigo",
+   "start": 20.38,
+   "end": 20.79,
+   "medido": false
+  },
+  {
+   "id": "w46",
+   "cena": "c04",
+   "text": "e",
+   "start": 20.79,
+   "end": 20.924,
+   "medido": true
+  },
+  {
+   "id": "w47",
+   "cena": "c04",
+   "text": "furam",
+   "start": 20.924,
+   "end": 21.156,
+   "medido": false
+  },
+  {
+   "id": "w48",
+   "cena": "c04",
+   "text": "as",
+   "start": 21.156,
+   "end": 21.29,
+   "medido": false
+  },
+  {
+   "id": "w49",
+   "cena": "c04",
+   "text": "cercas.",
+   "start": 21.29,
+   "end": 21.81,
+   "medido": true
+  },
+  {
+   "id": "w50",
+   "cena": "c05",
+   "text": "Fazendeiros",
+   "start": 22.29,
+   "end": 22.89,
+   "medido": true
+  },
+  {
+   "id": "w51",
+   "cena": "c05",
+   "text": "pedem",
+   "start": 22.89,
+   "end": 23.39,
+   "medido": true
+  },
+  {
+   "id": "w52",
+   "cena": "c05",
+   "text": "metralhadoras.",
+   "start": 23.39,
+   "end": 24.35,
+   "medido": true
+  },
+  {
+   "id": "w53",
+   "cena": "c05",
+   "text": "O",
+   "start": 24.76,
+   "end": 24.78,
+   "medido": true
+  },
+  {
+   "id": "w54",
+   "cena": "c05",
+   "text": "ministro",
+   "start": 24.85,
+   "end": 25.48,
+   "medido": true
+  },
+  {
+   "id": "w55",
+   "cena": "c05",
+   "text": "da",
+   "start": 25.48,
+   "end": 25.72,
+   "medido": true
+  },
+  {
+   "id": "w56",
+   "cena": "c05",
+   "text": "Defesa",
+   "start": 25.72,
+   "end": 26.12,
+   "medido": true
+  },
+  {
+   "id": "w57",
+   "cena": "c05",
+   "text": "topa,",
+   "start": 26.12,
+   "end": 26.61,
+   "medido": true
+  },
+  {
+   "id": "w58",
+   "cena": "c05",
+   "text": "mas",
+   "start": 26.61,
+   "end": 26.79,
+   "medido": true
+  },
+  {
+   "id": "w59",
+   "cena": "c05",
+   "text": "não",
+   "start": 26.79,
+   "end": 26.96,
+   "medido": true
+  },
+  {
+   "id": "w60",
+   "cena": "c05",
+   "text": "paga",
+   "start": 26.96,
+   "end": 27.19,
+   "medido": true
+  },
+  {
+   "id": "w61",
+   "cena": "c05",
+   "text": "a",
+   "start": 27.19,
+   "end": 27.38,
+   "medido": true
+  },
+  {
+   "id": "w62",
+   "cena": "c05",
+   "text": "munição.",
+   "start": 27.38,
+   "end": 27.85,
+   "medido": false
+  },
+  {
+   "id": "w63",
+   "cena": "c06",
+   "text": "Partem",
+   "start": 28.33,
+   "end": 28.8,
+   "medido": true
+  },
+  {
+   "id": "w64",
+   "cena": "c06",
+   "text": "o",
+   "start": 29.11,
+   "end": 29.321,
+   "medido": true
+  },
+  {
+   "id": "w65",
+   "cena": "c06",
+   "text": "major",
+   "start": 29.321,
+   "end": 29.687,
+   "medido": false
+  },
+  {
+   "id": "w66",
+   "cena": "c06",
+   "text": "Meredith,",
+   "start": 29.687,
+   "end": 30.21,
+   "medido": false
+  },
+  {
+   "id": "w67",
+   "cena": "c06",
+   "text": "dois",
+   "start": 30.52,
+   "end": 30.64,
+   "medido": true
+  },
+  {
+   "id": "w68",
+   "cena": "c06",
+   "text": "ajudantes",
+   "start": 30.64,
+   "end": 31.55,
+   "medido": true
+  },
+  {
+   "id": "w69",
+   "cena": "c06",
+   "text": "e",
+   "start": 31.55,
+   "end": 31.685,
+   "medido": true
+  },
+  {
+   "id": "w70",
+   "cena": "c06",
+   "text": "um",
+   "start": 31.685,
+   "end": 31.82,
+   "medido": false
+  },
+  {
+   "id": "w71",
+   "cena": "c06",
+   "text": "cinegrafista.",
+   "start": 31.82,
+   "end": 32.72,
+   "medido": true
+  },
+  {
+   "id": "w72",
+   "cena": "c07",
+   "text": "Emboscada",
+   "start": 33.2,
+   "end": 33.9,
+   "medido": true
+  },
+  {
+   "id": "w73",
+   "cena": "c07",
+   "text": "numa",
+   "start": 33.9,
+   "end": 34.22,
+   "medido": true
+  },
+  {
+   "id": "w74",
+   "cena": "c07",
+   "text": "represa:",
+   "start": 34.27,
+   "end": 34.63,
+   "medido": true
+  },
+  {
+   "id": "w75",
+   "cena": "c07",
+   "text": "cerca",
+   "start": 34.94,
+   "end": 35.6,
+   "medido": true
+  },
+  {
+   "id": "w76",
+   "cena": "c07",
+   "text": "de",
+   "start": 35.6,
+   "end": 35.81,
+   "medido": true
+  },
+  {
+   "id": "w77",
+   "cena": "c07",
+   "text": "mil",
+   "start": 35.81,
+   "end": 36.11,
+   "medido": true
+  },
+  {
+   "id": "w78",
+   "cena": "c07",
+   "text": "emus.",
+   "start": 36.11,
+   "end": 36.3,
+   "medido": true
+  },
+  {
+   "id": "w79",
+   "cena": "c07",
+   "text": "E",
+   "start": 36.71,
+   "end": 36.87,
+   "medido": true
+  },
+  {
+   "id": "w80",
+   "cena": "c07",
+   "text": "a",
+   "start": 36.87,
+   "end": 36.94,
+   "medido": true
+  },
+  {
+   "id": "w81",
+   "cena": "c07",
+   "text": "metralhadora",
+   "start": 36.94,
+   "end": 37.81,
+   "medido": true
+  },
+  {
+   "id": "w82",
+   "cena": "c07",
+   "text": "trava.",
+   "start": 37.81,
+   "end": 38.19,
+   "medido": true
+  },
+  {
+   "id": "w83",
+   "cena": "c08",
+   "text": "Num",
+   "start": 38.67,
+   "end": 38.86,
+   "medido": true
+  },
+  {
+   "id": "w84",
+   "cena": "c08",
+   "text": "caminhão,",
+   "start": 38.86,
+   "end": 39.5,
+   "medido": true
+  },
+  {
+   "id": "w85",
+   "cena": "c08",
+   "text": "a",
+   "start": 39.81,
+   "end": 39.9,
+   "medido": true
+  },
+  {
+   "id": "w86",
+   "cena": "c08",
+   "text": "mira",
+   "start": 39.9,
+   "end": 40.32,
+   "medido": true
+  },
+  {
+   "id": "w87",
+   "cena": "c08",
+   "text": "piora.",
+   "start": 40.32,
+   "end": 40.66,
+   "medido": true
+  },
+  {
+   "id": "w88",
+   "cena": "c08",
+   "text": "Em",
+   "start": 41.07,
+   "end": 41.19,
+   "medido": true
+  },
+  {
+   "id": "w89",
+   "cena": "c08",
+   "text": "seis",
+   "start": 41.19,
+   "end": 41.56,
+   "medido": true
+  },
+  {
+   "id": "w90",
+   "cena": "c08",
+   "text": "dias,",
+   "start": 41.56,
+   "end": 41.895,
+   "medido": true
+  },
+  {
+   "id": "w91",
+   "cena": "c08",
+   "text": "o",
+   "start": 41.895,
+   "end": 42.23,
+   "medido": false
+  },
+  {
+   "id": "w92",
+   "cena": "c08",
+   "text": "governo",
+   "start": 42.23,
+   "end": 42.7,
+   "medido": true
+  },
+  {
+   "id": "w93",
+   "cena": "c08",
+   "text": "manda",
+   "start": 42.7,
+   "end": 43.04,
+   "medido": true
+  },
+  {
+   "id": "w94",
+   "cena": "c08",
+   "text": "recuar.",
+   "start": 43.04,
+   "end": 43.72,
+   "medido": true
+  },
+  {
+   "id": "w95",
+   "cena": "c09",
+   "text": "O",
+   "start": 44.2,
+   "end": 44.313,
+   "medido": true
+  },
+  {
+   "id": "w96",
+   "cena": "c09",
+   "text": "major",
+   "start": 44.313,
+   "end": 44.51,
+   "medido": false
+  },
+  {
+   "id": "w97",
+   "cena": "c09",
+   "text": "resumiu:",
+   "start": 44.51,
+   "end": 45.19,
+   "medido": true
+  },
+  {
+   "id": "w98",
+   "cena": "c09",
+   "text": "eles",
+   "start": 45.5,
+   "end": 45.71,
+   "medido": true
+  },
+  {
+   "id": "w99",
+   "cena": "c09",
+   "text": "podem",
+   "start": 45.78,
+   "end": 46.002,
+   "medido": false
+  },
+  {
+   "id": "w100",
+   "cena": "c09",
+   "text": "enfrentar",
+   "start": 46.002,
+   "end": 46.36,
+   "medido": false
+  },
+  {
+   "id": "w101",
+   "cena": "c09",
+   "text": "metralhadoras",
+   "start": 46.36,
+   "end": 47.39,
+   "medido": true
+  },
+  {
+   "id": "w102",
+   "cena": "c09",
+   "text": "com",
+   "start": 47.39,
+   "end": 47.5,
+   "medido": true
+  },
+  {
+   "id": "w103",
+   "cena": "c09",
+   "text": "a",
+   "start": 47.5,
+   "end": 47.65,
+   "medido": true
+  },
+  {
+   "id": "w104",
+   "cena": "c09",
+   "text": "invulnerabilidade",
+   "start": 47.65,
+   "end": 48.58,
+   "medido": false
+  },
+  {
+   "id": "w105",
+   "cena": "c09",
+   "text": "de",
+   "start": 48.58,
+   "end": 48.7,
+   "medido": true
+  },
+  {
+   "id": "w106",
+   "cena": "c09",
+   "text": "tanques.",
+   "start": 48.7,
+   "end": 49.29,
+   "medido": true
+  },
+  {
+   "id": "w107",
+   "cena": "c10",
+   "text": "No",
+   "start": 49.77,
+   "end": 49.971,
+   "medido": true
+  },
+  {
+   "id": "w108",
+   "cena": "c10",
+   "text": "Parlamento,",
+   "start": 49.971,
+   "end": 50.62,
+   "medido": false
+  },
+  {
+   "id": "w109",
+   "cena": "c10",
+   "text": "perguntam",
+   "start": 50.93,
+   "end": 51.46,
+   "medido": true
+  },
+  {
+   "id": "w110",
+   "cena": "c10",
+   "text": "se",
+   "start": 51.46,
+   "end": 51.6,
+   "medido": true
+  },
+  {
+   "id": "w111",
+   "cena": "c10",
+   "text": "haverá",
+   "start": 51.6,
+   "end": 52.05,
+   "medido": true
+  },
+  {
+   "id": "w112",
+   "cena": "c10",
+   "text": "medalha.",
+   "start": 52.05,
+   "end": 52.52,
+   "medido": true
+  },
+  {
+   "id": "w113",
+   "cena": "c10",
+   "text": "Um",
+   "start": 52.93,
+   "end": 53.08,
+   "medido": true
+  },
+  {
+   "id": "w114",
+   "cena": "c10",
+   "text": "deputado",
+   "start": 53.08,
+   "end": 53.803,
+   "medido": true
+  },
+  {
+   "id": "w115",
+   "cena": "c10",
+   "text": "responde:",
+   "start": 53.803,
+   "end": 54.36,
+   "medido": false
+  },
+  {
+   "id": "w116",
+   "cena": "c10",
+   "text": "os",
+   "start": 54.67,
+   "end": 54.79,
+   "medido": true
+  },
+  {
+   "id": "w117",
+   "cena": "c10",
+   "text": "emus",
+   "start": 54.79,
+   "end": 55.11,
+   "medido": true
+  },
+  {
+   "id": "w118",
+   "cena": "c10",
+   "text": "venceram",
+   "start": 55.11,
+   "end": 55.82,
+   "medido": true
+  },
+  {
+   "id": "w119",
+   "cena": "c10",
+   "text": "todos",
+   "start": 55.96,
+   "end": 56.15,
+   "medido": true
+  },
+  {
+   "id": "w120",
+   "cena": "c10",
+   "text": "os",
+   "start": 56.15,
+   "end": 56.31,
+   "medido": true
+  },
+  {
+   "id": "w121",
+   "cena": "c10",
+   "text": "rounds",
+   "start": 56.31,
+   "end": 56.79,
+   "medido": true
+  },
+  {
+   "id": "w122",
+   "cena": "c10",
+   "text": "até",
+   "start": 56.79,
+   "end": 57.03,
+   "medido": true
+  },
+  {
+   "id": "w123",
+   "cena": "c10",
+   "text": "agora.",
+   "start": 57.03,
+   "end": 57.67,
+   "medido": true
+  },
+  {
+   "id": "w124",
+   "cena": "c11",
+   "text": "O",
+   "start": 58.15,
+   "end": 58.356,
+   "medido": true
+  },
+  {
+   "id": "w125",
+   "cena": "c11",
+   "text": "Exército",
+   "start": 58.356,
+   "end": 59.02,
+   "medido": false
+  },
+  {
+   "id": "w126",
+   "cena": "c11",
+   "text": "volta.",
+   "start": 59.02,
+   "end": 59.25,
+   "medido": true
+  },
+  {
+   "id": "w127",
+   "cena": "c11",
+   "text": "Na",
+   "start": 59.66,
+   "end": 59.93,
+   "medido": true
+  },
+  {
+   "id": "w128",
+   "cena": "c11",
+   "text": "conta",
+   "start": 59.93,
+   "end": 60.5,
+   "medido": true
+  },
+  {
+   "id": "w129",
+   "cena": "c11",
+   "text": "do",
+   "start": 60.5,
+   "end": 60.71,
+   "medido": true
+  },
+  {
+   "id": "w130",
+   "cena": "c11",
+   "text": "major:",
+   "start": 60.71,
+   "end": 61.023,
+   "medido": true
+  },
+  {
+   "id": "w131",
+   "cena": "c11",
+   "text": "novecentos",
+   "start": 61.023,
+   "end": 61.603,
+   "medido": false
+  },
+  {
+   "id": "w132",
+   "cena": "c11",
+   "text": "e",
+   "start": 61.603,
+   "end": 61.783,
+   "medido": false
+  },
+  {
+   "id": "w133",
+   "cena": "c11",
+   "text": "oitenta",
+   "start": 61.783,
+   "end": 62.23,
+   "medido": false
+  },
+  {
+   "id": "w134",
+   "cena": "c11",
+   "text": "e",
+   "start": 62.23,
+   "end": 62.41,
+   "medido": false
+  },
+  {
+   "id": "w135",
+   "cena": "c11",
+   "text": "seis",
+   "start": 62.72,
+   "end": 62.884,
+   "medido": false
+  },
+  {
+   "id": "w136",
+   "cena": "c11",
+   "text": "emus",
+   "start": 62.884,
+   "end": 63.17,
+   "medido": false
+  },
+  {
+   "id": "w137",
+   "cena": "c11",
+   "text": "confirmados.",
+   "start": 63.17,
+   "end": 63.9,
+   "medido": true
+  },
+  {
+   "id": "w138",
+   "cena": "c11",
+   "text": "Quase",
+   "start": 64.31,
+   "end": 64.805,
+   "medido": true
+  },
+  {
+   "id": "w139",
+   "cena": "c11",
+   "text": "dez",
+   "start": 64.805,
+   "end": 65.09,
+   "medido": false
+  },
+  {
+   "id": "w140",
+   "cena": "c11",
+   "text": "mil",
+   "start": 65.09,
+   "end": 65.27,
+   "medido": true
+  },
+  {
+   "id": "w141",
+   "cena": "c11",
+   "text": "balas.",
+   "start": 65.27,
+   "end": 65.57,
+   "medido": true
+  },
+  {
+   "id": "w142",
+   "cena": "c12",
+   "text": "Outra",
+   "start": 66.05,
+   "end": 66.38,
+   "medido": true
+  },
+  {
+   "id": "w143",
+   "cena": "c12",
+   "text": "conta:",
+   "start": 66.38,
+   "end": 66.87,
+   "medido": true
+  },
+  {
+   "id": "w144",
+   "cena": "c12",
+   "text": "cinquenta",
+   "start": 67.18,
+   "end": 67.599,
+   "medido": false
+  },
+  {
+   "id": "w145",
+   "cena": "c12",
+   "text": "e",
+   "start": 67.599,
+   "end": 67.767,
+   "medido": false
+  },
+  {
+   "id": "w146",
+   "cena": "c12",
+   "text": "sete",
+   "start": 67.767,
+   "end": 68.061,
+   "medido": false
+  },
+  {
+   "id": "w147",
+   "cena": "c12",
+   "text": "mil",
+   "start": 68.061,
+   "end": 68.23,
+   "medido": false
+  },
+  {
+   "id": "w148",
+   "cena": "c12",
+   "text": "pedidos",
+   "start": 68.23,
+   "end": 68.72,
+   "medido": true
+  },
+  {
+   "id": "w149",
+   "cena": "c12",
+   "text": "de",
+   "start": 68.72,
+   "end": 68.86,
+   "medido": true
+  },
+  {
+   "id": "w150",
+   "cena": "c12",
+   "text": "recompensa",
+   "start": 68.86,
+   "end": 69.59,
+   "medido": true
+  },
+  {
+   "id": "w151",
+   "cena": "c12",
+   "text": "por",
+   "start": 69.59,
+   "end": 69.94,
+   "medido": true
+  },
+  {
+   "id": "w152",
+   "cena": "c12",
+   "text": "emu.",
+   "start": 69.94,
+   "end": 70.09,
+   "medido": true
+  },
+  {
+   "id": "w153",
+   "cena": "c12",
+   "text": "Em",
+   "start": 70.5,
+   "end": 71.11,
+   "medido": true
+  },
+  {
+   "id": "w154",
+   "cena": "c12",
+   "text": "só",
+   "start": 71.11,
+   "end": 71.3,
+   "medido": true
+  },
+  {
+   "id": "w155",
+   "cena": "c12",
+   "text": "seis",
+   "start": 71.3,
+   "end": 71.75,
+   "medido": true
+  },
+  {
+   "id": "w156",
+   "cena": "c12",
+   "text": "meses",
+   "start": 72.06,
+   "end": 72.309,
+   "medido": true
+  },
+  {
+   "id": "w157",
+   "cena": "c12",
+   "text": "de",
+   "start": 72.309,
+   "end": 72.452,
+   "medido": false
+  },
+  {
+   "id": "w158",
+   "cena": "c12",
+   "text": "mil",
+   "start": 72.452,
+   "end": 72.595,
+   "medido": false
+  },
+  {
+   "id": "w159",
+   "cena": "c12",
+   "text": "novecentos",
+   "start": 72.595,
+   "end": 73.056,
+   "medido": false
+  },
+  {
+   "id": "w160",
+   "cena": "c12",
+   "text": "e",
+   "start": 73.056,
+   "end": 73.199,
+   "medido": false
+  },
+  {
+   "id": "w161",
+   "cena": "c12",
+   "text": "trinta",
+   "start": 73.199,
+   "end": 73.448,
+   "medido": false
+  },
+  {
+   "id": "w162",
+   "cena": "c12",
+   "text": "e",
+   "start": 73.448,
+   "end": 73.591,
+   "medido": false
+  },
+  {
+   "id": "w163",
+   "cena": "c12",
+   "text": "quatro.",
+   "start": 73.591,
+   "end": 73.84,
+   "medido": false
+  },
+  {
+   "id": "w164",
+   "cena": "c13",
+   "text": "Fazendeiros",
+   "start": 74.32,
+   "end": 75.022,
+   "medido": true
+  },
+  {
+   "id": "w165",
+   "cena": "c13",
+   "text": "pedem",
+   "start": 75.022,
+   "end": 75.402,
+   "medido": false
+  },
+  {
+   "id": "w166",
+   "cena": "c13",
+   "text": "o",
+   "start": 75.402,
+   "end": 75.62,
+   "medido": false
+  },
+  {
+   "id": "w167",
+   "cena": "c13",
+   "text": "Exército",
+   "start": 75.62,
+   "end": 76.24,
+   "medido": true
+  },
+  {
+   "id": "w168",
+   "cena": "c13",
+   "text": "de",
+   "start": 76.24,
+   "end": 76.39,
+   "medido": true
+  },
+  {
+   "id": "w169",
+   "cena": "c13",
+   "text": "novo.",
+   "start": 76.39,
+   "end": 76.67,
+   "medido": true
+  },
+  {
+   "id": "w170",
+   "cena": "c13",
+   "text": "O",
+   "start": 77.08,
+   "end": 77.25,
+   "medido": true
+  },
+  {
+   "id": "w171",
+   "cena": "c13",
+   "text": "governo",
+   "start": 77.25,
+   "end": 77.78,
+   "medido": true
+  },
+  {
+   "id": "w172",
+   "cena": "c13",
+   "text": "diz",
+   "start": 77.78,
+   "end": 78.13,
+   "medido": true
+  },
+  {
+   "id": "w173",
+   "cena": "c13",
+   "text": "não.",
+   "start": 78.13,
+   "end": 78.38,
+   "medido": true
+  },
+  {
+   "id": "w174",
+   "cena": "c14",
+   "text": "Desde",
+   "start": 78.86,
+   "end": 79.182,
+   "medido": true
+  },
+  {
+   "id": "w175",
+   "cena": "c14",
+   "text": "mil",
+   "start": 79.182,
+   "end": 79.367,
+   "medido": false
+  },
+  {
+   "id": "w176",
+   "cena": "c14",
+   "text": "novecentos",
+   "start": 79.367,
+   "end": 79.963,
+   "medido": false
+  },
+  {
+   "id": "w177",
+   "cena": "c14",
+   "text": "e",
+   "start": 79.963,
+   "end": 80.148,
+   "medido": false
+  },
+  {
+   "id": "w178",
+   "cena": "c14",
+   "text": "oito,",
+   "start": 80.148,
+   "end": 80.39,
+   "medido": false
+  },
+  {
+   "id": "w179",
+   "cena": "c14",
+   "text": "o",
+   "start": 80.5,
+   "end": 80.56,
+   "medido": true
+  },
+  {
+   "id": "w180",
+   "cena": "c14",
+   "text": "emu",
+   "start": 80.68,
+   "end": 80.86,
+   "medido": false
+  },
+  {
+   "id": "w181",
+   "cena": "c14",
+   "text": "está",
+   "start": 80.86,
+   "end": 81.108,
+   "medido": false
+  },
+  {
+   "id": "w182",
+   "cena": "c14",
+   "text": "no",
+   "start": 81.108,
+   "end": 81.25,
+   "medido": false
+  },
+  {
+   "id": "w183",
+   "cena": "c14",
+   "text": "brasão",
+   "start": 81.25,
+   "end": 81.65,
+   "medido": true
+  },
+  {
+   "id": "w184",
+   "cena": "c14",
+   "text": "da",
+   "start": 81.65,
+   "end": 81.82,
+   "medido": true
+  },
+  {
+   "id": "w185",
+   "cena": "c14",
+   "text": "Austrália.",
+   "start": 81.82,
+   "end": 82.54,
+   "medido": true
+  },
+  {
+   "id": "w186",
+   "cena": "c14",
+   "text": "O",
+   "start": 82.95,
+   "end": 83.115,
+   "medido": true
+  },
+  {
+   "id": "w187",
+   "cena": "c14",
+   "text": "país",
+   "start": 83.115,
+   "end": 83.28,
+   "medido": false
+  },
+  {
+   "id": "w188",
+   "cena": "c14",
+   "text": "atirou",
+   "start": 83.28,
+   "end": 83.76,
+   "medido": true
+  },
+  {
+   "id": "w189",
+   "cena": "c14",
+   "text": "na",
+   "start": 83.76,
+   "end": 83.92,
+   "medido": true
+  },
+  {
+   "id": "w190",
+   "cena": "c14",
+   "text": "ave",
+   "start": 83.92,
+   "end": 84.2,
+   "medido": true
+  },
+  {
+   "id": "w191",
+   "cena": "c14",
+   "text": "do",
+   "start": 84.2,
+   "end": 84.35,
+   "medido": true
+  },
+  {
+   "id": "w192",
+   "cena": "c14",
+   "text": "próprio",
+   "start": 84.44,
+   "end": 85.03,
+   "medido": true
+  },
+  {
+   "id": "w193",
+   "cena": "c14",
+   "text": "brasão.",
+   "start": 85.03,
+   "end": 85.24,
+   "medido": true
+  },
+  {
+   "id": "w194",
+   "cena": "c14",
+   "text": "E",
+   "start": 85.65,
+   "end": 85.84,
+   "medido": true
+  },
+  {
+   "id": "w195",
+   "cena": "c14",
+   "text": "entrou",
+   "start": 85.84,
+   "end": 86.17,
+   "medido": true
+  },
+  {
+   "id": "w196",
+   "cena": "c14",
+   "text": "para",
+   "start": 86.17,
+   "end": 86.42,
+   "medido": true
+  },
+  {
+   "id": "w197",
+   "cena": "c14",
+   "text": "a",
+   "start": 86.42,
+   "end": 86.578,
+   "medido": true
+  },
+  {
+   "id": "w198",
+   "cena": "c14",
+   "text": "história",
+   "start": 86.578,
+   "end": 86.97,
+   "medido": false
+  },
+  {
+   "id": "w199",
+   "cena": "c14",
+   "text": "como",
+   "start": 86.97,
+   "end": 87.22,
+   "medido": true
+  },
+  {
+   "id": "w200",
+   "cena": "c14",
+   "text": "perdedor.",
+   "start": 87.22,
+   "end": 87.68,
+   "medido": true
+  }
+ ],
+ "duracao_narracao": 87.8,
+ "duracao_video": 89.8,
+ "palavras_medidas": 145,
+ "tempos_medidos": false
+}

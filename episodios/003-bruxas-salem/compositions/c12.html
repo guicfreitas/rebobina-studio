@@ -1,0 +1,63 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    .pos { position: absolute; left: 70px; top: 320px; width: 940px; height: 730px; background: var(--fita-2); overflow: hidden; }
+    .pos-p { position: absolute; left: 0; top: 0; width: 940px; height: 410px; background: var(--papel); box-shadow: inset 0 0 90px rgba(120,90,40,.28); }
+    .pos-t { position: absolute; left: 22px; width: 900px; color: var(--tinta); font-size: 212px; white-space: nowrap; }
+    .pos-g { position: absolute; left: 500px; top: 410px; width: 420px; height: 320px; background: radial-gradient(circle at 60% 30%, rgba(180,140,255,.5), transparent 68%); }
+    .pos-m { position: absolute; left: 610px; top: 412px; }
+
+    .r { position: absolute; left: 12px; height: 18px; background: var(--rec); }
+    #c12-nf { position: absolute; left: 50px; top: 150px; font-size: 66px; background: rgba(241,232,211,.9); white-space: nowrap; color: #d3241a; border-color: #d3241a; mix-blend-mode: normal; }
+    #c12-l1, #c12-l2 { position: absolute; left: 26px; font-size: 130px; white-space: nowrap; }
+    #c12-l1 { top: 438px; color: var(--vhs); } #c12-l2 { top: 566px; }
+    .c12-fum { position: absolute; width: 56px; height: 56px; border-radius: 50%; background: rgba(128,122,138,.8); left: 655px; top: 440px; opacity: 0; }
+
+  </style>
+  <div id="root" data-composition-id="c12" data-width="1080" data-height="1920">
+    <div id="c12-w" class="clip" data-start="0" data-duration="7.65" data-layout-allow-overlap data-layout-allow-overflow>
+      <div id="c12-pos" class="pos">
+        <div class="pos-p"></div>
+        <div class="pos-t rb-titulo" data-layout-allow-occlusion style="top:12px">&ldquo;QUEIMADAS</div>
+        <div class="pos-t rb-titulo" data-layout-allow-occlusion style="top:204px">NA FOGUEIRA&rdquo;</div>
+        <div id="c12-r1" class="r" style="top:108px;width:760px"></div>
+        <div id="c12-r2" class="r" style="top:300px;width:910px"></div>
+        <div id="c12-nf" class="rb-carimbo">NENHUMA FOGUEIRA</div>
+        <div id="c12-g" class="pos-g"></div>
+        <div class="c12-fum" id="c12-f1"></div><div class="c12-fum" id="c12-f2"></div><div class="c12-fum" id="c12-f3"></div>
+        <div id="c12-m" class="pos-m"><svg class="m-svg" viewBox="0 0 200 460" width="130" height="299">
+        <rect x="88" y="170" width="24" height="290" fill="#c9a36a"/><rect x="88" y="170" width="7" height="290" fill="#e6c48c"/>
+        <path d="M84 176 Q80 132 100 124 Q120 132 116 176 Q100 188 84 176Z" fill="#3b2a55"/>
+        <g id="c12-fl"><path d="M100 4 C128 52 158 78 150 122 C144 158 122 172 100 172 C78 172 54 158 50 122 C44 88 76 66 100 4Z" fill="#b48cff"/>
+        <path d="M100 70 C114 96 130 108 126 132 C122 154 112 162 100 162 C88 162 76 154 74 132 C72 112 90 100 100 70Z" fill="#f1e8d3"/></g></svg></div>
+        <div id="c12-l1" class="rb-titulo">329 ANOS</div>
+        <div id="c12-l2" class="rb-titulo">PARA APAGAR</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const C = "c12"; const T = (w, n) => RB.t(C, w, n), Tf = (w, n) => RB.tf(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    // entra no gatilho, sem atravessar a tela: carimbo bate (1,5 → 1); peça aparece com um pequeno deslocamento
+    const bate = (el, t, de = 0, ate = 0, op = 1) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: op }, t); tl.fromTo(el, { scale: 1.5, rotation: de }, { scale: 1, rotation: ate, duration: 0.16, ease: "back.out(2)" }, t); };
+    const surge = (el, t, dy = 24) => { gsap.set(el, { autoAlpha: 0 }); tl.set(el, { autoAlpha: 1 }, t); tl.fromTo(el, { y: dy }, { y: 0, duration: 0.18, ease: "power3.out" }, t); };
+    const A = T("apagar");
+    gsap.set("#c12-fl", { svgOrigin: "100 172" });
+    for (let t = 0.1; t < A; t += 0.1) tl.set("#c12-fl", { scaleY: 1 + 0.07 * Math.sin(t * 37), skewX: 5 * Math.sin(t * 23) }, t);
+    tl.fromTo("#c12-r1", { scaleX: 0, transformOrigin: "0 50%" }, { scaleX: 1, duration: 0.24, ease: "power3.out" }, T("nunca") - 0.1);
+    tl.fromTo("#c12-r2", { scaleX: 0, transformOrigin: "0 50%" }, { scaleX: 1, duration: 0.24, ease: "power3.out" }, T("acendeu") - 0.05);
+    bate("#c12-nf", T("fogueira"), -10, -4, 0.92);
+    tl.fromTo("#c12-l1", { x: -900 }, { x: 0, duration: 0.2, ease: "power3.out" }, A - 0.18);
+    tl.fromTo("#c12-l2", { x: -900 }, { x: 0, duration: 0.2, ease: "power3.out" }, A - 0.05);
+    tl.to("#c12-fl", { scaleY: 0.02, scaleX: 0.2, duration: 0.12, ease: "steps(3)" }, A);
+    tl.to("#c12-g", { opacity: 0, duration: 0.12, ease: "steps(3)" }, A);
+    // a fumaça sobe em passos até 0,5 s antes do STOP (o OSD troca para STOP 0,9 s antes do fim do vídeo)
+    const FUM = ["#c12-f1", "#c12-f2", "#c12-f3"], SUBIDA = 1.2, FIM_FUM = D - 0.9 - 0.5;
+    for (let t = A + 0.05, i = 0; t < FIM_FUM - 0.4; t += 0.42, i++) {
+      const f = FUM[i % 3];
+      tl.set(f, { y: 0, x: 0, scale: 0.4, opacity: 1 }, t);
+      tl.to(f, { y: -420, x: ((i % 3) - 1) * 60 + 25, scale: 2.8, opacity: 0, duration: Math.min(SUBIDA, FIM_FUM - t), ease: "steps(10)" }, t + 0.01);
+    }
+    window.__timelines["c12"] = tl;
+  </script>
+</template>

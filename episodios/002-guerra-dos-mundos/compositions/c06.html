@@ -1,0 +1,48 @@
+<template>
+  <!-- c06 · escalada · número-que-cai: 5.000 ligações; de 100 casas, só 2 ouviam Welles. -->
+  <style>
+    #root { position: absolute; inset: 0; background: var(--fita); overflow: hidden; }
+    #c06-cont { position: absolute; left: 90px; top: 330px; font-size: 40px; color: var(--papel); }
+    #c06-cont b { color: var(--vhs); }
+    #c06-grade { position: absolute; left: 150px; top: 420px; width: 780px; display: grid; grid-template-columns: repeat(10, 60px); gap: 12px 20px; }
+    .c06-casa { width: 60px; height: 50px; background: #3a3744; clip-path: polygon(50% 0, 100% 45%, 88% 45%, 88% 100%, 12% 100%, 12% 45%, 0 45%); }
+    #c06-pct { position: absolute; left: 90px; top: 560px; width: 900px; text-align: center; font-size: 330px; color: var(--acento); text-shadow: 0 12px 50px #000; }
+    #c06-pct-l { position: absolute; left: 90px; top: 900px; width: 900px; text-align: center; font-size: 34px; color: var(--papel); }
+  </style>
+  <div id="root" data-composition-id="c06" data-width="1080" data-height="1920">
+    <div id="c06-w" class="clip" data-start="0" data-duration="9" data-layout-allow-overlap>
+      <div id="c06-cont" class="rb-mono">LIGAÇÕES: <b id="c06-n">0</b></div>
+      <div id="c06-grade">
+        <div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div>
+        <div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div>
+        <div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div id="c06-a1" class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div>
+        <div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div>
+        <div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div>
+        <div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div>
+        <div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div id="c06-a2" class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div>
+        <div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div>
+        <div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div>
+        <div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div><div class="c06-casa"></div>
+      </div>
+      <div id="c06-pct" class="rb-titulo">2%</div>
+      <div id="c06-pct-l" class="rb-mono">OUVIAM ORSON WELLES</div>
+    </div>
+  </div>
+  <script>
+    const C = "c06", T = (w, n) => RB.t(C, w, n), D = RB.dur(C);
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#c06-cont", { opacity: 0 }, { opacity: 1, duration: 0.1, ease: "steps(2)" }, 0.1);
+    tl.fromTo(".c06-casa", { scale: 0 }, { scale: 1, duration: 0.08, stagger: 0.012, ease: "back.out(2)" }, 0.15);
+    // o contador de ligações rola em passos até 5.000 em "ligou … cinco mil casas"
+    const n0 = T("ligou"), passos = [250, 900, 1700, 2600, 3400, 4200, 4800, 5000];
+    passos.forEach((v, i) => tl.set("#c06-n", { textContent: "​" + String(v).replace(/\B(?=(\d{3})+(?!\d))/g, ".") }, n0 + i * ((T("casas") - n0 + 0.2) / passos.length)));
+    tl.fromTo(".c06-casa", { backgroundColor: "#3a3744" }, { backgroundColor: "#4e4a5a", duration: 0.2 }, T("cinco"));
+    // "só dois por cento": 98 casas apagam, 2 acendem
+    tl.to(".c06-casa", { backgroundColor: "#24222b", duration: 0.15, ease: "steps(3)" }, T("dois") - 0.15);
+    tl.to("#c06-a1, #c06-a2", { backgroundColor: "#e07a3b", scale: 1.25, duration: 0.15, ease: "back.out(3)" }, T("dois"));
+    tl.fromTo("#c06-pct", { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1, duration: 0.2, ease: "back.out(2)" }, T("cento") + 0.05);
+    tl.fromTo("#c06-pct-l", { opacity: 0 }, { opacity: 1, duration: 0.1, ease: "steps(2)" }, T("ouviam"));
+    tl.to("#c06-grade", { opacity: 0.35, duration: 0.2 }, T("cento") + 0.05);
+    window.__timelines["c06"] = tl;
+  </script>
+</template>
